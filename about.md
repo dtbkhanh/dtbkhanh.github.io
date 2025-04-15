@@ -1,11 +1,3 @@
-layout: page
-title: "About Me"
-permalink: /about/
-
----
-
-# About Me
-
 Hi, I'm Khanh! 👋
 I'm a data analyst with 3+ years of hands-on experience transforming raw data into meaningful insights.
 
