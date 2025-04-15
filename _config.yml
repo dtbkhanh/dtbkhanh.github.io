@@ -1,7 +1,14 @@
 title: ""
-theme: cayman
+theme: jekyll-theme-cayman
 paginate: 5
 description: "A blog showcasing my dashboard case studies."
+nav:
+  - title: "Home"
+    url: /
+  - title: "About Me"
+    url: /about/
+  - title: "Posts"
+    url: /posts/
 
 ---
 layout: page
