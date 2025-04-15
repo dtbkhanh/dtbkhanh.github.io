@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Case Study: Mobile App Marketing & Conversion Analysis"
-date:   2025-04-15
+date: 2025-04-15
 ---
 
-In this case study, I break down the Looker Studio dashboard I built using video game sales data.
+In this case study, I break down the Looker Studio dashboard I built.
 
 ## 🎯 Key Insights
 
