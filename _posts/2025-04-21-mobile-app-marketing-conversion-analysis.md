@@ -36,7 +36,7 @@ I created **4 interactive dashboards in Looker Studio** to uncover actionable in
 ### 📊 Key Visualizations
 1. **KPI Cards:** Total users (29.1k), Conversion Rate (15.1%), Total Monthly Recurring Revenue (MRR)
 2. **Pie Charts:** Conversion Status Breakdown (Free vs. Paid), Paid vs. Non-paid Conversion
-3. **Line Charts:** Account Creation Timeline, Monthly New subscribers
+3. **Line Charts:** Account Creation Timeline, Monthly New Subscribers
 
 ### 🔍 Insights
 - Steady user growth from 2020 to 2025 indicates increasing brand visibility and app popularity.
@@ -133,19 +133,9 @@ Most users convert within the **first 1–2 months**.
 **3–5. Marketing Channel Performance**  
 Evaluation by user volume, conversion rate, and maximum MRR:
 
-- **Google**  
-  - Brings in the largest volume of users  
-  - Highest Max MRR  
-  - Conversion rate is **moderate**
-
-- **Facebook**  
-  - Moderate user base  
-  - Highest conversion rate, outperforming Google and TikTok  
-  - Moderate Max MRR
-
-- **TikTok**  
-  - Lowest in user volume, conversion rate, and Max MRR  
-  - Overall underperformance
+- **Google** brings in the largest volume of users, top MRR, but moderate conversion.  
+- **Facebook** has a moderate traffic and max MRR, but the highest conversion rate — outperforming Google and TikTok.  
+- **TikTok** has the lowest user volume, conversion rate, and Max MRR — which brings overall underperformance.
 
 **6–7. Campaign Performance**  
 Analysis by conversion distribution and Max MRR.
@@ -267,7 +257,6 @@ Analysis by conversion distribution and Max MRR.
 ➡️ Prioritize marketing to **dual-income users**, who likely face more complex financial management  
 ➡️ Adjust messaging to highlight how Accountable supports **multi-income stream management**
 
-
 ### 🔍 Insights
 
 - Certain **professions and regions** drive better conversion and revenue
@@ -285,12 +274,11 @@ Analysis by conversion distribution and Max MRR.
   - Run deeper segmentation analysis by profession, VAT type, region, and account status
 
 ---
-📌 ## Final Takeaways
-
-Across all four dashboards, we uncovered key insights:  
+## 📌 Final Takeaways
+This case study showed how a mix of behavioral analytics and marketing performance can drive better user acquisition and retention. The combination of funnel tracking, feature analysis, and campaign ROI offers a blueprint for optimizing app growth strategies. Across all four dashboards, we uncovered key insights:  
 - Conversion is driven by meaningful feature use — especially financial setup and AI interaction.  
 - User onboarding flow matters. Users starting with guided or advanced features convert better.
 - Marketing ROI varies widely — Facebook delivers strong results; TikTok underperforms.
 - Location matters. Cities like Berlin and NRW show high MRR and conversion potential.
 
-➡️ Next Steps: Prioritize onboarding improvements, double down on top-performing channels and regions, and test personalized nudges based on behavior.
+➡️ **Next steps:** Prioritize onboarding improvements, double down on top-performing channels and regions, and test personalized nudges based on behavior.
