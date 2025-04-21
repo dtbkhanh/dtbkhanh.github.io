@@ -38,7 +38,6 @@ title: Home
   </a>
 </div>
 
----
 
 ## 🆕 Latest Insights
 
