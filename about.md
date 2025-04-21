@@ -1,27 +1,49 @@
-Hi, I'm Khanh! 👋
-I'm a data analyst with 3+ years of hands-on experience transforming raw data into meaningful insights.
+---
+layout: default
+title: About Me
+---
 
-To me, data isn’t just numbers — it’s a story waiting to be uncovered. Throughout my career, I’ve worked alongside experts in financial services and business consulting, sharpening my skills in data processing, analytics, and visualization. Fueled by curiosity and a drive to grow, I’m diving deeper into the world of Machine Learning and exploring advanced visualization techniques to uncover even more hidden narratives in the data. Whether in the fast-paced world of startups or the structured landscape of global enterprises, I bring analytical rigor, creativity, and a collaborative mindset to every team I join.
+# 👋 Hi, I'm Khanh!
 
-I’m excited to continue leveraging data to solve complex challenges and drive smarter decision-making. Let’s connect!
+I'm a data analyst with 3+ years of hands-on experience turning raw data into meaningful insights that drive smarter decisions.
 
-📊 What I Do:
+To me, data isn’t just numbers — it’s a story waiting to be uncovered. I've worked in both financial services and business consulting, collaborating with experts and delivering impact through data processing, analytics, and visualization. 
 
-Transform complex data into actionable insights
-Specialize in data analytics, visualization, and storytelling
-Work with SQL, Python, R, Power BI, Tableau, and Looker Studio
-🚀 Currently Learning:
+Fueled by curiosity and a love for continuous learning, I'm diving deeper into **Machine Learning** and advanced **data storytelling techniques**. Whether in a fast-paced startup or a global enterprise, I bring analytical rigor, creativity, and a collaborative mindset to every team I join.
 
-Machine Learning to uncover deeper insights
-Advanced analytics and visualization techniques to tell even more powerful data stories
-💡 Let's Talk About:
+---
 
-Exploring Machine Learning to uncover hidden patterns and drive insights
-Creating interactive dashboards that help visualize data and support decision-making
-Discussing advanced analytics techniques to solve complex problems and tell compelling data stories
-Building data pipelines for efficient data processing and analysis
-🧑‍💻 Hobbies:
+## 📊 What I Do
 
-Hiking & Camping 🏞️ – Exploring nature and staying active
-Photography 📸 – Capturing moments and landscapes
-Traveling 🌍 – Discovering new cultures and experiences
+- Transform complex datasets into actionable insights  
+- Build interactive dashboards and clear visualizations  
+- Specialize in data storytelling and analytical thinking  
+- Tools I use: **SQL**, **Python**, **R**, **Power BI**, **Tableau**, **Looker Studio**
+
+---
+
+## 🚀 Currently Exploring
+
+- **Machine Learning** — uncovering deeper patterns and predictive insights  
+- **Advanced visualizations** — crafting compelling, interactive data stories  
+
+---
+
+## 💡 Let’s Talk About
+
+- Building data pipelines for efficient processing  
+- Creating dashboards that inspire action  
+- Solving problems with smart analytics and clear visual communication  
+- Turning business questions into data-driven strategies  
+
+---
+
+## 🧑‍💻 Outside of Work
+
+- 🏞️ **Hiking & Camping** — nature helps me recharge  
+- 📸 **Photography** — capturing landscapes and everyday moments  
+- 🌍 **Traveling** — always curious to discover new places and cultures  
+
+---
+
+Let’s connect and explore the stories data has to tell!
