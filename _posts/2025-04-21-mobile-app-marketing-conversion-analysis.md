@@ -9,13 +9,13 @@ excerpt: "How do user behavior and marketing touchpoints shape conversions in a 
 
 How do user behavior and marketing touchpoints shape conversions in a mobile app for self-employed professionals in Germany?
 
-This case study explores data from **29.1k users (15.1% conversion)** between 2020–2025, with the goal of improving subscription rates and acquisition efficiency.  
+This case study explores data from **29.1k users (15.1% conversion)** between 2020 – 2025, with the goal of improving subscription rates and acquisition efficiency.  
 I created **4 interactive dashboards in Looker Studio** to uncover actionable insights:
 
 1. **Overview** – Growth, revenue & conversion trends  
-2. **User Behavior** – In-app actions that drive conversion  
+2. **User Behavior Analysis** – In-app actions that drive conversion  
 3. **Marketing Performance** – ROI by channel & campaign  
-4. **User Segmentation** – Region & profession-based targeting
+4. **User Segmentation & Targeting** – Region & profession-based targeting
 
 
 ## 🔧 Tools & Methods
@@ -45,7 +45,7 @@ I created **4 interactive dashboards in Looker Studio** to uncover actionable in
 - Paid user breakdown: Among users who converted, this chart shows:
   - *Paid:* Users who subscribed without using a free trial (77.1% of Converted users).
   - *Non-paid:* Users who first tried the app with a free trial and then subscribed (22.9% of Converted users).
-- July–September 2024 shows a noticeable spike in non-paid conversions, raising important questions:
+- July – September 2024 shows a noticeable spike in non-paid conversions, raising important questions:
   - Was there a large-scale marketing campaign that boosted sign-ups but didn’t convert well?
   - Could a free trial promotion have led to a surge in trial users who didn't upgrade?
   - Was the audience mismatch? (e.g., students testing features, or users from countries where payment is unsupported)
@@ -78,10 +78,10 @@ I created **4 interactive dashboards in Looker Studio** to uncover actionable in
   - Users feeling overwhelmed with tax-related setup
 
 **3. Conversion Rate by Feature Used (100% Stacked Bar Chart)**
-- Although fewer users use features like **IBAN Setup**, **Verified Bank**, and **PEPPOL Registration**, those who do are far more likely to become paid users.
+- Although fewer users use features like **IBAN Setup**, **Verified Bank**, and **PEPPOL Registration**, those who do are far more likely to become paid users.  
   → These actions suggest serious engagement and a high intent to fully use the platform.
-- **AI Assistant** has a moderate conversion rate (~71.7%).
-- Frequently used basic features such as **Create Expense**, **Invoice**, or **Other Revenue** have lower conversion rates.
+- **AI Assistant** has a moderate conversion rate (~71.7%).  
+- Frequently used basic features such as **Create Expense**, **Invoice**, or **Other Revenue** have lower conversion rates.  
   → These are often used for quick testing by new or casual users without further exploration.
 
 **4. First Feature Used Distribution**  
