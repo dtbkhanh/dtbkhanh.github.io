@@ -51,11 +51,9 @@ title: Home
 
 <div align="center" style="margin-top: 20px;">
   <h2>🤝 Let's Connect 🤝</h2>
-</div>
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/dtbkhanh/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/dtbkhanh)
 
-<div align="center" style="margin-top: 20px;">
   <small>Feel free to reach out and connect!</small>
 </div>
