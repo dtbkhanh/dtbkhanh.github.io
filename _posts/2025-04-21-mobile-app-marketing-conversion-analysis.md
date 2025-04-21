@@ -2,6 +2,7 @@
 layout: post
 title: "Case Study: Mobile App Marketing & Conversion Analysis"
 date: 2025-04-21
+excerpt: "How do user behavior and marketing touchpoints shape conversions in a mobile app for self-employed professionals in Germany?"
 ---
 
 ## 📌 Overview
