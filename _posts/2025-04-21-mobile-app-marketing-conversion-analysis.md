@@ -243,19 +243,18 @@ Analysis by conversion distribution and Max MRR.
 
 ### 4. VAT Type Segmentation
 
-- The majority fall under **"franchise"** (small business, no VAT charged)  
-- **"subjectToVAT"** users show **higher conversion rates**
+- Most users fall under **franchise** (small businesses exempt from charging VAT)
+- Users under **subjectToVAT** show higher conversion rates—suggesting that businesses handling VAT may find more value in the app
 
-➡️ Tailor messaging to **subjectToVAT** users' needs (invoicing, tax complexity)
-
+➡️ Tailor messaging to **subjectToVAT** users' needs (highlight features like invoicing and VAT management).
 
 ### 5. Account Type Segmentation
 
-- Most users are **principal business owners or freelancers without VAT**  
-- **Complementary status** users (primary job + side freelancing) have **highest conversion rates**
-
-➡️ Prioritize marketing to **dual-income users**, who likely face more complex financial management  
-➡️ Adjust messaging to highlight how Accountable supports **multi-income stream management**
+- Most users are freelancers or solo business owners without VAT.  
+- Complementary status users — those with a primary job and a freelancing side gig—have the highest conversion rates
+  
+➡️ Prioritize marketing toward dual-income users, as they are likely to face more complex financial management.  
+➡️ Adjust messaging to emphasize how the app supports multi-income stream management.
 
 ### 🔍 Insights
 
