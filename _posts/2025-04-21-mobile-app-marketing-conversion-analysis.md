@@ -1,21 +1,20 @@
 ---
 layout: post
 title: "Case Study: Mobile App Marketing & Conversion Analysis"
-date: 2025-04-15
+date: 2025-04-21
 ---
 
 ## 📌 Overview
 
-This case study explores user behavior and marketing performance for a mobile app designed for self-employed professionals in Germany. Using data from 2020 to 2025, the goal was to improve conversion rates to paid subscriptions and optimize acquisition efficiency.
+How do user behavior and marketing touchpoints shape conversions in a mobile app for self-employed professionals in Germany?
 
-The dataset covers **29.1k users** (15.1% conversion rate), capturing sign-up dates, in-app actions, profession types, subscription choices, and marketing sources.
+This case study explores data from **29.1k users (15.1% conversion)** between 2020–2025, with the goal of improving subscription rates and acquisition efficiency.  
+I created **4 interactive dashboards in Looker Studio** to uncover actionable insights:
 
-I created **four interactive dashboards in Looker Studio** to visualize KPIs and uncover insights:
-
-1. **Overview:** High-level performance metrics and conversion trends  
-2. **User Behavior Analysis**  
-3. **Marketing Performance**  
-4. **User Segmentation & Targeting**
+1. **Overview** – Growth, revenue & conversion trends  
+2. **User Behavior** – In-app actions that drive conversion  
+3. **Marketing Performance** – ROI by channel & campaign  
+4. **User Segmentation** – Region & profession-based targeting
 
 
 ## 🔧 Tools & Methods
@@ -284,3 +283,14 @@ Analysis by conversion distribution and Max MRR.
 - Invest in understanding behavior:
   - Collect qualitative feedback for improved UX  
   - Run deeper segmentation analysis by profession, VAT type, region, and account status
+
+---
+📌 ## Final Takeaways
+
+Across all four dashboards, we uncovered key insights:  
+- Conversion is driven by meaningful feature use — especially financial setup and AI interaction.  
+- User onboarding flow matters. Users starting with guided or advanced features convert better.
+- Marketing ROI varies widely — Facebook delivers strong results; TikTok underperforms.
+- Location matters. Cities like Berlin and NRW show high MRR and conversion potential.
+
+➡️ Next Steps: Prioritize onboarding improvements, double down on top-performing channels and regions, and test personalized nudges based on behavior.
