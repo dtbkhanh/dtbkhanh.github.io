@@ -30,7 +30,7 @@ title: Home
     <div style="border: 1px solid #ccc; padding: 15px; border-radius: 5px; text-align: center;">
       <span style="font-size: 1.5em;">📊</span><br>
       <strong>Dashboards & Reports</strong><br>
-      Explore my interactive analytics projects.
+      Explore my analytics projects.
     </div>
   </a>
 </div>
