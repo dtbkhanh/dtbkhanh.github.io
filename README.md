@@ -24,7 +24,7 @@ This website is built using [Jekyll](https://jekyllrb.com/), a simple, blog-awar
 
 ## 📌 Explore the Content
 
-* **About Me**: Learn more about my background and journey on the [About Me page](https://dtbkhanh.github.io/about/).
+* **About Me**: Learn more about my background and journey on the [About Me page](https://dtbkhanh.github.io/about).
 * **Blog Posts**: Dive into my case studies and data-driven stories on the [Blog Posts page](https://dtbkhanh.github.io/posts/).
 * **Dashboards & Reports**: Explore my interactive data analytics projects and reports on my [Data-Analytics-and-Reports GitHub repository](https://github.com/dtbkhanh/Data-Analytics-and-Reports).
 
