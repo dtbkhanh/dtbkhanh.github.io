@@ -22,14 +22,12 @@ Fueled by curiosity and a love for continuous learning, I'm diving deeper into *
 - Specialize in data storytelling and analytical thinking  
 - Tools I use: **SQL**, **Python**, **R**, **Power BI**, **Tableau**, **Looker Studio**
 
----
 
 ## 🚀 Currently Exploring
 
 - **Machine Learning** — uncovering deeper patterns and predictive insights  
 - **Advanced visualizations** — crafting compelling, interactive data stories  
 
----
 
 ## 💡 Let’s Talk About
 
@@ -38,7 +36,6 @@ Fueled by curiosity and a love for continuous learning, I'm diving deeper into *
 - Solving problems with smart analytics and clear visual communication  
 - Turning business questions into data-driven strategies  
 
----
 
 ## 🧑‍💻 Outside of Work
 
