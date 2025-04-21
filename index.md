@@ -15,7 +15,7 @@ title: Home
 ## 📌 Explore
 
 <div style="display: flex; justify-content: space-around; margin-bottom: 20px;">
-  <a href="about" style="text-decoration: none;">
+  <a href="/about/" style="text-decoration: none;">
     <div style="border: 1px solid #ccc; padding: 15px; border-radius: 5px; text-align: center;">
       <span style="font-size: 1.5em;">👤</span><br>
       <strong>About Me</strong><br>
