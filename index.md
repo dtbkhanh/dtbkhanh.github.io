@@ -30,7 +30,7 @@ title: Home
     <div style="border: 1px solid #ccc; padding: 15px; border-radius: 5px; text-align: center; height: 150px; display: flex; flex-direction: column; justify-content: center;">
       <span style="font-size: 1.5em;">📊</span><br>
       <strong>Dashboards & Reports</strong><br>
-      <span style="font-size: 0.9em;">Explore my analytics projects.</span>
+      <span style="font-size: 0.9em;">Explore my analytics projects on GitHub.</span>
     </div>
   </a>
 </div>
