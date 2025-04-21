@@ -10,7 +10,7 @@ This case study explores user behavior and marketing performance for a mobile ap
 
 The dataset covers **29.1k users** (15.1% conversion rate), capturing sign-up dates, in-app actions, profession types, subscription choices, and marketing sources.
 
-We created **four interactive dashboards in Looker Studio** to visualize KPIs and uncover insights:
+I created **four interactive dashboards in Looker Studio** to visualize KPIs and uncover insights:
 
 1. **Overview:** High-level performance metrics and conversion trends  
 2. **User Behavior Analysis**  
@@ -38,11 +38,14 @@ We created **four interactive dashboards in Looker Studio** to visualize KPIs an
 
 **Key Visualizations:**
 - **KPI Cards:** Total users (29.1k), Conversion Rate (15.1%), Total Monthly Recurring Revenue (MRR)
-- **Pie Charts:** Conversion Status Breakdown (Free vs. Paid), Paid vs. Non-paid Conversion (Direct vs. Trial → Paid)
+- **Pie Charts:** Conversion Status Breakdown (Free vs. Paid), Paid vs. Non-paid Conversion
 - **Line Charts:** Account Creation Timeline, Monthly New subscribers
 
 **Insights:**
 - Steady user growth from 2020 to 2025 indicates increasing brand visibility and app popularity.
+- Paid User Breakdown: Among users who converted, this chart shows:
+  - Paid: Users who subscribed without using a free trial (77.1% of Converted users).
+  - Non-paid: Users who first tried the app with a free trial and then subscribed (22.9% of Converted users).
 - July–September 2024 shows a noticeable spike in non-paid conversions, raising important questions:
   - Was there a large-scale marketing campaign that boosted sign-ups but didn’t convert well?
   - Could a free trial promotion have led to a surge in trial users who didn't upgrade?
