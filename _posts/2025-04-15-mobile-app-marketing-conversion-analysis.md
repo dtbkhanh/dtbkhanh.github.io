@@ -4,7 +4,7 @@ title: "Case Study: Mobile App Marketing & Conversion Analysis"
 date: 2025-04-15
 ---
 
-## 📌 Overview
+# 📌 Overview
 
 This case study explores user behavior and marketing performance for a mobile app designed for self-employed professionals in Germany. Using data from 2020 to 2025, the goal was to improve conversion rates to paid subscriptions and optimize acquisition efficiency.
 
@@ -17,33 +17,29 @@ I created **four interactive dashboards in Looker Studio** to visualize KPIs and
 3. **Marketing Performance**  
 4. **User Segmentation & Targeting**
 
----
 
-## 🔧 Tools & Methods
+# 🔧 Tools & Methods
 
 - **Data Cleaning & Preparation:** Python  
 - **Visualization:** Looker Studio (Google Data Studio)  
 - **Data Source:** Internal app analytics (user events, subscriptions, acquisition data)
 
----
 
-## 📊 Dashboard Breakdown & Insights
+# 📊 Dashboard Breakdown & Insights
 
----
+## 1. Overview Dashboard  
+**🎯 Goal:** Provide a high-level snapshot of user growth, conversion trends, and subscription revenue over time.
 
-### 1. Overview Dashboard  
-**Goal:** Provide a high-level snapshot of user growth, conversion trends, and subscription revenue over time.
+<img src="/assets/images/Screenshot_Acctbl%20Mobile%20App_01.png" alt="Overview Dashboard Screenshot" width="800"/>
 
-![Overview Dashboard Screenshot](/assets/images/Screenshot_Acctbl Mobile App_01.png)
-
-**Key Visualizations:**
+#### 📊 Key Visualizations
 - **KPI Cards:** Total users (29.1k), Conversion Rate (15.1%), Total Monthly Recurring Revenue (MRR)
 - **Pie Charts:** Conversion Status Breakdown (Free vs. Paid), Paid vs. Non-paid Conversion
 - **Line Charts:** Account Creation Timeline, Monthly New subscribers
 
-**Insights:**
+#### 🔍 Insights
 - Steady user growth from 2020 to 2025 indicates increasing brand visibility and app popularity.
-- Paid User Breakdown: Among users who converted, this chart shows:
+- Paid user breakdown: Among users who converted, this chart shows:
   - Paid: Users who subscribed without using a free trial (77.1% of Converted users).
   - Non-paid: Users who first tried the app with a free trial and then subscribed (22.9% of Converted users).
 - July–September 2024 shows a noticeable spike in non-paid conversions, raising important questions:
@@ -51,57 +47,62 @@ I created **four interactive dashboards in Looker Studio** to visualize KPIs and
   - Could a free trial promotion have led to a surge in trial users who didn't upgrade?
   - Was the audience mismatch? (e.g., students testing features, or users from countries where payment is unsupported)
 
-**Recommendations:**
+#### ✅ Recommendations
 - Investigate campaign strategies and audience sources during this spike period.
 - Analyze user segments to determine if trial experiences or onboarding flows contributed to lower paid conversion.
 - Cross-check app store reviews or feedback during this time for additional context.
   
 ---
 
-### 2. User Behavior Analysis Dashboard  
-**Goal:** Identify high-converting in-app actions and patterns among different user types.
+## 2. User Behavior Analysis Dashboard
 
-![User Behavior Dashboard Screenshot](/assets/images/Screenshot_Acctbl Mobile App_02.png)
+**🎯 Goal:** Identify high-converting in-app actions and behavioral patterns among different user types.
 
+<img src="/assets/images/Screenshot_Acctbl%20Mobile%20App_02.png" alt="User Behavior Dashboard Screenshot" width="800"/>
 
-**Key Visualizations:**
-- **Funnel Chart:** Sign-up → key actions (e.g., bank connection, AI Assistant use) → subscription
-- **Bar Chart:** Feature usage (invoice, AI) by user type
-- **Heatmap:** Conversion rates by profession
-- **Time Series:** Time to conversion by action
-- - **Funnel Chart:** Tracks user journey from sign-up to subscription
-- **Line Graph:** Monthly sign-ups and conversions (2020–2025)
-- **Bar Chart:** Sessions by converted vs. non-converted users
+#### 📊 Key Visualizations
 
-**Insights:**
-- Early funnel drop-offs are significant before users engage with features
-- Converted users show higher session frequency and faster onboarding
+**Engagement Metrics Table**  
+- Converted users tend to have more sessions and spend more time per session, showing deeper engagement.  
+- Non-converted users use the app more frequently (higher average days used) but spend less time overall, likely testing limited features such as invoice creation or bank connections that are restricted in the free plan.  
 
-**Recommendations:**
-- Simplify onboarding with tooltips and prompts
-- Send push notifications to re-engage users who drop off early
+**Funnel Chart**  
+- Shows which features are most and least used, as well as drop-off points.  
+- Many users begin with basic actions like "Create Expense/Invoice" or inputting a tax number but stop before reaching more advanced steps like PEPPOL registration or VAT input.  
+- This drop-off may suggest UX friction, unclear guidance, or users feeling overwhelmed by tax-related features.  
+- Users who interact with advanced financial tools (e.g. IBAN setup, verified bank, PEPPOL registration) are significantly more likely to convert.  
+- The AI Assistant's first message also has a moderate conversion rate of 71.7%.  
+- Basic features (Create Expense, Other Revenue) are popular but have a low conversion rate, likely because users try them early without progressing further.
 
-**Insights:**
-- Users who connect a **bank account** or use the **AI Assistant within 3 sessions** convert more
-- Non-converted users often skip essential features
+**Bar Charts: First Feature Used and Conversion Rate by First Feature**  
+- Most users start with simple features like "Create Expense/Invoice" and gradually explore more complex ones.  
+- Users who begin with the AI Assistant have the highest conversion rate (40%), even though they are a smaller group.  
+- This suggests that early engagement with guided or advanced features is linked to higher conversion.
 
-**Recommendations:**
+#### 🔍 Insights
 
-**Onboarding Optimization:**
-- Use tutorials/tooltips to encourage early feature use  
-- Add an optional AI Assistant walkthrough to increase awareness
+- A significant number of users drop off before engaging with meaningful features.  
+- Converted users tend to complete onboarding steps faster and engage more consistently.  
+- Users who connect a bank account or use the AI Assistant within their first three sessions show higher conversion.  
+- Non-converted users often skip key features entirely.
 
-**Targeted Messaging:**
-- Offer a **14-day trial** to bank-connected users who don’t convert
+#### ✅ Recommendations
 
-**A/B Testing Ideas:**
-- AI button placement (current vs. prominent)  
-- AI tone (factual vs. conversational)  
-- Feature recommendations (generic vs. tailored by profession)
+**Onboarding Optimization**  
+- Add tutorials, tooltips, and contextual prompts to help users discover important features earlier.  
+- Consider an optional walkthrough for the AI Assistant to improve early engagement.
+
+**Targeted Messaging**  
+- Offer a limited-time trial (e.g. 14 days) for users who connect a bank account but haven’t subscribed.  
+- Use push notifications to re-engage users who drop off after basic usage.
+
+**Improving the First-Time AI Assistant Experience**  
+- Introduce a mandatory but skippable interaction with the AI Assistant during onboarding.  
+- Let the Assistant guide users through logical next steps (e.g. after creating their first invoice, suggest connecting a bank or setting up VAT).
 
 ---
 
-### 3. Marketing Performance Dashboard  
+## 3. Marketing Performance Dashboard  
 **Goal:** Evaluate marketing channels by conversion, spend, and ROI to optimize acquisition strategy.
 
 ![Marketing Dashboard Screenshot](/assets/images/Screenshot_Acctbl Mobile App_03.png)
