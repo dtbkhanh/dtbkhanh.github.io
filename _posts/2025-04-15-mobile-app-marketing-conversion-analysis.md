@@ -35,9 +35,9 @@ I created **four interactive dashboards in Looker Studio** to visualize KPIs and
 <img src="/assets/images/Screenshot_Acctbl%20Mobile%20App_01.png" alt="Overview Dashboard Screenshot" width="800"/>
 
 ### 📊 Key Visualizations
-- **KPI Cards:** Total users (29.1k), Conversion Rate (15.1%), Total Monthly Recurring Revenue (MRR)
-- **Pie Charts:** Conversion Status Breakdown (Free vs. Paid), Paid vs. Non-paid Conversion
-- **Line Charts:** Account Creation Timeline, Monthly New subscribers
+1. **KPI Cards:** Total users (29.1k), Conversion Rate (15.1%), Total Monthly Recurring Revenue (MRR)
+2. **Pie Charts:** Conversion Status Breakdown (Free vs. Paid), Paid vs. Non-paid Conversion
+3. **Line Charts:** Account Creation Timeline, Monthly New subscribers
 
 ### 🔍 Insights
 - Steady user growth from 2020 to 2025 indicates increasing brand visibility and app popularity.
