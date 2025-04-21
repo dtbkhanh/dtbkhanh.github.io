@@ -12,21 +12,21 @@ title: Home
 
 
 <div style="display: flex; justify-content: space-around; margin-bottom: 20px;">
-  <a href="/about" style="text-decoration: none; width: 200px;">
+  <a href="/about" style="text-decoration: none; width: 220px;">
     <div style="border: 1px solid #ccc; padding: 15px; border-radius: 5px; text-align: center; height: 150px; display: flex; flex-direction: column; justify-content: center;">
       <span style="font-size: 1.5em;">👤</span><br>
       <strong>About Me</strong><br>
       <span style="font-size: 0.9em;">Learn about my background and journey.</span>
     </div>
   </a>
-  <a href="/posts/" style="text-decoration: none; width: 200px;">
+  <a href="/posts/" style="text-decoration: none; width: 220px;">
     <div style="border: 1px solid #ccc; padding: 15px; border-radius: 5px; text-align: center; height: 150px; display: flex; flex-direction: column; justify-content: center;">
       <span style="font-size: 1.5em;">📝</span><br>
       <strong>Blog Posts</strong><br>
       <span style="font-size: 0.9em;">Dive into data-driven case studies and stories.</span>
     </div>
   </a>
-  <a href="https://github.com/dtbkhanh/Data-Analytics-and-Reports" style="text-decoration: none; width: 200px;">
+  <a href="https://github.com/dtbkhanh/Data-Analytics-and-Reports" style="text-decoration: none; width: 220px;">
     <div style="border: 1px solid #ccc; padding: 15px; border-radius: 5px; text-align: center; height: 150px; display: flex; flex-direction: column; justify-content: center;">
       <span style="font-size: 1.5em;">📊</span><br>
       <strong>Dashboards & Reports</strong><br>
