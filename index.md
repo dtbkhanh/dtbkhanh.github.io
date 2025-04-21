@@ -35,8 +35,10 @@ title: Home
   </a>
 </div>
 
-
-## 🆕 Latest Insights
+---
+<div align="center" style="margin-top: 20px;">
+  <h2>🆕 Latest Insights 🆕</h2>
+</div>
 
 {% assign post = site.posts.first %}
 - **<span style="font-size: 1.2em;">[{{ post.title }}]({{ post.url }})</span>**
@@ -47,7 +49,9 @@ title: Home
 
 ---
 
-## 🤝 Let's Connect
+<div align="center" style="margin-top: 20px;">
+  <h2>🤝 Let's Connect 🤝</h2>
+</div>
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/dtbkhanh/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/dtbkhanh)
