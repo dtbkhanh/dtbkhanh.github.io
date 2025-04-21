@@ -188,7 +188,7 @@ Analysis by conversion distribution and Max MRR.
 ## 4. User Segmentation & Targeting 
 **🎯 Goal:** Segment users by behavior, profession, and region to personalize marketing and onboarding.
 
-### 1. Regional Segmentation
+### a. Regional Segmentation
 
 <img src="/assets/images/Screenshot_Acctbl%20Mobile%20App_04a.png" alt="Users by Region" width="800"/>
 
@@ -208,7 +208,7 @@ Analysis by conversion distribution and Max MRR.
   ➡️ Consider **reducing ad spend**
 
 
-### 2. User Type & Self-Employment
+### b. User Type & Self-Employment
 
 <img src="/assets/images/Screenshot_Acctbl%20Mobile%20App_04b.png" alt="Self-Employment Status" width="800"/>
 
@@ -222,7 +222,7 @@ Analysis by conversion distribution and Max MRR.
 ➡️ Maintain focus on self-employed users  
 ➡️ Create light messaging for the “pre-freelancer” segment
 
-### 3. Profession-Based Segmentation
+### c. Profession-Based Segmentation
 
 - **Artists & Content Creators** are the largest group. They generate the highest Max MRR (due to size), though not the best conversion rate.
 - Top professions by volume ≠ Top professions by conversion rate
@@ -234,14 +234,14 @@ Analysis by conversion distribution and Max MRR.
 
 <img src="/assets/images/Screenshot_Acctbl%20Mobile%20App_04c.png" alt="VAT and Account Type" width="800"/>
 
-### 4. VAT Type Segmentation
+### d. VAT Type Segmentation
 
 - Most users fall under **franchise** (small businesses exempt from charging VAT)
 - Users under **subjectToVAT** show higher conversion rates—suggesting that businesses handling VAT may find more value in the app
 
 ➡️ Tailor messaging to **subjectToVAT** users' needs (highlight features like invoicing and VAT management).
 
-### 5. Account Type Segmentation
+### e. Account Type Segmentation
 
 - Most users are freelancers or solo business owners without VAT.  
 - Complementary status users — those with a primary job and a freelancing side gig—have the highest conversion rates
