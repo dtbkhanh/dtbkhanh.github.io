@@ -5,7 +5,7 @@ title: Home
 
 <div align="center">
   <img src="https://github.com/dtbkhanh.png" alt="Khanh's profile photo" width="120" style="border-radius: 50%;"/>
-  <h1>Hi, I’m Khanh! 👋</h1>
+  <h1>Hi, I’m Khanh!</h1>
   <p><em>Data Analytics Specialist | Data Science Enthusiast | Lifetime Learner</em></p>
 </div>
 
@@ -29,3 +29,10 @@ title: Home
 {% assign post = site.posts.first %}
 - **[{{ post.title }}]({{ post.url }})**  
   <small>{{ post.date | date: "%B %d, %Y" }}</small>
+
+---
+
+## 🤝 Connect with Me
+
+- 💼 [LinkedIn](https://www.linkedin.com/in/dtbkhanh)  
+- 💻 [GitHub](https://github.com/dtbkhanh)
