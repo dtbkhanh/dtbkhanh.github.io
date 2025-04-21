@@ -263,10 +263,10 @@ Analysis by conversion distribution and Max MRR.
 ---
 ## 📌 Final Takeaways
 
-This case study showed how a mix of behavioral analytics and marketing performance can drive better user acquisition and retention. The combination of funnel tracking, feature analysis, and campaign ROI offers a blueprint for optimizing app growth strategies. Across all four dashboards, we uncovered key insights:  
+This case study showed how integrating behavioral analytics and marketing performance can drive better user acquisition and retention. The combination of funnel tracking, feature analysis, and campaign ROI offers a blueprint for optimizing app growth strategies. Across all four dashboards, we uncovered key insights:  
 - Conversion is driven by meaningful feature use — especially financial setup and AI interaction.  
 - User onboarding flow matters. Users starting with guided or advanced features convert better.
 - Marketing ROI varies widely — Facebook delivers strong results; TikTok underperforms.
 - Location matters. Cities like Berlin and NRW show high MRR and conversion potential.
 
-➡️ **Next steps:** Prioritize onboarding improvements, double down on top-performing channels and regions, and test personalized nudges based on behavior.
+➡️ **Next steps:** We need to make the initial experience for new users better, focus more on the marketing that works best (like Facebook in strong regions), and try different ways to connect with users based on how they use the app and where they are. We'll keep tracking these things to make sure we keep growing effectively.
