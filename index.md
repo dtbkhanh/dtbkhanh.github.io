@@ -3,18 +3,30 @@ layout: default
 title: Home
 ---
 
-<h1>👋 Hi, I’m Khanh!</h1>
-<p>I’m a data analyst passionate about turning data into stories.</p>
+# 👋 Hi, I’m Khanh!
 
-<h2>📌 Explore</h2>
+I’m a data analyst with 3+ years of experience turning data into impactful insights. I thrive on uncovering stories hidden in numbers and building visualizations that inform smarter decisions.
 
-<div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-  <div style="flex: 1 1 30%; border: 1px solid #ccc; border-radius: 8px; padding: 1rem;">
-    <h3><a href="/about">About Me</a></h3>
-    <p>My journey, tools, and what drives me to dive into data.</p>
-  </div>
-  <div style="flex: 1 1 30%; border: 1px solid #ccc; border-radius: 8px; padding: 1rem;">
-    <h3><a href="/posts">Blog Posts</a></h3>
-    <p>Explore case studies and real-world analytics projects.</p>
-  </div>
-</div>
+> **Specialties**: Data storytelling · SQL · Python · Power BI · Tableau · Looker Studio  
+> **Exploring**: Machine Learning · Advanced analytics · Interactive dashboards
+
+---
+
+## 📌 Explore
+
+- 🔍 [**About Me**](about.md)  
+  Get to know my background, the tools I work with, and what fuels my passion for data.
+
+- 📝 [**Blog Posts**](/posts/)  
+  Dive into case studies and data-driven stories from real-world projects.
+
+- 📊 [**Dashboards & Reports**](https://github.com/dtbkhanh/Data-Analytics-and-Reports)  
+  Explore interactive dashboards and analytics work — from marketing conversion to business insights.
+
+---
+
+## 🆕 Latest Post
+
+{% assign post = site.posts.first %}
+- **[{{ post.title }}]({{ post.url }})**  
+  <small>{{ post.date | date: "%B %d, %Y" }}</small>
