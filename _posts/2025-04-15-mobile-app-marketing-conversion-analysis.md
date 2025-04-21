@@ -62,11 +62,11 @@ I created **four interactive dashboards in Looker Studio** to visualize KPIs and
 
 #### 📊 Key Visualizations
 
-**Engagement Metrics Table**  
+**1. Engagement Metrics Table**  
 - Converted users tend to have more sessions and spend more time per session, showing deeper engagement.  
 - Non-converted users use the app more frequently (higher average days used) but spend less time overall, likely testing limited features such as invoice creation or bank connections that are restricted in the free plan.  
 
-**Feature Usage Funnel**  
+**2. Feature Usage Funnel**  
 - Many users begin with basic features like **Create Expense/Invoice** or **Enter Tax Number**.
 - Fewer users proceed to advanced tasks such as **PEPPOL Registration**, **VAT Input**, or **IBAN Setup**.
 - These drop-offs may suggest:
@@ -74,20 +74,20 @@ I created **four interactive dashboards in Looker Studio** to visualize KPIs and
   - Lack of onboarding or tooltips
   - Users feeling overwhelmed with tax-related setup
 
-**Conversion Rate by Feature Used (100% Stacked Bar Chart)**
+**3. Conversion Rate by Feature Used (100% Stacked Bar Chart)**
 - Although fewer users use features like **IBAN Setup**, **Verified Bank**, and **PEPPOL Registration**, those who do are far more likely to become paid users.
   → These actions suggest serious engagement and high intent to fully use the platform.
 - **AI Assistant** has a moderate conversion rate (~71.7%).
 - Frequently used basic features such as **Create Expense**, **Invoice**, or **Other Revenue** have lower conversion rates.
   → These are often used for quick testing by new or casual users without further exploration.
 
-**First Feature Used Distribution**  
+**4. First Feature Used Distribution**  
 Shows which feature users interacted with first after installing the app.
 
 - Most users start with simpler actions such as **Create Expense** or **Create Invoice**.
 - Fewer users begin with advanced or guided features, which mirrors the behavior seen in the usage funnel.
 
-**Conversion Rate by First Feature Used**  
+**5. Conversion Rate by First Feature Used**  
 Highlights how the first action impacts conversion likelihood.
 
 - Users who start with **AI Assistant** have the highest conversion rate (40%), despite being a smaller group.
