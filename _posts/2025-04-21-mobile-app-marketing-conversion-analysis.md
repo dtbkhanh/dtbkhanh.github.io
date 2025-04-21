@@ -143,7 +143,7 @@ Evaluation by user volume, conversion rate, and maximum MRR:
 Analysis by conversion distribution and Max MRR.  
 <img src="/assets/images/Screenshot_Acctbl%20Mobile%20App_03b.png" alt="Marketing Performance Dashboard Screenshot" width="800"/>
 
-> ⚠️ ⚠️ To ensure data accuracy for the campaign analysis, a data cleaning step was performed. The original `campaign` column presented inconsistencies in naming, which were resolved by grouping similar entries into these standardized categories:
+> ⚠️ To ensure data accuracy for the campaign analysis, a data cleaning step was performed. The original `campaign` column presented inconsistencies in naming, which were resolved by grouping similar entries into these standardized categories:
 
 - `sea` → Search Engine Advertising  
 - `ugc` → User Generated Content  
@@ -227,9 +227,9 @@ Analysis by conversion distribution and Max MRR.
 - **Artists & Content Creators** are the largest group and generate the highest Max MRR (due to size). However, their conversion rate is not the highest among all professions, indicating an opportunity for improvement. The high MRR is primarily driven by the sheer volume of users in this category.  
 - Disparity Between Volume and Conversion: Notably, the professions with the highest number of users are not necessarily the same as those with the highest conversion rates. This highlights the need for a nuanced approach to targeting.
 
-<img src="/assets/images/Screenshot_Acctbl%20Mobile%20App_04c.png" alt="VAT and Account Type" width="800"/>
-
 ### d. VAT Type Segmentation
+
+<img src="/assets/images/Screenshot_Acctbl Mobile App_04c.jpg" alt="VAT and Account Type" width="800"/>
 
 - Most users fall under **franchise**, which are small businesses exempt from charging Value Added Tax (VAT).  
 - Users under **subjectToVAT** show higher conversion rates, suggesting that businesses actively involved in VAT processes find greater utility and value in the app's features.
