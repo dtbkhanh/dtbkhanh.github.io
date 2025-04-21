@@ -143,7 +143,7 @@ Evaluation by user volume, conversion rate, and maximum MRR:
 Analysis by conversion distribution and Max MRR.  
 <img src="/assets/images/Screenshot_Acctbl%20Mobile%20App_03b.png" alt="Marketing Performance Dashboard Screenshot" width="800"/>
 
-> ⚠️ Before this analysis, I cleaned the raw data. The `campaign` column had many inconsistent names, so I grouped similar entries into clear categories:
+> ⚠️ ⚠️ To ensure data accuracy for the campaign analysis, a data cleaning step was performed. The original `campaign` column presented inconsistencies in naming, which were resolved by grouping similar entries into these standardized categories:
 
 - `sea` → Search Engine Advertising  
 - `ugc` → User Generated Content  
@@ -151,9 +151,9 @@ Analysis by conversion distribution and Max MRR.
 
 🔗 [View data cleansing here](https://github.com/dtbkhanh/Data-Analytics-and-Reports/blob/7da10cc3356b97b4d1f8d75133a124ccf609ac1f/Jupyter%20Notebooks/05.%20Mobile%20App%20Marketing%20%26%20Conversion%20Analysis.ipynb)
 
-- Two campaigns (“Retargeting” and “Organic”) show **100% conversion**, but each had **only one user**, so they’re not statistically meaningful.
-- Google’s **Search Engine Advertising** brings the **highest Max MRR**, despite a lower conversion rate.
-- The **Static Campaign** ranks second in Max MRR and has a **high conversion rate of 52.3%**.
+- Two campaigns (“Retargeting” and “Organic”) show 100% conversion, but each had only one user, so they’re not statistically meaningful.
+- Google’s **Search Engine Advertising** brings the highest Max MRR, despite a lower conversion rate.
+- The **Static Campaign** ranks second in Max MRR and has a high conversion rate of 52.3%.
 
 **8–9. Promocode Analysis**
 
@@ -164,33 +164,24 @@ Analysis by conversion distribution and Max MRR.
 
 ### 🔍 Insights
 
-- **Social media** campaigns deliver strong conversions and revenue.
-- **Search engine** campaigns are under-optimized but promising.
-- **Short-form video** campaigns underperform, possibly due to audience mismatch.
+- **Social media (e.g., Facebook):** Demonstrates strong conversion rates and contributes significantly to revenue, suggesting a highly engaged audience. Consider further investment and scaling successful creatives.  
+- **Search engine (Google):** While generating the highest user volume and MRR, search engine campaigns show a moderate conversion rate, indicating potential for optimization through improved keyword targeting and landing page relevance.  
+- **Short-form video (TikTok):** Currently underperforming across key metrics (user volume, conversion, MRR), potentially due to a mismatch between the platform's demographics and our target audience. A carefully targeted experiment is recommended before further investment.
 
 
 ### ✅ Recommendations
 
-**For Channels:**
+**Channel Strategy:**
 
-- **Increase investment in Facebook**, the highest-performing channel.
-- **Optimize Google**:
-  - Focus on top-performing campaigns (e.g. **Search Engine Advertising**)
-  - Improve **keyword targeting**
-  - Refine **landing pages** and **ad messaging**
+- **Facebook:** Increase budget to leverage its high conversion rates.
+- **Google:** Optimize for better conversion by focusing on top campaigns (SEA), refining keyword targeting, and improving ad and landing page relevance.
+- **TikTok:** Conduct a focused final experiment targeting age 25-35 with interest in business, finance, and freelance topics, using content addressing their pain points, before considering a budget cut.
 
-- **TikTok**:
-  - Consider a budget cut.
-  - Before a full cut, run a **final experiment**:
-    - **Age Range**: 25–35
-    - **Interest**: Business, finance, side hustles
-    - **Content**: Tailor ads to address invoicing, taxes, and freelance pain points
+**Campaign Tactics:**
 
-**For Campaigns:**
-
-- **Prioritize high-performing campaigns** with strong ROI (e.g. SEA, Static).
-- Monitor high-rate but low-volume campaigns (e.g. Retargeting, Organic).
-- Offer **limited-time promocodes** to speed up conversions.
+- **Prioritize High ROI:** Allocate more budget to campaigns demonstrating strong return (e.g., SEA, Static).
+- **Explore High-Potential:** Monitor and test scaling campaigns with high conversion rates but low volume (e.g., Retargeting, Organic).
+- **Drive Faster Conversion:** Implement limited-time promocodes to encourage quicker subscriptions.
 
 ---
 
