@@ -66,39 +66,53 @@ I created **four interactive dashboards in Looker Studio** to visualize KPIs and
 - Converted users tend to have more sessions and spend more time per session, showing deeper engagement.  
 - Non-converted users use the app more frequently (higher average days used) but spend less time overall, likely testing limited features such as invoice creation or bank connections that are restricted in the free plan.  
 
-**Funnel Chart**  
-- Shows which features are most and least used, as well as drop-off points.  
-- Many users begin with basic actions like "Create Expense/Invoice" or inputting a tax number but stop before reaching more advanced steps like PEPPOL registration or VAT input.  
-- This drop-off may suggest UX friction, unclear guidance, or users feeling overwhelmed by tax-related features.  
-- Users who interact with advanced financial tools (e.g. IBAN setup, verified bank, PEPPOL registration) are significantly more likely to convert.  
-- The AI Assistant's first message also has a moderate conversion rate of 71.7%.  
-- Basic features (Create Expense, Other Revenue) are popular but have a low conversion rate, likely because users try them early without progressing further.
+**Feature Usage Funnel**  
+- Many users begin with basic features like **Create Expense/Invoice** or **Enter Tax Number**.
+- Fewer users proceed to advanced tasks such as **PEPPOL Registration**, **VAT Input**, or **IBAN Setup**.
+- These drop-offs may suggest:
+  - UX friction or complexity
+  - Lack of onboarding or tooltips
+  - Users feeling overwhelmed with tax-related setup
 
-**Bar Charts: First Feature Used and Conversion Rate by First Feature**  
-- Most users start with simple features like "Create Expense/Invoice" and gradually explore more complex ones.  
-- Users who begin with the AI Assistant have the highest conversion rate (40%), even though they are a smaller group.  
-- This suggests that early engagement with guided or advanced features is linked to higher conversion.
+**Conversion Rate by Feature Used (100% Stacked Bar Chart)**
+- Although fewer users use features like **IBAN Setup**, **Verified Bank**, and **PEPPOL Registration**, those who do are far more likely to become paid users.
+  → These actions suggest serious engagement and high intent to fully use the platform.
+- **AI Assistant** has a moderate conversion rate (~71.7%).
+- Frequently used basic features such as **Create Expense**, **Invoice**, or **Other Revenue** have lower conversion rates.
+  → These are often used for quick testing by new or casual users without further exploration.
+
+**First Feature Used Distribution**  
+Shows which feature users interacted with first after installing the app.
+
+- Most users start with simpler actions such as **Create Expense** or **Create Invoice**.
+- Fewer users begin with advanced or guided features, which mirrors the behavior seen in the usage funnel.
+
+**Conversion Rate by First Feature Used**  
+Highlights how the first action impacts conversion likelihood.
+
+- Users who start with **AI Assistant** have the highest conversion rate (40%), despite being a smaller group.
+  → These users are more likely to explore deeply and engage meaningfully with the platform.
+- Users who start with simpler features tend to explore less, leading to lower conversion.
 
 #### 🔍 Insights
 
-- A significant number of users drop off before engaging with meaningful features.  
-- Converted users tend to complete onboarding steps faster and engage more consistently.  
-- Users who connect a bank account or use the AI Assistant within their first three sessions show higher conversion.  
-- Non-converted users often skip key features entirely.
+- Early drop-offs in the usage funnel suggest onboarding friction.
+- Users who adopt financial tools or AI early are more likely to convert.
+- Conversion is influenced not only by feature use but by the **order and timing** of use.
 
 #### ✅ Recommendations
 
-**Onboarding Optimization**  
-- Add tutorials, tooltips, and contextual prompts to help users discover important features earlier.  
-- Consider an optional walkthrough for the AI Assistant to improve early engagement.
+**Onboarding Improvements**  
+- Add tooltips and onboarding prompts for advanced features.
+- Suggest logical next steps after a user performs a basic action (e.g. after creating an invoice, prompt to connect a bank account).
 
-**Targeted Messaging**  
-- Offer a limited-time trial (e.g. 14 days) for users who connect a bank account but haven’t subscribed.  
-- Use push notifications to re-engage users who drop off after basic usage.
+**AI Assistant Optimization**  
+- Introduce a required (but skippable) first interaction with the AI Assistant.
+- Use the Assistant to guide users through onboarding (e.g. suggesting VAT input after tax number entry).
 
-**Improving the First-Time AI Assistant Experience**  
-- Introduce a mandatory but skippable interaction with the AI Assistant during onboarding.  
-- Let the Assistant guide users through logical next steps (e.g. after creating their first invoice, suggest connecting a bank or setting up VAT).
+**Incentives and Retention**  
+- Offer a 14-day trial to users who connect a bank but don’t convert.
+- Send personalized in-app nudges to re-engage users who drop off early in the funnel.
 
 ---
 
