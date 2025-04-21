@@ -4,7 +4,7 @@ title: "Case Study: Mobile App Marketing & Conversion Analysis"
 date: 2025-04-15
 ---
 
-# 📌 Overview
+## 📌 Overview
 
 This case study explores user behavior and marketing performance for a mobile app designed for self-employed professionals in Germany. Using data from 2020 to 2025, the goal was to improve conversion rates to paid subscriptions and optimize acquisition efficiency.
 
@@ -18,14 +18,16 @@ I created **four interactive dashboards in Looker Studio** to visualize KPIs and
 4. **User Segmentation & Targeting**
 
 
-# 🔧 Tools & Methods
+## 🔧 Tools & Methods
 
-- **Data Cleaning & Preparation:** Python  
+- **Data Cleaning & Preparation:** Python ➡️ [(View here)](https://github.com/dtbkhanh/Data-Analytics-and-Reports/blob/7da10cc3356b97b4d1f8d75133a124ccf609ac1f/Jupyter%20Notebooks/05.%20Mobile%20App%20Marketing%20%26%20Conversion%20Analysis.ipynb)
 - **Visualization:** Looker Studio (Google Data Studio)  
 - **Data Source:** Internal app analytics (user events, subscriptions, acquisition data)
 
+## 📊 Live Dashboards
+➡️ [View here](https://lookerstudio.google.com/u/0/reporting/8959b791-5c18-4a12-8986-2f58b882b980/page/eleFF)
 
-# 📊 Dashboard Breakdown & Insights
+---
 
 ## 1. Overview Dashboard  
 **🎯 Goal:** Provide a high-level snapshot of user growth, conversion trends, and subscription revenue over time.
@@ -117,32 +119,96 @@ Highlights how the first action impacts conversion likelihood.
 ---
 
 ## 3. Marketing Performance Dashboard  
-**Goal:** Evaluate marketing channels by conversion, spend, and ROI to optimize acquisition strategy.
+**🎯 Goal:** Evaluate marketing channels by conversion, spend, and ROI to optimize acquisition strategy.
 
-![Marketing Dashboard Screenshot](/assets/images/Screenshot_Acctbl Mobile App_03.png)
+---
 
-**Key Visualizations:**
-- **Pie Chart:** Conversion rate by channel (social, search, video)
-- **Bar Chart:** Revenue/conversions by channel
-- **Table:** CAC, conversions, and spend
-- **Line Graph:** Channel trends over time
+### 📊 Key Visualizations
 
-**Insights:**
-- **Social media** campaigns deliver strong conversions and revenue
-- **Search engine** campaigns are under-optimized
-- **Short-form video** underperforms due to a misaligned audience
+<img src="/assets/images/Screenshot_Acctbl%20Mobile%20App_03.png" alt="Marketing Performance Dashboard Screenshot" width="800"/>
 
-**Recommendations:**
-- Increase budget on social channels
-- Improve keyword targeting and landing page UX for search
-- A/B test content on video platforms (ages 25–35, finance interests)
+**1. Conversion Speed Breakdown**  
+Among converted users, **10.4%** converted immediately — meaning they subscribed on the **first or second day** of using the app.
+
+**2. Time to Pay Distribution**  
+Most users convert within the **first 1–2 months**.
+
+
+**3–5. Marketing Channel Performance**  
+Evaluation by user volume, conversion rate, and maximum MRR:
+
+- **Google**  
+  - Brings in the **largest volume** of users  
+  - **Highest Max MRR**  
+  - Conversion rate is **moderate**
+
+- **Facebook**  
+  - Moderate user base  
+  - **Highest conversion rate**, outperforming Google and TikTok  
+  - **Moderate Max MRR**
+
+- **TikTok**  
+  - **Lowest** in user volume, conversion rate, and Max MRR  
+  - Overall **underperformance**
+
+
+**6–7. Campaign Performance**  
+Analysis by conversion distribution and Max MRR.
+
+> ⚠️ Before this analysis, I cleaned the raw data. The `campaign` column had many inconsistent names, so I grouped similar entries into clear categories:
+
+- `sea` → Search Engine Advertising  
+- `ugc` → User Generated Content  
+- `vat` → VAT Campaign  
+
+🔗 [View data cleansing here](https://github.com/dtbkhanh/Data-Analytics-and-Reports/blob/7da10cc3356b97b4d1f8d75133a124ccf609ac1f/Jupyter%20Notebooks/05.%20Mobile%20App%20Marketing%20%26%20Conversion%20Analysis.ipynb)
+
+- Two campaigns (“Retargeting” and “Organic”) show **100% conversion**, but each had **only one user**, so they’re not statistically meaningful.
+- Google’s **Search Engine Advertising** brings the **highest Max MRR**, despite a lower conversion rate.
+- The **Static Campaign** ranks second in Max MRR and has a **high conversion rate of 52.3%**.
+
+
+**8–9. Promocode Analysis**
+
+- Promocode usage **significantly boosts** both **conversion rate** and **conversion speed**.
+
+
+### 🔍 Insights
+
+- **Social media** campaigns deliver strong conversions and revenue.
+- **Search engine** campaigns are under-optimized but promising.
+- **Short-form video** campaigns underperform, possibly due to audience mismatch.
+
+
+### ✅ Recommendations
+
+**For Channels:**
+
+- **Increase investment in Facebook**, the highest-performing channel.
+- **Optimize Google**:
+  - Focus on top-performing campaigns (e.g. **Search Engine Advertising**)
+  - Improve **keyword targeting**
+  - Refine **landing pages** and **ad messaging**
+
+- **TikTok**:
+  - Consider a budget cut.
+  - Before a full cut, run a **final experiment**:
+    - **Age Range**: 25–35
+    - **Interest**: Business, finance, side hustles
+    - **Content**: Tailor ads to address invoicing, taxes, and freelance pain points
+
+**For Campaigns:**
+
+- **Prioritize high-performing campaigns** with strong ROI (e.g. SEA, Static).
+- Monitor high-rate but low-volume campaigns (e.g. Retargeting, Organic).
+- Offer **limited-time promocodes** to speed up conversions.
 
 ---
 
 ### 4. User Segmentation & Targeting Dashboard  
 **Goal:** Segment users by behavior, profession, and region to personalize marketing and onboarding.
 
-![Segmentation Dashboard Screenshot](insert-segmentation-dashboard-screenshot-url-here)
+
 
 **Key Visualizations:**
 - **Heatmap:** Conversion rates by profession (freelancers, consultants)
@@ -159,29 +225,6 @@ Highlights how the first action impacts conversion likelihood.
 - Run campaigns tailored by profession/region
 - Offer trials or incentives to re-engage active non-subscribers
 - Use CPA, CAC, and LTV to refine targeting and segmentation
-
----
-
-## 🛠️ Dashboard Features
-
-- **Interactive Filters:** Date, region, profession, VAT status, platform  
-- **KPI Cards:** Track total conversions, MRR, and user volume  
-- **Funnel Visualizations:** Identify where users drop off  
-- **Segmentation Views:** Behavioral and demographic filters
-
----
-
-## 🧹 Data Preparation
-
-The dataset was cleaned and analyzed in Python.  
-➡️ [View Jupyter Notebook](https://github.com/dtbkhanh/Data-Analytics-and-Reports/blob/7da10cc3356b97b4d1f8d75133a124ccf609ac1f/Jupyter%20Notebooks/05.%20Mobile%20App%20Marketing%20%26%20Conversion%20Analysis.ipynb)
-
----
-
-## 📊 Live Dashboards
-
-Explore the interactive dashboards here:  
-➡️ [Live Looker Dashboards](https://lookerstudio.google.com/u/0/reporting/8959b791-5c18-4a12-8986-2f58b882b980/page/eleFF)
 
 ---
 
