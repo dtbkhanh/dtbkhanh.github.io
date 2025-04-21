@@ -3,12 +3,11 @@ layout: default
 title: Home
 ---
 
-# 👋 Hi, I’m Khanh!
-
-I’m a data analyst with 3+ years of experience turning data into impactful insights. I thrive on uncovering stories hidden in numbers and building visualizations that inform smarter decisions.
-
-> **Specialties**: Data storytelling · SQL · Python · Power BI · Tableau · Looker Studio  
-> **Exploring**: Machine Learning · Advanced analytics · Interactive dashboards
+<div align="center">
+  <img src="https://github.com/dtbkhanh.png" alt="Khanh's profile photo" width="120" style="border-radius: 50%;"/>
+  <h1>Hi, I’m Khanh! 👋</h1>
+  <p><em>Data Analytics Specialist | Data Science Enthusiast | Lifetime Learner</em></p>
+</div>
 
 ---
 
