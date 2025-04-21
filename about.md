@@ -4,9 +4,8 @@ title: About Me
 ---
 <div align="center">
   <img src="/assets/images/github_profilepic.png" alt="Khanh's profile photo" width="120" style="border-radius: 100%;"/>
+  <h1>Hi, I’m Khanh!</h1>
 </div>
-
-# 👋 Hi, I'm Khanh!
 
 I'm a data analyst with 3+ years of hands-on experience turning raw data into meaningful insights that drive smarter decisions.
 
