@@ -10,9 +10,6 @@ title: Home
   <p>Python | SQL | Power BI | Tableau | Looker Studio </p>
 </div>
 
----
-
-## 📌 Explore
 
 <div style="display: flex; justify-content: space-around; margin-bottom: 20px;">
   <a href="/about" style="text-decoration: none;">
