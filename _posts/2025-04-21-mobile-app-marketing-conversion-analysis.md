@@ -5,7 +5,7 @@ date: 2025-04-21
 excerpt: "How do user behavior and marketing touchpoints shape conversions in a mobile app for self-employed professionals in Germany?"
 ---
 
-## 📌 Overview
+### 📌 Overview
 
 How do user behavior and marketing touchpoints shape conversions in a mobile app for self-employed professionals in Germany?
 
@@ -18,19 +18,19 @@ I created **4 interactive dashboards in Looker Studio** to uncover actionable in
 4. **User Segmentation & Targeting** – Region & profession-based targeting
 
 
-## 🔧 Tools & Methods
+### 🔧 Tools & Methods
 
 - **Data Preparation:** Python ➡️ **[View Code](https://github.com/dtbkhanh/Data-Analytics-and-Reports/blob/7da10cc3356b97b4d1f8d75133a124ccf609ac1f/Jupyter%20Notebooks/05.%20Mobile%20App%20Marketing%20%26%20Conversion%20Analysis.ipynb)**
 - **Visualization:** Looker Studio (Google Data Studio)
 - **Data:** Internal app analytics (events, subscriptions, acquisition)
 
-## 📊 Live Dashboards
+### 📊 Live Dashboards
 
 ➡️ **[Explore Dashboards](https://lookerstudio.google.com/u/0/reporting/8959b791-5c18-4a12-8986-2f58b882b980/page/eleFF)**
 
 ---
 
-## 1. Overview Dashboard  
+## 1. Overview 
 **🎯 Goal:** Provide a high-level snapshot of user growth, conversion trends, and subscription revenue over time.
 
 <img src="/assets/images/Screenshot_Acctbl%20Mobile%20App_01.png" alt="Overview Dashboard Screenshot" width="800"/>
@@ -57,7 +57,7 @@ I created **4 interactive dashboards in Looker Studio** to uncover actionable in
   
 ---
 
-## 2. User Behavior Analysis Dashboard
+## 2. User Behavior Analysis
 
 **🎯 Goal:** Identify high-converting in-app actions and behavioral patterns among different user types.
 
@@ -94,8 +94,8 @@ Shows which feature users interacted with first after installing the app.
 Highlights how the first action impacts conversion likelihood.
 
 - Users who start with **AI Assistant** have the highest conversion rate (40%), despite being a smaller group.  
-  → These users are more likely to explore deeply and engage meaningfully with the platform.
 - Users who start with simpler features tend to explore less, leading to lower conversion.
+→ When users take the time to explore the app fully and engage with its features, they have a higher chance of becoming paying subscribers.
 
 ### 🔍 Insights
 
@@ -119,7 +119,7 @@ Highlights how the first action impacts conversion likelihood.
 
 ---
 
-## 3. Marketing Performance Dashboard  
+## 3. Marketing Performance
 **🎯 Goal:** Evaluate marketing channels by conversion, spend, and ROI to optimize acquisition strategy.
 
 ### 📊 Key Visualizations
@@ -136,11 +136,11 @@ Most users convert within the **first 1–2 months**.
 Evaluation by user volume, conversion rate, and maximum MRR:
 
 - **Google** brings in the largest volume of users, top MRR, but moderate conversion.  
-- **Facebook** has a moderate traffic and max MRR, but the highest conversion rate — outperforming Google and TikTok.  
-- **TikTok** has the lowest user volume, conversion rate, and Max MRR — which brings overall underperformance.
+- **Facebook** achieves the highest conversion rate, surpassing Google and TikTok, despite having moderate user traffic and MRR.
+- **TikTok** exhibits the lowest performance across user volume, conversion rate, and MRR, indicating overall underperformance.
 
 **6–7. Campaign Performance**  
-Analysis by conversion distribution and Max MRR.
+Analysis by conversion distribution and Max MRR.  
 <img src="/assets/images/Screenshot_Acctbl%20Mobile%20App_03b.png" alt="Marketing Performance Dashboard Screenshot" width="800"/>
 
 > ⚠️ Before this analysis, I cleaned the raw data. The `campaign` column had many inconsistent names, so I grouped similar entries into clear categories:
@@ -194,7 +194,7 @@ Analysis by conversion distribution and Max MRR.
 
 ---
 
-## 4. User Segmentation & Targeting Dashboard  
+## 4. User Segmentation & Targeting 
 **🎯 Goal:** Segment users by behavior, profession, and region to personalize marketing and onboarding.
 
 ### 1. Regional Segmentation
