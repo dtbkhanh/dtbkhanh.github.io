@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Blog Posts
+permalink: /posts/
 ---
 
 # Blog Posts
