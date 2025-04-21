@@ -46,3 +46,7 @@ Fueled by curiosity and a love for continuous learning, I'm diving deeper into *
 ---
 
 Let’s connect and explore the stories data has to tell!
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/dtbkhanh/) 
+[![Blog](https://img.shields.io/badge/Blog-blue?style=for-the-badge&logo=bookstack&logoColor=white)](https://dtbkhanh.github.io/) 
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/dtbkhanh)
