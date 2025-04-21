@@ -42,8 +42,8 @@ I created **four interactive dashboards in Looker Studio** to visualize KPIs and
 #### 🔍 Insights
 - Steady user growth from 2020 to 2025 indicates increasing brand visibility and app popularity.
 - Paid user breakdown: Among users who converted, this chart shows:
-  - Paid: Users who subscribed without using a free trial (77.1% of Converted users).
-  - Non-paid: Users who first tried the app with a free trial and then subscribed (22.9% of Converted users).
+  - *Paid:* Users who subscribed without using a free trial (77.1% of Converted users).
+  - *Non-paid:* Users who first tried the app with a free trial and then subscribed (22.9% of Converted users).
 - July–September 2024 shows a noticeable spike in non-paid conversions, raising important questions:
   - Was there a large-scale marketing campaign that boosted sign-ups but didn’t convert well?
   - Could a free trial promotion have led to a surge in trial users who didn't upgrade?
@@ -78,7 +78,7 @@ I created **four interactive dashboards in Looker Studio** to visualize KPIs and
 
 **3. Conversion Rate by Feature Used (100% Stacked Bar Chart)**
 - Although fewer users use features like **IBAN Setup**, **Verified Bank**, and **PEPPOL Registration**, those who do are far more likely to become paid users.
-  → These actions suggest serious engagement and high intent to fully use the platform.
+  → These actions suggest serious engagement and a high intent to fully use the platform.
 - **AI Assistant** has a moderate conversion rate (~71.7%).
 - Frequently used basic features such as **Create Expense**, **Invoice**, or **Other Revenue** have lower conversion rates.
   → These are often used for quick testing by new or casual users without further exploration.
@@ -106,11 +106,11 @@ Highlights how the first action impacts conversion likelihood.
 
 **Onboarding Improvements**  
 - Add tooltips and onboarding prompts for advanced features.
-- Suggest logical next steps after a user performs a basic action (e.g. after creating an invoice, prompt to connect a bank account).
+- Suggest logical next steps after a user performs a basic action (e.g., after creating an invoice, prompt to connect a bank account).
 
 **AI Assistant Optimization**  
 - Introduce a required (but skippable) first interaction with the AI Assistant.
-- Use the Assistant to guide users through onboarding (e.g. suggesting VAT input after tax number entry).
+- Use the Assistant to guide users through onboarding (e.g., suggesting VAT input after tax number entry).
 
 **Incentives and Retention**  
 - Offer a 14-day trial to users who connect a bank but don’t convert.
@@ -121,39 +121,36 @@ Highlights how the first action impacts conversion likelihood.
 ## 3. Marketing Performance Dashboard  
 **🎯 Goal:** Evaluate marketing channels by conversion, spend, and ROI to optimize acquisition strategy.
 
----
-
 ### 📊 Key Visualizations
 
 <img src="/assets/images/Screenshot_Acctbl%20Mobile%20App_03.png" alt="Marketing Performance Dashboard Screenshot" width="800"/>
 
 **1. Conversion Speed Breakdown**  
-Among converted users, **10.4%** converted immediately — meaning they subscribed on the **first or second day** of using the app.
+Among converted users, 10.4% converted immediately — meaning they subscribed on the first or second day of using the app.
 
 **2. Time to Pay Distribution**  
 Most users convert within the **first 1–2 months**.
-
 
 **3–5. Marketing Channel Performance**  
 Evaluation by user volume, conversion rate, and maximum MRR:
 
 - **Google**  
-  - Brings in the **largest volume** of users  
-  - **Highest Max MRR**  
+  - Brings in the largest volume of users  
+  - Highest Max MRR  
   - Conversion rate is **moderate**
 
 - **Facebook**  
   - Moderate user base  
-  - **Highest conversion rate**, outperforming Google and TikTok  
-  - **Moderate Max MRR**
+  - Highest conversion rate, outperforming Google and TikTok  
+  - Moderate Max MRR
 
 - **TikTok**  
-  - **Lowest** in user volume, conversion rate, and Max MRR  
-  - Overall **underperformance**
-
+  - Lowest in user volume, conversion rate, and Max MRR  
+  - Overall underperformance
 
 **6–7. Campaign Performance**  
 Analysis by conversion distribution and Max MRR.
+<img src="/assets/images/Screenshot_Acctbl%20Mobile%20App_03b.png" alt="Marketing Performance Dashboard Screenshot" width="800"/>
 
 > ⚠️ Before this analysis, I cleaned the raw data. The `campaign` column had many inconsistent names, so I grouped similar entries into clear categories:
 
@@ -167,10 +164,11 @@ Analysis by conversion distribution and Max MRR.
 - Google’s **Search Engine Advertising** brings the **highest Max MRR**, despite a lower conversion rate.
 - The **Static Campaign** ranks second in Max MRR and has a **high conversion rate of 52.3%**.
 
-
 **8–9. Promocode Analysis**
 
-- Promocode usage **significantly boosts** both **conversion rate** and **conversion speed**.
+<img src="/assets/images/Screenshot_Acctbl%20Mobile%20App_03c.png" alt="Marketing Performance Dashboard Screenshot" width="800"/>
+
+- Promocode usage significantly boosts both conversion rate and conversion speed.
 
 
 ### 🔍 Insights
