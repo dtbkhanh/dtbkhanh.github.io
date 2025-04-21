@@ -93,7 +93,7 @@ Shows which feature users interacted with first after installing the app.
 **5. Conversion Rate by First Feature Used**  
 Highlights how the first action impacts conversion likelihood.
 
-- Users who start with **AI Assistant** have the highest conversion rate (40%), despite being a smaller group.
+- Users who start with **AI Assistant** have the highest conversion rate (40%), despite being a smaller group.  
   → These users are more likely to explore deeply and engage meaningfully with the platform.
 - Users who start with simpler features tend to explore less, leading to lower conversion.
 
@@ -101,13 +101,13 @@ Highlights how the first action impacts conversion likelihood.
 
 - Early drop-offs in the usage funnel suggest onboarding friction.
 - Users who adopt financial tools or AI early are more likely to convert.
-- Conversion is influenced not only by feature use but by the **order and timing** of use.
+- Conversion is influenced not only by feature use, but by the order and timing of use.
 
 ### ✅ Recommendations
 
 **Onboarding Improvements**  
 - Add tooltips and onboarding prompts for advanced features.
-- Suggest logical next steps after a user performs a basic action (e.g., after creating an invoice, prompt to connect a bank account).
+- Guide users to the next helpful action after they perform a basic action. For example, if they create an invoice, suggest connecting their bank account.
 
 **AI Assistant Optimization**  
 - Introduce a required (but skippable) first interaction with the AI Assistant.
