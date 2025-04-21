@@ -14,7 +14,7 @@ title: Home
 ## 📌 Explore
 
 - 🔍 [**About Me**](about.md)  
-  Get to know my background, the tools I work with, and what fuels my passion for data.
+  Get to know my background.
 
 - 📝 [**Blog Posts**](/posts/)  
   Dive into case studies and data-driven stories from real-world projects.
@@ -34,5 +34,4 @@ title: Home
 
 ## 🤝 Connect with Me
 
-- 💼 [LinkedIn](https://www.linkedin.com/in/dtbkhanh)  
-- 💻 [GitHub](https://github.com/dtbkhanh)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/dtbkhanh/)  [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/dtbkhanh)
