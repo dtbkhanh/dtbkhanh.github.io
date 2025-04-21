@@ -34,12 +34,12 @@ I created **four interactive dashboards in Looker Studio** to visualize KPIs and
 
 <img src="/assets/images/Screenshot_Acctbl%20Mobile%20App_01.png" alt="Overview Dashboard Screenshot" width="800"/>
 
-#### 📊 Key Visualizations
+### 📊 Key Visualizations
 - **KPI Cards:** Total users (29.1k), Conversion Rate (15.1%), Total Monthly Recurring Revenue (MRR)
 - **Pie Charts:** Conversion Status Breakdown (Free vs. Paid), Paid vs. Non-paid Conversion
 - **Line Charts:** Account Creation Timeline, Monthly New subscribers
 
-#### 🔍 Insights
+### 🔍 Insights
 - Steady user growth from 2020 to 2025 indicates increasing brand visibility and app popularity.
 - Paid user breakdown: Among users who converted, this chart shows:
   - *Paid:* Users who subscribed without using a free trial (77.1% of Converted users).
@@ -49,7 +49,7 @@ I created **four interactive dashboards in Looker Studio** to visualize KPIs and
   - Could a free trial promotion have led to a surge in trial users who didn't upgrade?
   - Was the audience mismatch? (e.g., students testing features, or users from countries where payment is unsupported)
 
-#### ✅ Recommendations
+### ✅ Recommendations
 - Investigate campaign strategies and audience sources during this spike period.
 - Analyze user segments to determine if trial experiences or onboarding flows contributed to lower paid conversion.
 - Cross-check app store reviews or feedback during this time for additional context.
@@ -62,11 +62,11 @@ I created **four interactive dashboards in Looker Studio** to visualize KPIs and
 
 <img src="/assets/images/Screenshot_Acctbl%20Mobile%20App_02.png" alt="User Behavior Dashboard Screenshot" width="800"/>
 
-#### 📊 Key Visualizations
+### 📊 Key Visualizations
 
 **1. Engagement Metrics Table**  
 - Converted users tend to have more sessions and spend more time per session, showing deeper engagement.  
-- Non-converted users use the app more frequently (higher average days used) but spend less time overall, likely testing limited features such as invoice creation or bank connections that are restricted in the free plan.  
+- Non-converted users use the app more frequently (higher average days used) but spend less time overall, likely testing limited features (such as invoice creation or bank connections) that are restricted in the free plan.  
 
 **2. Feature Usage Funnel**  
 - Many users begin with basic features like **Create Expense/Invoice** or **Enter Tax Number**.
@@ -96,13 +96,13 @@ Highlights how the first action impacts conversion likelihood.
   → These users are more likely to explore deeply and engage meaningfully with the platform.
 - Users who start with simpler features tend to explore less, leading to lower conversion.
 
-#### 🔍 Insights
+### 🔍 Insights
 
 - Early drop-offs in the usage funnel suggest onboarding friction.
 - Users who adopt financial tools or AI early are more likely to convert.
 - Conversion is influenced not only by feature use but by the **order and timing** of use.
 
-#### ✅ Recommendations
+### ✅ Recommendations
 
 **Onboarding Improvements**  
 - Add tooltips and onboarding prompts for advanced features.
