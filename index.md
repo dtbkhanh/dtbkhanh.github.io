@@ -6,7 +6,7 @@ title: Home
 <div align="center">
   <img src="https://github.com/dtbkhanh.png" alt="Khanh's profile photo" width="120" style="border-radius: 50%;"/>
   <h1>Hi, I’m Khanh!</h1>
-  <p><em>Data Analytics Specialist | Data Science Enthusiast | Lifetime Learner</em></p>
+  <p><em>Data Analytics Specialist</em></p>
   <p>Python | SQL | Power BI | Tableau | Looker Studio </p>
 </div>
 
