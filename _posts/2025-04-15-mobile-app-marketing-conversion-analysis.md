@@ -203,33 +203,84 @@ Analysis by conversion distribution and Max MRR.
 
 ---
 
-### 4. User Segmentation & Targeting Dashboard  
-**Goal:** Segment users by behavior, profession, and region to personalize marketing and onboarding.
+## 4. User Segmentation & Targeting Dashboard  
+**🎯 Goal:** Segment users by behavior, profession, and region to personalize marketing and onboarding.
+
+### 1. Regional Segmentation
+
+<img src="/assets/images/Screenshot_Acctbl%20Mobile%20App_04a.png" alt="Users by Region" width="800"/>
+
+- **Berlin** has the largest user base, the highest Conversion Rate, and the highest Max MRR.  
+  ➡️ **Increase marketing budget**  
+  ➡️ Analyze top-performing campaigns in Berlin and scale similar strategies to other cities
+
+- **Nordrhein-Westfalen & Bayern** shows strong performance: high MRR and high Conversion Rates.  
+  ➡️ Maintain or slightly increase marketing investment  
+  ➡️ Test new campaign ideas to unlock additional value
+
+- **Mecklenburg-Vorpommern & Hamburg** has fewer users, but strong conversion efficiency.  
+  ➡️ Explore potential with **low-budget awareness campaigns**
+
+- **Saarland** has low user base, poor conversion, and revenue.  
+  ➡️ Conduct **market research** to identify blockers  
+  ➡️ Consider **reducing ad spend**
 
 
+### 2. User Type & Self-Employment
 
-**Key Visualizations:**
-- **Heatmap:** Conversion rates by profession (freelancers, consultants)
-- **Geo Chart:** Regional activity and conversion
-- **Bar Chart:** VAT status, account type vs. conversion
-- **Sankey Diagram:** Paths from sign-up to conversion or churn
+<img src="/assets/images/Screenshot_Acctbl%20Mobile%20App_04b.png" alt="Self-Employment Status" width="800"/>
 
-**Insights:**
-- Certain **professions and regions** convert better
-- **Bank-connected but unsubscribed** users are prime re-engagement targets
-- Regional behavior suggests potential for localized campaigns
+**Users by Self-Employment Status**  
+- The majority are self-employed, aligning with the app’s target audience  
+- A small portion is not self-employed:
+  - Curious explorers
+  - Preparing for future freelancing
+  - Representing a potential **secondary market**
 
-**Recommendations:**
-- Run campaigns tailored by profession/region
-- Offer trials or incentives to re-engage active non-subscribers
-- Use CPA, CAC, and LTV to refine targeting and segmentation
+➡️ Maintain focus on self-employed users  
+➡️ Create light messaging for the “pre-freelancer” segment
 
----
+### 3. Profession-Based Segmentation
 
-## 📌 Final Takeaways
+- **Artists & Content Creators** are the largest group. They generate the highest Max MRR (due to size), though not the best conversion rate.
+- Top professions by volume ≠ Top professions by conversion rate
 
-- Conversion rates differ significantly by **user behavior** and **profession**
-- Top-performing channels should receive **increased budget and refinement**
-- **Personalized onboarding and re-engagement** drive higher conversion and LTV
+➡️ Focus budget on **high-converting professions** to maximize ROI  
+➡️ Nurture large-volume professions (like artists) by:
+  - Identifying blockers to conversion  
+  - Running **targeted tests** (profession-specific messaging or landing pages)
 
-👉 These insights directly informed marketing experiments and UX adjustments to improve growth and retention.
+<img src="/assets/images/Screenshot_Acctbl%20Mobile%20App_04c.png" alt="VAT and Account Type" width="800"/>
+
+### 4. VAT Type Segmentation
+
+- The majority fall under **"franchise"** (small business, no VAT charged)  
+- **"subjectToVAT"** users show **higher conversion rates**
+
+➡️ Tailor messaging to **subjectToVAT** users' needs (invoicing, tax complexity)
+
+
+### 5. Account Type Segmentation
+
+- Most users are **principal business owners or freelancers without VAT**  
+- **Complementary status** users (primary job + side freelancing) have **highest conversion rates**
+
+➡️ Prioritize marketing to **dual-income users**, who likely face more complex financial management  
+➡️ Adjust messaging to highlight how Accountable supports **multi-income stream management**
+
+
+### 🔍 Insights
+
+- Certain **professions and regions** drive better conversion and revenue
+- **Bank-connected but unsubscribed** users present an opportunity for re-engagement
+- Regional differences indicate potential for **localized marketing strategies**
+
+
+### ✅ Recommendations
+
+- Tailor campaigns to high-performing regions (e.g., Berlin, NRW)
+- Test localized messaging to unlock value in under-tapped regions (e.g., Hamburg)
+- Re-engage unsubscribed but active users via segmented campaigns
+- Invest in understanding behavior:
+  - Collect qualitative feedback for improved UX  
+  - Run deeper segmentation analysis by profession, VAT type, region, and account status
