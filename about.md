@@ -2,6 +2,9 @@
 layout: default
 title: About Me
 ---
+<div align="center">
+  <img src="/assets/images/github_profilepic.png" alt="Khanh's profile photo" width="120" style="border-radius: 100%;"/>
+</div>
 
 # 👋 Hi, I'm Khanh!
 
