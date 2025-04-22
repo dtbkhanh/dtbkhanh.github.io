@@ -19,7 +19,7 @@ How do user behavior and marketing touchpoints shape conversions in a mobile app
 
 This case study explores data from **29.1k users (15.1% conversion)** between 2020 – 2025, with the goal of improving subscription rates and acquisition efficiency.
 
-I created **4 interactive dashboards in Looker Studio** to uncover actionable insights:  
+I created 4 interactive dashboards in Looker Studio to uncover actionable insights:  
 1. **Overview** – Growth, revenue & conversion trends  
 2. **User Behavior Analysis** – In-app actions that drive conversion  
 3. **Marketing Performance** – ROI by channel & campaign  
