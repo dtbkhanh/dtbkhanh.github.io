@@ -38,7 +38,8 @@ I created **4 interactive dashboards in Looker Studio** to uncover actionable in
 
 <!------------------------------ DASHBOARDS  ----------------------------------->
 <div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
-<h1>📊 Explore Dashboards📊 </h1>
+
+<div style="text-align: center;"><h1>📊 Explore Dashboards📊 </h1></div>
 <div style="text-align: center;">
   <span>➡️</span> 
   <strong><a href="https://lookerstudio.google.com/u/0/reporting/8959b791-5c18-4a12-8986-2f58b882b980/page/eleFF" target="_blank">Live Dashboards</a></strong>
