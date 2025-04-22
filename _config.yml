@@ -7,8 +7,8 @@ title: "Khanh's Online Journal"
 description: "A blog sharing my experiences and insights on work, projects, and data."
 author: Khanh Dang
 email: ""
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol, e.g. http://example.com
+baseurl: ""
+url: ""
 
 # Build settings
 theme: minima
