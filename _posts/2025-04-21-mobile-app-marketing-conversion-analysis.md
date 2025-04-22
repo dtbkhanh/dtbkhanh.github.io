@@ -5,6 +5,17 @@ date: 2025-04-21
 excerpt: "How do user behavior and marketing touchpoints shape conversions in a mobile app for self-employed professionals in Germany?"
 ---
 
+<details>
+  <summary><strong>Table of Contents</strong></summary>
+
+1. [Overview Dashboard](#1-overview-dashboard)  
+2. [User Behavior Analysis](#2-user-behavior-analysis)  
+3. [Marketing Performance](#3-marketing-performance)  
+4. [User Segmentation & Targeting](#4-user-segmentation--targeting)  
+5. [Final Takeaways](#-final-takeaways)
+
+</details>
+
 ### 📌 Overview
 
 How do user behavior and marketing touchpoints shape conversions in a mobile app for self-employed professionals in Germany?
@@ -30,7 +41,7 @@ I created **4 interactive dashboards in Looker Studio** to uncover actionable in
 
 ---
 
-## 1. Overview 
+## 1. Overview Dashboard  
 **🎯 Goal:** Provide a high-level snapshot of user growth, conversion trends, and subscription revenue over time.
 
 <img src="/assets/images/Screenshot_Acctbl%20Mobile%20App_01.png" alt="Overview Dashboard Screenshot" width="800"/>
