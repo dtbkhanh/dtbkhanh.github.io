@@ -41,7 +41,7 @@ I created **4 interactive dashboards in Looker Studio** to uncover actionable in
 
 
 <!------------------------------ DASHBOARDS  ----------------------------------->
-<img src="/assets/images/Screenshot_Acctbl%20Mobile%20App_02.png" alt="User Behavior Dashboard Screenshot" width="800"/>
+<div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
 
 <!------------------------------ PAGE 1  ----------------------------------->
 <h1 id="1-overview-dashboard">1. Overview Dashboard</h1>
