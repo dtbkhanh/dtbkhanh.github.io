@@ -11,29 +11,94 @@ title: Home
 </div>
 
 
-<div style="display: flex; justify-content: space-around; margin-bottom: 20px;">
-  <a href="/about" style="text-decoration: none; width: 300px;">
-    <div style="border: 1px solid #ccc; padding: 15px; border-radius: 5px; text-align: center; height: 150px; display: flex; flex-direction: column; justify-content: center;">
-      <span style="font-size: 1.5em;">👤</span><br>
-      <strong>About Me</strong><br>
-      <span style="font-size: 0.9em;">Learn about my background and journey.</span>
+<div class="card-container">
+  <a href="/about" class="card">
+    <div class="card-content">
+      <span class="card-icon">👤</span>
+      <strong>About Me</strong>
+      <span class="card-description">Learn about my background and journey.</span>
     </div>
   </a>
-  <a href="/posts/" style="text-decoration: none; width: 300px;">
-    <div style="border: 1px solid #ccc; padding: 15px; border-radius: 5px; text-align: center; height: 150px; display: flex; flex-direction: column; justify-content: center;">
-      <span style="font-size: 1.5em;">📝</span><br>
-      <strong>Blog Posts</strong><br>
-      <span style="font-size: 0.9em;">Dive into data-driven case studies and stories.</span>
+  <a href="/posts/" class="card">
+    <div class="card-content">
+      <span class="card-icon">📝</span>
+      <strong>Blog Posts</strong>
+      <span class="card-description">Dive into data-driven case studies and stories.</span>
     </div>
   </a>
-  <a href="https://github.com/dtbkhanh/Data-Analytics-and-Reports" style="text-decoration: none; width: 300px;">
-    <div style="border: 1px solid #ccc; padding: 15px; border-radius: 5px; text-align: center; height: 150px; display: flex; flex-direction: column; justify-content: center;">
-      <span style="font-size: 1.5em;">📊</span><br>
-      <strong>Dashboards & Reports</strong><br>
-      <span style="font-size: 0.9em;">Explore my analytics projects on GitHub.</span>
+  <a href="https://github.com/dtbkhanh/Data-Analytics-and-Reports" class="card">
+    <div class="card-content">
+      <span class="card-icon">📊</span>
+      <strong>Dashboards & Reports</strong>
+      <span class="card-description">Explore my analytics projects on GitHub.</span>
     </div>
   </a>
 </div>
+
+<style>
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    text-decoration: none;
+    color: inherit;
+    width: 300px;
+    flex-grow: 1;
+    min-width: 250px;
+    max-width: 100%;
+  }
+  
+  .card-content {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+  
+  .card-content:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+    border-color: #999;
+  }
+  
+  .card-icon {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+  }
+  
+  .card-description {
+    font-size: 0.9em;
+    margin-top: 5px;
+  }
+  
+  /* Mobile-specific styles */
+  @media (max-width: 768px) {
+    .card-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .card {
+      width: 90%;
+      max-width: 400px;
+    }
+    
+    .card-content {
+      height: auto;
+      padding: 20px 10px;
+    }
+  }
+</style>
 
 ---
 <div align="center" style="margin-top: 20px;">
