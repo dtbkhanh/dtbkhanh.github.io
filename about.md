@@ -15,7 +15,7 @@ Fueled by curiosity and a love for continuous learning, I'm diving deeper into M
 
 <div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
 
-## 📊 What I Do
+## <span class="material-icons">analytics</span> What I Do
 
 - Transform complex datasets into actionable insights  
 - Build interactive dashboards and clear visualizations  
@@ -23,13 +23,13 @@ Fueled by curiosity and a love for continuous learning, I'm diving deeper into M
 - Tools I use: **SQL**, **Python**, **R**, **Power BI**, **Tableau**, **Looker Studio**
 
 
-## 🚀 Currently Exploring
+## <span class="material-icons">rocket</span> Currently Exploring
 
 - **Machine Learning** — uncovering deeper patterns and predictive insights  
 - **Advanced visualizations** — crafting compelling, interactive data stories  
 
 
-## 💡 Let’s Talk About
+## <span class="material-icons">lightbulb</span> Let’s Talk About
 
 - Building data pipelines for efficient processing  
 - Creating dashboards that inspire action  
@@ -37,7 +37,7 @@ Fueled by curiosity and a love for continuous learning, I'm diving deeper into M
 - Turning business questions into data-driven strategies  
 
 
-## 🧑‍💻 Outside of Work
+## <span class="material-icons">computer</span> Outside of Work
 
 - 🏞️ **Hiking & Camping** — nature helps me recharge  
 - 📸 **Photography** — capturing landscapes and everyday moments  
