@@ -137,46 +137,44 @@ body {
 /* Post content styling */
 .post-content {
   margin-bottom: 30px;
-  text-align: justify; /* Add this for all content */
-}
+  text-align: justify;
 
-.post-content h1 {
-  font-size: 2.5em;
-  border-bottom: 1px solid var(--medium-gray);
-  padding-bottom: 10px;
-  margin-top: 1.5em;
-  color: var(--primary-color);
-  text-align: left; /* Headers typically look better left-aligned */
-}
+  h1 {
+    font-size: 2.5em;
+    border-bottom: 1px solid var(--medium-gray);
+    padding-bottom: 10px;
+    margin-top: 1.5em;
+    color: var(--primary-color);
+    text-align: left;
+  }
 
-.post-content h2,
-.post-content h3,
-.post-content h4 {
-  margin-top: 1.5em;
-  color: var(--primary-color);
-  text-align: left;
-}
+  h2, h3, h4 {
+    margin-top: 1.5em;
+    color: var(--primary-color);
+    text-align: left;
+  }
 
-.post-content h3 {
-  font-size: 1.5em;
-}
+  h3 {
+    font-size: 1.5em;
+  }
 
-.post-content p {
-  margin-bottom: 1.2em;
-  text-align: justify; /* Reinforcing justify for paragraphs */
-}
+  p {
+    margin-bottom: 1.2em;
+    text-align: justify;
+  }
 
-.post-content blockquote {
-  border-left: 4px solid var(--secondary-color);
-  padding-left: 15px;
-  color: var(--dark-gray);
-  font-style: italic;
-}
+  blockquote {
+    border-left: 4px solid var(--secondary-color);
+    padding-left: 15px;
+    color: var(--dark-gray);
+    font-style: italic;
+  }
 
-.post-content img {
-  max-width: 100%;
-  border-radius: 5px;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  img {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  }
 }
 
 /* Footer styling */
@@ -278,59 +276,4 @@ h2 i {
 
 .card-icon i:hover {
   color: var(--accent-color);
-}
-
-/* Table of Contents styling */
-.toc-container {
-  margin-bottom: 30px;
-}
-
-.toc-container details {
-  border: 1px solid var(--medium-gray);
-  border-radius: 5px;
-  padding: 15px;
-  background-color: var(--light-gray);
-  transition: all 0.3s ease;
-}
-
-.toc-container details[open] {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-}
-
-.toc-container summary {
-  cursor: pointer;
-  padding: 5px 0;
-  font-weight: 600;
-  color: var(--primary-color);
-  outline: none;
-}
-
-.toc-container summary:hover {
-  color: var(--secondary-color);
-}
-
-/* This is critical for proper Markdown processing inside HTML */
-.toc-container div[markdown="1"] {
-  margin-top: 15px;
-}
-
-.toc-container ul,
-.toc-container ol {
-  margin-bottom: 0;
-  padding-left: 25px;
-}
-
-.toc-container li {
-  margin-bottom: 8px;
-}
-
-.toc-container a {
-  color: var(--primary-color);
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-.toc-container a:hover {
-  color: var(--secondary-color);
-  text-decoration: underline;
 }
