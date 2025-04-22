@@ -36,9 +36,24 @@ I created 4 interactive dashboards in Looker Studio to uncover actionable insigh
 <div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
 
 <div style="text-align: center; font-size: 1.3em;"><h1>📊 Explore Dashboards📊 </h1></div>
-<div style="border: 1px solid #ccc; padding: 15px; margin: 20px 0; border-radius: 5px; text-align: center;">
+
+<div style="border: 1px solid #ccc; padding: 15px; margin: 20px 0; border-radius: 5px; text-align: center; transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;">
   <strong><a href="https://lookerstudio.google.com/u/0/reporting/8959b791-5c18-4a12-8986-2f58b882b980/page/eleFF" target="_blank" style="text-decoration: none;">➡️ View Live Dashboards ⬅️</a></strong>
 </div>
+
+<script>
+  const dashboardBox = document.querySelector('div[style*="border: 1px solid #ccc"]');
+  if (dashboardBox) {
+    dashboardBox.addEventListener('mouseenter', () => {
+      dashboardBox.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
+      dashboardBox.style.borderColor = '#3498db'; /* Example hover border color */
+    });
+    dashboardBox.addEventListener('mouseleave', () => {
+      dashboardBox.style.boxShadow = 'none';
+      dashboardBox.style.borderColor = '#ccc';
+    });
+  }
+</script>
 
 <!------------------------------ PAGE 1  ----------------------------------->
 <h1 id="1-overview">1. Overview</h1>
