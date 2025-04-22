@@ -9,11 +9,11 @@ title: About Me
 
 I'm a data analyst with 3+ years of hands-on experience turning raw data into meaningful insights that drive smarter decisions.
 
-To me, data isn’t just numbers — it’s a story waiting to be uncovered. I've worked in both financial services and business consulting, collaborating with experts and delivering impact through data processing, analytics, and visualization. 
+To me, data isn’t just numbers—it’s a story waiting to be uncovered. I've worked in financial services and business consulting, collaborating with experts and delivering impact through data processing, analytics, and visualization. 
 
-Fueled by curiosity and a love for continuous learning, I'm diving deeper into **Machine Learning** and advanced **data storytelling techniques**. Whether in a fast-paced startup or a global enterprise, I bring analytical rigor, creativity, and a collaborative mindset to every team I join.
+Fueled by curiosity and a love for continuous learning, I'm diving deeper into Machine Learning and advanced data storytelling techniques. Whether in a fast-paced startup or a global enterprise, I bring analytical rigor, creativity, and a collaborative mindset to every team I join.
 
----
+<div class="section-divider"></div>
 
 ## 📊 What I Do
 
@@ -43,7 +43,7 @@ Fueled by curiosity and a love for continuous learning, I'm diving deeper into *
 - 📸 **Photography** — capturing landscapes and everyday moments  
 - 🌍 **Traveling** — always curious to discover new places and cultures  
 
----
+<div class="section-divider"></div>
 
 Let’s connect and explore the stories data has to tell!
 
