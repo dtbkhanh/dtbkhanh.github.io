@@ -50,3 +50,15 @@ Let’s connect and explore the stories data has to tell!
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/dtbkhanh/) 
 [![Blog](https://img.shields.io/badge/Blog-blue?style=for-the-badge&logo=bookstack&logoColor=white)](https://dtbkhanh.github.io/) 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/dtbkhanh)
+
+<div class="contact-links">
+  <a href="https://linkedin.com/in/yourusername" class="social-link">
+    <i class="fab fa-linkedin"></i> LinkedIn
+  </a>
+  <a href="https://github.com/dtbkhanh" class="social-link">
+    <i class="fab fa-github"></i> GitHub
+  </a>
+  <a href="mailto:your.email@example.com" class="social-link">
+    <i class="far fa-envelope"></i> Email
+  </a>
+</div>
