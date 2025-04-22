@@ -21,7 +21,7 @@ I created **4 interactive dashboards in Looker Studio** to uncover actionable in
 ### 🔧 Tools & Methods
 
 - **Data Preparation:** Python ➡️ **[View Code](https://github.com/dtbkhanh/Data-Analytics-and-Reports/blob/7da10cc3356b97b4d1f8d75133a124ccf609ac1f/Jupyter%20Notebooks/05.%20Mobile%20App%20Marketing%20%26%20Conversion%20Analysis.ipynb)**
-- **Visualization:** Looker Studio (Google Data Studio)
+- **Visualization:** Looker Studio (Google Data Studio) ➡️ **[View Live Dashboards](https://lookerstudio.google.com/u/0/reporting/8959b791-5c18-4a12-8986-2f58b882b980/page/eleFF)**
 - **Data:** Internal app analytics (events, subscriptions, acquisition)
 
 
