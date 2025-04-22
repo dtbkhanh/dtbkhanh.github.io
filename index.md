@@ -14,10 +14,10 @@ title: Home
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    .card-icon i, h2 i { color: #494e57; font-size: 1.5rem; margin-right: 0.5em; }
+    .card-icon i, h2 i { color: #36445c; font-size: 1.5rem; margin-right: 0.5em; }
     .card-icon i:hover { color: #ff6600; }
-    h2 { color: #004466; font-weight: 600; }
-    .card-content strong { color: #141f26; display: block; margin-top: 0.5em; font-size: 1.1rem; }
+    h2 { color: #2f3e57; font-weight: 600; }
+    .card-content strong { color: #36445c; display: block; margin-top: 0.5em; font-size: 1.1rem; }
     .card-description { color: #555; font-size: 0.95rem; }
     .card:hover { background-color: #f9f9f9; transition: 0.3s; }
   </style>
