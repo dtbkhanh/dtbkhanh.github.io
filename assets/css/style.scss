@@ -226,3 +226,72 @@ body {
     font-size: 20px;
   }
 }
+
+/* About page styling */
+.page-content {
+  padding: 30px 0;
+}
+
+.page-content h1 {
+  color: var(--primary-color);
+  margin-bottom: 25px;
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+.page-content p {
+  font-size: 1.1em;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+/* Custom section divider */
+.section-divider {
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--secondary-color), transparent);
+  margin: 40px 0;
+  border: none;
+}
+
+/* Contact links styling */
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 15px;
+  background-color: var(--light-gray);
+  border-radius: 5px;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background-color: var(--secondary-color);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.social-link i {
+  margin-right: 8px;
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+  .contact-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .social-link {
+    width: 100%;
+    justify-content: center;
+  }
+}
