@@ -1,5 +1,70 @@
+# Site settings
 title: "Khanh's Online Journal"
 description: "A blog sharing my experiences and insights on work, projects, and data."
+author: Khanh Dang
+email: ""
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol, e.g. http://example.com
+
+# Build settings
 theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-sitemap
+
+# Navigation
+header_pages:
+  - about.md
+  - posts.md
+  - projects.md
+
+# Pagination
 paginate: 5
-paginate_path: "/page:num"
+paginate_path: "/page:num/"
+
+# Minima theme settings
+minima:
+  date_format: "%b %-d, %Y"
+  social_links:
+    github: dtbkhanh
+    linkedin: dtbkhanh
+    # twitter: your-twitter-username
+
+# Google Analytics
+google_analytics: "" # Replace with your tracking ID if you have one
+
+# Disqus comments (optional)
+# disqus:
+#   shortname: your-disqus-shortname
+
+# Additional customization
+show_excerpts: true
+excerpt_separator: <!--more-->
+
+# Collections (for organizing different types of content)
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/
+
+# Default front matter for posts and pages
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Your Name"
+      comments: true
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
