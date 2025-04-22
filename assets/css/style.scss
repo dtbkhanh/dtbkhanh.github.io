@@ -1,7 +1,5 @@
 /* Custom styles for professional blog appearance */
----
----
-@import "{{ site.theme }}";
+@import "{{ site.theme }}";  // Import the theme CSS
 
 .post-content {
   text-align: justify;
