@@ -40,10 +40,10 @@ I created **4 interactive dashboards in Looker Studio** to uncover actionable in
 ➡️ **[Explore Dashboards](https://lookerstudio.google.com/u/0/reporting/8959b791-5c18-4a12-8986-2f58b882b980/page/eleFF)**
 
 
-<!-- DASHBOARD  -->
+<!------------------------------ DASHBOARDS  ----------------------------------->
 <img src="/assets/images/Screenshot_Acctbl%20Mobile%20App_02.png" alt="User Behavior Dashboard Screenshot" width="800"/>
 
-<!-- PAGE 1  -->
+<!------------------------------ PAGE 1  ----------------------------------->
 <h1 id="1-overview-dashboard">1. Overview Dashboard</h1>
 
 **🎯 Goal:** Provide a high-level snapshot of user growth, conversion trends, and subscription revenue over time.
@@ -70,9 +70,8 @@ I created **4 interactive dashboards in Looker Studio** to uncover actionable in
 - Analyze user segments to determine if trial experiences or onboarding flows contributed to lower paid conversion.
 - Cross-check app store reviews or feedback during this time for additional context.
 
+<!------------------------------ PAGE 2  ----------------------------------->
 <div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
-
-<!-- PAGE 2  -->
 <h1 id="2-user-behavior-analysis">2. User Behavior Analysis</h1>
 
 **🎯 Goal:** Identify high-converting in-app actions and behavioral patterns among different user types.
@@ -133,9 +132,8 @@ Highlights how the first action impacts conversion likelihood.
 - Offer a 14-day trial to users who connect a bank but don’t convert.
 - Send personalized in-app nudges to re-engage users who drop off early in the funnel.
 
+<!------------------------------ PAGE 3  ----------------------------------->
 <div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
-
-<!-- PAGE 3  -->
 <h1 id="3-marketing-performance">3. Marketing Performance</h1>
 
 **🎯 Goal:** Evaluate marketing channels by conversion, spend, and ROI to optimize acquisition strategy.
@@ -201,9 +199,9 @@ Analysis by conversion distribution and Max MRR.
 - **Explore High-Potential:** Monitor and test scaling campaigns with high conversion rates but low volume (e.g., Retargeting, Organic).
 - **Drive Faster Conversion:** Implement limited-time promocodes to encourage quicker subscriptions.
 
-<div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
+<!------------------------------ PAGE 4  ----------------------------------->
 
-<!-- PAGE 4  -->
+<div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
 <h1 id="4-user-segmentation--targeting">4. User Segmentation & Targeting</h1>
 
 **🎯 Goal:** Segment users by behavior, profession, and region to personalize marketing and onboarding.
@@ -280,9 +278,8 @@ Analysis by conversion distribution and Max MRR.
     - **Qualitative Feedback:** Actively collect and analyze user feedback to inform UX improvements and refine marketing messaging.
     - **Comprehensive Data Analysis:** Conduct deeper segmentation analysis across profession, VAT type, region, and account status to uncover further opportunities for targeted strategies.
 
-<div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
-
 <!-- FINAL  -->
+<div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
 <h1 id="-final-takeaways">📌 Final Takeaways</h1>
 
 This case study showed how integrating behavioral analytics and marketing performance can drive better user acquisition and retention. The combination of funnel tracking, feature analysis, and campaign ROI offers a blueprint for optimizing app growth strategies. Across all four dashboards, we uncovered key insights:  
