@@ -4,7 +4,7 @@ Welcome to my personal website repository! This site showcases my work and insig
 
 ## 🚀 Explore the Live Site
 
-You can visit my website live at: [https://dtbkhanh.github.io/](https://dtbkhanh.github.io/)
+You can visit my website live at: [https://dtbkhanh.github.io](https://dtbkhanh.github.io)
 
 ## 📂 Repository Structure
 
