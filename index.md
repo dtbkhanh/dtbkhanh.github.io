@@ -2,7 +2,7 @@
 layout: default
 title: Home
 ---
-
+<!-- Introduction -->
 <div align="center">
   <img src="/assets/images/github_profilepic.png" alt="Khanh's profile photo" width="120" style="border-radius: 100%;"/>
   <h1>Hi, I’m Khanh!</h1>
@@ -10,8 +10,18 @@ title: Home
   <p>Python | SQL | Power BI | Tableau | Looker Studio </p>
 </div>
 
+<!-- Highlight containers -->
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .card-icon i {
+      color: #0077cc;
+      font-size: 1.5rem;
+    }
+    .card-icon i:hover {
+      color: #ff6600;
+    }
+  </style>
 </head>
 
 <div class="card-container">
@@ -116,7 +126,7 @@ title: Home
   {% endif %}
 
 ---
-
+<!-- Let's connect -->
 <div align="center" style="margin-top: 10px;">
   <h2>🤝 Let's Connect 🤝</h2>
   <a href="https://www.linkedin.com/in/dtbkhanh/">
