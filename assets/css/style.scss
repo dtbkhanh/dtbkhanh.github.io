@@ -247,8 +247,29 @@ body {
 
 /* Custom section divider */
 .section-divider {
+  display: block;
   height: 2px;
   background: linear-gradient(to right, transparent, var(--secondary-color), transparent);
   margin: 40px 0;
   border: none;
+  content: '';
+  width: 100%;
+}
+
+/* Alternative version with a pseudo-element for more reliability */
+.section-divider-alt {
+  position: relative;
+  height: 30px;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.section-divider-alt:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--secondary-color), transparent);
 }
