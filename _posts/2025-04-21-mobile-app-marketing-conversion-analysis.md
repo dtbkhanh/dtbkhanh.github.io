@@ -6,15 +6,18 @@ excerpt: "This case study explores how different marketing channels and user beh
 ---
 
 <!-- Table of Contents -->
-<details>
-  <summary><strong>Table of Contents</strong></summary>
-  
-1. [Overview Dashboard](#1-overview)  
-2. [User Behavior Analysis](#2-user-behavior-analysis)  
-3. [Marketing Performance](#3-marketing-performance)  
-4. [User Segmentation & Targeting](#4-user-segmentation--targeting)  
-5. [Final Takeaways](#-final-takeaways)
-</details>
+<div class="toc-container">
+  <details>
+    <summary><strong>Table of Contents</strong></summary>
+    <div markdown="1">
+* [Overview Dashboard](#1-overview-dashboard)
+* [User Behavior Analysis](#2-user-behavior-analysis)
+* [Marketing Performance](#3-marketing-performance)
+* [User Segmentation & Targeting](#4-user-segmentation--targeting)
+* [Final Takeaways](#-final-takeaways)
+    </div>
+  </details>
+</div>
 
 <!-- Intro -->
 ### 📌 Introduction
