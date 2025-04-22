@@ -255,3 +255,15 @@ body {
   content: '';
   width: 100%;
 }
+
+/* Card icons */
+.card-icon i,
+h2 i {
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  margin-right: 0.5em;
+}
+
+.card-icon i:hover {
+  color: var(--accent-color);
+}
