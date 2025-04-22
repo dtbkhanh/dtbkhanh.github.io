@@ -35,7 +35,7 @@ I created **4 interactive dashboards in Looker Studio** to uncover actionable in
 <!------------------------------ DASHBOARDS  ----------------------------------->
 <div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
 
-<div style="text-align: center; font-size: 1.5em;"><h1>📊 Explore Dashboards📊 </h1></div>
+<div style="text-align: center; font-size: 1.2em;"><h1>📊 Explore Dashboards📊 </h1></div>
 <div style="border: 1px solid #ccc; padding: 15px; margin: 20px 0; border-radius: 5px; text-align: center;">
   <strong><a href="https://lookerstudio.google.com/u/0/reporting/8959b791-5c18-4a12-8986-2f58b882b980/page/eleFF" target="_blank" style="text-decoration: none;">➡️ View Live Dashboards ⬅️</a></strong>
 </div>
@@ -239,7 +239,7 @@ Analysis by conversion distribution and Max MRR.
 ### c. Profession-Based Segmentation
 
 - **Artists & Content Creators** are the largest group and generate the highest Max MRR (due to size). However, their conversion rate is not the highest among all professions, indicating an opportunity for improvement. The high MRR is primarily driven by the sheer volume of users in this category.  
-- Disparity Between Volume and Conversion: Notably, the professions with the highest number of users are not necessarily the same as those with the highest conversion rates. This highlights the need for a nuanced approach to targeting.
+- Disparity between Volume and Conversion: Notably, the professions with the highest number of users are not necessarily the same as those with the highest conversion rates. This highlights the need for a nuanced approach to targeting.
 
 ### d. VAT Type Segmentation
 
