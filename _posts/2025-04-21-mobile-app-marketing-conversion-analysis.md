@@ -60,7 +60,7 @@ I created 4 interactive dashboards in Looker Studio to uncover actionable insigh
 
 **🎯 Goal:** Provide a high-level snapshot of user growth, conversion trends, and subscription revenue over time.
 
-<img src="/assets/images/Screenshot_Acctbl%20Mobile%20App_01.png" alt="Overview Dashboard Screenshot" width="800"/>
+<img src="/assets/images/Screenshot_Mobile App_01.png" alt="Overview Dashboard Screenshot" width="800"/>
 
 ### 📊 Key Visualizations
 1. **KPI Cards:** Total users (29.1k), Conversion Rate (15.1%), Total Monthly Recurring Revenue (MRR)
@@ -88,7 +88,7 @@ I created 4 interactive dashboards in Looker Studio to uncover actionable insigh
 
 **🎯 Goal:** Identify high-converting in-app actions and behavioral patterns among different user types.
 
-<img src="/assets/images/Screenshot_Acctbl%20Mobile%20App_02.png" alt="User Behavior Dashboard Screenshot" width="800"/>
+<img src="/assets/images/Screenshot_Mobile App_02.png" alt="User Behavior Dashboard Screenshot" width="800"/>
 
 ### 📊 Key Visualizations
 
@@ -152,7 +152,7 @@ Highlights how the first action impacts conversion likelihood.
 
 ### 📊 Key Visualizations
 
-<img src="/assets/images/Screenshot_Acctbl%20Mobile%20App_03.png" alt="Marketing Performance Dashboard Screenshot" width="800"/>
+<img src="/assets/images/Screenshot_Mobile App_03a.png" alt="Marketing Performance Dashboard Screenshot" width="800"/>
 
 **1. Conversion Speed Breakdown**  
 Among converted users, 10.4% converted immediately — meaning they subscribed on the first or second day of using the app.
@@ -169,7 +169,7 @@ Evaluation by user volume, conversion rate, and maximum MRR:
 
 **6–7. Campaign Performance**  
 Analysis by conversion distribution and Max MRR.  
-<img src="/assets/images/Screenshot_Acctbl%20Mobile%20App_03b.png" alt="Marketing Performance Dashboard Screenshot" width="800"/>
+<img src="/assets/images/Screenshot_Mobile App_03b.png" alt="Marketing Performance Dashboard Screenshot" width="800"/>
 
 > ⚠️ To ensure data accuracy for the campaign analysis, a data cleaning step was performed. The original `campaign` column presented inconsistencies in naming, which were resolved by grouping similar entries into these standardized categories:
 
@@ -185,7 +185,7 @@ Analysis by conversion distribution and Max MRR.
 
 **8–9. Promocode Analysis**
 
-<img src="/assets/images/Screenshot_Acctbl%20Mobile%20App_03c.png" alt="Marketing Performance Dashboard Screenshot" width="800"/>
+<img src="/assets/images/Screenshot_Mobile App_03c.png" alt="Marketing Performance Dashboard Screenshot" width="800"/>
 
 - Promocode usage significantly boosts both conversion rate and conversion speed.
 
@@ -203,13 +203,13 @@ Analysis by conversion distribution and Max MRR.
 
 - **Facebook:** Increase budget to leverage its high conversion rates.
 - **Google:** Optimize for better conversion by focusing on top campaigns (SEA), refining keyword targeting, and improving ad and landing page relevance.
-- **TikTok:** Conduct a focused final experiment targeting age 25-35 with interest in business, finance, and freelance topics, using content addressing their pain points, before considering a budget cut.
+- **TikTok:** Conduct a focused final experiment targeting people aged 25-35 who are interested in business, finance, and freelance topics, using content that addresses their pain points, before considering a budget cut.
 
 **Campaign Tactics:**
 
 - **Prioritize High ROI:** Allocate more budget to campaigns demonstrating strong return (e.g., SEA, Static).
 - **Explore High-Potential:** Monitor and test scaling campaigns with high conversion rates but low volume (e.g., Retargeting, Organic).
-- **Drive Faster Conversion:** Implement limited-time promocodes to encourage quicker subscriptions.
+- **Drive Faster Conversion:** Implement limited-time promos to encourage quicker subscriptions.
 
 <!------------------------------ PAGE 4  ----------------------------------->
 
@@ -220,7 +220,7 @@ Analysis by conversion distribution and Max MRR.
 
 ### a. Regional Segmentation
 
-<img src="/assets/images/Screenshot_Acctbl%20Mobile%20App_04a.png" alt="Users by Region" width="800"/>
+<img src="/assets/images/Screenshot_Mobile App_04a.png" alt="Users by Region" width="800"/>
 
 - **Berlin** stands out as the region with the largest user base, the highest conversion rate, and the highest Max MRR.   
   ➡️ Significantly increase marketing budget for Berlin to capitalize on this high-performing market.  
@@ -240,7 +240,7 @@ Analysis by conversion distribution and Max MRR.
 
 ### b. Users by Self-Employment Status
 
-<img src="/assets/images/Screenshot_Acctbl%20Mobile%20App_04b.png" alt="Self-Employment Status" width="800"/>
+<img src="/assets/images/Screenshot_Mobile App_04b.png" alt="Self-Employment Status" width="800"/>
 
 - The majority identifies as self-employed, confirming strong alignment with the app's intended target audience.  
 - A smaller segment comprises individuals who are not currently self-employed, potentially representing:
@@ -258,7 +258,7 @@ Analysis by conversion distribution and Max MRR.
 
 ### d. VAT Type Segmentation
 
-<img src="/assets/images/Screenshot_Acctbl Mobile App_04c.jpg" alt="VAT and Account Type" width="800"/>
+<img src="/assets/images/Screenshot_Mobile App_04c.png" alt="VAT and Account Type" width="800"/>
 
 - Most users fall under **franchise**, which are small businesses exempt from charging Value Added Tax (VAT).  
 - Users under **subjectToVAT** show higher conversion rates, suggesting that businesses actively involved in VAT processes find greater utility and value in the app's features.
