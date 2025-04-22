@@ -1,13 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>{{ page.title }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-    {{ site.head }}
-  </head>
-  <body>
+---
+layout: default
+---
+
+<article class="post-content">
+  <header>
+    <h1>{{ page.title }}</h1>
+    <p class="post-meta">
+      📅 {{ page.date | date: "%B %d, %Y" }}
+    </p>
+    {% if page.excerpt %}
+      <p class="post-excerpt">{{ page.excerpt }}</p>
+    {% endif %}
+  </header>
+
+  <section>
     {{ content }}
-  </body>
-</html>
+  </section>
+</article>
