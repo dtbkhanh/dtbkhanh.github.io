@@ -10,6 +10,8 @@ title: Home
   <p>Python | SQL | Power BI | Tableau | Looker Studio </p>
 </div>
 
+<div style="height: 2px; background-color: transparent; margin: 40px 0;"></div>
+
 <!-- Highlight containers -->
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -104,7 +106,8 @@ title: Home
   }
 </style>
 
----
+<div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
+
 <!-- Latest Blogs -->
 <div align="center" style="margin-top: 20px;">
   <h2><i class="fas fa-lightbulb"></i> Latest Insights <i class="fas fa-lightbulb"></i></h2>
@@ -117,7 +120,8 @@ title: Home
     <p><small>{{ post.excerpt | strip_html | truncatewords: 20 }}</small></p>
   {% endif %}
 
----
+<div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
+
 <!-- Let's connect -->
 <div align="center" style="margin-top: 10px;">
   <h2><i class="fas fa-handshake"></i> Let's Connect <i class="fas fa-handshake"></i></h2>
