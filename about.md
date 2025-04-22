@@ -7,7 +7,7 @@ title: About Me
   <h1>Hi, I’m Khanh!</h1>
 </div>
 
-<div style="height: 2px; background-color: transparent; margin: 30px 0;"></div>
+<div style="height: 2px; background-color: transparent; margin: 10px 0;"></div>
 
 I'm a data analyst with 3+ years of hands-on experience turning raw data into meaningful insights that drive smarter decisions.
 
