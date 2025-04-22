@@ -1,17 +1,35 @@
----
-layout: default
----
-
-<article class="post-content">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <!-- Header -->
   <header>
-    <h1>{{ page.title }}</h1>
-    <p class="post-meta">📅 {{ page.date | date: "%B %d, %Y" }}</p>
-    {% if page.excerpt %}
-      <p class="post-excerpt">{{ page.excerpt }}</p>
-    {% endif %}
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/blog">Blog</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section>
-    {{ content }}
-  </section>
-</article>
+  <!-- Main Content Area -->
+  <main>
+    <div class="content-wrapper">
+      <!-- This is where the content of the post will be inserted -->
+      {{ content }}
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Your Site</p>
+  </footer>
+</body>
+</html>
