@@ -5,14 +5,15 @@ date: 2025-04-21
 excerpt: "How do user behavior and marketing touchpoints shape conversions in a mobile app for self-employed professionals in Germany?"
 ---
 
+<!-- Table of Contents -->
 <details>
   <summary><strong>Table of Contents</strong></summary>
-
+  
 1. [Overview Dashboard](#1-overview-dashboard)  
 2. [User Behavior Analysis](#2-user-behavior-analysis)  
 3. [Marketing Performance](#3-marketing-performance)  
 4. [User Segmentation & Targeting](#4-user-segmentation--targeting)  
-5. [Final Takeaways](#-final-takeaways)
+5. [Final Takeaways](#final-takeaways)
 
 </details>
 
@@ -40,8 +41,9 @@ I created **4 interactive dashboards in Looker Studio** to uncover actionable in
 ➡️ **[Explore Dashboards](https://lookerstudio.google.com/u/0/reporting/8959b791-5c18-4a12-8986-2f58b882b980/page/eleFF)**
 
 ---
+<!-- DASHBOARDS -->
 
-## 1. Overview Dashboard  
+# 1. Overview Dashboard  
 **🎯 Goal:** Provide a high-level snapshot of user growth, conversion trends, and subscription revenue over time.
 
 <img src="/assets/images/Screenshot_Acctbl%20Mobile%20App_01.png" alt="Overview Dashboard Screenshot" width="800"/>
@@ -68,7 +70,7 @@ I created **4 interactive dashboards in Looker Studio** to uncover actionable in
   
 ---
 
-## 2. User Behavior Analysis
+# 2. User Behavior Analysis
 
 **🎯 Goal:** Identify high-converting in-app actions and behavioral patterns among different user types.
 
@@ -130,7 +132,7 @@ Highlights how the first action impacts conversion likelihood.
 
 ---
 
-## 3. Marketing Performance
+# 3. Marketing Performance
 **🎯 Goal:** Evaluate marketing channels by conversion, spend, and ROI to optimize acquisition strategy.
 
 ### 📊 Key Visualizations
@@ -196,7 +198,7 @@ Analysis by conversion distribution and Max MRR.
 
 ---
 
-## 4. User Segmentation & Targeting 
+# 4. User Segmentation & Targeting 
 **🎯 Goal:** Segment users by behavior, profession, and region to personalize marketing and onboarding.
 
 ### a. Regional Segmentation
@@ -272,7 +274,7 @@ Analysis by conversion distribution and Max MRR.
     - **Comprehensive Data Analysis:** Conduct deeper segmentation analysis across profession, VAT type, region, and account status to uncover further opportunities for targeted strategies.
 
 ---
-## 📌 Final Takeaways
+# 📌 Final Takeaways
 
 This case study showed how integrating behavioral analytics and marketing performance can drive better user acquisition and retention. The combination of funnel tracking, feature analysis, and campaign ROI offers a blueprint for optimizing app growth strategies. Across all four dashboards, we uncovered key insights:  
 - Conversion is driven by meaningful feature use — especially financial setup and AI interaction.  
