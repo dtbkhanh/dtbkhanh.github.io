@@ -207,7 +207,7 @@ Analysis by conversion distribution and Max MRR.
   ➡️ Significantly increase marketing budget for Berlin to capitalize on this high-performing market.  
   ➡️ Conduct a thorough analysis of top-performing campaigns within Berlin to identify successful strategies that can be adapted and scaled to other promising regions.
 
-- **Nordrhein-Westfalen & Bayern** demonstrate strong potential with high Max MRR and robust conversion rates. 
+- **Nordrhein-Westfalen & Bayern** demonstrate strong potential with high Max MRR and robust conversion rates.  
   ➡️ Maintain or slightly increase marketing investment in these regions.  
   ➡️ Implement A/B testing of new and innovative campaign ideas to further optimize performance and unlock additional user acquisition and revenue.
   
