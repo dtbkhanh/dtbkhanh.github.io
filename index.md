@@ -129,7 +129,7 @@ title: Home
 ---
 <!-- Let's connect -->
 <div align="center" style="margin-top: 10px;">
-  <h2><i class="fas fa-handshake"></i> Let's Connect <i class="fas fa-handshake"></h2>
+  <h2><i class="fas fa-handshake"></i> Let's Connect <i class="fas fa-handshake"></i></h2>
   <a href="https://www.linkedin.com/in/dtbkhanh/">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
   </a>
