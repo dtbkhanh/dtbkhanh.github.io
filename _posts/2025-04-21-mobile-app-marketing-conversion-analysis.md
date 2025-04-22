@@ -9,15 +9,15 @@ excerpt: "How do user behavior and marketing touchpoints shape conversions in a 
 <details>
   <summary><strong>Table of Contents</strong></summary>
   
-1. [Overview Dashboard](#1-overview-dashboard)  
-2. [User Behavior Analysis](#2-user-behavior-analysis)  
-3. [Marketing Performance](#3-marketing-performance)  
-4. [User Segmentation & Targeting](#4-user-segmentation--targeting)  
+1. [Overview Dashboard](#overview-dashboard)  
+2. [User Behavior Analysis](#user-behavior-analysis)  
+3. [Marketing Performance](#marketing-performance)  
+4. [User Segmentation & Targeting](#user-segmentation-targeting)  
 5. [Final Takeaways](#final-takeaways)
 
 </details>
 
-### 📌 Overview
+### 📌 Introduction
 
 How do user behavior and marketing touchpoints shape conversions in a mobile app for self-employed professionals in Germany?
 
