@@ -32,13 +32,6 @@ minima:
     linkedin: dtbkhanh
     # twitter: your-twitter-username
 
-# Google Analytics
-google_analytics: "" # Replace with your tracking ID if you have one
-
-# Disqus comments (optional)
-# disqus:
-#   shortname: your-disqus-shortname
-
 # Additional customization
 show_excerpts: true
 excerpt_separator: <!--more-->
