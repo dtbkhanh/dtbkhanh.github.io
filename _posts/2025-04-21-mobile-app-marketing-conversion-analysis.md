@@ -35,7 +35,7 @@ I created **4 interactive dashboards in Looker Studio** to uncover actionable in
 <!------------------------------ DASHBOARDS  ----------------------------------->
 <div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
 
-<div style="text-align: center; font-size: 2em;"><h1>📊 Explore Dashboards📊 </h1></div>
+<div style="text-align: center; font-size: 1.5em;"><h1>📊 Explore Dashboards📊 </h1></div>
 <div style="border: 1px solid #ccc; padding: 15px; margin: 20px 0; border-radius: 5px; text-align: center;">
   <strong><a href="https://lookerstudio.google.com/u/0/reporting/8959b791-5c18-4a12-8986-2f58b882b980/page/eleFF" target="_blank" style="text-decoration: none;">➡️ View Live Dashboards ⬅️</a></strong>
 </div>
@@ -223,11 +223,10 @@ Analysis by conversion distribution and Max MRR.
   ➡️ Based on the research findings, consider strategically reducing ad spend in this region or pivoting to highly targeted, experimental campaigns if a viable path to improvement is identified.
 
 
-### b. User Type & Self-Employment
+### b. *Users by Self-Employment Status
 
 <img src="/assets/images/Screenshot_Acctbl%20Mobile%20App_04b.png" alt="Self-Employment Status" width="800"/>
 
-**Users by Self-Employment Status**  
 - The majority identifies as self-employed, confirming strong alignment with the app's intended target audience.  
 - A smaller segment comprises individuals who are not currently self-employed, potentially representing:
   - Users exploring the app out of general interest.
@@ -239,7 +238,7 @@ Analysis by conversion distribution and Max MRR.
 
 ### c. Profession-Based Segmentation
 
-- **Artists & Content Creators** are the largest group and generate the highest Max MRR (due to size). However, their conversion rate is not the highest among all professions, indicating an opportunity for improvement. The high MRR is primarily driven by the sheer volume of users in this category.  
+- Artists & Content Creators are the largest group and generate the highest Max MRR (due to size). However, their conversion rate is not the highest among all professions, indicating an opportunity for improvement. The high MRR is primarily driven by the sheer volume of users in this category.  
 - Disparity Between Volume and Conversion: Notably, the professions with the highest number of users are not necessarily the same as those with the highest conversion rates. This highlights the need for a nuanced approach to targeting.
 
 ### d. VAT Type Segmentation
@@ -257,23 +256,23 @@ Analysis by conversion distribution and Max MRR.
 
 ### ✅ Recommendations
 
-- **Region-Specific Marketing:**
-    - **High-Performing Regions (e.g., Berlin, NRW):** Develop and implement tailored campaigns to capitalize on existing strong performance.
-    - **Under-Tapped Regions (e.g., Hamburg):** Test localized messaging and targeted campaigns to explore and unlock potential user growth.
+- Region-Specific Marketing:
+    - High-Performing Regions (e.g., Berlin, NRW): Develop and implement tailored campaigns to capitalize on existing strong performance.
+    - Under-Tapped Regions (e.g., Hamburg): Test localized messaging and targeted campaigns to explore and unlock potential user growth.
 
-- **Profession-Based Optimization:**
-    - **High-Converting Professions:** Strategically allocate marketing budget to target these segments with tailored campaigns focused on their specific needs and pain points to maximize ROI.
-    - **High-Volume Professions (e.g., Artists & Content Creators):** Implement a nurturing strategy involving identifying conversion blockers and running targeted A/B tests with profession-specific messaging and landing pages.
+- Profession-Based Optimization:
+    - High-Converting Professions: Strategically allocate marketing budget to target these segments with tailored campaigns focused on their specific needs and pain points to maximize ROI.
+    - High-Volume Professions (e.g., Artists & Content Creators): Implement a nurturing strategy involving identifying conversion blockers and running targeted A/B tests with profession-specific messaging and landing pages.
 
-- **Targeting VAT-Registered Businesses:** Develop and deploy marketing messages that directly address the needs of **subjectToVAT** users, emphasizing features like streamlined VAT invoicing, comprehensive reporting, and efficient management.
+- Targeting VAT-Registered Businesses: Develop and deploy marketing messages that directly address the needs of **subjectToVAT** users, emphasizing features like streamlined VAT invoicing, comprehensive reporting, and efficient management.
 
-- **Engaging Dual-Income Users:** Prioritize marketing efforts towards dual-income users by highlighting how the app simplifies the complexities of managing multiple income streams.
+- Engaging Dual-Income Users: Prioritize marketing efforts towards dual-income users by highlighting how the app simplifies the complexities of managing multiple income streams.
 
-- **Re-engagement of Active but Unsubscribed Users:** Implement segmented re-engagement campaigns targeting users who have shown engagement (e.g., bank connections, feature usage) but haven't converted to paid plans.
+- Re-engagement of Active but Unsubscribed Users: Implement segmented re-engagement campaigns targeting users who have shown engagement (e.g., bank connections, feature usage) but haven't converted to paid plans.
 
 - **Deepen User Understanding:**
-    - **Qualitative Feedback:** Actively collect and analyze user feedback to inform UX improvements and refine marketing messaging.
-    - **Comprehensive Data Analysis:** Conduct deeper segmentation analysis across profession, VAT type, region, and account status to uncover further opportunities for targeted strategies.
+    - Qualitative Feedback: Actively collect and analyze user feedback to inform UX improvements and refine marketing messaging.
+    - Comprehensive Data Analysis: Conduct deeper segmentation analysis across profession, VAT type, region, and account status to uncover further opportunities for targeted strategies.
 
 <!-- FINAL  -->
 <div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
