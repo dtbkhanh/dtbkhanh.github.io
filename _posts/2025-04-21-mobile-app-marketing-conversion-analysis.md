@@ -9,7 +9,7 @@ excerpt: "This case study explores how different marketing channels and user beh
 <details>
   <summary><strong>Table of Contents</strong></summary>
   
-1. [Overview Dashboard](#1-overview-dashboard)  
+1. [Overview Dashboard](#1-overview)  
 2. [User Behavior Analysis](#2-user-behavior-analysis)  
 3. [Marketing Performance](#3-marketing-performance)  
 4. [User Segmentation & Targeting](#4-user-segmentation--targeting)  
@@ -35,16 +35,18 @@ I created **4 interactive dashboards in Looker Studio** to uncover actionable in
 - **Visualization:** Looker Studio (Google Data Studio)
 - **Data:** Internal app analytics (events, subscriptions, acquisition)
 
-### 📊 Live Dashboards
-
-➡️ **[Explore Dashboards](https://lookerstudio.google.com/u/0/reporting/8959b791-5c18-4a12-8986-2f58b882b980/page/eleFF)**
-
 
 <!------------------------------ DASHBOARDS  ----------------------------------->
 <div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
+<h1>📊 Explore Dashboards📊 </h1>
+<div style="text-align: center;">
+  <span>➡️</span> 
+  <strong><a href="https://lookerstudio.google.com/u/0/reporting/8959b791-5c18-4a12-8986-2f58b882b980/page/eleFF" target="_blank">Live Dashboards</a></strong>
+  <span>⬅️</span>
+</div>
 
 <!------------------------------ PAGE 1  ----------------------------------->
-<h1 id="1-overview-dashboard">1. Overview Dashboard</h1>
+<h1 id="1-overview">1. Overview</h1>
 
 **🎯 Goal:** Provide a high-level snapshot of user growth, conversion trends, and subscription revenue over time.
 
