@@ -69,7 +69,7 @@ I created 4 interactive dashboards in Looker Studio to uncover actionable insigh
 
 ### 🔍 Insights
 - Steady user growth from 2020 to 2025 indicates increasing brand visibility and app popularity.
-- Paid user breakdown: Among users who converted, this chart shows:
+- Subscriber breakdown: Among users who converted, the "Paid vs. Non-paid Conversion" pie chart shows:
   - *Paid:* Users who subscribed without using a free trial (77.1% of Converted users).
   - *Non-paid:* Users who first tried the app with a free trial and then subscribed (22.9% of Converted users).
 - July – September 2024 shows a noticeable spike in non-paid conversions, raising important questions:
