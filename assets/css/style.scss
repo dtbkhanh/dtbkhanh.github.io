@@ -210,33 +210,6 @@ body {
   color: white;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .card-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .card {
-    width: 90%;
-    max-width: 400px;
-    margin-bottom: 15px;
-  }
-
-  .card-content {
-    height: auto;
-    padding: 20px 15px;
-  }
-
-  .post-list li {
-    padding: 15px;
-  }
-
-  .post-link {
-    font-size: 20px;
-  }
-}
-
 /* About page styling */
 .page-content p {
   text-align: justify;
