@@ -134,44 +134,49 @@ body {
   color: var(--dark-gray);
 }
 
-/* Content styling */
+/* Post content styling */
 .post-content {
   margin-bottom: 30px;
+  text-align: justify; /* Add this for all content */
+}
 
-  h1 {
-    font-size: 2.5em; /* Adjust as needed */
-    border-bottom: 1px solid var(--medium-gray);
-    padding-bottom: 10px;
-    margin-top: 1.5em;
-    color: var(--primary-color);
-  }
+.post-content h1 {
+  font-size: 2.5em;
+  border-bottom: 1px solid var(--medium-gray);
+  padding-bottom: 10px;
+  margin-top: 1.5em;
+  color: var(--primary-color);
+  text-align: left; /* Headers typically look better left-aligned */
+}
 
-  h2, h3, h4 {
-    margin-top: 1.5em;
-    color: var(--primary-color);
-  }
+.post-content h2,
+.post-content h3,
+.post-content h4 {
+  margin-top: 1.5em;
+  color: var(--primary-color);
+  text-align: left;
+}
 
-  h3 {
-    font-size: 1.5em; /* Adjust as needed, smaller than h1 */
-  }
+.post-content h3 {
+  font-size: 1.5em;
+}
 
-  p {
-    margin-bottom: 1.2em;
-    text-align: justify;
-  }
+.post-content p {
+  margin-bottom: 1.2em;
+  text-align: justify; /* Reinforcing justify for paragraphs */
+}
 
-  blockquote {
-    border-left: 4px solid var(--secondary-color);
-    padding-left: 15px;
-    color: var(--dark-gray);
-    font-style: italic;
-  }
+.post-content blockquote {
+  border-left: 4px solid var(--secondary-color);
+  padding-left: 15px;
+  color: var(--dark-gray);
+  font-style: italic;
+}
 
-  img {
-    max-width: 100%;
-    border-radius: 5px;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
-  }
+.post-content img {
+  max-width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer styling */
