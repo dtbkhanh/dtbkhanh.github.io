@@ -1,7 +1,8 @@
-/* Custom styles for blog posts */
-.post-content {
+---
+---
+
+@import "minima";
+
+.post-content p {
   text-align: justify;
-  padding: 2rem;
-  background-color: white;
-  border-radius: 8px;
 }
