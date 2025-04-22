@@ -5,20 +5,6 @@ date: 2025-04-21
 excerpt: "This case study explores how different marketing channels and user behaviors influence conversion rates for a mobile app targeting self-employed professionals in Germany."
 ---
 
-<!-- Table of Contents -->
-<div class="toc-container">
-  <details>
-    <summary><strong>Table of Contents</strong></summary>
-    <div markdown="1">
-* [Overview Dashboard](#1-overview-dashboard)
-* [User Behavior Analysis](#2-user-behavior-analysis)
-* [Marketing Performance](#3-marketing-performance)
-* [User Segmentation & Targeting](#4-user-segmentation--targeting)
-* [Final Takeaways](#-final-takeaways)
-    </div>
-  </details>
-</div>
-
 <!-- Intro -->
 ### 📌 Introduction
 
