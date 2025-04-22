@@ -13,7 +13,7 @@ To me, data isn’t just numbers—it’s a story waiting to be uncovered. I've 
 
 Fueled by curiosity and a love for continuous learning, I'm diving deeper into Machine Learning and advanced data storytelling techniques. Whether in a fast-paced startup or a global enterprise, I bring analytical rigor, creativity, and a collaborative mindset to every team I join.
 
-<div class="section-divider-alt"></div>
+<div style="height: 2px; background-color: blue; margin: 40px 0;"></div>
 
 ## 📊 What I Do
 
