@@ -10,25 +10,28 @@ title: Home
   <p>Python | SQL | Power BI | Tableau | Looker Studio </p>
 </div>
 
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
 
 <div class="card-container">
   <a href="/about" class="card">
     <div class="card-content">
-      <span class="card-icon">👤</span>
+      <span class="card-icon"><i class="fas fa-user"></i></span>
       <strong>About Me</strong>
       <span class="card-description">Learn about my background and journey.</span>
     </div>
   </a>
   <a href="/posts/" class="card">
     <div class="card-content">
-      <span class="card-icon">📝</span>
+      <span class="card-icon"><i class="fas fa-pen-nib"></i></span>
       <strong>Blog Posts</strong>
       <span class="card-description">Dive into data-driven case studies and stories.</span>
     </div>
   </a>
   <a href="https://github.com/dtbkhanh/Data-Analytics-and-Reports" class="card">
     <div class="card-content">
-      <span class="card-icon">📊</span>
+      <span class="card-icon"><i class="fas fa-chart-bar"></i></span>
       <strong>Dashboards & Reports</strong>
       <span class="card-description">Explore my analytics projects on GitHub.</span>
     </div>
