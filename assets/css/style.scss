@@ -252,16 +252,3 @@ body {
   margin: 40px 0;
   border: none;
 }
-
-/* Add responsiveness */
-@media (max-width: 768px) {
-  .contact-links {
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .social-link {
-    width: 100%;
-    justify-content: center;
-  }
-}
