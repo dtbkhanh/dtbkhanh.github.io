@@ -6,7 +6,7 @@ excerpt: "This case study explores how different marketing channels and user beh
 ---
 
 **Table of Contents**
-- [1. Overview Dashboard](#1-overview-dashboard)
+- [1. Overview](#1-overview)
 - [2. User Behavior Analysis](#2-user-behavior-analysis)
 - [3. Marketing Performance](#3-marketing-performance)
 - [4. User Segmentation & Targeting](#4-user-segmentation--targeting)
@@ -28,7 +28,7 @@ I created **4 interactive dashboards in Looker Studio** to uncover actionable in
 ### 🔧 Tools & Methods
 
 - **Data Preparation:** Python ➡️ **[View Code](https://github.com/dtbkhanh/Data-Analytics-and-Reports/blob/7da10cc3356b97b4d1f8d75133a124ccf609ac1f/Jupyter%20Notebooks/05.%20Mobile%20App%20Marketing%20%26%20Conversion%20Analysis.ipynb)**
-- **Visualization:** Looker Studio (Google Data Studio) ➡️ **[View Live Dashboards](https://lookerstudio.google.com/u/0/reporting/8959b791-5c18-4a12-8986-2f58b882b980/page/eleFF)**
+- **Visualization:** Looker Studio (Google Data Studio)
 - **Data:** Internal app analytics (events, subscriptions, acquisition)
 
 
@@ -36,11 +36,13 @@ I created **4 interactive dashboards in Looker Studio** to uncover actionable in
 <div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
 
 <div style="text-align: center;"><h1>📊 Explore Dashboards📊 </h1></div>
-<div style="text-align: center;">
-  <span>➡️</span> 
-  <strong><a href="https://lookerstudio.google.com/u/0/reporting/8959b791-5c18-4a12-8986-2f58b882b980/page/eleFF" target="_blank">Live Dashboards</a></strong>
+<div style="text-align: center; margin: 20px 0;">
+  <span>➡️</span>
+  <strong><a href="https://lookerstudio.google.com/u/0/reporting/8959b791-5c18-4a12-8986-2f58b882b980/page/eleFF" target="_blank">Explore the Live Dashboards</a></strong>
   <span>⬅️</span>
 </div>
+
+<div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
 
 <!------------------------------ PAGE 1  ----------------------------------->
 <h1 id="1-overview">1. Overview</h1>
@@ -279,7 +281,7 @@ Analysis by conversion distribution and Max MRR.
 
 <!-- FINAL  -->
 <div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
-<h1 id="-final-takeaways">📌 Final Takeaways</h1>
+<h1 id="final-takeaways">📌 Final Takeaways</h1>
 
 This case study showed how integrating behavioral analytics and marketing performance can drive better user acquisition and retention. The combination of funnel tracking, feature analysis, and campaign ROI offers a blueprint for optimizing app growth strategies. Across all four dashboards, we uncovered key insights:  
 - Conversion is driven by meaningful feature use — especially financial setup and AI interaction.  
