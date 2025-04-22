@@ -152,6 +152,7 @@ body {
 
 .post-content p {
   margin-bottom: 1.2em;
+  text-align: justify; 
 }
 
 .post-content blockquote {
@@ -269,47 +270,56 @@ h2 i {
 }
 
 /* Table of Contents styling */
-details {
+.toc-container {
+  margin-bottom: 30px;
+}
+
+.toc-container details {
   border: 1px solid var(--medium-gray);
   border-radius: 5px;
   padding: 15px;
-  margin-bottom: 30px;
   background-color: var(--light-gray);
   transition: all 0.3s ease;
 }
 
-details[open] {
+.toc-container details[open] {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
-details summary {
+.toc-container summary {
   cursor: pointer;
   padding: 5px 0;
   font-weight: 600;
   color: var(--primary-color);
+  outline: none;
 }
 
-details summary:hover {
+.toc-container summary:hover {
   color: var(--secondary-color);
 }
 
-details ol {
+/* This is critical for proper Markdown processing inside HTML */
+.toc-container div[markdown="1"] {
   margin-top: 15px;
+}
+
+.toc-container ul, 
+.toc-container ol {
   margin-bottom: 0;
   padding-left: 25px;
 }
 
-details ol li {
+.toc-container li {
   margin-bottom: 8px;
 }
 
-details ol li a {
+.toc-container a {
   color: var(--primary-color);
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
-details ol li a:hover {
+.toc-container a:hover {
   color: var(--secondary-color);
   text-decoration: underline;
 }
