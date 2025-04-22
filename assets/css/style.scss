@@ -267,3 +267,49 @@ h2 i {
 .card-icon i:hover {
   color: var(--accent-color);
 }
+
+/* Table of Contents styling */
+details {
+  border: 1px solid var(--medium-gray);
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 30px;
+  background-color: var(--light-gray);
+  transition: all 0.3s ease;
+}
+
+details[open] {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+details summary {
+  cursor: pointer;
+  padding: 5px 0;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+details summary:hover {
+  color: var(--secondary-color);
+}
+
+details ol {
+  margin-top: 15px;
+  margin-bottom: 0;
+  padding-left: 25px;
+}
+
+details ol li {
+  margin-bottom: 8px;
+}
+
+details ol li a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+details ol li a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
