@@ -9,11 +9,17 @@ title: About Me
 
 <div style="height: 2px; background-color: transparent; margin: 10px 0;"></div>
 
-I'm a data analyst with 3+ years of hands-on experience turning raw data into meaningful insights that drive smarter decisions.
+<p style="text-align: justify;">
+  I'm a data analyst with 3+ years of hands-on experience turning raw data into meaningful insights that drive smarter decisions.
+</p>
 
-To me, data isn’t just numbers—it’s a story waiting to be uncovered. I've worked in financial services and business consulting, collaborating with experts and delivering impact through data processing, analytics, and visualization. 
+<p style="text-align: justify;">
+  To me, data isn’t just numbers—it’s a story waiting to be uncovered. I've worked in financial services and business consulting, collaborating with experts and delivering impact through data processing, analytics, and visualization.
+</p>
 
-Fueled by curiosity and a love for continuous learning, I'm diving deeper into Machine Learning and advanced data storytelling techniques. Whether in a fast-paced startup or a global enterprise, I bring analytical rigor, creativity, and a collaborative mindset to every team I join.
+<p style="text-align: justify;">
+  Fueled by curiosity and a love for continuous learning, I'm diving deeper into Machine Learning and advanced data storytelling techniques. Whether in a fast-paced startup or a global enterprise, I bring analytical rigor, creativity, and a collaborative mindset to every team I join.
+</p>
 
 <div style="height: 2px; background-color: lightgray; margin: 30px 0;"></div>
 
