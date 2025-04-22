@@ -43,7 +43,7 @@ Fueled by curiosity and a love for continuous learning, I'm diving deeper into M
 - 📸 **Photography** — capturing landscapes and everyday moments  
 - 🌍 **Traveling** — always curious to discover new places and cultures  
 
-<div class="section-divider"></div>
+<div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
 
 Let’s connect and explore the stories data has to tell!
 
