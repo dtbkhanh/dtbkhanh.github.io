@@ -64,21 +64,23 @@ I created 4 interactive dashboards in Looker Studio to uncover actionable insigh
 
 ### 📊 Key Visualizations
 1. **KPI Cards:** Total users (29.1k), Conversion Rate (15.1%), Total Monthly Recurring Revenue (MRR)
-2. **Pie Charts:** Conversion Status Breakdown (Free vs. Paid), Paid vs. Non-paid Conversion
+2. **Pie Charts:** Conversion Status Breakdown (Subscribers vs. Non-subscibers), Paid vs. Non-paid Conversion (among Subscribers)
 3. **Line Charts:** Account Creation Timeline, Monthly New Subscribers
 
 ### 🔍 Insights
-- Steady user growth from 2020 to 2025 indicates increasing brand visibility and app popularity.
-- Subscriber breakdown: Among users who converted, the "Paid vs. Non-paid Conversion" pie chart shows:
-  - *Paid:* Users who subscribed without using a free trial (77.1% of Converted users).
-  - *Non-paid:* Users who first tried the app with a free trial and then subscribed (22.9% of Converted users).
-- July – September 2024 shows a noticeable spike in non-paid conversions, raising important questions:
-  - Was there a large-scale marketing campaign that boosted sign-ups but didn’t convert well?
-  - Could a free trial promotion have led to a surge in trial users who didn't upgrade?
-  - Was the audience mismatch? (e.g., students testing features, or users from countries where payment is unsupported)
+- **Overall Conversion Rate opportunity**: A 15.1% overall conversion rate indicates room for improvement.  
+- **Strong user acquisition trend**: The consistent growth in total users from 2020 to 2025 highlights successful brand building and increasing appSteady user growth from 2020 to 2025 indicates increasing brand visibility and app popularity.  
+- **Dominance of Paid Conversions**: The "Paid vs. Non-paid Conversion" pie chart reveals that:  
+  - *Paid:* Users who subscribed without using a free trial (77.1% of Converted users).  
+  - *Non-paid:* Users who first tried the app with a free trial and then subscribed (22.9% of Converted users).  
+- **Significant Spike in trial Conversions**: The "Monthly New Subscribers" chart shows a notable increase in non-paid conversions during July – September 2024.
 
 ### ✅ Recommendations
-- Investigate campaign strategies and audience sources during this spike period.
+- Investigate the strike period (July – September 2024):
+  - *Marketing campaign effectiveness*: Analyze marketing campaign performance during this period. Were there specific campaigns focused on free trials? Evaluate the cost per acquisition (CPA) and conversion rate of these campaigns.
+  - *Free trial promotion analysis*: Review any free trial promotions run during this time. Was the trial duration, features offered, or onboarding process different? Examine the churn rate of users who signed up through this spike.
+  - *Potential audience mismatch*: Investigate user demographics and behavior during this period. Did the spike correlate with sign-ups from specific regions or user segments? Analyze feature usage among these trial users to see if they engaged with key value propositions.
+  - *Technical or billing issues*: Rule out any technical glitches or billing issues that might have temporarily affected direct paid sign-ups or inflated trial sign-ups.
 - Analyze user segments to determine if trial experiences or onboarding flows contributed to lower paid conversion.
 - Cross-check app store reviews or feedback during this time for additional context.
 
@@ -272,12 +274,12 @@ Analysis by conversion distribution and Max MRR.
 ### ✅ Recommendations
 
 - **Region-specific Marketing:**
-    - High-Performing Regions (e.g., Berlin, NRW): Develop and implement tailored campaigns to capitalize on existing strong performance.
-    - Under-Tapped Regions (e.g., Hamburg): Test localized messaging and targeted campaigns to explore and unlock potential user growth.
+    - *High-performing Regions* (e.g., Berlin, NRW): Develop and implement tailored campaigns to capitalize on existing strong performance.
+    - *Under-tapped Regions* (e.g., Hamburg): Test localized messaging and targeted campaigns to explore and unlock potential user growth.
 
 - **Profession-based optimization:**
-    - High-Converting Professions: Strategically allocate marketing budget to target these segments with tailored campaigns focused on their specific needs and pain points to maximize ROI.
-    - High-Volume Professions (e.g., Artists & Content Creators): Implement a nurturing strategy involving identifying conversion blockers and running targeted A/B tests with profession-specific messaging and landing pages.
+    - *High-Converting Professions*: Strategically allocate marketing budget to target these segments with tailored campaigns focused on their specific needs and pain points to maximize ROI.
+    - *High-Volume Professions* (e.g., Artists & Content Creators): Implement a nurturing strategy involving identifying conversion blockers and running targeted A/B tests with profession-specific messaging and landing pages.
 
 - **Targeting VAT-registered Businesses:** Develop and deploy marketing messages that directly address the needs of **subjectToVAT** users, emphasizing features like streamlined VAT invoicing, comprehensive reporting, and efficient management.
 
@@ -286,8 +288,8 @@ Analysis by conversion distribution and Max MRR.
 - **Re-engagement of active but unsubscribed users:** Implement segmented re-engagement campaigns targeting users who have shown engagement (e.g., bank connections, feature usage) but haven't converted to paid plans.
 
 - **Deepen user understanding:**
-    - Qualitative Feedback: Actively collect and analyze user feedback to inform UX improvements and refine marketing messaging.
-    - Comprehensive Data Analysis: Conduct deeper segmentation analysis across profession, VAT type, region, and account status to uncover further opportunities for targeted strategies.
+    - *Qualitative Feedback*: Actively collect and analyze user feedback to inform UX improvements and refine marketing messaging.
+    - *Comprehensive Data Analysis*: Conduct deeper segmentation analysis across profession, VAT type, region, and account status to uncover further opportunities for targeted strategies.
 
 <!-- FINAL  -->
 <div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
