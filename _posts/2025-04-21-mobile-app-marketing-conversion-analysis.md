@@ -69,7 +69,7 @@ I created 4 interactive dashboards in Looker Studio to uncover actionable insigh
 
 ### 🔍 Insights
 - **Overall Conversion Rate opportunity**: A 15.1% overall conversion rate indicates room for improvement.  
-- **Strong user acquisition trend**: The consistent growth in total users from 2020 to 2025 highlights successful brand building and increasing appSteady user growth from 2020 to 2025 indicates increasing brand visibility and app popularity.  
+- **Strong user acquisition trend**: The consistent growth in total users from 2020 to 2025 highlights successful brand building and increasing app popularity.  
 - **Dominance of Paid Conversions**: The "Paid vs. Non-paid Conversion" pie chart reveals that:  
   - ***Paid:*** Users who subscribed without using a free trial (77.1% of Converted users).  
   - ***Non-paid:*** Users who first tried the app with a free trial and then subscribed (22.9% of Converted users).  
@@ -77,10 +77,10 @@ I created 4 interactive dashboards in Looker Studio to uncover actionable insigh
 
 ### ✅ Recommendations
 -  Investigate the spike in non-paid conversions during the period of July – September 2024:
-  - *Marketing campaign effectiveness*: Analyze marketing campaign performance during this period. Were there specific campaigns focused on free trials? Evaluate the cost per acquisition (CPA) and conversion rate of these campaigns.
-  - *Free trial promotion analysis*: Review any free trial promotions run during this time. Was the trial duration, features offered, or onboarding process different? Examine the churn rate of users who signed up through this spike.
-  - *Potential audience mismatch*: Investigate user demographics and behavior during this period. Did the spike correlate with sign-ups from specific regions or user segments? Analyze feature usage among these trial users to see if they engaged with key value propositions.
-  - *Technical or billing issues*: Rule out any technical glitches or billing issues that might have temporarily affected direct paid sign-ups or inflated trial sign-ups.
+  -  *Marketing campaign effectiveness*: Analyze marketing campaign performance during this period. Were there specific campaigns focused on free trials? Evaluate the cost per acquisition (CPA) and conversion rate of these campaigns.  
+  - *Free trial promotion analysis*: Review any free trial promotions run during this time. Was the trial duration, features offered, or onboarding process different? Examine the churn rate of users who signed up through this spike.  
+  - *Potential audience mismatch*: Investigate user demographics and behavior during this period. Did the spike correlate with sign-ups from specific regions or user segments? Analyze feature usage among these trial users to see if they engaged with key value propositions.  
+  - *Technical or billing issues*: Rule out any technical glitches or billing issues that might have temporarily affected direct paid sign-ups or inflated trial sign-ups.  
 - Cross-check app store reviews or feedback during this time for additional context.
 
 <!------------------------------ PAGE 2  ----------------------------------->
