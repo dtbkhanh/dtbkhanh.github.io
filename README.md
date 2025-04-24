@@ -12,6 +12,7 @@ This repository contains the following key folders and files:
 
 * **`_posts`**: This directory holds my blog posts, written in Markdown format.  
 * **`assets/images`**: This folder contains images used throughout the website, such as screenshots for blog posts.
+* **`_layouts`**: Contains custom HTML layouts used by Jekyll to render different types of pages (e.g., posts, pages). These define the structure and style of the website's content.
 * **`README.md`**: This file provides an overview of the repository and website.
 * **`_config.yml`**: The main configuration file for Jekyll, the static site generator that builds this website. It controls various settings like theme, site title, and plugins.
 * **`about.md`**: A Markdown file containing information about me, my background, and my interests. Accessible at [https://dtbkhanh.github.io/about/](https://dtbkhanh.github.io/about).
