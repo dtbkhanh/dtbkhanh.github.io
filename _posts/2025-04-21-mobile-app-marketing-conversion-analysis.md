@@ -76,12 +76,11 @@ I created 4 interactive dashboards in Looker Studio to uncover actionable insigh
 - **Significant Spike in trial Conversions**: The "Monthly New Subscribers" chart shows a notable increase in non-paid conversions during July – September 2024.
 
 ### ✅ Recommendations
-- Investigate the strike period (July – September 2024):
+-  Investigate the spike in non-paid conversions during the period of July – September 2024:
   - *Marketing campaign effectiveness*: Analyze marketing campaign performance during this period. Were there specific campaigns focused on free trials? Evaluate the cost per acquisition (CPA) and conversion rate of these campaigns.
   - *Free trial promotion analysis*: Review any free trial promotions run during this time. Was the trial duration, features offered, or onboarding process different? Examine the churn rate of users who signed up through this spike.
   - *Potential audience mismatch*: Investigate user demographics and behavior during this period. Did the spike correlate with sign-ups from specific regions or user segments? Analyze feature usage among these trial users to see if they engaged with key value propositions.
   - *Technical or billing issues*: Rule out any technical glitches or billing issues that might have temporarily affected direct paid sign-ups or inflated trial sign-ups.
-- Analyze user segments to determine if trial experiences or onboarding flows contributed to lower paid conversion.
 - Cross-check app store reviews or feedback during this time for additional context.
 
 <!------------------------------ PAGE 2  ----------------------------------->
