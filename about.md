@@ -14,7 +14,7 @@ title: About Me
 </p>
 
 <p style="text-align: justify;">
-  To me, data isn’t just numbers—it’s a story waiting to be uncovered. I've worked in financial services and business consulting, collaborating with experts and delivering impact through data processing, analytics, and visualization.
+  To me, data isn’t just numbers—it’s a story waiting to be uncovered. Throughout my career, I’ve worked alongside experts in financial services and business consulting, sharpening my skills in data processing, analytics, and visualization.
 </p>
 
 <p style="text-align: justify;">
@@ -34,7 +34,7 @@ title: About Me
 ## 🚀 Currently Exploring
 
 - **Machine Learning** — uncovering deeper patterns and predictive insights  
-- **Advanced visualizations** — crafting compelling, interactive data stories  
+- **Advanced analytics and visualization techniques** — crafting compelling, interactive data stories  
 
 
 ## 💡 Let’s Talk About
@@ -47,7 +47,7 @@ title: About Me
 
 ## 🧑‍💻 Outside of Work
 
-- 🏞️ **Hiking & Camping** — nature helps me recharge  
+- 🏞️ **Hiking & Camping** — exploring nature and staying active
 - 📸 **Photography** — capturing landscapes and everyday moments  
 - 🌍 **Traveling** — always curious to discover new places and cultures  
 
