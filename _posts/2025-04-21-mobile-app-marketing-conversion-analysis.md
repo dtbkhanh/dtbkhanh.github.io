@@ -71,8 +71,8 @@ I created 4 interactive dashboards in Looker Studio to uncover actionable insigh
 - **Overall Conversion Rate opportunity**: A 15.1% overall conversion rate indicates room for improvement.  
 - **Strong user acquisition trend**: The consistent growth in total users from 2020 to 2025 highlights successful brand building and increasing appSteady user growth from 2020 to 2025 indicates increasing brand visibility and app popularity.  
 - **Dominance of Paid Conversions**: The "Paid vs. Non-paid Conversion" pie chart reveals that:  
-  - *Paid:* Users who subscribed without using a free trial (77.1% of Converted users).  
-  - *Non-paid:* Users who first tried the app with a free trial and then subscribed (22.9% of Converted users).  
+  - ***Paid:*** Users who subscribed without using a free trial (77.1% of Converted users).  
+  - ***Non-paid:*** Users who first tried the app with a free trial and then subscribed (22.9% of Converted users).  
 - **Significant Spike in trial Conversions**: The "Monthly New Subscribers" chart shows a notable increase in non-paid conversions during July – September 2024.
 
 ### ✅ Recommendations
@@ -256,7 +256,7 @@ Analysis by conversion distribution and Max MRR.
 ### c. Profession-Based Segmentation
 
 - **Artists & Content Creators** are the largest group and generate the highest Max MRR (due to size). However, their conversion rate is not the highest among all professions, indicating an opportunity for improvement. The high MRR is primarily driven by the sheer volume of users in this category.  
-- Disparity between Volume and Conversion: Notably, the professions with the highest number of users are not necessarily the same as those with the highest conversion rates. This highlights the need for a nuanced approach to targeting.
+- **Disparity between Volume and Conversion**: Notably, the professions with the highest number of users are not necessarily the same as those with the highest conversion rates. This highlights the need for a nuanced approach to targeting.
 
 ### d. VAT Type Segmentation
 
