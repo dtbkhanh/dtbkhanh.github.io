@@ -3,7 +3,7 @@ layout: post
 title: "Case Study: Mobile App Marketing & Conversion Analysis"
 date: 2025-04-21
 excerpt: "This case study explores how different marketing channels and user behaviors influence conversion rates for a mobile app targeting self-employed professionals in Germany."
-cover: /assets/images/Screenshot_Mobile App_01.png
+cover: /assets/images/Cover_MobileApp Marketing.png
 ---
 
 **Table of Contents**
