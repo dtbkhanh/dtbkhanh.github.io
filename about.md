@@ -2,13 +2,57 @@
 layout: default
 title: About Me
 ---
-<div align="center">
-  <img src="/assets/images/github_profilepic.png" alt="Khanh's profile photo" width="120" style="border-radius: 100%;"/>
-  <h1>Hi, I’m Khanh!</h1>
+
+<!-- About Me Introduction -->
+<style>
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.about-image {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-title {
+  font-size: 2.4em;
+  font-weight: bold;
+  color: #333;
+}
+
+@media (max-width: 600px) {
+  .about-title {
+    font-size: 2em;
+  }
+}
+</style>
+
+<div class="about-container">
+  <div class="about-image">
+    <img src="/assets/images/github_profilepic.png" alt="Khanh's profile photo">
+  </div>
+  <div class="about-title">Hi, I’m Khanh!</div>
 </div>
 
-<div style="height: 2px; background-color: transparent; margin: 10px 0;"></div>
+<div style="height: 2px; background-color: transparent; margin: 40px 0;"></div>
 
+<!-------------------------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------------------------->
 <p style="text-align: justify;">
   I'm a data analyst with 3+ years of hands-on experience turning raw data into meaningful insights that drive smarter decisions.
 </p>
