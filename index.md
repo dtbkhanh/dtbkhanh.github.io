@@ -2,17 +2,81 @@
 layout: default
 title: Home
 ---
-<!-- Introduction -->
-<div align="center">
-  <img src="/assets/images/github_profilepic.png" alt="Khanh's profile photo" width="120" style="border-radius: 100%;"/>
-  <h1>Hi, I’m Khanh!</h1>
-  <p><em>Data Analytics Specialist</em></p>
-  <p>Python | SQL | Power BI | Tableau | Looker Studio </p>
+<!-------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------ Introduction ------------------------------------------------------>
+<!-------------------------------------------------------------------------------------------------------------------------->
+<style>
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.intro-image {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.intro-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.intro-title {
+  font-size: 2.4em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.intro-subtitle {
+  font-size: 1.5em;
+  font-style: italic;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.intro-skills {
+  font-size: 1em;
+  color: #444;
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  .intro-title {
+    font-size: 2em;
+  }
+  .intro-subtitle {
+    font-size: 1.2em;
+  }
+}
+</style>
+
+<div class="intro-container">
+  <div class="intro-image">
+    <img src="/assets/images/github_profilepic.png" alt="Khanh's profile photo">
+  </div>
+  <div class="intro-title">Hi, I’m Khanh!</div>
+  <div class="intro-subtitle">Data Analytics Specialist</div>
+  <div class="intro-skills">
+    Python &nbsp;|&nbsp; SQL &nbsp;|&nbsp; Power BI &nbsp;|&nbsp; Tableau &nbsp;|&nbsp; Looker Studio
+  </div>
 </div>
 
 <div style="height: 2px; background-color: transparent; margin: 40px 0;"></div>
 
-<!-- Highlight containers -->
+<!-------------------------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------- Highlight containers -------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------------------------->
+
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
@@ -108,7 +172,11 @@ title: Home
 
 <div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
 
-<!-- Latest Blogs -->
+
+<!-------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------ Latest Blogs ------------------------------------------------------>
+<!-------------------------------------------------------------------------------------------------------------------------->
+
 <div align="center" style="margin-top: 20px;">
   <h2>LATEST INSIGHTS</h2>
 </div>
@@ -140,7 +208,11 @@ title: Home
 
 <div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
 
-<!-- Let's connect -->
+
+<!-------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------ Let's connect ----------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------------------------->
+
 <div align="center" style="margin-top: 10px;">
   <h2> LET'S CONNECT </h2>
   <a href="https://www.linkedin.com/in/dtbkhanh/">
