@@ -8,23 +8,23 @@ permalink: /posts/
 .posts-grid {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 2rem;
   margin-top: 2rem;
 }
 
 .post-card {
   display: flex;
-  align-items: flex-start;
-  gap: 1rem;
+  align-items: center;
+  gap: 1.5rem;
   border-bottom: 1px solid #e0e0e0;
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
 }
 
 .post-card-image img {
-  width: 120px;
-  height: 80px;
+  width: 220px;
+  height: 140px;
   object-fit: cover;
-  border-radius: 6px;
+  border-radius: 8px;
 }
 
 .post-card-content {
@@ -32,14 +32,15 @@ permalink: /posts/
 }
 
 .post-card-content h3 {
-  margin-top: 0.2rem;
-  margin-bottom: 0.4rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.5rem;
 }
 
 .post-card-content p {
-  margin: 0.2rem 0 0;
-  color: #666;
-  font-size: 0.95rem;
+  margin: 0.3rem 0 0;
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.4;
 }
 </style>
 
