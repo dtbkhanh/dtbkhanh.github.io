@@ -14,21 +14,22 @@ permalink: /posts/
 
 .post-card {
   display: flex;
-  align-items: center;
+  flex-direction: row;
   gap: 1.5rem;
   border-bottom: 1px solid #e0e0e0;
   padding-bottom: 1.5rem;
 }
 
 .post-card-image img {
-  width: 220px;
-  height: 140px;
+  width: 250px;
+  height: auto;
   object-fit: cover;
   border-radius: 8px;
 }
 
 .post-card-content {
   flex: 1;
+  text-align: justify;
 }
 
 .post-card-content h3 {
@@ -37,10 +38,10 @@ permalink: /posts/
 }
 
 .post-card-content p {
-  margin: 0.3rem 0 0;
+  margin: 0.5rem 0 0;
   color: #555;
   font-size: 1rem;
-  line-height: 1.4;
+  line-height: 1.6;
 }
 </style>
 
