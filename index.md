@@ -110,7 +110,7 @@ title: Home
 
 <!-- Latest Blogs -->
 <div align="center" style="margin-top: 20px;">
-  <h2><i class="fas fa-lightbulb"></i> Latest Insights <i class="fas fa-lightbulb"></i></h2>
+  <h2> LATEST INSIGHTS </h2>
 </div>
 
 {% assign post = site.posts.first %}
@@ -124,7 +124,7 @@ title: Home
 
 <!-- Let's connect -->
 <div align="center" style="margin-top: 10px;">
-  <h2><i class="fas fa-handshake"></i> Let's Connect <i class="fas fa-handshake"></i></h2>
+  <h2> LET'S CONNECT </h2>
   <a href="https://www.linkedin.com/in/dtbkhanh/">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
   </a>
