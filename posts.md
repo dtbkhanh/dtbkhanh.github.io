@@ -14,21 +14,27 @@ permalink: /posts/
 
 .post-card {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   gap: 1.5rem;
   border-bottom: 1px solid #e0e0e0;
   padding-bottom: 1.5rem;
 }
 
+.post-card-image {
+  flex: 1 1 300px;
+  max-width: 400px;
+}
+
 .post-card-image img {
-  width: 250px;
+  width: 100%;
   height: auto;
   object-fit: cover;
   border-radius: 8px;
 }
 
 .post-card-content {
-  flex: 1;
+  flex: 2 1 400px;
+  min-width: 280px;
   text-align: justify;
 }
 
@@ -42,6 +48,19 @@ permalink: /posts/
   color: #555;
   font-size: 1rem;
   line-height: 1.6;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .post-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .post-card-content {
+    text-align: justify;
+  }
 }
 </style>
 
@@ -60,14 +79,14 @@ permalink: /posts/
         </div>
         {%- endif -%}
         <div class="post-card-content">
-          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <span class="post-meta">{{ post.date | date: "%B %d, %Y" }}</span>
           <h3>
             <a class="post-link" href="{{ post.url | relative_url }}">
               {{ post.title | escape }}
             </a>
           </h3>
           {%- if site.show_excerpts -%}
-            <p>{{ post.excerpt }}</p>
+            <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
           {%- endif -%}
         </div>
       </div>
