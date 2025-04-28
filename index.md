@@ -116,15 +116,15 @@ title: Home
 {% assign post = site.posts.first %}
 
 {% if post %}
-<div style="display: flex; flex-direction: row; align-items: flex-start; gap: 1.5rem; margin-top: 2rem;">
+<div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 1.5rem; margin-top: 2rem;">
   {% if post.cover %}
-  <div style="flex-shrink: 0;">
+  <div style="flex: 1 1 300px; max-width: 400px; margin: 0 auto;">
     <a href="{{ post.url | relative_url }}">
-      <img src="{{ post.cover | relative_url }}" alt="Cover for {{ post.title }}" style="width: 300px; height: auto; border-radius: 8px; object-fit: cover;">
+      <img src="{{ post.cover | relative_url }}" alt="Cover for {{ post.title }}" style="width: 100%; height: auto; border-radius: 8px; object-fit: cover;">
     </a>
   </div>
   {% endif %}
-  <div style="flex: 1; text-align: justify;">
+  <div style="flex: 2 1 400px; min-width: 280px; text-align: justify; margin: 0 auto;">
     <h3 style="margin-top: 0;">
       <a href="{{ post.url | relative_url }}" style="text-decoration: none; color: inherit;">
         {{ post.title }}
