@@ -110,15 +110,33 @@ title: Home
 
 <!-- Latest Blogs -->
 <div align="center" style="margin-top: 20px;">
-  <h2> LATEST INSIGHTS </h2>
+  <h2>LATEST INSIGHTS</h2>
 </div>
 
 {% assign post = site.posts.first %}
-- **<span style="font-size: 1.2em;">[{{ post.title }}]({{ post.url }})</span>**
-  <br><small>{{ post.date | date: "%B %d, %Y" }}</small>
-  {% if post.excerpt %}
-    <p><small>{{ post.excerpt | strip_html | truncatewords: 20 }}</small></p>
+
+{% if post %}
+<div style="display: flex; flex-direction: row; align-items: flex-start; gap: 1.5rem; margin-top: 2rem;">
+  {% if post.cover %}
+  <div style="flex-shrink: 0;">
+    <a href="{{ post.url | relative_url }}">
+      <img src="{{ post.cover | relative_url }}" alt="Cover for {{ post.title }}" style="width: 300px; height: auto; border-radius: 8px; object-fit: cover;">
+    </a>
+  </div>
   {% endif %}
+  <div style="flex: 1; text-align: justify;">
+    <h3 style="margin-top: 0;">
+      <a href="{{ post.url | relative_url }}" style="text-decoration: none; color: inherit;">
+        {{ post.title }}
+      </a>
+    </h3>
+    <p style="margin: 0; color: gray; font-size: 0.9em;">{{ post.date | date: "%B %d, %Y" }}</p>
+    {% if post.excerpt %}
+      <p style="margin-top: 0.8rem; font-size: 1rem; line-height: 1.6;">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+    {% endif %}
+  </div>
+</div>
+{% endif %}
 
 <div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
 
