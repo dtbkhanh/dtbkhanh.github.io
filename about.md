@@ -56,7 +56,7 @@ title: About Me
 </p>
 
 <p style="text-align: justify;">
-  To me, data isn’t just numbers—it’s a story waiting to be uncovered. Throughout my career, I’ve worked alongside experts in financial services and business consulting, sharpening my skills in data processing, analytics, and visualization.
+  To me, data isn’t just numbers — it’s a story waiting to be uncovered. Throughout my career, I’ve worked alongside experts in financial services and business consulting, sharpening my skills in data processing, analytics, and visualization.
 </p>
 
 <p style="text-align: justify;">
