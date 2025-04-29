@@ -2,7 +2,7 @@
 layout: post
 title: "My Interview Journey with Google"
 date: 2025-04-30
-excerpt: "Interviewing at Google was more than a hiring process — it was a deep reflection on how I think, communicate, and grow under pressure. From technical rounds to behavioral insights, each stage sharpened my skills and left me with lasting clarity about my strengths and goals."
+excerpt: "Interviewing at Google wasn't just about securing a job — it became a journey of self-reflection, testing my ability to think, communicate, and perform under pressure. Every stage, from technical assessments to behavioral discussions, pushed my limits, refining my skills and leaving me with a clearer understanding of my strengths and ambitions."
 cover: /assets/images/Cover_Google Interview.png
 ---
 
