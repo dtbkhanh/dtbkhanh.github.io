@@ -181,30 +181,30 @@ title: Home
   <h2>LATEST INSIGHTS</h2>
 </div>
 
-{% assign post = site.posts.first %}
-
-{% if post %}
 <div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 1.5rem; margin-top: 2rem;">
-  {% if post.cover %}
-  <div style="flex: 1 1 300px; max-width: 400px; margin: 0 auto;">
-    <a href="{{ post.url | relative_url }}">
-      <img src="{{ post.cover | relative_url }}" alt="Cover for {{ post.title }}" style="width: 100%; height: auto; border-radius: 8px; object-fit: cover;">
-    </a>
-  </div>
-  {% endif %}
-  <div style="flex: 2 1 400px; min-width: 280px; text-align: justify; margin: 0 auto;">
-    <h3 style="margin-top: 0;">
-      <a href="{{ post.url | relative_url }}" style="text-decoration: none; color: inherit;">
-        {{ post.title }}
-      </a>
-    </h3>
-    <p style="margin: 0; color: gray; font-size: 0.9em;">{{ post.date | date: "%B %d, %Y" }}</p>
-    {% if post.excerpt %}
-      <p style="margin-top: 0.8rem; font-size: 1rem; line-height: 1.6;">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-    {% endif %}
-  </div>
+  {% assign latest_posts = site.posts limit: 3 %}  <!-- Get the latest 3 posts -->
+
+  {% for post in latest_posts %}
+    <div style="flex: 1 1 300px; max-width: 400px; margin: 0 auto;">
+      {% if post.cover %}
+        <a href="{{ post.url | relative_url }}">
+          <img src="{{ post.cover | relative_url }}" alt="Cover for {{ post.title }}" style="width: 100%; height: auto; border-radius: 8px; object-fit: cover;">
+        </a>
+      {% endif %}
+    </div>
+    <div style="flex: 2 1 400px; min-width: 280px; text-align: justify; margin: 0 auto;">
+      <h3 style="margin-top: 0;">
+        <a href="{{ post.url | relative_url }}" style="text-decoration: none; color: inherit;">
+          {{ post.title }}
+        </a>
+      </h3>
+      <p style="margin: 0; color: gray; font-size: 0.9em;">{{ post.date | date: "%B %d, %Y" }}</p>
+      {% if post.excerpt %}
+        <p style="margin-top: 0.8rem; font-size: 1rem; line-height: 1.6;">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+      {% endif %}
+    </div>
+  {% endfor %}
 </div>
-{% endif %}
 
 <div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
 
