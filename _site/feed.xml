@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-04-29T19:01:12+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Khanh’s Online Journal</title><subtitle>A blog sharing my experiences and insights on work, projects, and data.</subtitle><author><name>Khanh Dang</name></author><entry><title type="html">My Interview Journey with Google</title><link href="http://localhost:4000/2025/04/30/interview-with-google.html" rel="alternate" type="text/html" title="My Interview Journey with Google" /><published>2025-04-30T00:00:00+02:00</published><updated>2025-04-30T00:00:00+02:00</updated><id>http://localhost:4000/2025/04/30/interview-with-google</id><content type="html" xml:base="http://localhost:4000/2025/04/30/interview-with-google.html"><![CDATA[<!-- Intro -->
+
+<p><img src="/assets/images/Cover_Google Interview.png" alt="Interview with Google" width="800" /></p>
+
+<p>A few months ago, I had the opportunity to complete the final round of interviews for an Analytical Consultant position at Google in Germany. It was a meaningful and well-structured four-stage process that followed an initial CV screening.</p>
+
+<p>Interviewing at top-tier tech companies like Google is often seen as both challenging and rewarding. For me, it turned out to be more than just a hiring process—it became a mirror that helped me refine how I present my work, think through problems, and operate under pressure in a virtual setting. Each stage shed light on a different aspect of my skills and prompted me to reflect on how I communicate, stay composed, and adapt in real time.</p>
+
+<div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
+
+<!------------------------------ STAGE 1 ----------------------------------->
+
+<h1 id="round-1">Stage 1: Initial Engagement</h1>
+
+<p>The journey began with an online conversation with a Google HR representative. We discussed how my professional background aligned with the role, my longer-term career aspirations, and my motivation for applying. I also appreciated getting a clearer sense of the team’s expectations and what working at Google might be like.</p>
+
+<p>Soon after, I was invited to proceed to the next stage: a series of three technical interviews, scheduled over three consecutive days. Each session lasted 45 minutes and typically included 4–5 core questions, exploring theoretical understanding, practical applications, and real-world scenarios. Preparing for this stage required focused effort, especially in organizing my experiences into a clear and compelling professional narrative.</p>
+
+<!------------------------------ STAGE 2 ----------------------------------->
+
+<h1 id="round-2">Stage 2: Exploring Technical Foundations</h1>
+
+<p>This stage focused on my domain expertise in Data Analytics, Sales, and Digital Marketing. The interviewer referred to specific points on my CV, leading to an in-depth discussion about a major project I had worked on, followed up with related technical and conceptual questions.</p>
+
+<p>There was also a short SQL assessment — nothing too advanced, but enough to require some solid preparation. Beyond that, I answered scenario-based questions that tested my understanding of Digital Marketing principles and the Online Advertising ecosystem.</p>
+
+<p>What stood out to me was that even seemingly simple questions could feel open-ended. The real challenge wasn’t just answering but organizing my responses with structure and confidence. Clearly framing my thought process often mattered more than aiming for the “perfect” response.</p>
+
+<!------------------------------ STAGE 3 ----------------------------------->
+
+<h1 id="round-3">Stage 3: Case Analysis and Problem-Solving</h1>
+
+<p>This round was designed to assess my analytical thinking and problem-solving in context. After a brief introduction, I was presented with case studies touching on Sales, Online Advertising, and Digital Strategy. Each scenario involved a business challenge and required outlining potential actions and realistic solutions in a structured way.</p>
+
+<p>The cases themselves weren’t unfamiliar, but the expectations were high. The interviewers weren’t just looking for a “correct” answer — they wanted to see how I approached the problem, broke it down, and reasoned through it step by step.</p>
+
+<p>This round also reinforced the importance of understanding industry terms like CTR, CPA, and ROI. Staying calm, thinking aloud, and mapping out a structured response made a big difference. Overall, it became clear that the process of arriving at an answer was just as important as the answer itself.</p>
+
+<!------------------------------ STAGE 4 ----------------------------------->
+
+<h1 id="round-4">Stage 4: Understanding "Googleyness" and Situational Responses</h1>
+
+<p>The final round was focused on behavioral questions and soft skills — essentially, how I handle real-world challenges, from interpersonal issues to high-pressure situations. This stage felt like a test of soft skills, communication style, adaptability, and cultural fit. The questions often involved hypothetical or past work situations. Common themes include navigating interpersonal challenges, resolving conflicts, managing pressure, and responding to setbacks.</p>
+
+<p>I used the STAR method (Situation, Task, Action, Result) to stay organized in my responses, especially when questions came with layered follow-ups. In cases where I hadn’t faced an identical situation, I tried to draw parallels from similar experiences, staying honest and grounded in my responses. Maintaining a composed, positive, and engaged attitude felt most appropriate.</p>
+
+<p>This was the stage where authenticity mattered most. While technical precision was key earlier, here it was about listening, communicating, and building understanding—staying composed and true to my working style helped me navigate it with more ease.</p>
+
+<!------------------------------ EVALUATION ----------------------------------->
+<hr style="width: 40%; border: none; border-top: 1px dashed lightgray; margin: 40px auto;" />
+
+<h1 id="evaluation">🎯 The Evaluation Process</h1>
+
+<p>After the interviews, my performance was evaluated by a hiring committee and benchmarked against internal criteria. These criteria vary by role and seniority level. While overall feedback was positive, my problem-solving depth was assessed as landing between an L3 and L4 level.</p>
+
+<p>Ultimately, I was offered an L3 role—typically aligned with early-career professionals who have a few years of experience. Although the position I had initially applied for was scoped at a more senior level, I appreciated the transparency from the team. They acknowledged my aspirations and shared that they would stay in touch regarding future opportunities that might be a stronger match in terms of level and responsibilities.</p>
+
+<!------------------------------ FINAL  ----------------------------------->
+<div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
+<h1 id="final">📌 Final Thoughts</h1>
+
+<p>This experience has left a lasting impression on me — not just because of the company name, but because of the rigor and intentionality of the process. Each stage challenged a different part of my skill set and helped me see my strengths and blind spots with greater clarity. While the outcome didn’t unfold exactly as I had imagined, I’m grateful for the opportunity and the professional insights gained along the way.</p>
+
+<p>The process reminded me that interviewing isn’t only about receiving an offer — it’s also about learning how we show up, how we grow, and how we move forward with a clearer sense of what we want to build next.</p>]]></content><author><name>Khanh Dang</name></author><summary type="html"><![CDATA[Interviewing at Google was more than just a hiring process — it became a journey of self-reflection, testing my ability to think, communicate, and grow under pressure.]]></summary></entry><entry><title type="html">Case Study: Mobile App Marketing &amp;amp; Conversion Analysis</title><link href="http://localhost:4000/2025/04/21/mobile-app-marketing-conversion-analysis.html" rel="alternate" type="text/html" title="Case Study: Mobile App Marketing &amp;amp; Conversion Analysis" /><published>2025-04-21T00:00:00+02:00</published><updated>2025-04-21T00:00:00+02:00</updated><id>http://localhost:4000/2025/04/21/mobile-app-marketing-conversion-analysis</id><content type="html" xml:base="http://localhost:4000/2025/04/21/mobile-app-marketing-conversion-analysis.html"><![CDATA[<p><strong>Table of Contents</strong></p>
+<ul>
+  <li><a href="#1-overview">1. Overview</a></li>
+  <li><a href="#2-user-behavior-analysis">2. User Behavior Analysis</a></li>
+  <li><a href="#3-marketing-performance">3. Marketing Performance</a></li>
+  <li><a href="#4-user-segmentation--targeting">4. User Segmentation &amp; Targeting</a></li>
+  <li><a href="#final-takeaways">5. Final Takeaways</a></li>
+</ul>
+
+<!-- Intro -->
+<hr style="width: 40%; border: none; border-top: 1px dashed lightgray; margin: 40px auto;" />
+
+<h3 id="-introduction">📌 Introduction</h3>
+
+<p>How do user behavior and marketing touchpoints shape conversions in a mobile app for self-employed professionals in Germany?</p>
+
+<p>This case study explores data from <strong>29.1k users (15.1% conversion)</strong> between 2020 – 2025, with the goal of improving subscription rates and acquisition efficiency.</p>
+
+<p>I created 4 interactive dashboards in Looker Studio to uncover actionable insights:</p>
+<ol>
+  <li><strong>Overview</strong> – Growth, revenue &amp; conversion trends</li>
+  <li><strong>User Behavior Analysis</strong> – In-app actions that drive conversion</li>
+  <li><strong>Marketing Performance</strong> – ROI by channel &amp; campaign</li>
+  <li><strong>User Segmentation &amp; Targeting</strong> – Region &amp; profession-based targeting</li>
+</ol>
+
+<h3 id="-tools--methods">🔧 Tools &amp; Methods</h3>
+
+<ul>
+  <li><strong>Data Preparation:</strong> Python ➡️ <strong><a href="https://github.com/dtbkhanh/Data-Analytics-and-Reports/blob/7da10cc3356b97b4d1f8d75133a124ccf609ac1f/Jupyter%20Notebooks/05.%20Mobile%20App%20Marketing%20%26%20Conversion%20Analysis.ipynb">View Code</a></strong></li>
+  <li><strong>Visualization:</strong> Looker Studio (Google Data Studio)</li>
+  <li><strong>Data:</strong> Internal app analytics (events, subscriptions, acquisition)</li>
+</ul>
+
+<!------------------------------ DASHBOARDS  ----------------------------------->
+<div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
+
+<div style="text-align: center; font-size: 1.3em;"><h1>📊 Explore Dashboards📊 </h1></div>
+
+<div style="border: 1px solid #ccc; padding: 15px; margin: 20px 0; border-radius: 5px; text-align: center; transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;">
+  <strong><a href="https://lookerstudio.google.com/u/0/reporting/8959b791-5c18-4a12-8986-2f58b882b980/page/eleFF" target="_blank" style="text-decoration: none;">➡️ View Live Dashboards ⬅️</a></strong>
+</div>
+
+<script>
+  const dashboardBox = document.querySelector('div[style*="border: 1px solid #ccc"]');
+  if (dashboardBox) {
+    dashboardBox.addEventListener('mouseenter', () => {
+      dashboardBox.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
+      dashboardBox.style.borderColor = '#3498db'; /* Example hover border color */
+    });
+    dashboardBox.addEventListener('mouseleave', () => {
+      dashboardBox.style.boxShadow = 'none';
+      dashboardBox.style.borderColor = '#ccc';
+    });
+  }
+</script>
+
+<!------------------------------ PAGE 1  ----------------------------------->
+<h1 id="1-overview">1. Overview</h1>
+
+<p><strong>🎯 Goal:</strong> Provide a high-level snapshot of user growth, conversion trends, and subscription revenue over time.</p>
+
+<p><img src="/assets/images/Screenshot_Mobile App_01.png" alt="Overview Dashboard Screenshot" width="800" /></p>
+
+<h3 id="-key-visualizations">📊 Key Visualizations</h3>
+<ol>
+  <li><strong>KPI Cards:</strong> Total users (29.1k), Conversion Rate (15.1%), Total Monthly Recurring Revenue (MRR)</li>
+  <li><strong>Pie Charts:</strong> Conversion Status Breakdown (Subscribers vs. Non-subscibers), Paid vs. Non-paid Conversion (among Subscribers)</li>
+  <li><strong>Line Charts:</strong> Account Creation Timeline, Monthly New Subscribers</li>
+</ol>
+
+<h3 id="-insights">🔍 Insights</h3>
+<ul>
+  <li><strong>Overall Conversion Rate opportunity</strong>: A 15.1% overall conversion rate indicates room for improvement.</li>
+  <li><strong>Strong user acquisition trend</strong>: The consistent growth in total users from 2020 to 2025 highlights successful brand building and increasing app popularity.</li>
+  <li><strong>Dominance of Paid Conversions</strong>: The “Paid vs. Non-paid Conversion” pie chart reveals that:
+    <ul>
+      <li><strong><em>Paid:</em></strong> Users who subscribed without using a free trial (77.1% of Converted users).</li>
+      <li><strong><em>Non-paid:</em></strong> Users who first tried the app with a free trial and then subscribed (22.9% of Converted users).</li>
+    </ul>
+  </li>
+  <li><strong>Significant Spike in trial Conversions</strong>: The “Monthly New Subscribers” chart shows a notable increase in non-paid conversions during July – September 2024.</li>
+</ul>
+
+<h3 id="-recommendations">✅ Recommendations</h3>
+<ul>
+  <li>
+    <p>Investigate the spike in non-paid conversions during the period of July – September 2024:</p>
+
+    <ul>
+      <li>
+        <p><strong>Marketing campaign effectiveness</strong>: Analyze marketing campaign performance during this period. Were there specific campaigns focused on free trials? Evaluate the cost per acquisition (CPA) and conversion rate of these campaigns.</p>
+      </li>
+      <li>
+        <p><strong>Free trial promotion analysis</strong>: Review any free trial promotions run during this time. Was the trial duration, features offered, or onboarding process different? Examine the churn rate of users who signed up through this spike.</p>
+      </li>
+      <li>
+        <p><strong>Potential audience mismatch</strong>: Investigate user demographics and behavior during this period. Did the spike correlate with sign-ups from specific regions or user segments? Analyze feature usage among these trial users to see if they engaged with key value propositions.</p>
+      </li>
+      <li>
+        <p><strong>Technical or billing issues</strong>: Rule out any technical glitches or billing issues that might have temporarily affected direct paid sign-ups or inflated trial sign-ups.</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Cross-check app store reviews or feedback during this time for additional context.</p>
+  </li>
+</ul>
+
+<!------------------------------ PAGE 2  ----------------------------------->
+<div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
+<h1 id="2-user-behavior-analysis">2. User Behavior Analysis</h1>
+
+<p><strong>🎯 Goal:</strong> Identify high-converting in-app actions and behavioral patterns among different user types.</p>
+
+<p><img src="/assets/images/Screenshot_Mobile App_02.png" alt="User Behavior Dashboard Screenshot" width="800" /></p>
+
+<h3 id="-key-visualizations-1">📊 Key Visualizations</h3>
+
+<p><strong>1. Engagement Metrics Table</strong></p>
+<ul>
+  <li>Converted users tend to have more sessions and spend more time per session, showing deeper engagement.</li>
+  <li>Non-converted users use the app more frequently (higher average days used) but spend less time overall, likely testing limited features (such as invoice creation or bank connections) that are restricted in the free plan.</li>
+</ul>
+
+<p><strong>2. Feature Usage Funnel</strong></p>
+<ul>
+  <li>Many users begin with basic features like <strong>Create Expense/Invoice</strong> or <strong>Enter Tax Number</strong>.</li>
+  <li>Fewer users proceed to advanced tasks such as <strong>PEPPOL Registration</strong>, <strong>VAT Input</strong>, or <strong>IBAN Setup</strong>.</li>
+  <li>These drop-offs may suggest:
+    <ul>
+      <li>UX friction or complexity</li>
+      <li>Lack of onboarding or tooltips</li>
+      <li>Users feeling overwhelmed with tax-related setup</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>3. Conversion Rate by Feature Used (100% Stacked Bar Chart)</strong></p>
+<ul>
+  <li>Although fewer users use features like <strong>IBAN Setup</strong>, <strong>Verified Bank</strong>, and <strong>PEPPOL Registration</strong>, those who do are far more likely to become paid users.<br />
+→ These actions suggest serious engagement and a high intent to fully use the platform.</li>
+  <li><strong>AI Assistant</strong> has a moderate conversion rate (~71.7%).</li>
+  <li>Frequently used basic features such as <strong>Create Expense</strong>, <strong>Invoice</strong>, or <strong>Other Revenue</strong> have lower conversion rates.<br />
+→ These are often used for quick testing by new or casual users without further exploration.</li>
+</ul>
+
+<p><strong>4. First Feature Used Distribution</strong><br />
+Shows which feature users interacted with first after installing the app.</p>
+
+<ul>
+  <li>Most users start with simpler actions such as <strong>Create Expense</strong> or <strong>Create Invoice</strong>.</li>
+  <li>Fewer users begin with advanced or guided features, which mirrors the behavior seen in the usage funnel.</li>
+</ul>
+
+<p><strong>5. Conversion Rate by First Feature Used</strong><br />
+Highlights how the first action impacts conversion likelihood.</p>
+
+<ul>
+  <li>Users who start with <strong>AI Assistant</strong> have the highest conversion rate (40%), despite being a smaller group.</li>
+  <li>Users who start with simpler features tend to explore less, leading to lower conversion.<br />
+→ When users take the time to explore the app fully and engage with its features, they have a higher chance of becoming paying subscribers.</li>
+</ul>
+
+<h3 id="-insights-1">🔍 Insights</h3>
+
+<ul>
+  <li>Early drop-offs in the usage funnel suggest onboarding friction.</li>
+  <li>Users who adopt financial tools or AI early are more likely to convert.</li>
+  <li>Conversion is influenced not only by feature use, but by the order and timing of use.</li>
+</ul>
+
+<h3 id="-recommendations-1">✅ Recommendations</h3>
+
+<p><strong>Onboarding Improvements</strong></p>
+<ul>
+  <li>Add tooltips and onboarding prompts for advanced features.</li>
+  <li>Guide users to the next helpful action after they perform a basic action. For example, if they create an invoice, suggest connecting their bank account.</li>
+</ul>
+
+<p><strong>AI Assistant Optimization</strong></p>
+<ul>
+  <li>Introduce a required (but skippable) first interaction with the AI Assistant.</li>
+  <li>Use the Assistant to guide users through onboarding (e.g., suggesting VAT input after tax number entry).</li>
+</ul>
+
+<p><strong>Incentives and Retention</strong></p>
+<ul>
+  <li>Offer a 14-day trial to users who connect a bank but don’t convert.</li>
+  <li>Send personalized in-app nudges to re-engage users who drop off early in the funnel.</li>
+</ul>
+
+<!------------------------------ PAGE 3  ----------------------------------->
+<div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
+<h1 id="3-marketing-performance">3. Marketing Performance</h1>
+
+<p><strong>🎯 Goal:</strong> Evaluate marketing channels by conversion, spend, and ROI to optimize acquisition strategy.</p>
+
+<h3 id="-key-visualizations-2">📊 Key Visualizations</h3>
+
+<p><img src="/assets/images/Screenshot_Mobile App_03a.png" alt="Marketing Performance Dashboard Screenshot" width="800" /></p>
+
+<p><strong>1. Conversion Speed Breakdown</strong><br />
+Among converted users, 10.4% converted immediately — meaning they subscribed on the first or second day of using the app.</p>
+
+<p><strong>2. Time to Pay Distribution</strong><br />
+Most users convert within the <strong>first 1–2 months</strong>.</p>
+
+<p><strong>3–5. Marketing Channel Performance</strong><br />
+Evaluation by user volume, conversion rate, and maximum MRR:</p>
+
+<ul>
+  <li><strong>Google</strong> brings in the largest volume of users, top MRR, but moderate conversion.</li>
+  <li><strong>Facebook</strong> achieves the highest conversion rate, surpassing Google and TikTok, despite having moderate user traffic and MRR.</li>
+  <li><strong>TikTok</strong> exhibits the lowest performance across user volume, conversion rate, and MRR, indicating overall underperformance.</li>
+</ul>
+
+<p><strong>6–7. Campaign Performance</strong><br />
+Analysis by conversion distribution and Max MRR.<br />
+<img src="/assets/images/Screenshot_Mobile App_03b.png" alt="Marketing Performance Dashboard Screenshot" width="800" /></p>
+
+<blockquote>
+  <p>⚠️ To ensure data accuracy for the campaign analysis, a data cleaning step was performed. The original <code class="language-plaintext highlighter-rouge">campaign</code> column presented inconsistencies in naming, which were resolved by grouping similar entries into these standardized categories:</p>
+</blockquote>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">sea</code> → Search Engine Advertising</li>
+  <li><code class="language-plaintext highlighter-rouge">ugc</code> → User Generated Content</li>
+  <li><code class="language-plaintext highlighter-rouge">vat</code> → VAT Campaign</li>
+</ul>
+
+<p>🔗 <a href="https://github.com/dtbkhanh/Data-Analytics-and-Reports/blob/7da10cc3356b97b4d1f8d75133a124ccf609ac1f/Jupyter%20Notebooks/05.%20Mobile%20App%20Marketing%20%26%20Conversion%20Analysis.ipynb">View data cleansing here</a></p>
+
+<ul>
+  <li>Two campaigns (“Retargeting” and “Organic”) show 100% conversion, but each had only one user, so they’re not statistically meaningful.</li>
+  <li>Google’s <strong>Search Engine Advertising</strong> brings the highest Max MRR, despite a lower conversion rate.</li>
+  <li>The <strong>Static Campaign</strong> ranks second in Max MRR and has a high conversion rate of 52.3%.</li>
+</ul>
+
+<p><strong>8–9. Promocode Analysis</strong></p>
+
+<p><img src="/assets/images/Screenshot_Mobile App_03c.png" alt="Marketing Performance Dashboard Screenshot" width="800" /></p>
+
+<ul>
+  <li>Promocode usage significantly boosts both conversion rate and conversion speed.</li>
+</ul>
+
+<h3 id="-insights-2">🔍 Insights</h3>
+
+<ul>
+  <li><strong>Social media (e.g., Facebook):</strong> Demonstrates strong conversion rates and contributes significantly to revenue, suggesting a highly engaged audience. Consider further investment and scaling successful creatives.</li>
+  <li><strong>Search engine (Google):</strong> While generating the highest user volume and MRR, search engine campaigns show a moderate conversion rate, indicating potential for optimization through improved keyword targeting and landing page relevance.</li>
+  <li><strong>Short-form video (TikTok):</strong> Currently underperforming across key metrics (user volume, conversion, MRR), potentially due to a mismatch between the platform’s demographics and our target audience. A carefully targeted experiment is recommended before further investment.</li>
+</ul>
+
+<h3 id="-recommendations-2">✅ Recommendations</h3>
+
+<p><strong>Channel Strategy:</strong></p>
+
+<ul>
+  <li><strong>Facebook:</strong> Increase budget to leverage its high conversion rates.</li>
+  <li><strong>Google:</strong> Optimize for better conversion by focusing on top campaigns (SEA), refining keyword targeting, and improving ad and landing page relevance.</li>
+  <li><strong>TikTok:</strong> Conduct a focused final experiment targeting people aged 25-35 who are interested in business, finance, and freelance topics, using content that addresses their pain points, before considering a budget cut.</li>
+</ul>
+
+<p><strong>Campaign Tactics:</strong></p>
+
+<ul>
+  <li><strong>Prioritize High ROI:</strong> Allocate more budget to campaigns demonstrating strong return (e.g., SEA, Static).</li>
+  <li><strong>Explore High-Potential:</strong> Monitor and test scaling campaigns with high conversion rates but low volume (e.g., Retargeting, Organic).</li>
+  <li><strong>Drive Faster Conversion:</strong> Implement limited-time promos to encourage quicker subscriptions.</li>
+</ul>
+
+<!------------------------------ PAGE 4  ----------------------------------->
+
+<div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
+<h1 id="4-user-segmentation--targeting">4. User Segmentation &amp; Targeting</h1>
+
+<p><strong>🎯 Goal:</strong> Segment users by behavior, profession, and region to personalize marketing and onboarding.</p>
+
+<h3 id="a-regional-segmentation">a. Regional Segmentation</h3>
+
+<p><img src="/assets/images/Screenshot_Mobile App_04a.png" alt="Users by Region" width="800" /></p>
+
+<ul>
+  <li>
+    <p><strong>Berlin</strong> stands out as the region with the largest user base, the highest conversion rate, and the highest Max MRR. <br />
+➡️ Significantly increase marketing budget for Berlin to capitalize on this high-performing market.<br />
+➡️ Conduct a thorough analysis of top-performing campaigns within Berlin to identify successful strategies that can be adapted and scaled to other promising regions.</p>
+  </li>
+  <li>
+    <p><strong>Nordrhein-Westfalen &amp; Bayern</strong> demonstrate strong potential with high Max MRR and robust conversion rates.<br />
+➡️ Maintain or slightly increase marketing investment in these regions.<br />
+➡️ Implement A/B testing of new and innovative campaign ideas to further optimize performance and unlock additional user acquisition and revenue.</p>
+  </li>
+  <li>
+    <p><strong>Mecklenburg-Vorpommern &amp; Hamburg</strong> has fewer users, but strong conversion efficiency.<br />
+➡️ Explore growth potential by implementing targeted, low-budget awareness campaigns to increase user acquisition. Initial small investments could yield efficient returns.</p>
+  </li>
+  <li>
+    <p><strong>Saarland</strong> shows low user acquisition, poor conversion rates, and low revenue generation.<br />
+➡️ Conduct in-depth market research within Saarland to understand the underlying reasons for the low performance and identify potential barriers to adoption.<br />
+➡️ Based on the research findings, consider strategically reducing ad spend in this region or pivoting to highly targeted, experimental campaigns if a viable path to improvement is identified.</p>
+  </li>
+</ul>
+
+<h3 id="b-users-by-self-employment-status">b. Users by Self-Employment Status</h3>
+
+<p><img src="/assets/images/Screenshot_Mobile App_04b.png" alt="Self-Employment Status" width="800" /></p>
+
+<ul>
+  <li>The majority identifies as self-employed, confirming strong alignment with the app’s intended target audience.</li>
+  <li>A smaller segment comprises individuals who are not currently self-employed, potentially representing:
+    <ul>
+      <li>Users exploring the app out of general interest.</li>
+      <li>Individuals in the process of preparing to become self-employed.</li>
+      <li>A potential secondary market that could be further explored.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>➡️ Continue prioritizing marketing and feature development for the core self-employed user base.<br />
+➡️ Consider developing introductory or informational content tailored to the “pre-freelancer” segment to nurture potential future users.</p>
+
+<h3 id="c-profession-based-segmentation">c. Profession-Based Segmentation</h3>
+
+<ul>
+  <li><strong>Artists &amp; Content Creators</strong> are the largest group and generate the highest Max MRR (due to size). However, their conversion rate is not the highest among all professions, indicating an opportunity for improvement. The high MRR is primarily driven by the sheer volume of users in this category.</li>
+  <li><strong>Disparity between Volume and Conversion</strong>: Notably, the professions with the highest number of users are not necessarily the same as those with the highest conversion rates. This highlights the need for a nuanced approach to targeting.</li>
+</ul>
+
+<h3 id="d-vat-type-segmentation">d. VAT Type Segmentation</h3>
+
+<p><img src="/assets/images/Screenshot_Mobile App_04c.png" alt="VAT and Account Type" width="800" /></p>
+
+<ul>
+  <li>Most users fall under <strong>franchise</strong>, which are small businesses exempt from charging Value Added Tax (VAT).</li>
+  <li>Users under <strong>subjectToVAT</strong> show higher conversion rates, suggesting that businesses actively involved in VAT processes find greater utility and value in the app’s features.</li>
+</ul>
+
+<h3 id="e-account-type-segmentation">e. Account Type Segmentation</h3>
+
+<ul>
+  <li>Most users are freelancers or solo business owners without VAT.</li>
+  <li>Complementary status users — those with a primary job and a freelancing side gig—have the highest conversion rates</li>
+</ul>
+
+<h3 id="-recommendations-3">✅ Recommendations</h3>
+
+<ul>
+  <li><strong>Region-specific Marketing:</strong>
+    <ul>
+      <li><em>High-performing regions</em> (e.g., Berlin, NRW): Develop and implement tailored campaigns to capitalize on existing strong performance.</li>
+      <li><em>Under-tapped regions</em> (e.g., Hamburg): Test localized messaging and targeted campaigns to explore and unlock potential user growth.</li>
+    </ul>
+  </li>
+  <li><strong>Profession-based optimization:</strong>
+    <ul>
+      <li><em>High-converting professions</em>: Strategically allocate marketing budget to target these segments with tailored campaigns focused on their specific needs and pain points to maximize ROI.</li>
+      <li><em>High-volume professions</em> (e.g., Artists &amp; Content Creators): Implement a nurturing strategy involving identifying conversion blockers and running targeted A/B tests with profession-specific messaging and landing pages.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Targeting VAT-registered businesses:</strong> Develop and deploy marketing messages that directly address the needs of <strong>subjectToVAT</strong> users, emphasizing features like streamlined VAT invoicing, comprehensive reporting, and efficient management.</p>
+  </li>
+  <li>
+    <p><strong>Engaging dual-income users:</strong> Prioritize marketing efforts towards dual-income users by highlighting how the app simplifies the complexities of managing multiple income streams.</p>
+  </li>
+  <li>
+    <p><strong>Re-engagement of active but unsubscribed users:</strong> Implement segmented re-engagement campaigns targeting users who have shown engagement (e.g., bank connections, feature usage) but haven’t converted to paid plans.</p>
+  </li>
+  <li><strong>Deepen user understanding:</strong>
+    <ul>
+      <li><em>Qualitative feedback</em>: Actively collect and analyze user feedback to inform UX improvements and refine marketing messaging.</li>
+      <li><em>Comprehensive data analysis</em>: Conduct deeper segmentation analysis across profession, VAT type, region, and account status to uncover further opportunities for targeted strategies.</li>
+    </ul>
+  </li>
+</ul>
+
+<!-- FINAL  -->
+<div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
+<h1 id="final-takeaways">📌 Final Takeaways</h1>
+
+<p>This case study showed how integrating behavioral analytics and marketing performance can drive better user acquisition and retention. The combination of funnel tracking, feature analysis, and campaign ROI offers a blueprint for optimizing app growth strategies. By leveraging interactive dashboards and a structured analysis approach, we uncovered several key insights:</p>
+<ul>
+  <li><strong>Feature engagement drives conversion</strong>: Users who interact with advanced financial tools or the AI Assistant show significantly higher conversion rates. These features signal strong intent and deeper engagement.</li>
+  <li><strong>The onboarding experience is crucial</strong>: Conversion likelihood is heavily influenced by the first feature users engage with. Early exposure to guided or advanced functionality leads to higher subscription rates.</li>
+  <li><strong>Marketing ROI varies by Channel</strong>: Facebook delivers the strongest conversion performance, while TikTok underperforms.</li>
+  <li><strong>Regional performance varies significantly</strong>: Berlin leads regionally with the highest conversion rate and MRR.</li>
+  <li><strong>Profession &amp; VAT status</strong> influence conversion behavior, pointing to the value of profession-specific messaging and features for VAT-registered users.</li>
+  <li><strong>Dual-income users</strong> (e.g., freelancers with a main job) show the highest conversion rates and are an emerging high-value segment.</li>
+</ul>
+
+<p>➡️ <strong>Next steps:</strong> We need to make the initial experience for new users better, focus more on the marketing that works best (like Facebook in strong regions), and try different ways to connect with users based on how they use the app and where they are. We’ll keep tracking these things to make sure we keep growing effectively.</p>]]></content><author><name>Khanh Dang</name></author><summary type="html"><![CDATA[This case study explores how different marketing channels and user behaviors influence conversion rates for a mobile app targeting self-employed professionals in Germany.]]></summary></entry></feed>

@@ -14,6 +14,8 @@ cover: /assets/images/Cover_MobileApp Marketing.png
 - [5. Final Takeaways](#final-takeaways)
 
 <!-- Intro -->
+<hr style="width: 40%; border: none; border-top: 1px dashed lightgray; margin: 40px auto;">
+
 ### 📌 Introduction
 
 How do user behavior and marketing touchpoints shape conversions in a mobile app for self-employed professionals in Germany?
