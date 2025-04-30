@@ -65,7 +65,7 @@ title: About Me
 
 <div style="height: 2px; background-color: lightgray; margin: 30px 0;"></div>
 
-## 📊 What I Do
+## 📊 WHAT I DO
 
 - Transform complex datasets into actionable insights  
 - Build interactive dashboards and clear visualizations  
@@ -73,13 +73,13 @@ title: About Me
 - Tools I use: **SQL**, **Python**, **R**, **Power BI**, **Tableau**, **Looker Studio**
 
 
-## 🚀 Currently Exploring
+## 🚀 CURRENTLY EXPLORING
 
 - **Machine Learning** — uncovering deeper patterns and predictive insights  
 - **Advanced analytics and visualization techniques** — crafting compelling, interactive data stories  
 
 
-## 💡 Let’s Talk About
+## 💡 LET'S TALK ABOUT
 
 - Building data pipelines for efficient processing  
 - Creating dashboards that inspire action  
@@ -87,7 +87,7 @@ title: About Me
 - Turning business questions into data-driven strategies  
 
 
-## 🧑‍💻 Outside of Work
+## 🧑‍💻 OUTSIDE OF WORK
 
 - 🏞️ **Hiking & Camping** — exploring nature and staying active
 - 📸 **Photography** — capturing landscapes and everyday moments  
