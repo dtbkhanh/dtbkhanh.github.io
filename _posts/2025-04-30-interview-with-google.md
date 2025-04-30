@@ -50,7 +50,7 @@ This round also reinforced the importance of understanding industry terms like C
 
 The final round was focused on behavioral questions and soft skills — essentially, how I handle real-world challenges, from interpersonal issues to high-pressure situations. This stage felt like a test of soft skills, communication style, adaptability, and cultural fit. The questions often involved hypothetical or past work situations. Common themes include navigating interpersonal challenges, resolving conflicts, managing pressure, and responding to setbacks.
 
-I used the STAR method (Situation, Task, Action, Result) to stay organized in my responses, especially when questions came with layered follow-ups. In cases where I hadn’t faced an identical situation, I tried to draw parallels from similar experiences, staying honest and grounded in my responses. Maintaining a composed, positive, and engaged attitude felt most appropriate.  
+I used the **STAR method** (Situation, Task, Action, Result) to stay organized in my responses, especially when questions came with layered follow-ups. In cases where I hadn’t faced an identical situation, I tried to draw parallels from similar experiences, staying honest and grounded in my responses. Maintaining a composed, positive, and engaged attitude felt most appropriate.  
 
 This was the stage where authenticity mattered most. While technical precision was key earlier, here it was about listening, communicating, and building understanding — staying composed and true to my working style helped me navigate it with more ease.
 
@@ -69,4 +69,4 @@ Ultimately, I was offered an L3 role — typically aligned with early-career pro
 
 This experience has left a lasting impression on me — not just because of the company name, but because of the rigor and intentionality of the process. Each stage challenged a different part of my skill set and helped me see my strengths and blind spots with greater clarity. While the outcome didn’t unfold exactly as I had imagined, I’m grateful for the opportunity and the professional insights gained along the way.
 
-The process reminded me that interviewing isn’t only about receiving an offer — it’s also about learning how we show up, how we grow, and how we move forward with a clearer sense of what we want to build next.
+The journey taught me that each interview, regardless of the outcome, contributes to our evolution and understanding of our career objectives.
