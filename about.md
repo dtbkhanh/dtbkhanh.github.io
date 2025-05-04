@@ -81,8 +81,7 @@ title: About Me
 
 ## 💡 LET'S TALK ABOUT
 
-- Building data pipelines for efficient processing  
-- Creating dashboards that inspire action  
+- Creating interactive dashboards that inspire action and support decision-making  
 - Solving problems with smart analytics and clear visual communication  
 - Turning business questions into data-driven strategies  
 
