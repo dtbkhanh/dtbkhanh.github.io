@@ -102,7 +102,7 @@
 
 <p>In this case study, I analyze data from Bibitor, LLC — a fictional retail chain with 80+ locations and over $450M in annual sales — to uncover patterns patterns in vendor performance, inventory movement, and sales behavior, applying real-world retail concepts.</p>
 
-<h3 id="-about-the-dataset">🧩 About the Dataset</h3>
+<h3 id="-about-the-dataset">🧾 About the Dataset</h3>
 <p>The dataset come from the <strong><a href="https://www.hubae.org">HUB of Analytics Education</a></strong> and mimics operations in a large-scale liquor retailer in Lincoln, USA. It spans December 2016 and includes 6 key tables:</p>
 <ul>
   <li><strong>Inventory</strong>
@@ -131,10 +131,18 @@
 
 <p>These tables, when combined, allow us to track products from purchase to sale, understand vendor relationships, and monitor financial flows, all essential for optimizing retail operations.</p>
 
-<h3 id="-data-model">🧩 Data Model</h3>
-<p>Before writing a single line of code, understanding how the different pieces of data relate to each other is paramount. An Entity-Relationship Diagram (ERD) visually represents these connections, forming the logical backbone for accurate and efficient analysis. It ensures that our joins are correct and our derived insights are reliable.</p>
+<h3 id="-key-business-questions">🔑 Key Business Questions</h3>
+<ul>
+  <li>Which vendors provide the most value?</li>
+  <li>Are we overstocking or underutilizing inventory?</li>
+  <li>How do purchase prices compare to actual sales?</li>
+  <li>What’s the average time it takes to sell received stock?</li>
+</ul>
 
-<p>Below is the ERD that guided our analysis, illustrating the relationships between Bibitor’s core transactional and master data tables:</p>
+<h3 id="-data-model">🧩 Data Model</h3>
+<p>Before diving into the code, we first need to understand how all the different pieces of data connect. An <em>Entity-Relationship Diagram (ERD)</em> visually represents these connections, providing the logical framework for accurate and efficient analysis. This ensures our data joins are correct and our derived insights are reliable.</p>
+
+<p>The ERD below guided our analysis, showing the relationships between Bibitor’s core transactional and master data tables:</p>
 
 <p>As shown, tables like PurchasesDec and <code class="language-plaintext highlighter-rouge">VendorInvoicesDec</code> are linked by shared keys like <code class="language-plaintext highlighter-rouge">VendorNumber</code> and <code class="language-plaintext highlighter-rouge">PONumber</code>, representing the core of Bibitor’s procurement. <code class="language-plaintext highlighter-rouge">SalesDec</code> connects through <code class="language-plaintext highlighter-rouge">InventoryId</code> to track items’ journeys from purchase to customer. This structure ensures a cohesive flow for tracing products and understanding financial transactions across the business.</p>
 
@@ -150,16 +158,114 @@
 <h2 id="21-initial-data-health-check-initial-analysissql">2.1. Initial Data Health Check (<code class="language-plaintext highlighter-rouge">Initial Analysis.sql</code>)</h2>
 <p>Before any deep dive, ensuring the data’s integrity was crucial. The <code class="language-plaintext highlighter-rouge">Initial Analysis.sql</code> script acted as our data auditor, meticulously checking for common pitfalls like missing entries, zero values in critical financial columns, and inconsistencies that could skew our results.</p>
 
-<h3 id="key-actions--questions-addressed">Key actions &amp; questions addressed:</h3>
+<h3 id="-key-actions--questions-addressed">🔑 Key actions &amp; questions addressed:</h3>
 <ul>
   <li><strong>Identifying invalid entries:</strong> Are there sales, purchase, or pricing records with missing or zero dollar/price amounts?</li>
   <li><strong>Assessing completeness:</strong> What percentage of our data might be incomplete or erroneous?</li>
-  <li><strong>Validating derived values:</strong> Do calculated values (e.g., PurchasePrice * Quantity) consistently match recorded totals, or are there unexpected variances?</li>
+  <li><strong>Validating derived values:</strong> Do calculated values (e.g., <code class="language-plaintext highlighter-rouge">PurchasePrice * Quantity</code>) consistently match recorded totals, or are there unexpected variances?</li>
   <li><strong>Cross-table consistency:</strong> Are vendor records consistent across purchasing and sales datasets?</li>
 </ul>
 
-<h3 id="a-glimpse-into-the-code">A glimpse into the Code:</h3>
-<p>One vital check was identifying where the recorded <code class="language-plaintext highlighter-rouge">Dollars</code> in our <code class="language-plaintext highlighter-rouge">PurchasesDec</code> table didn’t align with the simple multiplication of <code class="language-plaintext highlighter-rouge">PurchasePrice</code> and <code class="language-plaintext highlighter-rouge">Quantity</code>. While minor differences can be due to floating-point precision, larger discrepancies signal potential data entry or system issues.</p>
+<h3 id="-a-glimpse-into-the-code">🔍 A glimpse into the Code:</h3>
+<h4 id="a-missing-or-zero-values">a. Missing or Zero values</h4>
+<p><strong>📦 Purchases:</strong></p>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">PurchasesDec</span> <span class="k">WHERE</span> <span class="n">Dollars</span> <span class="o">&lt;=</span> <span class="mi">0</span> <span class="k">OR</span> <span class="n">Dollars</span> <span class="k">IS</span> <span class="k">NULL</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p><em>Sample Output:</em></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>InventoryId</th>
+      <th>Store</th>
+      <th>…</th>
+      <th>PurchasePrice</th>
+      <th>Quantity</th>
+      <th>Dollars</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>59_CLAETHORPES_2166</td>
+      <td>59</td>
+      <td>…</td>
+      <td>0</td>
+      <td>12</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>38_GOULCREST_2166</td>
+      <td>38</td>
+      <td>…</td>
+      <td>0</td>
+      <td>12</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>34_PITMERDEN_2166</td>
+      <td>34</td>
+      <td>…</td>
+      <td>0</td>
+      <td>12</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>This query returned 153 entries where the <strong><code class="language-plaintext highlighter-rouge">Dollars</code></strong> value is zero or null. Given that <code class="language-plaintext highlighter-rouge">Dollars</code> is calculated as <code class="language-plaintext highlighter-rouge">PurchasePrice * Quantity</code>, this directly implies that <strong><code class="language-plaintext highlighter-rouge">PurchasePrice</code></strong> for these entries is also zero, requiring further investigation. Potential reasons for these entries include:</p>
+<ul>
+  <li><strong>Promotional or Free Goods:</strong> Items given away as part of a promotion, marketing campaign, or bundled with other purchases.</li>
+  <li><strong>Samples:</strong> Products recorded as samples for in-store use or customer trials.</li>
+  <li><strong>Data Entry Errors:</strong> Mistakes made during data input.</li>
+</ul>
+
+<p><strong>📦 Sales:</strong></p>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">SalesDec</span> <span class="k">WHERE</span> <span class="n">SalesDollars</span> <span class="o">&lt;=</span> <span class="mi">0</span> <span class="k">OR</span> <span class="n">SalesDollars</span> <span class="k">IS</span> <span class="k">NULL</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p><em>Sample Output:</em></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>InventoryId</th>
+      <th>Store</th>
+      <th>Brand</th>
+      <th>SalesQuantity</th>
+      <th>SalesDollars</th>
+      <th>…</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>38_GOULCREST_25340</td>
+      <td>38</td>
+      <td>25340</td>
+      <td>3</td>
+      <td>0</td>
+      <td>…</td>
+    </tr>
+    <tr>
+      <td>66_EANVERNESS_25340</td>
+      <td>66</td>
+      <td>25340</td>
+      <td>3</td>
+      <td>0</td>
+      <td>…</td>
+    </tr>
+    <tr>
+      <td>66_EANVERNESS_25340</td>
+      <td>66</td>
+      <td>25340</td>
+      <td>1</td>
+      <td>0</td>
+      <td>…</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Our analysis revealed 55 entries where the <strong><code class="language-plaintext highlighter-rouge">SalesDollars</code></strong> field is zero or null. Since <code class="language-plaintext highlighter-rouge">SalesDollars</code> is derived from <code class="language-plaintext highlighter-rouge">SalesPrice</code> multiplied by <code class="language-plaintext highlighter-rouge">SalesQuantity</code>, a zero <code class="language-plaintext highlighter-rouge">SalesDollars</code> value means that the <strong><code class="language-plaintext highlighter-rouge">SalesPrice</code></strong> for these transactions is effectively zero as well. This warrants further investigation.</p>
 
 <!------------------------------ DASHBOARDS  ----------------------------------->
 <div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
