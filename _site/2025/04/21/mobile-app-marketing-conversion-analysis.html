@@ -41,11 +41,35 @@
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <style>
+    .post-title {
+      font-size: 2.25em;
+      font-weight: bold;
+      margin-bottom: 0.5em;
+    }
+
+    /* Text alignment */
     .post-content p,
     .post-content li {
       text-align: justify;
     }
+
+    /* Normalize markdown heading sizes inside the post content */
+    .post-content h1 { font-size: 2em; margin-top: 1.2em; }
+    .post-content h2 { font-size: 1.75em; margin-top: 1.1em; }
+    .post-content h3 { font-size: 1.5em; margin-top: 1em; }
+    .post-content h4 { font-size: 1.25em; }
+    .post-content h5 { font-size: 1.1em; }
+    .post-content h6 { font-size: 1em; }
+
+    /* Add spacing to avoid headers looking cramped */
+    .post-content h1, .post-content h2, .post-content h3,
+    .post-content h4, .post-content h5, .post-content h6 {
+      font-weight: 600;
+      line-height: 1.3;
+      margin-bottom: 0.6em;
+    }
   </style>
+
 
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">Case Study: Mobile App Marketing &amp; Conversion Analysis</h1>
@@ -57,20 +81,24 @@
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <p><strong>Table of Contents</strong></p>
+    <!----------- Table of Contents ----------->
+<details>
+<summary><strong>Table of Contents</strong></summary>
 <ul>
-  <li><a href="#1-overview">1. Overview</a></li>
-  <li><a href="#2-user-behavior-analysis">2. User Behavior Analysis</a></li>
-  <li><a href="#3-marketing-performance">3. Marketing Performance</a></li>
-  <li><a href="#4-user-segmentation--targeting">4. User Segmentation &amp; Targeting</a></li>
-  <li><a href="#final-takeaways">5. Final Takeaways</a></li>
+<li><a href="#1-overview">1. Overview</a></li>
+<li><a href="#2-user-behavior-analysis">2. User Behavior Analysis</a></li>
+<li><a href="#3-marketing-performance">3. Marketing Performance</a></li>
+<li><a href="#4-user-segmentation--targeting">4. User Segmentation &amp; Targeting</a></li>
+<li><a href="#final-takeaways">5. Final Takeaways</a></li>
 </ul>
+</details>
 
-<!-- Intro -->
+<!------------ Intro ------------>
 <hr style="width: 40%; border: none; border-top: 1px dashed lightgray; margin: 40px auto;" />
 
-<h3 id="-introduction">📌 Introduction</h3>
+<!-- <img src="/assets/images/Cover_MobileApp Marketing.png" alt="MobileApp" width="800"/> -->
 
+<h2 id="-introduction">📌 INTRODUCTION</h2>
 <p>How do user behavior and marketing touchpoints shape conversions in a mobile app for self-employed professionals in Germany?</p>
 
 <p>This case study explores data from <strong>29.1k users (15.1% conversion)</strong> between 2020 – 2025, with the goal of improving subscription rates and acquisition efficiency.</p>
@@ -83,7 +111,7 @@
   <li><strong>User Segmentation &amp; Targeting</strong> – Region &amp; profession-based targeting</li>
 </ol>
 
-<h3 id="-tools--methods">🔧 Tools &amp; Methods</h3>
+<h2 id="-tools--methods">🔧 Tools &amp; Methods</h2>
 
 <ul>
   <li><strong>Data Preparation:</strong> Python ➡️ <strong><a href="https://github.com/dtbkhanh/Data-Analytics-and-Reports/blob/7da10cc3356b97b4d1f8d75133a124ccf609ac1f/Jupyter%20Notebooks/05.%20Mobile%20App%20Marketing%20%26%20Conversion%20Analysis.ipynb">View Code</a></strong></li>
@@ -94,7 +122,9 @@
 <!------------------------------ DASHBOARDS  ----------------------------------->
 <div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
 
-<div style="text-align: center; font-size: 1.3em;"><h1>📊 Explore Dashboards📊 </h1></div>
+<div style="text-align: center; font-size: 1.1em;">
+  <h1 style="font-weight: bold;">📊 Explore Dashboards 📊</h1>
+</div>
 
 <div style="border: 1px solid #ccc; padding: 15px; margin: 20px 0; border-radius: 5px; text-align: center; transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;">
   <strong><a href="https://lookerstudio.google.com/u/0/reporting/8959b791-5c18-4a12-8986-2f58b882b980/page/eleFF" target="_blank" style="text-decoration: none;">➡️ View Live Dashboards ⬅️</a></strong>

@@ -1,4 +1,85 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-04-29T20:23:49+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Khanh’s Online Journal</title><subtitle>A blog sharing my experiences and insights on work, projects, and data.</subtitle><author><name>Khanh Dang</name></author><entry><title type="html">My Interview Journey with Google</title><link href="http://localhost:4000/2025/04/30/interview-with-google.html" rel="alternate" type="text/html" title="My Interview Journey with Google" /><published>2025-04-30T00:00:00+02:00</published><updated>2025-04-30T00:00:00+02:00</updated><id>http://localhost:4000/2025/04/30/interview-with-google</id><content type="html" xml:base="http://localhost:4000/2025/04/30/interview-with-google.html"><![CDATA[<!-- Intro -->
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-05-28T22:11:47+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Khanh’s Online Journal</title><subtitle>A blog sharing my experiences and insights on work, projects, and data.</subtitle><author><name>Khanh Dang</name></author><entry><title type="html">Inside Retail Operations: A Case Study on Sales, Inventory, and Vendors</title><link href="http://localhost:4000/2025/05/18/bibitor-inventory-sales-analysis.html" rel="alternate" type="text/html" title="Inside Retail Operations: A Case Study on Sales, Inventory, and Vendors" /><published>2025-05-18T00:00:00+02:00</published><updated>2025-05-18T00:00:00+02:00</updated><id>http://localhost:4000/2025/05/18/bibitor-inventory-sales-analysis</id><content type="html" xml:base="http://localhost:4000/2025/05/18/bibitor-inventory-sales-analysis.html"><![CDATA[<!----------- Table of Contents ----------->
+<details>
+<summary><strong>Table of Contents</strong></summary>
+<ul>
+<li><a href="#intro">1. Introduction</a></li>
+<li><a href="#sql">2. Analysis with SQL</a></li>
+</ul>
+</details>
+
+<!------------ Intro ------------>
+<!-- <img src="/assets/images/Cover_Bibitor.png" alt="Liquour Sales" width="800"/> -->
+<hr style="width: 40%; border: none; border-top: 1px dashed lightgray; margin: 40px auto;" />
+
+<div style="text-align: left;">
+  <h1 id="intro" style="font-weight: bold;">1. INTRODUCTION</h1>
+</div>
+
+<p>What does it take to run a successful liquor business? It’s not just about stocking the right products — it’s about understanding what sells, how fast it moves, and which vendors help or hurt your bottom line.</p>
+
+<p>In this case study, I analyze data from Bibitor, LLC — a fictional retail chain with 80+ locations and over $450M in annual sales — to uncover patterns patterns in vendor performance, inventory movement, and sales behavior, applying real-world retail concepts.</p>
+
+<h3 id="-about-the-dataset">🧩 About the Dataset</h3>
+<p>The dataset come from the <strong><a href="https://www.hubae.org">HUB of Analytics Education</a></strong> and mimics operations in a large-scale liquor retailer in Lincoln, USA. It spans December 2016 and includes 6 key tables:</p>
+<ul>
+  <li><strong>Inventory</strong>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">BegInvDec</code>: Inventory at the start of December 2016.</li>
+      <li><code class="language-plaintext highlighter-rouge">EndInvDec</code>: Inventory remaining at the end of December 2016.</li>
+    </ul>
+  </li>
+  <li><strong>Purchases</strong>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">PurchasesDec</code>: What Bibitor bought from vendors (quantities, total cost, vendor info).</li>
+      <li><code class="language-plaintext highlighter-rouge">PricingPurchasesDec</code>: Reference prices Bibitor expects from suppliers.</li>
+    </ul>
+  </li>
+  <li><strong>Vendor Invoices</strong>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">VendorInvoicesDec</code>: The bills Bibitor received from their suppliers (vendors).</li>
+    </ul>
+  </li>
+  <li><strong>Sales</strong>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">SalesDec</code>: Item-level sales data including price, quantity, and total revenue.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>These tables, when combined, allow us to track products from purchase to sale, understand vendor relationships, and monitor financial flows, all essential for optimizing retail operations.</p>
+
+<h3 id="-data-model">🧩 Data Model</h3>
+<p>Before writing a single line of code, understanding how the different pieces of data relate to each other is paramount. An Entity-Relationship Diagram (ERD) visually represents these connections, forming the logical backbone for accurate and efficient analysis. It ensures that our joins are correct and our derived insights are reliable.</p>
+
+<p>Below is the ERD that guided our analysis, illustrating the relationships between Bibitor’s core transactional and master data tables:</p>
+
+<p>As shown, tables like PurchasesDec and <code class="language-plaintext highlighter-rouge">VendorInvoicesDec</code> are linked by shared keys like <code class="language-plaintext highlighter-rouge">VendorNumber</code> and <code class="language-plaintext highlighter-rouge">PONumber</code>, representing the core of Bibitor’s procurement. <code class="language-plaintext highlighter-rouge">SalesDec</code> connects through <code class="language-plaintext highlighter-rouge">InventoryId</code> to track items’ journeys from purchase to customer. This structure ensures a cohesive flow for tracing products and understanding financial transactions across the business.</p>
+
+<!------------------------------ SQL  ----------------------------------->
+<div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
+
+<div style="text-align: left;">
+  <h1 id="sql" style="font-weight: bold;">2. ANALYSIS WITH SQL</h1>
+</div>
+
+<p>SQL was the primary tool for extracting, transforming, and performing the initial layers of analysis on Bibitor’s vast datasets. Its power allowed us to systematically address business questions at a granular level.</p>
+
+<h2 id="21-initial-data-health-check-initial-analysissql">2.1. Initial Data Health Check (<code class="language-plaintext highlighter-rouge">Initial Analysis.sql</code>)</h2>
+<p>Before any deep dive, ensuring the data’s integrity was crucial. The <code class="language-plaintext highlighter-rouge">Initial Analysis.sql</code> script acted as our data auditor, meticulously checking for common pitfalls like missing entries, zero values in critical financial columns, and inconsistencies that could skew our results.</p>
+
+<h3 id="key-actions--questions-addressed">Key actions &amp; questions addressed:</h3>
+<ul>
+  <li><strong>Identifying invalid entries:</strong> Are there sales, purchase, or pricing records with missing or zero dollar/price amounts?</li>
+  <li><strong>Assessing completeness:</strong> What percentage of our data might be incomplete or erroneous?</li>
+  <li><strong>Validating derived values:</strong> Do calculated values (e.g., PurchasePrice * Quantity) consistently match recorded totals, or are there unexpected variances?</li>
+  <li><strong>Cross-table consistency:</strong> Are vendor records consistent across purchasing and sales datasets?</li>
+</ul>
+
+<h3 id="a-glimpse-into-the-code">A glimpse into the Code:</h3>
+<p>One vital check was identifying where the recorded <code class="language-plaintext highlighter-rouge">Dollars</code> in our <code class="language-plaintext highlighter-rouge">PurchasesDec</code> table didn’t align with the simple multiplication of <code class="language-plaintext highlighter-rouge">PurchasePrice</code> and <code class="language-plaintext highlighter-rouge">Quantity</code>. While minor differences can be due to floating-point precision, larger discrepancies signal potential data entry or system issues.</p>
+
+<!------------------------------ DASHBOARDS  ----------------------------------->
+<div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>]]></content><author><name>Khanh Dang</name></author><summary type="html"><![CDATA[What does it take to run a successful retail business? It's knowing what sells, how fast inventory moves, and which vendors truly impact your bottom line.]]></summary></entry><entry><title type="html">My Interview Journey with Google</title><link href="http://localhost:4000/2025/04/30/interview-with-google.html" rel="alternate" type="text/html" title="My Interview Journey with Google" /><published>2025-04-30T00:00:00+02:00</published><updated>2025-04-30T00:00:00+02:00</updated><id>http://localhost:4000/2025/04/30/interview-with-google</id><content type="html" xml:base="http://localhost:4000/2025/04/30/interview-with-google.html"><![CDATA[<!-- Intro -->
 
 <p><img src="/assets/images/Cover_Google Interview.png" alt="Interview with Google" width="800" /></p>
 
@@ -61,20 +142,24 @@
 
 <p>This experience has left a lasting impression on me — not just because of the company name, but because of the rigor and intentionality of the process. Each stage challenged a different part of my skill set and helped me see my strengths and blind spots with greater clarity. While the outcome didn’t unfold exactly as I had imagined, I’m grateful for the opportunity and the professional insights gained along the way.</p>
 
-<p>The process reminded me that interviewing isn’t only about receiving an offer — it’s also about learning how we show up, how we grow, and how we move forward with a clearer sense of what we want to build next.</p>]]></content><author><name>Khanh Dang</name></author><summary type="html"><![CDATA[Interviewing at Google was more than just a hiring process — it became a journey of self-reflection, testing my ability to think, communicate, and grow under pressure.]]></summary></entry><entry><title type="html">Case Study: Mobile App Marketing &amp;amp; Conversion Analysis</title><link href="http://localhost:4000/2025/04/21/mobile-app-marketing-conversion-analysis.html" rel="alternate" type="text/html" title="Case Study: Mobile App Marketing &amp;amp; Conversion Analysis" /><published>2025-04-21T00:00:00+02:00</published><updated>2025-04-21T00:00:00+02:00</updated><id>http://localhost:4000/2025/04/21/mobile-app-marketing-conversion-analysis</id><content type="html" xml:base="http://localhost:4000/2025/04/21/mobile-app-marketing-conversion-analysis.html"><![CDATA[<p><strong>Table of Contents</strong></p>
+<p>The process reminded me that interviewing isn’t only about receiving an offer — it’s also about learning how we show up, how we grow, and how we move forward with a clearer sense of what we want to build next.</p>]]></content><author><name>Khanh Dang</name></author><summary type="html"><![CDATA[Interviewing at Google was more than just a hiring process — it became a journey of self-reflection, testing my ability to think, communicate, and grow under pressure.]]></summary></entry><entry><title type="html">Case Study: Mobile App Marketing &amp;amp; Conversion Analysis</title><link href="http://localhost:4000/2025/04/21/mobile-app-marketing-conversion-analysis.html" rel="alternate" type="text/html" title="Case Study: Mobile App Marketing &amp;amp; Conversion Analysis" /><published>2025-04-21T00:00:00+02:00</published><updated>2025-04-21T00:00:00+02:00</updated><id>http://localhost:4000/2025/04/21/mobile-app-marketing-conversion-analysis</id><content type="html" xml:base="http://localhost:4000/2025/04/21/mobile-app-marketing-conversion-analysis.html"><![CDATA[<!----------- Table of Contents ----------->
+<details>
+<summary><strong>Table of Contents</strong></summary>
 <ul>
-  <li><a href="#1-overview">1. Overview</a></li>
-  <li><a href="#2-user-behavior-analysis">2. User Behavior Analysis</a></li>
-  <li><a href="#3-marketing-performance">3. Marketing Performance</a></li>
-  <li><a href="#4-user-segmentation--targeting">4. User Segmentation &amp; Targeting</a></li>
-  <li><a href="#final-takeaways">5. Final Takeaways</a></li>
+<li><a href="#1-overview">1. Overview</a></li>
+<li><a href="#2-user-behavior-analysis">2. User Behavior Analysis</a></li>
+<li><a href="#3-marketing-performance">3. Marketing Performance</a></li>
+<li><a href="#4-user-segmentation--targeting">4. User Segmentation &amp; Targeting</a></li>
+<li><a href="#final-takeaways">5. Final Takeaways</a></li>
 </ul>
+</details>
 
-<!-- Intro -->
+<!------------ Intro ------------>
 <hr style="width: 40%; border: none; border-top: 1px dashed lightgray; margin: 40px auto;" />
 
-<h3 id="-introduction">📌 Introduction</h3>
+<!-- <img src="/assets/images/Cover_MobileApp Marketing.png" alt="MobileApp" width="800"/> -->
 
+<h2 id="-introduction">📌 INTRODUCTION</h2>
 <p>How do user behavior and marketing touchpoints shape conversions in a mobile app for self-employed professionals in Germany?</p>
 
 <p>This case study explores data from <strong>29.1k users (15.1% conversion)</strong> between 2020 – 2025, with the goal of improving subscription rates and acquisition efficiency.</p>
@@ -87,7 +172,7 @@
   <li><strong>User Segmentation &amp; Targeting</strong> – Region &amp; profession-based targeting</li>
 </ol>
 
-<h3 id="-tools--methods">🔧 Tools &amp; Methods</h3>
+<h2 id="-tools--methods">🔧 Tools &amp; Methods</h2>
 
 <ul>
   <li><strong>Data Preparation:</strong> Python ➡️ <strong><a href="https://github.com/dtbkhanh/Data-Analytics-and-Reports/blob/7da10cc3356b97b4d1f8d75133a124ccf609ac1f/Jupyter%20Notebooks/05.%20Mobile%20App%20Marketing%20%26%20Conversion%20Analysis.ipynb">View Code</a></strong></li>
@@ -98,7 +183,9 @@
 <!------------------------------ DASHBOARDS  ----------------------------------->
 <div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
 
-<div style="text-align: center; font-size: 1.3em;"><h1>📊 Explore Dashboards📊 </h1></div>
+<div style="text-align: center; font-size: 1.1em;">
+  <h1 style="font-weight: bold;">📊 Explore Dashboards 📊</h1>
+</div>
 
 <div style="border: 1px solid #ccc; padding: 15px; margin: 20px 0; border-radius: 5px; text-align: center; transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;">
   <strong><a href="https://lookerstudio.google.com/u/0/reporting/8959b791-5c18-4a12-8986-2f58b882b980/page/eleFF" target="_blank" style="text-decoration: none;">➡️ View Live Dashboards ⬅️</a></strong>

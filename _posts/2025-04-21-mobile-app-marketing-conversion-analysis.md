@@ -6,18 +6,24 @@ excerpt: "This case study explores how different marketing channels and user beh
 cover: /assets/images/Cover_MobileApp Marketing.png
 ---
 
-**Table of Contents**
-- [1. Overview](#1-overview)
-- [2. User Behavior Analysis](#2-user-behavior-analysis)
-- [3. Marketing Performance](#3-marketing-performance)
-- [4. User Segmentation & Targeting](#4-user-segmentation--targeting)
-- [5. Final Takeaways](#final-takeaways)
+<!----------- Table of Contents ----------->
+<details>
+<summary><strong>Table of Contents</strong></summary>
+<ul>
+<li><a href="#1-overview">1. Overview</a></li>
+<li><a href="#2-user-behavior-analysis">2. User Behavior Analysis</a></li>
+<li><a href="#3-marketing-performance">3. Marketing Performance</a></li>
+<li><a href="#4-user-segmentation--targeting">4. User Segmentation & Targeting</a></li>
+<li><a href="#final-takeaways">5. Final Takeaways</a></li>
+</ul>
+</details>
 
-<!-- Intro -->
+<!------------ Intro ------------>
 <hr style="width: 40%; border: none; border-top: 1px dashed lightgray; margin: 40px auto;">
 
-### 📌 Introduction
+<!-- <img src="/assets/images/Cover_MobileApp Marketing.png" alt="MobileApp" width="800"/> -->
 
+## 📌 INTRODUCTION
 How do user behavior and marketing touchpoints shape conversions in a mobile app for self-employed professionals in Germany?
 
 This case study explores data from **29.1k users (15.1% conversion)** between 2020 – 2025, with the goal of improving subscription rates and acquisition efficiency.
@@ -28,7 +34,7 @@ I created 4 interactive dashboards in Looker Studio to uncover actionable insigh
 3. **Marketing Performance** – ROI by channel & campaign  
 4. **User Segmentation & Targeting** – Region & profession-based targeting
 
-### 🔧 Tools & Methods
+## 🔧 Tools & Methods
 
 - **Data Preparation:** Python ➡️ **[View Code](https://github.com/dtbkhanh/Data-Analytics-and-Reports/blob/7da10cc3356b97b4d1f8d75133a124ccf609ac1f/Jupyter%20Notebooks/05.%20Mobile%20App%20Marketing%20%26%20Conversion%20Analysis.ipynb)**
 - **Visualization:** Looker Studio (Google Data Studio)
@@ -38,7 +44,9 @@ I created 4 interactive dashboards in Looker Studio to uncover actionable insigh
 <!------------------------------ DASHBOARDS  ----------------------------------->
 <div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
 
-<div style="text-align: center; font-size: 1.3em;"><h1>📊 Explore Dashboards📊 </h1></div>
+<div style="text-align: center; font-size: 1.1em;">
+  <h1 style="font-weight: bold;">📊 Explore Dashboards 📊</h1>
+</div>
 
 <div style="border: 1px solid #ccc; padding: 15px; margin: 20px 0; border-radius: 5px; text-align: center; transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;">
   <strong><a href="https://lookerstudio.google.com/u/0/reporting/8959b791-5c18-4a12-8986-2f58b882b980/page/eleFF" target="_blank" style="text-decoration: none;">➡️ View Live Dashboards ⬅️</a></strong>
