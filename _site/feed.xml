@@ -1,9 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-05-28T23:41:06+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Khanh’s Online Journal</title><subtitle>A blog sharing my experiences and insights on work, projects, and data.</subtitle><author><name>Khanh Dang</name></author><entry><title type="html">Inside Retail Operations: A Case Study on Sales, Inventory, and Vendors</title><link href="http://localhost:4000/2025/05/18/bibitor-inventory-sales-analysis.html" rel="alternate" type="text/html" title="Inside Retail Operations: A Case Study on Sales, Inventory, and Vendors" /><published>2025-05-18T00:00:00+02:00</published><updated>2025-05-18T00:00:00+02:00</updated><id>http://localhost:4000/2025/05/18/bibitor-inventory-sales-analysis</id><content type="html" xml:base="http://localhost:4000/2025/05/18/bibitor-inventory-sales-analysis.html"><![CDATA[<!----------- Table of Contents ----------->
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-05-30T23:46:57+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Khanh’s Online Journal</title><subtitle>A blog sharing my experiences and insights on work, projects, and data.</subtitle><author><name>Khanh Dang</name></author><entry><title type="html">Inside Retail Operations: A Case Study on Sales, Inventory, and Vendors</title><link href="http://localhost:4000/2025/05/18/bibitor-inventory-sales-analysis.html" rel="alternate" type="text/html" title="Inside Retail Operations: A Case Study on Sales, Inventory, and Vendors" /><published>2025-05-18T00:00:00+02:00</published><updated>2025-05-18T00:00:00+02:00</updated><id>http://localhost:4000/2025/05/18/bibitor-inventory-sales-analysis</id><content type="html" xml:base="http://localhost:4000/2025/05/18/bibitor-inventory-sales-analysis.html"><![CDATA[<!----------- Table of Contents ----------->
 <details>
 <summary><strong>Table of Contents</strong></summary>
 <ul>
-<li><a href="#intro">1. Introduction</a></li>
-<li><a href="#sql">2. Analysis with SQL</a></li>
+<li><a href="#1-intro">1. Introduction</a></li>
+<li><a href="#2-sql">2. Analysis with SQL</a>
+  <ul>
+    <li><a href="#2-1-data-health-check">2.1. Initial Data Health Check</a></li>
+    <li><a href="#2-2-vendor">2.2. Vendor Performance Analysis</a></li>
+    <li><a href="#2-3-inventory">2.3. Inventory Analysis</a></li>
+  </ul>
+</li>
 </ul>
 </details>
 
@@ -12,7 +18,7 @@
 <hr style="width: 40%; border: none; border-top: 1px dashed lightgray; margin: 40px auto;" />
 
 <div style="text-align: left;">
-  <h1 id="intro" style="font-weight: bold;">1. INTRODUCTION</h1>
+  <h1 id="1-intro" style="font-weight: bold;">1. INTRODUCTION</h1>
 </div>
 
 <p>What does it take to run a successful liquor business? It’s not just about stocking the right products — it’s about understanding what sells, how fast it moves, and which vendors help or hurt your bottom line.</p>
@@ -63,19 +69,32 @@
 
 <p>As shown, tables like PurchasesDec and <code class="language-plaintext highlighter-rouge">VendorInvoicesDec</code> are linked by shared keys like <code class="language-plaintext highlighter-rouge">VendorNumber</code> and <code class="language-plaintext highlighter-rouge">PONumber</code>, representing the core of Bibitor’s procurement. <code class="language-plaintext highlighter-rouge">SalesDec</code> connects through <code class="language-plaintext highlighter-rouge">InventoryId</code> to track items’ journeys from purchase to customer. This structure ensures a cohesive flow for tracing products and understanding financial transactions across the business.</p>
 
+<!----------------------------------------------------------------------->
 <!------------------------------ SQL  ----------------------------------->
+<!----------------------------------------------------------------------->
+
 <div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
 
 <div style="text-align: left;">
-  <h1 id="sql" style="font-weight: bold;">2. ANALYSIS WITH SQL</h1>
+  <h1 id="2-sql" style="font-weight: bold;">2. ANALYSIS WITH SQL</h1>
 </div>
 
 <p>SQL was the primary tool for extracting, transforming, and performing the initial layers of analysis on Bibitor’s vast datasets. Its power allowed us to systematically address business questions at a granular level.</p>
 
-<h2 id="21-initial-data-health-check-initial-analysissql">2.1. Initial Data Health Check (<code class="language-plaintext highlighter-rouge">Initial Analysis.sql</code>)</h2>
-<p>Before any deep dive, ensuring the data’s integrity was crucial. The <code class="language-plaintext highlighter-rouge">Initial Analysis.sql</code> script acted as our data auditor, meticulously checking for common pitfalls like missing entries, zero values in critical financial columns, and inconsistencies that could skew our results.</p>
+<p>All SQL queries used for this analysis are available in the following GitHub repository:</p>
+<div style="border: 1px solid #ccc; padding: 15px; margin: 20px 0; border-radius: 5px; text-align: center; transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;">
+  <strong><a href="https://github.com/dtbkhanh/Data-Analytics-and-Reports/tree/021a7ac923e6cd4f8919e8d023981034e881d0a0/SQL%20Queries/01.%20Bibitor%20LLC%20Inventory%20Analysis" target="_blank" style="text-decoration: none;">➡️ View SQL Queries ⬅️</a></strong>
+</div>
 
-<h3 id="-key-actions--questions-addressed">🔑 Key actions &amp; questions addressed:</h3>
+<!-------- ** 2.1. Initial Data Health Check ** -------->
+
+<div style="text-align: left;">
+  <h2 id="2-1-data-health-check" style="font-weight: bold;">2.1. Initial Data Health Check</h2>
+</div>
+
+<p>Before any deep dive, ensuring the data’s integrity was crucial. The <strong><code class="language-plaintext highlighter-rouge">Initial Analysis.sql</code></strong> script acted as our data auditor, meticulously checking for common pitfalls like missing entries, zero values in critical financial columns, and inconsistencies that could skew our results.</p>
+
+<h2 id="-key-actions--questions">🔑 Key Actions &amp; Questions:</h2>
 <ul>
   <li><strong>Identifying invalid entries:</strong> Are there sales, purchase, or pricing records with missing or zero dollar/price amounts?</li>
   <li><strong>Assessing completeness:</strong> What percentage of our data might be incomplete or erroneous?</li>
@@ -83,8 +102,8 @@
   <li><strong>Cross-table consistency:</strong> Are vendor records consistent across purchasing and sales datasets?</li>
 </ul>
 
-<h3 id="-a-glimpse-into-the-code">🔍 A glimpse into the Code:</h3>
-<h4 id="a-missing-or-zero-values">a. Missing or Zero values</h4>
+<h2 id="-a-glimpse-into-the-code">🔍 A glimpse into the Code:</h2>
+<h3 id="a-missing-or-zero-values">a. Missing or Zero values</h3>
 <p><strong>📦 Purchases:</strong></p>
 <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">PurchasesDec</span> <span class="k">WHERE</span> <span class="n">Dollars</span> <span class="o">&lt;=</span> <span class="mi">0</span> <span class="k">OR</span> <span class="n">Dollars</span> <span class="k">IS</span> <span class="k">NULL</span><span class="p">;</span>
 </code></pre></div></div>
@@ -182,10 +201,441 @@
   </tbody>
 </table>
 
-<p>Our analysis revealed 55 entries where the <strong><code class="language-plaintext highlighter-rouge">SalesDollars</code></strong> field is zero or null. Since <code class="language-plaintext highlighter-rouge">SalesDollars</code> is derived from <code class="language-plaintext highlighter-rouge">SalesPrice</code> multiplied by <code class="language-plaintext highlighter-rouge">SalesQuantity</code>, a zero <code class="language-plaintext highlighter-rouge">SalesDollars</code> value means that the <strong><code class="language-plaintext highlighter-rouge">SalesPrice</code></strong> for these transactions is effectively zero as well. This warrants further investigation.</p>
+<p>The analysis revealed 55 entries where the <strong><code class="language-plaintext highlighter-rouge">SalesDollars</code></strong> field is zero or null. Since <code class="language-plaintext highlighter-rouge">SalesDollars</code> is derived from <code class="language-plaintext highlighter-rouge">SalesPrice</code> multiplied by <code class="language-plaintext highlighter-rouge">SalesQuantity</code>, a zero <code class="language-plaintext highlighter-rouge">SalesDollars</code> value means that the <strong><code class="language-plaintext highlighter-rouge">SalesPrice</code></strong> for these transactions is effectively zero as well. This warrants further investigation.</p>
 
+<h4 id="️-next-steps">➡️ Next steps:</h4>
+<p>To determine if these zero values are problematic, we need to:</p>
+<ul>
+  <li><strong>Understand the business context:</strong> Consult relevant teams (purchasing, sales, accounting, inventory) to confirm if zero-value transactions are expected and why.</li>
+  <li><strong>Analyze items and vendors:</strong> Look for patterns tied to specific products or suppliers.</li>
+  <li><strong>Review promotions and pricing strategies:</strong> Check for campaigns like “buy one, get one free” that may explain the values.</li>
+  <li><strong>Examine data entry and system integration:</strong> Investigate potential input errors or issues during data transfers.</li>
+</ul>
+
+<h3 id="b-percentage-of-zero-or-null-in-the-dataset">b. Percentage of Zero or Null in the dataset</h3>
+<p>To assess the cleanliness of the financial data, I calculated the percentage of zero or null values in the <code class="language-plaintext highlighter-rouge">Dollars</code> column of the <code class="language-plaintext highlighter-rouge">PurchasesDec</code> table, and the <code class="language-plaintext highlighter-rouge">SalesDollars</code> column of the <code class="language-plaintext highlighter-rouge">SalesDec</code> table.</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span>
+    <span class="k">CAST</span><span class="p">(</span><span class="k">SUM</span><span class="p">(</span><span class="k">CASE</span> <span class="k">WHEN</span> <span class="n">Dollars</span> <span class="o">&lt;=</span> <span class="mi">0</span> <span class="k">OR</span> <span class="n">Dollars</span> <span class="k">IS</span> <span class="k">NULL</span> <span class="k">THEN</span> <span class="mi">1</span> <span class="k">ELSE</span> <span class="mi">0</span> <span class="k">END</span><span class="p">)</span> <span class="k">AS</span> <span class="nb">REAL</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span> <span class="o">/</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">AS</span> <span class="n">ZeroPurchases</span>
+<span class="k">FROM</span> <span class="n">PurchasesDec</span><span class="p">;</span>
+</code></pre></div></div>
+<p><em>Output:</em> <code class="language-plaintext highlighter-rouge">0.0064</code></p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span>
+    <span class="k">CAST</span><span class="p">(</span><span class="k">SUM</span><span class="p">(</span><span class="k">CASE</span> <span class="k">WHEN</span> <span class="n">SalesDollars</span> <span class="o">&lt;=</span> <span class="mi">0</span> <span class="k">OR</span> <span class="n">SalesDollars</span> <span class="k">IS</span> <span class="k">NULL</span> <span class="k">THEN</span> <span class="mi">1</span> <span class="k">ELSE</span> <span class="mi">0</span> <span class="k">END</span><span class="p">)</span> <span class="k">AS</span> <span class="nb">REAL</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span> <span class="o">/</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">AS</span> <span class="n">ZeroSales</span>
+<span class="k">FROM</span> <span class="n">SalesDec</span><span class="p">;</span>
+
+</code></pre></div></div>
+<p><em>Output:</em> <code class="language-plaintext highlighter-rouge">0.0004</code></p>
+
+<p>➡️ These extremely low percentages in both the <code class="language-plaintext highlighter-rouge">Dollars</code> and <code class="language-plaintext highlighter-rouge">SalesDollars</code> columns indicate that our datasets are remarkably clean regarding zero or null monetary values. This is a positive sign for data quality.</p>
+
+<h3 id="c-dataset-summaries">c. Dataset Summaries</h3>
+<p>This section summarizes the key characteristics of the datasets to gain a foundational understanding of their contents.</p>
+
+<p><strong>📦 Purchases:</strong> <br />
+The <code class="language-plaintext highlighter-rouge">PurchasesDec</code> table contains 2.37 million rows, involving 126 distinct vendors and 5,543 unique purchase orders. Monetary and quantity data for purchases are as follows:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Metric</th>
+      <th>Quantity (units)</th>
+      <th>Dollars</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Total</td>
+      <td>33,584,377</td>
+      <td>$321,900,765.50</td>
+    </tr>
+    <tr>
+      <td>Average</td>
+      <td>14.16</td>
+      <td>$135.68</td>
+    </tr>
+    <tr>
+      <td>Minimum</td>
+      <td>1</td>
+      <td>$0.00</td>
+    </tr>
+    <tr>
+      <td>Maximum</td>
+      <td>3,816</td>
+      <td>$50,175.70</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The purchase data spans:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Date Type</th>
+      <th>Start Date</th>
+      <th>End Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PO Date</td>
+      <td>2015-12-20</td>
+      <td>2016-12-23</td>
+    </tr>
+    <tr>
+      <td>Receiving Date</td>
+      <td>2016-01-01</td>
+      <td>2016-12-31</td>
+    </tr>
+    <tr>
+      <td>Invoice Date</td>
+      <td>2016-01-04</td>
+      <td>2017-01-10</td>
+    </tr>
+    <tr>
+      <td>Pay Date</td>
+      <td>2016-02-04</td>
+      <td>2017-02-19</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>📦 Sales:</strong> <br />
+The <code class="language-plaintext highlighter-rouge">SalesDec</code> table shows a total sales volume of $452,062,952, with an average sale amount of $35.25. Individual sales range from $0 to $26,061.14.</p>
+
+<p><strong>📦 Vendors:</strong> <br />
+The <code class="language-plaintext highlighter-rouge">VendorInvoicesDec</code> table shares similar date ranges with <code class="language-plaintext highlighter-rouge">PurchasesDec</code> for PO, Invoice, and Pay dates.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Metric</th>
+      <th>Quantity (units)</th>
+      <th>Dollars</th>
+      <th>Freight</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Total</td>
+      <td>33,584,377</td>
+      <td>$321,900,765.50</td>
+      <td>$1,640,474.69</td>
+    </tr>
+    <tr>
+      <td>Average</td>
+      <td>6,058.88</td>
+      <td>$58,073.38</td>
+      <td>$295.95</td>
+    </tr>
+    <tr>
+      <td>Minimum</td>
+      <td>1</td>
+      <td>$4.14</td>
+      <td>$0.02</td>
+    </tr>
+    <tr>
+      <td>Maximum</td>
+      <td>141,660</td>
+      <td>$1,660,435.88</td>
+      <td>$8,468.22</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-------- ** 2.2. Vendor Performance Analysis ** -------->
+
+<div style="text-align: left;">
+  <h2 id="2-2-vendor" style="font-weight: bold;">2.2. Vendor Performance Analysis</h2>
+</div>
+
+<p>The next step was to understand Bibitor’s important relationships with its vendors, or suppliers. The <strong><code class="language-plaintext highlighter-rouge">Vendor Analysis.sql</code></strong> script provided a 360-degree view of supplier performance, aiming to find out which vendors were performing best, how efficient shipping costs were, and how much profit each vendor’s products brought in.</p>
+
+<h2 id="-key-actions--questions-1">🔑 Key Actions &amp; Questions:</h2>
+<ul>
+  <li><strong>Top Vendor identification:</strong> Which are the top suppliers by total spend, sales generated from their products, and quantity purchased?</li>
+  <li><strong>Freight cost insights:</strong> Which vendors contribute most to shipping costs, and how does freight impact the overall purchase cost from their goods?</li>
+  <li><strong>Profitability assessment:</strong> What is the gross margin achieved from products supplied by each vendor, highlighting their true profit contribution?</li>
+  <li><strong>Temporal trends:</strong> How do monthly purchase and sales trends look over time, indicating seasonality or growth?</li>
+</ul>
+
+<h2 id="-a-glimpse-into-the-code-1">🔍 A glimpse into the Code:</h2>
+<p>To begin, a comprehensive list of all distinct vendors across both purchase and invoice records was compiled. A total of <strong>128 unique vendors</strong> were identified.</p>
+
+<h3 id="a-top-vendors-by-spend--revenue">a. Top Vendors by Spend &amp; Revenue:</h3>
+<p>It’s crucial to know where the most money is spent and which vendors’ products bring in the most sales. The following query helps identify Bibitor’s top suppliers based on how much was spent on their products:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- Identifies top 5 suppliers by total spending (Dollars)</span>
+<span class="k">SELECT</span>
+    <span class="n">VendorNumber</span><span class="p">,</span>
+    <span class="n">VendorName</span><span class="p">,</span>
+    <span class="k">SUM</span><span class="p">(</span><span class="n">Dollars</span><span class="p">)</span> <span class="k">AS</span> <span class="n">TotalPurchaseDollars</span>
+<span class="k">FROM</span> <span class="n">PurchasesDec</span>
+<span class="k">GROUP</span> <span class="k">BY</span> <span class="n">VendorNumber</span><span class="p">,</span> <span class="n">VendorName</span>
+<span class="k">ORDER</span> <span class="k">BY</span> <span class="n">TotalPurchaseDollars</span> <span class="k">DESC</span>
+<span class="k">LIMIT</span> <span class="mi">5</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p><em>Output 1:</em></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>VendorNumber</th>
+      <th>VendorName</th>
+      <th>TotalPurchaseDollars</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3960</td>
+      <td>DIAGEO NORTH AMERICA INC</td>
+      <td>$50,959,796.85</td>
+    </tr>
+    <tr>
+      <td>4425</td>
+      <td>MARTIGNETTI COMPANIES</td>
+      <td>$27,861,690.02</td>
+    </tr>
+    <tr>
+      <td>12546</td>
+      <td>JIM BEAM BRANDS COMPANY</td>
+      <td>$24,203,151.05</td>
+    </tr>
+    <tr>
+      <td>17035</td>
+      <td>PERNOD RICARD USA</td>
+      <td>$24,124,091.56</td>
+    </tr>
+    <tr>
+      <td>480</td>
+      <td>BACARDI USA INC</td>
+      <td>$17,624,378.72</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Similarly, the analysis also identified the top suppliers by the total revenue generated from their products:</p>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- Identifies top 5 suppliers by total revenue (SalesDollars)</span>
+<span class="k">SELECT</span> 
+  <span class="n">VendorNo</span> <span class="k">AS</span> <span class="n">VendorNumber</span><span class="p">,</span>
+  <span class="n">VendorName</span><span class="p">,</span>
+  <span class="k">SUM</span><span class="p">(</span><span class="n">SalesDollars</span><span class="p">)</span> <span class="k">AS</span> <span class="n">TotalSalesDollars</span>
+<span class="k">FROM</span> <span class="n">SalesDec</span>
+<span class="k">GROUP</span> <span class="k">BY</span> <span class="n">VendorNo</span><span class="p">,</span> <span class="n">VendorName</span>
+<span class="k">ORDER</span> <span class="k">BY</span> <span class="n">TotalSalesDollars</span> <span class="k">DESC</span>
+<span class="k">LIMIT</span> <span class="mi">5</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p><em>Output 2:</em></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>VendorNumber</th>
+      <th>VendorName</th>
+      <th>TotalSalesDollars</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3960</td>
+      <td>DIAGEO NORTH AMERICA INC</td>
+      <td>$68,742,416.99</td>
+    </tr>
+    <tr>
+      <td>4425</td>
+      <td>MARTIGNETTI COMPANIES</td>
+      <td>$41,047,306.30</td>
+    </tr>
+    <tr>
+      <td>17035</td>
+      <td>PERNOD RICARD USA</td>
+      <td>$32,281,247.95</td>
+    </tr>
+    <tr>
+      <td>12546</td>
+      <td>JIM BEAM BRANDS COMPANY</td>
+      <td>$31,906,320.54</td>
+    </tr>
+    <tr>
+      <td>480</td>
+      <td>BACARDI USA INC</td>
+      <td>$25,014,556.89</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Both results revealed a similar ranking of top vendors. “DIAGEO NORTH AMERICA INC” consistently appeared as the largest supplier both in terms of total purchases and sales generated from their products. This means what Bibitor buys from them lines up well with what customers want to buy.</p>
+
+<h3 id="b-freight-cost-efficiency">b. Freight Cost Efficiency:</h3>
+<p>While higher purchase amounts often mean higher total shipping costs, it’s more insightful to look at shipping costs as a percentage of the total purchase cost. This helps uncover if shipping is costing too much compared to the value of the goods.</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- Calculates and ranks vendors by freight cost as a percentage of their total purchase cost</span>
+<span class="k">SELECT</span>
+    <span class="n">VendorNumber</span><span class="p">,</span>
+    <span class="n">VendorName</span><span class="p">,</span>
+    <span class="k">SUM</span><span class="p">(</span><span class="n">Dollars</span><span class="p">)</span> <span class="k">AS</span> <span class="n">TotalPurchase</span><span class="p">,</span>
+    <span class="k">SUM</span><span class="p">(</span><span class="n">Freight</span><span class="p">)</span> <span class="k">AS</span> <span class="n">TotalFreight</span><span class="p">,</span>
+    <span class="n">ROUND</span><span class="p">(</span><span class="k">SUM</span><span class="p">(</span><span class="n">Freight</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span><span class="p">.</span><span class="mi">0</span> <span class="o">/</span> <span class="k">NULLIF</span><span class="p">(</span><span class="k">SUM</span><span class="p">(</span><span class="n">Dollars</span><span class="p">),</span> <span class="mi">0</span><span class="p">),</span> <span class="mi">2</span><span class="p">)</span> <span class="k">AS</span> <span class="n">FreightPercent</span>
+<span class="k">FROM</span> <span class="n">VendorInvoicesDec</span>
+<span class="k">GROUP</span> <span class="k">BY</span> <span class="n">VendorNumber</span><span class="p">,</span> <span class="n">VendorName</span>
+<span class="k">ORDER</span> <span class="k">BY</span> <span class="n">FreightPercent</span> <span class="k">DESC</span>
+<span class="k">LIMIT</span> <span class="mi">5</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p><em>Output:</em></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>VendorNumber</th>
+      <th>VendorName</th>
+      <th>TotalPurchase</th>
+      <th>TotalFreight</th>
+      <th>FreightPercent</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>9625</td>
+      <td>WESTERN SPIRITS BEVERAGE CO</td>
+      <td>$361,249.21</td>
+      <td>$1,933.19</td>
+      <td>0.54%</td>
+    </tr>
+    <tr>
+      <td>28776</td>
+      <td>TALL SHIP DISTILLERY LLC</td>
+      <td>$48,445.58</td>
+      <td>$259.90</td>
+      <td>0.54%</td>
+    </tr>
+    <tr>
+      <td>3951</td>
+      <td>HIGHLAND WINE MERCHANTS LLC</td>
+      <td>$5,500.32</td>
+      <td>$29.43</td>
+      <td>0.54%</td>
+    </tr>
+    <tr>
+      <td>1590</td>
+      <td>DIAGEO CHATEAU ESTATE WINES</td>
+      <td>$1,365,472.83</td>
+      <td>$7,259.75</td>
+      <td>0.53%</td>
+    </tr>
+    <tr>
+      <td>9744</td>
+      <td>FREDERICK WILDMAN &amp; SONS</td>
+      <td>$759,449.24</td>
+      <td>$3,999.93</td>
+      <td>0.53%</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The result showed that vendors with the highest <em>percentage</em> of freight costs are often not the same as those with the highest <em>total</em> freight. This suggests that smaller or more specialized vendors may have less optimized shipping logistics, making freight a larger proportion of the overall cost for their products.</p>
+
+<h3 id="c-profitability-via-gross-margin">c. Profitability via Gross Margin:</h3>
+<p>A very important financial measure is gross margin by vendor. This helps identify which suppliers contribute the most to Bibitor’s profit.</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- Calculates the Gross Margin (Profit) by comparing Total Cost (Purchases) to Total Revenue (Sales) for each vendor</span>
+<span class="k">WITH</span> <span class="n">Purchases</span> <span class="k">AS</span> <span class="p">(</span>
+    <span class="k">SELECT</span> <span class="n">VendorNumber</span><span class="p">,</span> <span class="k">SUM</span><span class="p">(</span><span class="n">Dollars</span><span class="p">)</span> <span class="k">AS</span> <span class="n">TotalCost</span> <span class="k">FROM</span> <span class="n">PurchasesDec</span> <span class="k">WHERE</span> <span class="n">Dollars</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">VendorNumber</span>
+<span class="p">),</span>
+<span class="n">Sales</span> <span class="k">AS</span> <span class="p">(</span>
+    <span class="k">SELECT</span> <span class="n">VendorNo</span> <span class="k">AS</span> <span class="n">VendorNumber</span><span class="p">,</span> <span class="k">SUM</span><span class="p">(</span><span class="n">SalesDollars</span><span class="p">)</span> <span class="k">AS</span> <span class="n">TotalRevenue</span> <span class="k">FROM</span> <span class="n">SalesDec</span> <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">VendorNo</span>
+<span class="p">)</span>
+<span class="k">SELECT</span>
+    <span class="n">s</span><span class="p">.</span><span class="n">VendorNumber</span><span class="p">,</span>
+    <span class="n">s</span><span class="p">.</span><span class="n">TotalRevenue</span><span class="p">,</span>
+    <span class="n">p</span><span class="p">.</span><span class="n">TotalCost</span><span class="p">,</span>
+    <span class="p">(</span><span class="n">s</span><span class="p">.</span><span class="n">TotalRevenue</span> <span class="o">-</span> <span class="n">p</span><span class="p">.</span><span class="n">TotalCost</span><span class="p">)</span> <span class="k">AS</span> <span class="n">GrossProfit</span><span class="p">,</span>
+    <span class="n">ROUND</span><span class="p">((</span><span class="n">s</span><span class="p">.</span><span class="n">TotalRevenue</span> <span class="o">-</span> <span class="n">p</span><span class="p">.</span><span class="n">TotalCost</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span><span class="p">.</span><span class="mi">0</span> <span class="o">/</span> <span class="k">NULLIF</span><span class="p">(</span><span class="n">s</span><span class="p">.</span><span class="n">TotalRevenue</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="mi">2</span><span class="p">)</span> <span class="k">AS</span> <span class="n">GrossMarginPercent</span>
+<span class="k">FROM</span> <span class="n">Sales</span> <span class="n">s</span>
+<span class="k">LEFT</span> <span class="k">JOIN</span> <span class="n">Purchases</span> <span class="n">p</span> <span class="k">ON</span> <span class="n">s</span><span class="p">.</span><span class="n">VendorNumber</span> <span class="o">=</span> <span class="n">p</span><span class="p">.</span><span class="n">VendorNumber</span>
+<span class="k">ORDER</span> <span class="k">BY</span> <span class="n">GrossProfit</span> <span class="k">DESC</span>
+<span class="k">LIMIT</span> <span class="mi">5</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p><em>Output:</em></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>VendorNumber</th>
+      <th>TotalRevenue</th>
+      <th>TotalCost</th>
+      <th>GrossProfit</th>
+      <th>GrossMarginPercent</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3960</td>
+      <td>$68,742,416.99</td>
+      <td>$50,959,796.85</td>
+      <td>$17,782,620.14</td>
+      <td>25.87%</td>
+    </tr>
+    <tr>
+      <td>4425</td>
+      <td>$41,047,306.30</td>
+      <td>$27,861,690.02</td>
+      <td>$13,185,616.28</td>
+      <td>32.12%</td>
+    </tr>
+    <tr>
+      <td>1392</td>
+      <td>$24,469,172.93</td>
+      <td>$15,573,917.90</td>
+      <td>$8,895,255.03</td>
+      <td>36.35%</td>
+    </tr>
+    <tr>
+      <td>17035</td>
+      <td>$32,281,247.95</td>
+      <td>$24,124,091.56</td>
+      <td>$8,157,156.39</td>
+      <td>25.27%</td>
+    </tr>
+    <tr>
+      <td>12546</td>
+      <td>$31,906,320.54</td>
+      <td>$24,203,151.05</td>
+      <td>$7,703,169.49</td>
+      <td>24.14%</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>This clearly shows which vendors bring in the most profit. While some vendors lead in total profit, others have very strong gross margin percentages, meaning their products are very efficient at generating profit. This information is key for deciding which vendor relationships to focus on for better profits.</p>
+
+<!-------- ** 2.3. Inventory Analysis ** -------->
+
+<div style="text-align: left;">
+  <h2 id="2-3-inventory" style="font-weight: bold;">2.3. Inventory Analysis</h2>
+</div>
+
+<!------------------------------------------------------------------------------>
 <!------------------------------ DASHBOARDS  ----------------------------------->
-<div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>]]></content><author><name>Khanh Dang</name></author><summary type="html"><![CDATA[What does it take to run a successful retail business? It's knowing what sells, how fast inventory moves, and which vendors truly impact your bottom line.]]></summary></entry><entry><title type="html">My Interview Journey with Google</title><link href="http://localhost:4000/2025/04/30/interview-with-google.html" rel="alternate" type="text/html" title="My Interview Journey with Google" /><published>2025-04-30T00:00:00+02:00</published><updated>2025-04-30T00:00:00+02:00</updated><id>http://localhost:4000/2025/04/30/interview-with-google</id><content type="html" xml:base="http://localhost:4000/2025/04/30/interview-with-google.html"><![CDATA[<!-- Intro -->
+<!------------------------------------------------------------------------------>
+
+<div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
+<div style="text-align: left;">
+  <h1 id="3-dashboards" style="font-weight: bold;">3. DASHBOARDS</h1>
+</div>
+
+<p>Looking at monthly purchases and sales gives important clues about how operations flow and if demand changes with the seasons.</p>
+<ul>
+  <li>Monthly purchases generally went up throughout 2016, with a peak in August, which likely means inventory was being built up.</li>
+  <li>In contrast, monthly sales grew strongly, with big peaks in July and a huge jump in December, probably due to holiday shopping.</li>
+</ul>
+
+<p>These trends are vital for matching what’s bought with what’s expected to be sold.</p>]]></content><author><name>Khanh Dang</name></author><summary type="html"><![CDATA[What does it take to run a successful retail business? It's knowing what sells, how fast inventory moves, and which vendors truly impact your bottom line.]]></summary></entry><entry><title type="html">My Interview Journey with Google</title><link href="http://localhost:4000/2025/04/30/interview-with-google.html" rel="alternate" type="text/html" title="My Interview Journey with Google" /><published>2025-04-30T00:00:00+02:00</published><updated>2025-04-30T00:00:00+02:00</updated><id>http://localhost:4000/2025/04/30/interview-with-google</id><content type="html" xml:base="http://localhost:4000/2025/04/30/interview-with-google.html"><![CDATA[<!-- Intro -->
 
 <p><img src="/assets/images/Cover_Google Interview.png" alt="Interview with Google" width="800" /></p>
 
