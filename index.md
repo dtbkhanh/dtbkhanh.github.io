@@ -182,7 +182,7 @@ title: Home
 </div>
 
 <div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 1.5rem; margin-top: 2rem;">
-  {% assign latest_posts = site.posts limit: 3 %}  <!-- Get the latest 3 posts -->
+  {% assign latest_posts = site.posts | slice: 0, 3 %}  <!-- Get the latest 3 posts -->
 
   {% for post in latest_posts %}
     <div style="flex: 1 1 300px; max-width: 400px; margin: 0 auto;">

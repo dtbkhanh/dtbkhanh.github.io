@@ -68,6 +68,12 @@
       line-height: 1.3;
       margin-bottom: 0.6em;
     }
+
+    .table-wrapper {
+      overflow-x: scroll;
+      white-space: nowrap;
+    }
+
   </style>
 
 
@@ -90,7 +96,7 @@
   <ul>
     <li><a href="#2-1-data-health-check">2.1. Initial Data Health Check</a></li>
     <li><a href="#2-2-vendor">2.2. Vendor Performance Analysis</a></li>
-    <li><a href="#2-3-inventory">2.3. Inventory Analysis</a></li>
+    <li><a href="#2-3-inventory">2.3. Inventory Turnover Analysis</a></li>
   </ul>
 </li>
 </ul>
@@ -106,7 +112,7 @@
 
 <p>What does it take to run a successful liquor business? It’s not just about stocking the right products — it’s about understanding what sells, how fast it moves, and which vendors help or hurt your bottom line.</p>
 
-<p>In this case study, I analyze data from Bibitor, LLC — a fictional retail chain with 80+ locations and over $450M in annual sales — to uncover patterns patterns in vendor performance, inventory movement, and sales behavior, applying real-world retail concepts.</p>
+<p>This case study analyzes data from Bibitor, LLC — a fictional retail chain with 80+ locations and over $450M in annual sales — to uncover patterns patterns in vendor performance, inventory movement, and sales behavior, applying real-world retail concepts.</p>
 
 <h3 id="-about-the-dataset">🧾 About the Dataset</h3>
 <p>The dataset come from the <strong><a href="https://www.hubae.org">HUB of Analytics Education</a></strong> and mimics operations in a large-scale liquor retailer in Lincoln, USA. It spans December 2016 and includes 6 key tables:</p>
@@ -193,44 +199,112 @@
 
 <p><em>Sample Output:</em></p>
 
-<table>
-  <thead>
-    <tr>
-      <th>InventoryId</th>
-      <th>Store</th>
-      <th>…</th>
-      <th>PurchasePrice</th>
-      <th>Quantity</th>
-      <th>Dollars</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>59_CLAETHORPES_2166</td>
-      <td>59</td>
-      <td>…</td>
-      <td>0</td>
-      <td>12</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>38_GOULCREST_2166</td>
-      <td>38</td>
-      <td>…</td>
-      <td>0</td>
-      <td>12</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>34_PITMERDEN_2166</td>
-      <td>34</td>
-      <td>…</td>
-      <td>0</td>
-      <td>12</td>
-      <td>0</td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+
+  <table>
+    <thead>
+      <tr>
+        <th>InventoryId</th>
+        <th>Store</th>
+        <th>Brand</th>
+        <th>…</th>
+        <th>VendorNumber</th>
+        <th>VendorName</th>
+        <th>PONumber</th>
+        <th>PODate</th>
+        <th>ReceivingDate</th>
+        <th>InvoiceDate</th>
+        <th>PayDate</th>
+        <th>PurchasePrice</th>
+        <th>Quantity</th>
+        <th>Dollars</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>59_CLAETHORPES_2166</td>
+        <td>59</td>
+        <td>2166</td>
+        <td>…</td>
+        <td>2561</td>
+        <td>EDRINGTON AMERICAS</td>
+        <td>11462</td>
+        <td>2016-08-02</td>
+        <td>2016-08-10</td>
+        <td>2016-08-22</td>
+        <td>2016-10-01</td>
+        <td>0</td>
+        <td>12</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>38_GOULCREST_2166</td>
+        <td>38</td>
+        <td>2166</td>
+        <td>…</td>
+        <td>2561</td>
+        <td>EDRINGTON AMERICAS</td>
+        <td>11462</td>
+        <td>2016-08-02</td>
+        <td>2016-08-11</td>
+        <td>2016-08-22</td>
+        <td>2016-10-01</td>
+        <td>0</td>
+        <td>12</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>34_PITMERDEN_2166</td>
+        <td>34</td>
+        <td>2166</td>
+        <td>…</td>
+        <td>2561</td>
+        <td>EDRINGTON AMERICAS</td>
+        <td>11462</td>
+        <td>2016-08-02</td>
+        <td>2016-08-09</td>
+        <td>2016-08-22</td>
+        <td>2016-10-01</td>
+        <td>0</td>
+        <td>12</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>44_PORTHCRAWL_2166</td>
+        <td>44</td>
+        <td>2166</td>
+        <td>…</td>
+        <td>2561</td>
+        <td>EDRINGTON AMERICAS</td>
+        <td>11462</td>
+        <td>2016-08-02</td>
+        <td>2016-08-08</td>
+        <td>2016-08-22</td>
+        <td>2016-10-01</td>
+        <td>0</td>
+        <td>12</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>56_BEGGAR’S HOLE_2166</td>
+        <td>56</td>
+        <td>2166</td>
+        <td>…</td>
+        <td>2561</td>
+        <td>EDRINGTON AMERICAS</td>
+        <td>11462</td>
+        <td>2016-08-02</td>
+        <td>2016-08-09</td>
+        <td>2016-08-22</td>
+        <td>2016-10-01</td>
+        <td>0</td>
+        <td>12</td>
+        <td>0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
 
 <p>This query returned 153 entries where the <strong><code class="language-plaintext highlighter-rouge">Dollars</code></strong> value is zero or null. Given that <code class="language-plaintext highlighter-rouge">Dollars</code> is calculated as <code class="language-plaintext highlighter-rouge">PurchasePrice * Quantity</code>, this directly implies that <strong><code class="language-plaintext highlighter-rouge">PurchasePrice</code></strong> for these entries is also zero, requiring further investigation. Potential reasons for these entries include:</p>
 <ul>
@@ -245,44 +319,100 @@
 
 <p><em>Sample Output:</em></p>
 
-<table>
-  <thead>
-    <tr>
-      <th>InventoryId</th>
-      <th>Store</th>
-      <th>Brand</th>
-      <th>SalesQuantity</th>
-      <th>SalesDollars</th>
-      <th>…</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>38_GOULCREST_25340</td>
-      <td>38</td>
-      <td>25340</td>
-      <td>3</td>
-      <td>0</td>
-      <td>…</td>
-    </tr>
-    <tr>
-      <td>66_EANVERNESS_25340</td>
-      <td>66</td>
-      <td>25340</td>
-      <td>3</td>
-      <td>0</td>
-      <td>…</td>
-    </tr>
-    <tr>
-      <td>66_EANVERNESS_25340</td>
-      <td>66</td>
-      <td>25340</td>
-      <td>1</td>
-      <td>0</td>
-      <td>…</td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper">
+
+  <table>
+    <thead>
+      <tr>
+        <th>InventoryId</th>
+        <th>Store</th>
+        <th>Brand</th>
+        <th>…</th>
+        <th>SalesQuantity</th>
+        <th>SalesDollars</th>
+        <th>SalesPrice</th>
+        <th>SalesDate</th>
+        <th>Classification</th>
+        <th>ExciseTax</th>
+        <th>VendorNo</th>
+        <th>VendorName</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>38_GOULCREST_25340</td>
+        <td>38</td>
+        <td>25340</td>
+        <td>…</td>
+        <td>3</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2016-02-13</td>
+        <td>2</td>
+        <td>0.34</td>
+        <td>4425</td>
+        <td>MARTIGNETTI COMPANIES</td>
+      </tr>
+      <tr>
+        <td>66_EANVERNESS_25340</td>
+        <td>66</td>
+        <td>25340</td>
+        <td>…</td>
+        <td>3</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2016-02-12</td>
+        <td>2</td>
+        <td>0.34</td>
+        <td>4425</td>
+        <td>MARTIGNETTI COMPANIES</td>
+      </tr>
+      <tr>
+        <td>66_EANVERNESS_25340</td>
+        <td>66</td>
+        <td>25340</td>
+        <td>…</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2016-02-16</td>
+        <td>2</td>
+        <td>0.11</td>
+        <td>4425</td>
+        <td>MARTIGNETTI COMPANIES</td>
+      </tr>
+      <tr>
+        <td>67_EANVERNESS_25340</td>
+        <td>67</td>
+        <td>25340</td>
+        <td>…</td>
+        <td>12</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2016-02-07</td>
+        <td>2</td>
+        <td>1.35</td>
+        <td>4425</td>
+        <td>MARTIGNETTI COMPANIES</td>
+      </tr>
+      <tr>
+        <td>73_DONCASTER_25340</td>
+        <td>73</td>
+        <td>25340</td>
+        <td>…</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2016-02-15</td>
+        <td>2</td>
+        <td>0.11</td>
+        <td>4425</td>
+        <td>MARTIGNETTI COMPANIES</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
 
 <p>The analysis revealed 55 entries where the <strong><code class="language-plaintext highlighter-rouge">SalesDollars</code></strong> field is zero or null. Since <code class="language-plaintext highlighter-rouge">SalesDollars</code> is derived from <code class="language-plaintext highlighter-rouge">SalesPrice</code> multiplied by <code class="language-plaintext highlighter-rouge">SalesQuantity</code>, a zero <code class="language-plaintext highlighter-rouge">SalesDollars</code> value means that the <strong><code class="language-plaintext highlighter-rouge">SalesPrice</code></strong> for these transactions is effectively zero as well. This warrants further investigation.</p>
 
@@ -697,11 +827,106 @@ The <code class="language-plaintext highlighter-rouge">VendorInvoicesDec</code> 
 
 <p>This clearly shows which vendors bring in the most profit. While some vendors lead in total profit, others have very strong gross margin percentages, meaning their products are very efficient at generating profit. This information is key for deciding which vendor relationships to focus on for better profits.</p>
 
-<!-------- ** 2.3. Inventory Analysis ** -------->
+<!-------- ** 2.3. Inventory Turnover Analysis ** -------->
 
 <div style="text-align: left;">
-  <h2 id="2-3-inventory" style="font-weight: bold;">2.3. Inventory Analysis</h2>
+  <h2 id="2-3-inventory" style="font-weight: bold;">2.3. Inventory Turnover Analysis</h2>
 </div>
+
+<p>Efficient inventory management is critical for any retail business, directly impacting cash flow and profitability. This analysis, conducted using the <strong><code class="language-plaintext highlighter-rouge">Inventory Analysis.sql</code></strong> script, aimed to understand how quickly purchased products are sold and to pinpoint slow-moving items that might be tying up funds and taking up too much storage space.</p>
+
+<h3 id="a-calculating-days-to-sell">a. Calculating “Days to Sell”:</h3>
+<p>The main part of this analysis involved figuring out the “Days to Sell” for each unique item at every store. This number was calculated by finding the difference in days between when an item was first received and when it was first sold. This information was then saved into a new table called <code class="language-plaintext highlighter-rouge">InventorySaleLag</code> for easy access.</p>
+
+<p>While the full SQL code for creating this detailed table is extensive, the core idea involved bringing together purchase and sales data to compare dates. This allowed for the calculation of how many days each specific item sat in inventory before its first sale.</p>
+
+<h3 id="b-identifying-slow-moving-inventory">b. Identifying Slow-Moving Inventory::</h3>
+<p>Once the <code class="language-plaintext highlighter-rouge">InventorySaleLag</code> table was ready, a straightforward query was used to find items considered “slow-moving.” For this analysis, an item was flagged as slow-moving if it took longer than 60 days to sell after being received.</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- Selects inventory items that took longer than 60 days to sell from the calculated data</span>
+<span class="k">SELECT</span>
+    <span class="n">InventoryId</span><span class="p">,</span> <span class="n">Store</span><span class="p">,</span> <span class="n">VendorName</span><span class="p">,</span> <span class="n">AvgPurchasePrice</span><span class="p">,</span> <span class="n">AvgSalesPrice</span><span class="p">,</span>
+    <span class="n">TotalPurchased</span><span class="p">,</span> <span class="n">TotalSold</span><span class="p">,</span> <span class="n">FirstReceived</span><span class="p">,</span> <span class="n">FirstSold</span><span class="p">,</span> <span class="n">DaysToSell</span>
+<span class="k">FROM</span> <span class="n">InventorySaleLag</span>
+<span class="k">WHERE</span> <span class="n">DaysToSell</span> <span class="o">&gt;</span> <span class="mi">60</span>
+<span class="k">ORDER</span> <span class="k">BY</span> <span class="n">DaysToSell</span> <span class="k">DESC</span>
+<span class="k">LIMIT</span> <span class="mi">5</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p><em>Sample Output:</em></p>
+
+<div class="table-wrapper">
+
+  <table>
+    <thead>
+      <tr>
+        <th>InventoryId</th>
+        <th>Store</th>
+        <th>VendorName</th>
+        <th>…</th>
+        <th>TotalSold</th>
+        <th>FirstReceived</th>
+        <th>FirstSold</th>
+        <th>DaysToSell</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>29_AYLESBURY_42188</td>
+        <td>29</td>
+        <td>MOET HENNESSY USA INC</td>
+        <td>…</td>
+        <td>1</td>
+        <td>2016-01-02</td>
+        <td>2016-12-31</td>
+        <td>364</td>
+      </tr>
+      <tr>
+        <td>29_AYLESBURY_2767</td>
+        <td>29</td>
+        <td>DIAGEO NORTH AMERICA INC</td>
+        <td>…</td>
+        <td>1</td>
+        <td>2016-01-02</td>
+        <td>2016-12-29</td>
+        <td>362</td>
+      </tr>
+      <tr>
+        <td>29_AYLESBURY_8897</td>
+        <td>29</td>
+        <td>MOET HENNESSY USA INC</td>
+        <td>…</td>
+        <td>2</td>
+        <td>2016-01-08</td>
+        <td>2016-12-31</td>
+        <td>358</td>
+      </tr>
+      <tr>
+        <td>5_SUTTON_17967</td>
+        <td>5</td>
+        <td>BANFI PRODUCTS CORP</td>
+        <td>…</td>
+        <td>1</td>
+        <td>2016-01-02</td>
+        <td>2016-12-22</td>
+        <td>355</td>
+      </tr>
+      <tr>
+        <td>6_GOULCREST_4574</td>
+        <td>6</td>
+        <td>REMY COINTREAU USA INC</td>
+        <td>…</td>
+        <td>1</td>
+        <td>2016-01-04</td>
+        <td>2016-12-22</td>
+        <td>353</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+<p>This output immediately points to specific items that are staying in stock for very long periods, some for almost a full year! Products that sit for extended times incur costs for storage, risk becoming outdated, and tie up money that could be used elsewhere. Pinpointing these items allows Bibitor to take direct action, such as adjusting future orders, running special sales, or rethinking their prices for these specific products.</p>
 
 <!------------------------------------------------------------------------------>
 <!------------------------------ DASHBOARDS  ----------------------------------->

@@ -16,7 +16,7 @@ published: false
   <ul>
     <li><a href="#2-1-data-health-check">2.1. Initial Data Health Check</a></li>
     <li><a href="#2-2-vendor">2.2. Vendor Performance Analysis</a></li>
-    <li><a href="#2-3-inventory">2.3. Inventory Analysis</a></li>
+    <li><a href="#2-3-inventory">2.3. Inventory Turnover Analysis</a></li>
   </ul>
 </li>
 </ul>
@@ -32,7 +32,7 @@ published: false
 
 What does it take to run a successful liquor business? It’s not just about stocking the right products — it’s about understanding what sells, how fast it moves, and which vendors help or hurt your bottom line.
 
-In this case study, I analyze data from Bibitor, LLC — a fictional retail chain with 80+ locations and over $450M in annual sales — to uncover patterns patterns in vendor performance, inventory movement, and sales behavior, applying real-world retail concepts.
+This case study analyzes data from Bibitor, LLC — a fictional retail chain with 80+ locations and over $450M in annual sales — to uncover patterns patterns in vendor performance, inventory movement, and sales behavior, applying real-world retail concepts.
 
 ### 🧾 About the Dataset
 The dataset come from the **[HUB of Analytics Education](https://www.hubae.org)** and mimics operations in a large-scale liquor retailer in Lincoln, USA. It spans December 2016 and includes 6 key tables:
@@ -105,11 +105,18 @@ SELECT * FROM PurchasesDec WHERE Dollars <= 0 OR Dollars IS NULL;
 
 *Sample Output:*
 
-| InventoryId        | Store | ... | PurchasePrice | Quantity | Dollars |
-|--------------------|-------|-----|---------------|----------|---------|
-| 59_CLAETHORPES_2166| 59    | ... | 0             | 12       | 0       |
-| 38_GOULCREST_2166  | 38    | ... | 0             | 12       | 0       |
-| 34_PITMERDEN_2166  | 34    | ... | 0             | 12       | 0       |
+<div class="table-wrapper" markdown="block">
+
+| InventoryId            | Store | Brand | ... | VendorNumber  | VendorName         | PONumber | PODate     | ReceivingDate  | InvoiceDate  | PayDate     | PurchasePrice  | Quantity | Dollars |
+|------------------------|-------|-------|-----|---------------|--------------------|----------|------------|----------------|--------------|-------------|----------------|----------|---------|
+| 59_CLAETHORPES_2166    | 59    | 2166  | ... | 2561          | EDRINGTON AMERICAS | 11462    | 2016-08-02 | 2016-08-10     | 2016-08-22   | 2016-10-01  | 0              | 12       | 0       |
+| 38_GOULCREST_2166      | 38    | 2166  | ... | 2561          | EDRINGTON AMERICAS | 11462    | 2016-08-02 | 2016-08-11     | 2016-08-22   | 2016-10-01  | 0              | 12       | 0       |
+| 34_PITMERDEN_2166      | 34    | 2166  | ... | 2561          | EDRINGTON AMERICAS | 11462    | 2016-08-02 | 2016-08-09     | 2016-08-22   | 2016-10-01  | 0              | 12       | 0       |
+| 44_PORTHCRAWL_2166     | 44    | 2166  | ... | 2561          | EDRINGTON AMERICAS | 11462    | 2016-08-02 | 2016-08-08     | 2016-08-22   | 2016-10-01  | 0              | 12       | 0       |
+| 56_BEGGAR'S HOLE_2166  | 56    | 2166  | ... | 2561          | EDRINGTON AMERICAS | 11462    | 2016-08-02 | 2016-08-09     | 2016-08-22   | 2016-10-01  | 0              | 12       | 0       |
+
+
+</div>
 
 This query returned 153 entries where the **`Dollars`** value is zero or null. Given that `Dollars` is calculated as `PurchasePrice * Quantity`, this directly implies that **`PurchasePrice`** for these entries is also zero, requiring further investigation. Potential reasons for these entries include:
 - **Promotional or Free Goods:** Items given away as part of a promotion, marketing campaign, or bundled with other purchases.
@@ -123,11 +130,17 @@ SELECT * FROM SalesDec WHERE SalesDollars <= 0 OR SalesDollars IS NULL;
 
 *Sample Output:*
 
-| InventoryId           | Store | Brand | SalesQuantity | SalesDollars | ... |
-|------------------------|-------|--------|----------------|---------------|-----|
-| 38_GOULCREST_25340     | 38    | 25340  | 3              | 0             | ... |
-| 66_EANVERNESS_25340    | 66    | 25340  | 3              | 0             | ... |
-| 66_EANVERNESS_25340    | 66    | 25340  | 1              | 0             | ... |
+<div class="table-wrapper" markdown="block">
+
+| InventoryId            | Store | Brand | ... | SalesQuantity | SalesDollars | SalesPrice    | SalesDate  | Classification | ExciseTax  | VendorNo  | VendorName                  |
+|------------------------|-------|-------|-----|----------------|---------------|-------------|------------|----------------|------------|-----------|-----------------------------|
+| 38_GOULCREST_25340     | 38    | 25340 | ... | 3              | 0             | 0           | 2016-02-13 | 2              | 0.34       | 4425      | MARTIGNETTI COMPANIES       |
+| 66_EANVERNESS_25340    | 66    | 25340 | ... | 3              | 0             | 0           | 2016-02-12 | 2              | 0.34       | 4425      | MARTIGNETTI COMPANIES       |
+| 66_EANVERNESS_25340    | 66    | 25340 | ... | 1              | 0             | 0           | 2016-02-16 | 2              | 0.11       | 4425      | MARTIGNETTI COMPANIES       |
+| 67_EANVERNESS_25340    | 67    | 25340 | ... | 12             | 0             | 0           | 2016-02-07 | 2              | 1.35       | 4425      | MARTIGNETTI COMPANIES       |
+| 73_DONCASTER_25340     | 73    | 25340 | ... | 1              | 0             | 0           | 2016-02-15 | 2              | 0.11       | 4425      | MARTIGNETTI COMPANIES       |
+
+</div>
 
 The analysis revealed 55 entries where the **`SalesDollars`** field is zero or null. Since `SalesDollars` is derived from `SalesPrice` multiplied by `SalesQuantity`, a zero `SalesDollars` value means that the **`SalesPrice`** for these transactions is effectively zero as well. This warrants further investigation.
 
@@ -328,12 +341,48 @@ LIMIT 5;
 This clearly shows which vendors bring in the most profit. While some vendors lead in total profit, others have very strong gross margin percentages, meaning their products are very efficient at generating profit. This information is key for deciding which vendor relationships to focus on for better profits.
 
 
-<!-------- ** 2.3. Inventory Analysis ** -------->
+<!-------- ** 2.3. Inventory Turnover Analysis ** -------->
 
 <div style="text-align: left;">
-  <h2 id="2-3-inventory" style="font-weight: bold;">2.3. Inventory Analysis</h2>
+  <h2 id="2-3-inventory" style="font-weight: bold;">2.3. Inventory Turnover Analysis</h2>
 </div>
 
+Efficient inventory management is critical for any retail business, directly impacting cash flow and profitability. This analysis, conducted using the **`Inventory Analysis.sql`** script, aimed to understand how quickly purchased products are sold and to pinpoint slow-moving items that might be tying up funds and taking up too much storage space.
+
+### a. Calculating "Days to Sell":
+The main part of this analysis involved figuring out the "Days to Sell" for each unique item at every store. This number was calculated by finding the difference in days between when an item was first received and when it was first sold. This information was then saved into a new table called `InventorySaleLag` for easy access.
+
+While the full SQL code for creating this detailed table is extensive, the core idea involved bringing together purchase and sales data to compare dates. This allowed for the calculation of how many days each specific item sat in inventory before its first sale.
+
+### b. Identifying Slow-Moving Inventory::
+Once the `InventorySaleLag` table was ready, a straightforward query was used to find items considered "slow-moving." For this analysis, an item was flagged as slow-moving if it took longer than 60 days to sell after being received.
+
+```sql
+-- Selects inventory items that took longer than 60 days to sell from the calculated data
+SELECT
+    InventoryId, Store, VendorName, AvgPurchasePrice, AvgSalesPrice,
+    TotalPurchased, TotalSold, FirstReceived, FirstSold, DaysToSell
+FROM InventorySaleLag
+WHERE DaysToSell > 60
+ORDER BY DaysToSell DESC
+LIMIT 5;
+```
+
+*Sample Output:*
+
+<div class="table-wrapper" markdown="block">
+
+| InventoryId         | Store | VendorName            | ...| TotalSold | FirstReceived | FirstSold   | DaysToSell |
+|---------------------|-------|-----------------------|---|-----------|---------------|-------------|------------|
+| 29_AYLESBURY_42188  | 29    | MOET HENNESSY USA INC | ...| 1         | 2016-01-02    | 2016-12-31  | 364        |
+| 29_AYLESBURY_2767   | 29    | DIAGEO NORTH AMERICA INC | ...| 1         | 2016-01-02    | 2016-12-29  | 362        |
+| 29_AYLESBURY_8897   | 29    | MOET HENNESSY USA INC | ...| 2         | 2016-01-08    | 2016-12-31  | 358        |
+| 5_SUTTON_17967      | 5     | BANFI PRODUCTS CORP   | ...| 1         | 2016-01-02    | 2016-12-22  | 355        |
+| 6_GOULCREST_4574    | 6     | REMY COINTREAU USA INC | ...| 1         | 2016-01-04    | 2016-12-22  | 353        |
+
+</div>
+
+This output immediately points to specific items that are staying in stock for very long periods, some for almost a full year! Products that sit for extended times incur costs for storage, risk becoming outdated, and tie up money that could be used elsewhere. Pinpointing these items allows Bibitor to take direct action, such as adjusting future orders, running special sales, or rethinking their prices for these specific products.
 
 <!------------------------------------------------------------------------------>
 <!------------------------------ DASHBOARDS  ----------------------------------->
