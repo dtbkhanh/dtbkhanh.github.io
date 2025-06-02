@@ -97,6 +97,7 @@
     <li><a href="#2-1-data-health-check">2.1. Initial Data Health Check</a></li>
     <li><a href="#2-2-vendor">2.2. Vendor Performance Analysis</a></li>
     <li><a href="#2-3-inventory">2.3. Inventory Turnover Analysis</a></li>
+    <li><a href="#2-4-MAC">2.4. Inventory Valuation: Moving Average Cost (MAC)</a></li>
   </ul>
 </li>
 </ul>
@@ -927,6 +928,132 @@ The <code class="language-plaintext highlighter-rouge">VendorInvoicesDec</code> 
 </div>
 
 <p>This output immediately points to specific items that are staying in stock for very long periods, some for almost a full year! Products that sit for extended times incur costs for storage, risk becoming outdated, and tie up money that could be used elsewhere. Pinpointing these items allows Bibitor to take direct action, such as adjusting future orders, running special sales, or rethinking their prices for these specific products.</p>
+
+<!-------- ** 2.4. Inventory Valuation: Moving Average Cost (MAC) ** -------->
+
+<div style="text-align: left;">
+  <h2 id="2-4-MAC" style="font-weight: bold;">2.4. Inventory Valuation: Moving Average Cost (MAC)</h2>
+</div>
+
+<p>Understanding the true cost of inventory is as crucial as knowing how quickly it sells. One way Bibitor can estimate this is by using the Moving Average Cost (MAC) method. Implemented through the <strong><code class="language-plaintext highlighter-rouge">Inventory MovingAvgCost.sql</code></strong> script, this approach continuously updates the average cost of each item as new purchases are made, giving a more realistic view of profit when items are sold.</p>
+
+<p>The process involves several steps to combine what’s in stock, what was bought, and what was sold — and uses that to calculate the current average cost of each product.</p>
+
+<h3 id="a-calculating-mac">a. Calculating MAC:</h3>
+
+<p>To determine the Moving Average Cost, we followed a few key steps:</p>
+<ul>
+  <li><strong>Tracked sales and purchases:</strong> Sales quantities were treated as negative values (outflows), and purchase quantities as positive (inflows), to reflect inventory movement.</li>
+  <li><strong>Combined Transactions:</strong> All inventory movements (both ins and outs) were gathered into a single dataset.</li>
+  <li><strong>Added Beginning Inventory:</strong> The inventory at the start of the month was included to get the full picture of what was available.</li>
+  <li><strong>Calculated Moving Average:</strong> For each product at each store, the total cost was divided by the total quantity on hand, to compute a moving average cost as new transactions occur.</li>
+  <li><strong>Compared with Ending values:</strong> Finally, we checked whether this average cost matched the value recorded at the end of the period.</li>
+</ul>
+
+<p>The core goal is to give a precise, up-to-date average cost for every item in stock.</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- Calculate Moving Average Cost (MAC)</span>
+<span class="k">SELECT</span>
+    <span class="n">InventoryId</span><span class="p">,</span>
+    <span class="n">Store</span><span class="p">,</span>
+    <span class="n">Brand</span><span class="p">,</span>
+    <span class="k">SUM</span><span class="p">(</span><span class="n">Quantity</span><span class="p">)</span> <span class="k">AS</span> <span class="n">Quantity</span><span class="p">,</span>
+    <span class="k">SUM</span><span class="p">(</span><span class="n">Price</span><span class="p">)</span> <span class="k">AS</span> <span class="n">TotalCost</span><span class="p">,</span>
+    <span class="p">(</span><span class="k">SUM</span><span class="p">(</span><span class="n">Price</span><span class="p">)</span> <span class="o">/</span> <span class="k">NULLIF</span><span class="p">(</span><span class="k">SUM</span><span class="p">(</span><span class="n">Quantity</span><span class="p">),</span> <span class="mi">0</span><span class="p">))</span> <span class="k">AS</span> <span class="n">MAC</span>
+<span class="k">FROM</span> <span class="k">temp</span><span class="p">.</span><span class="n">BegInv_andTrans_proc</span>
+<span class="k">GROUP</span> <span class="k">BY</span> <span class="n">InventoryId</span><span class="p">,</span> <span class="n">Store</span><span class="p">,</span> <span class="n">Brand</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p><em>Sample Output:</em></p>
+
+<div class="table-wrapper">
+
+  <table>
+    <thead>
+      <tr>
+        <th>Inventory ID</th>
+        <th>Store</th>
+        <th>City</th>
+        <th>Brand</th>
+        <th>Description</th>
+        <th>Size</th>
+        <th>On Hand</th>
+        <th>Price ($)</th>
+        <th>End Date</th>
+        <th>MAC ($)</th>
+        <th>Difference ($)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>10_HORNSEY_1001</td>
+        <td>10</td>
+        <td>HORNSEY</td>
+        <td>1001</td>
+        <td>Baileys 50mL 4 Pack</td>
+        <td>50mL 4 Pk</td>
+        <td>0</td>
+        <td>5.99</td>
+        <td>2016-12-31</td>
+        <td>0.5445</td>
+        <td>5.4455</td>
+      </tr>
+      <tr>
+        <td>10_HORNSEY_1003</td>
+        <td>10</td>
+        <td>HORNSEY</td>
+        <td>1003</td>
+        <td>Crown Royal VAP Glass+Coaster</td>
+        <td>750mL</td>
+        <td>73</td>
+        <td>22.99</td>
+        <td>2016-12-31</td>
+        <td>3.1519</td>
+        <td>19.8381</td>
+      </tr>
+      <tr>
+        <td>10_HORNSEY_10058</td>
+        <td>10</td>
+        <td>HORNSEY</td>
+        <td>10058</td>
+        <td>F Coppola Dmd Ivry Cab Svgn</td>
+        <td>750mL</td>
+        <td>24</td>
+        <td>14.99</td>
+        <td>2016-12-31</td>
+        <td>0.5915</td>
+        <td>14.3985</td>
+      </tr>
+      <tr>
+        <td>10_HORNSEY_10062</td>
+        <td>10</td>
+        <td>HORNSEY</td>
+        <td>10062</td>
+        <td>B de Beauchene CDR Rouge</td>
+        <td>750mL</td>
+        <td>15</td>
+        <td>8.99</td>
+        <td>2016-12-31</td>
+        <td>0.8173</td>
+        <td>8.1727</td>
+      </tr>
+      <tr>
+        <td>10_HORNSEY_10164</td>
+        <td>10</td>
+        <td>HORNSEY</td>
+        <td>10164</td>
+        <td>Andre Bourgogne Pnt Nr RSV</td>
+        <td>750mL</td>
+        <td>19</td>
+        <td>15.99</td>
+        <td>2016-12-31</td>
+        <td>1.4536</td>
+        <td>14.5364</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
 
 <!------------------------------------------------------------------------------>
 <!------------------------------ DASHBOARDS  ----------------------------------->

@@ -17,6 +17,7 @@ published: false
     <li><a href="#2-1-data-health-check">2.1. Initial Data Health Check</a></li>
     <li><a href="#2-2-vendor">2.2. Vendor Performance Analysis</a></li>
     <li><a href="#2-3-inventory">2.3. Inventory Turnover Analysis</a></li>
+    <li><a href="#2-4-MAC">2.4. Inventory Valuation: Moving Average Cost (MAC)</a></li>
   </ul>
 </li>
 </ul>
@@ -383,6 +384,55 @@ LIMIT 5;
 </div>
 
 This output immediately points to specific items that are staying in stock for very long periods, some for almost a full year! Products that sit for extended times incur costs for storage, risk becoming outdated, and tie up money that could be used elsewhere. Pinpointing these items allows Bibitor to take direct action, such as adjusting future orders, running special sales, or rethinking their prices for these specific products.
+
+<!-------- ** 2.4. Inventory Valuation: Moving Average Cost (MAC) ** -------->
+
+<div style="text-align: left;">
+  <h2 id="2-4-MAC" style="font-weight: bold;">2.4. Inventory Valuation: Moving Average Cost (MAC)</h2>
+</div>
+
+Understanding the true cost of inventory is as crucial as knowing how quickly it sells. One way Bibitor can estimate this is by using the Moving Average Cost (MAC) method. Implemented through the **`Inventory MovingAvgCost.sql`** script, this approach continuously updates the average cost of each item as new purchases are made, giving a more realistic view of profit when items are sold.
+
+The process involves several steps to combine what’s in stock, what was bought, and what was sold — and uses that to calculate the current average cost of each product.
+
+### a. Calculating MAC:
+
+To determine the Moving Average Cost, we followed a few key steps:
+- **Tracked sales and purchases:** Sales quantities were treated as negative values (outflows), and purchase quantities as positive (inflows), to reflect inventory movement.
+- **Combined Transactions:** All inventory movements (both ins and outs) were gathered into a single dataset.
+- **Added Beginning Inventory:** The inventory at the start of the month was included to get the full picture of what was available.
+- **Calculated Moving Average:** For each product at each store, the total cost was divided by the total quantity on hand, to compute a moving average cost as new transactions occur.
+- **Compared with Ending values:** Finally, we checked whether this average cost matched the value recorded at the end of the period.
+
+The core goal is to give a precise, up-to-date average cost for every item in stock.
+
+```sql
+-- Calculate Moving Average Cost (MAC)
+SELECT
+    InventoryId,
+    Store,
+    Brand,
+    SUM(Quantity) AS Quantity,
+    SUM(Price) AS TotalCost,
+    (SUM(Price) / NULLIF(SUM(Quantity), 0)) AS MAC
+FROM temp.BegInv_andTrans_proc
+GROUP BY InventoryId, Store, Brand;
+```
+
+*Sample Output:*
+
+<div class="table-wrapper" markdown="block">
+
+| Inventory ID          | Store | City     | Brand  | Description                   | Size      | On Hand  | Price ($) | End Date   | MAC ($)            | Difference ($)       |
+|-----------------------|-------|----------|--------|-------------------------------|-----------|----------|-----------|------------|--------------------|----------------------|
+| 10_HORNSEY_1001       | 10    | HORNSEY  | 1001   | Baileys 50mL 4 Pack           | 50mL 4 Pk | 0        | 5.99      | 2016-12-31 | 0.5445             | 5.4455               |
+| 10_HORNSEY_1003       | 10    | HORNSEY  | 1003   | Crown Royal VAP Glass+Coaster | 750mL     | 73       | 22.99     | 2016-12-31 | 3.1519             | 19.8381              |
+| 10_HORNSEY_10058      | 10    | HORNSEY  | 10058  | F Coppola Dmd Ivry Cab Svgn   | 750mL     | 24       | 14.99     | 2016-12-31 | 0.5915             | 14.3985              |
+| 10_HORNSEY_10062      | 10    | HORNSEY  | 10062  | B de Beauchene CDR Rouge      | 750mL     | 15       | 8.99      | 2016-12-31 | 0.8173             | 8.1727               |
+| 10_HORNSEY_10164      | 10    | HORNSEY  | 10164  | Andre Bourgogne Pnt Nr RSV    | 750mL     | 19       | 15.99     | 2016-12-31 | 1.4536             | 14.5364              |
+
+</div>
+
 
 <!------------------------------------------------------------------------------>
 <!------------------------------ DASHBOARDS  ----------------------------------->
