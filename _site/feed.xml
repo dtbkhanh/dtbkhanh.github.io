@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-06-02T23:48:07+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Khanh’s Online Journal</title><subtitle>A blog sharing my experiences and insights on work, projects, and data.</subtitle><author><name>Khanh Dang</name></author><entry><title type="html">Inside Retail Operations: A Case Study on Sales, Inventory, and Vendors</title><link href="http://localhost:4000/2025/05/18/bibitor-inventory-sales-analysis.html" rel="alternate" type="text/html" title="Inside Retail Operations: A Case Study on Sales, Inventory, and Vendors" /><published>2025-05-18T00:00:00+02:00</published><updated>2025-05-18T00:00:00+02:00</updated><id>http://localhost:4000/2025/05/18/bibitor-inventory-sales-analysis</id><content type="html" xml:base="http://localhost:4000/2025/05/18/bibitor-inventory-sales-analysis.html"><![CDATA[<!----------- Table of Contents ----------->
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-06-04T00:48:20+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Khanh’s Online Journal</title><subtitle>A blog sharing my experiences and insights on work, projects, and data.</subtitle><author><name>Khanh Dang</name></author><entry><title type="html">Inside Retail Operations: A Case Study on Sales, Inventory, and Vendors</title><link href="http://localhost:4000/2025/05/18/bibitor-inventory-sales-analysis.html" rel="alternate" type="text/html" title="Inside Retail Operations: A Case Study on Sales, Inventory, and Vendors" /><published>2025-05-18T00:00:00+02:00</published><updated>2025-05-18T00:00:00+02:00</updated><id>http://localhost:4000/2025/05/18/bibitor-inventory-sales-analysis</id><content type="html" xml:base="http://localhost:4000/2025/05/18/bibitor-inventory-sales-analysis.html"><![CDATA[<!----------- Table of Contents ----------->
 <details>
 <summary><strong>Table of Contents</strong></summary>
 <ul>
@@ -68,7 +68,11 @@
 
 <p>The ERD below guided our analysis, showing the relationships between Bibitor’s core transactional and master data tables:</p>
 
-<p>As shown, tables like PurchasesDec and <code class="language-plaintext highlighter-rouge">VendorInvoicesDec</code> are linked by shared keys like <code class="language-plaintext highlighter-rouge">VendorNumber</code> and <code class="language-plaintext highlighter-rouge">PONumber</code>, representing the core of Bibitor’s procurement. <code class="language-plaintext highlighter-rouge">SalesDec</code> connects through <code class="language-plaintext highlighter-rouge">InventoryId</code> to track items’ journeys from purchase to customer. This structure ensures a cohesive flow for tracing products and understanding financial transactions across the business.</p>
+<p><a href="https://dbdiagram.io/d/Bibitor-LLC-6817a73d1ca52373f5661284">
+  <img src="/assets/images/DataModel_Bibitor.png" alt="Data Model" width="800" />
+</a></p>
+
+<p>As shown, tables like <code class="language-plaintext highlighter-rouge">PurchasesDec</code> and <code class="language-plaintext highlighter-rouge">VendorInvoicesDec</code> are linked by a shared key like <code class="language-plaintext highlighter-rouge">VendorNumber</code>, representing the core of Bibitor’s procurement. <code class="language-plaintext highlighter-rouge">SalesDec</code> connects through <code class="language-plaintext highlighter-rouge">InventoryId</code> to track items’ journeys from purchase to customer. This structure ensures a cohesive flow for tracing products and understanding financial transactions across the business.</p>
 
 <!----------------------------------------------------------------------->
 <!------------------------------ SQL  ----------------------------------->
@@ -93,7 +97,9 @@
   <h2 id="2-1-data-health-check" style="font-weight: bold;">2.1. Initial Data Health Check</h2>
 </div>
 
-<p>Before any deep dive, ensuring the data’s integrity was crucial. The <strong><code class="language-plaintext highlighter-rouge">Initial Analysis.sql</code></strong> script acted as our data auditor, meticulously checking for common pitfalls like missing entries, zero values in critical financial columns, and inconsistencies that could skew our results.</p>
+<h4 id="-sql-script-01-initial-analysissql">📜 <strong>SQL Script:</strong> <code class="language-plaintext highlighter-rouge">01. Initial Analysis.sql</code></h4>
+
+<p>Before diving deep into the data, ensuring its integrity was crucial. This meant meticulously checking for common issues like missing entries, zero values in critical financial columns, and inconsistencies that could skew results.</p>
 
 <h2 id="-key-actions--questions">🔑 Key Actions &amp; Questions:</h2>
 <ul>
@@ -476,11 +482,14 @@ The <code class="language-plaintext highlighter-rouge">VendorInvoicesDec</code> 
   <h2 id="2-2-vendor" style="font-weight: bold;">2.2. Vendor Performance Analysis</h2>
 </div>
 
-<p>The next step was to understand Bibitor’s important relationships with its vendors, or suppliers. The <strong><code class="language-plaintext highlighter-rouge">Vendor Analysis.sql</code></strong> script provided a 360-degree view of supplier performance, aiming to find out which vendors were performing best, how efficient shipping costs were, and how much profit each vendor’s products brought in.</p>
+<h4 id="-sql-script-02-vendor-analysissql">📜 <strong>SQL Script:</strong> <code class="language-plaintext highlighter-rouge">02. Vendor Analysis.sql</code></h4>
+
+<p>The next step involved understanding Bibitor’s important relationships with its vendors, or suppliers. This analysis provided a 360-degree view of supplier performance, aiming to find out which vendors were performing best, how efficient shipping costs were, and how much profit each vendor’s products brought in.</p>
 
 <h2 id="-key-actions--questions-1">🔑 Key Actions &amp; Questions:</h2>
 <ul>
   <li><strong>Top Vendor identification:</strong> Which are the top suppliers by total spend, sales generated from their products, and quantity purchased?</li>
+  <li><strong>Item-level sales performance:</strong> For each vendor, which specific inventory item is the most sold?</li>
   <li><strong>Freight cost insights:</strong> Which vendors contribute most to shipping costs, and how does freight impact the overall purchase cost from their goods?</li>
   <li><strong>Profitability assessment:</strong> What is the gross margin achieved from products supplied by each vendor, highlighting their true profit contribution?</li>
   <li><strong>Temporal trends:</strong> How do monthly purchase and sales trends look over time, indicating seasonality or growth?</li>
@@ -595,7 +604,57 @@ The <code class="language-plaintext highlighter-rouge">VendorInvoicesDec</code> 
 
 <p>Both results revealed a similar ranking of top vendors. “DIAGEO NORTH AMERICA INC” consistently appeared as the largest supplier both in terms of total purchases and sales generated from their products. This means what Bibitor buys from them lines up well with what customers want to buy.</p>
 
-<h3 id="b-freight-cost-efficiency">b. Freight Cost Efficiency:</h3>
+<h3 id="b-top-selling-products-by-vendor">b. Top-selling Products by Vendor:</h3>
+<p>To gain granular insight into sales performance, the analysis identified the top-selling inventory item for each individual vendor. This involved aggregating sales quantities and revenue for all items supplied by each vendor into a temporary table (<code class="language-plaintext highlighter-rouge">VendorItemsSold</code>), followed by a ranking process to determine the top performer.</p>
+
+<p><em>Sample Output:</em></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>VendorNumber</th>
+      <th>InventoryId</th>
+      <th>TotalSold</th>
+      <th>TotalSales</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2</td>
+      <td>76_DONCASTER_90609</td>
+      <td>23</td>
+      <td>$574.77</td>
+    </tr>
+    <tr>
+      <td>60</td>
+      <td>73_DONCASTER_3979</td>
+      <td>9282</td>
+      <td>$158,247.18</td>
+    </tr>
+    <tr>
+      <td>105</td>
+      <td>76_DONCASTER_8412</td>
+      <td>450</td>
+      <td>$22,495.50</td>
+    </tr>
+    <tr>
+      <td>200</td>
+      <td>12_LEESIDE_20789</td>
+      <td>76</td>
+      <td>$1,367.24</td>
+    </tr>
+    <tr>
+      <td>287</td>
+      <td>65_LUTON_24922</td>
+      <td>20</td>
+      <td>$281.80</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>This detailed item-level performance data is crucial for targeted inventory management, promotional activities, and refining product portfolio strategies.</p>
+
+<h3 id="c-freight-cost-efficiency">c. Freight Cost Efficiency:</h3>
 <p>While higher purchase amounts often mean higher total shipping costs, it’s more insightful to look at shipping costs as a percentage of the total purchase cost. This helps uncover if shipping is costing too much compared to the value of the goods.</p>
 
 <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- Calculates and ranks vendors by freight cost as a percentage of their total purchase cost</span>
@@ -745,7 +804,9 @@ The <code class="language-plaintext highlighter-rouge">VendorInvoicesDec</code> 
   <h2 id="2-3-inventory" style="font-weight: bold;">2.3. Inventory Turnover Analysis</h2>
 </div>
 
-<p>Efficient inventory management is critical for any retail business, directly impacting cash flow and profitability. This analysis, conducted using the <strong><code class="language-plaintext highlighter-rouge">Inventory Analysis.sql</code></strong> script, aimed to understand how quickly purchased products are sold and to pinpoint slow-moving items that might be tying up funds and taking up too much storage space.</p>
+<h4 id="-sql-script-03-inventory-turnover-analysissql">📜 <strong>SQL Script:</strong> <code class="language-plaintext highlighter-rouge">03. Inventory Turnover Analysis.sql</code></h4>
+
+<p>Efficient inventory management is critical for any retail business, directly impacting cash flow and profitability. This analysis aimed to understand how quickly purchased products are sold and to pinpoint slow-moving items that might be tying up funds and taking up too much storage space.</p>
 
 <h3 id="a-calculating-days-to-sell">a. Calculating “Days to Sell”:</h3>
 <p>The main part of this analysis involved figuring out the “Days to Sell” for each unique item at every store. This number was calculated by finding the difference in days between when an item was first received and when it was first sold. This information was then saved into a new table called <code class="language-plaintext highlighter-rouge">InventorySaleLag</code> for easy access.</p>
@@ -846,11 +907,13 @@ The <code class="language-plaintext highlighter-rouge">VendorInvoicesDec</code> 
   <h2 id="2-4-MAC" style="font-weight: bold;">2.4. Inventory Valuation: Moving Average Cost (MAC)</h2>
 </div>
 
-<p>Understanding the true cost of inventory is as crucial as knowing how quickly it sells. One way Bibitor can estimate this is by using the Moving Average Cost (MAC) method. Implemented through the <strong><code class="language-plaintext highlighter-rouge">Inventory MovingAvgCost.sql</code></strong> script, this approach continuously updates the average cost of each item as new purchases are made, giving a more realistic view of profit when items are sold.</p>
+<h4 id="-sql-script-04-inventory-movingavgcostsql">📜 <strong>SQL Script:</strong> <code class="language-plaintext highlighter-rouge">04. Inventory MovingAvgCost.sql</code></h4>
+
+<p>Knowing the true cost of inventory is just as important as knowing how quickly it sells. Bibitor can estimate this using the Moving Average Cost (MAC) method. This approach continually updates the average cost of each product as new purchases are made, giving a more realistic view of profit when items are sold.</p>
 
 <p>The process involves several steps to combine what’s in stock, what was bought, and what was sold — and uses that to calculate the current average cost of each product.</p>
 
-<h3 id="a-calculating-mac">a. Calculating MAC:</h3>
+<h3 id="calculating-mac">Calculating MAC:</h3>
 
 <p>To determine the Moving Average Cost, we followed a few key steps:</p>
 <ul>

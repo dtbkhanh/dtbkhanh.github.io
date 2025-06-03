@@ -64,7 +64,11 @@ Before diving into the code, we first need to understand how all the different p
 
 The ERD below guided our analysis, showing the relationships between Bibitor's core transactional and master data tables:
 
-As shown, tables like PurchasesDec and `VendorInvoicesDec` are linked by shared keys like `VendorNumber` and `PONumber`, representing the core of Bibitor's procurement. `SalesDec` connects through `InventoryId` to track items' journeys from purchase to customer. This structure ensures a cohesive flow for tracing products and understanding financial transactions across the business.
+<a href="https://dbdiagram.io/d/Bibitor-LLC-6817a73d1ca52373f5661284">
+  <img src="/assets/images/DataModel_Bibitor.png" alt="Data Model" width="800"/>
+</a>
+
+As shown, tables like `PurchasesDec` and `VendorInvoicesDec` are linked by a shared key like `VendorNumber`, representing the core of Bibitor's procurement. `SalesDec` connects through `InventoryId` to track items' journeys from purchase to customer. This structure ensures a cohesive flow for tracing products and understanding financial transactions across the business.
 
 <!----------------------------------------------------------------------->
 <!------------------------------ SQL  ----------------------------------->
@@ -89,7 +93,9 @@ All SQL queries used for this analysis are available in the following GitHub rep
   <h2 id="2-1-data-health-check" style="font-weight: bold;">2.1. Initial Data Health Check</h2>
 </div>
 
-Before any deep dive, ensuring the data's integrity was crucial. The **`Initial Analysis.sql`** script acted as our data auditor, meticulously checking for common pitfalls like missing entries, zero values in critical financial columns, and inconsistencies that could skew our results.
+#### 📜 **SQL Script:** `01. Initial Analysis.sql`
+
+Before diving deep into the data, ensuring its integrity was crucial. This meant meticulously checking for common issues like missing entries, zero values in critical financial columns, and inconsistencies that could skew results.
 
 ## 🔑 Key Actions & Questions:   
 - **Identifying invalid entries:** Are there sales, purchase, or pricing records with missing or zero dollar/price amounts?
@@ -214,11 +220,14 @@ The `VendorInvoicesDec` table shares similar date ranges with `PurchasesDec` for
   <h2 id="2-2-vendor" style="font-weight: bold;">2.2. Vendor Performance Analysis</h2>
 </div>
 
-The next step was to understand Bibitor's important relationships with its vendors, or suppliers. The **`Vendor Analysis.sql`** script provided a 360-degree view of supplier performance, aiming to find out which vendors were performing best, how efficient shipping costs were, and how much profit each vendor's products brought in.
+#### 📜 **SQL Script:** `02. Vendor Analysis.sql`
+
+The next step involved understanding Bibitor's important relationships with its vendors, or suppliers. This analysis provided a 360-degree view of supplier performance, aiming to find out which vendors were performing best, how efficient shipping costs were, and how much profit each vendor's products brought in.
 
 
 ## 🔑 Key Actions & Questions:   
 - **Top Vendor identification:** Which are the top suppliers by total spend, sales generated from their products, and quantity purchased?
+- **Item-level sales performance:** For each vendor, which specific inventory item is the most sold?
 - **Freight cost insights:** Which vendors contribute most to shipping costs, and how does freight impact the overall purchase cost from their goods?
 - **Profitability assessment:** What is the gross margin achieved from products supplied by each vendor, highlighting their true profit contribution?
 - **Temporal trends:** How do monthly purchase and sales trends look over time, indicating seasonality or growth?
@@ -276,7 +285,22 @@ LIMIT 5;
 
 Both results revealed a similar ranking of top vendors. "DIAGEO NORTH AMERICA INC" consistently appeared as the largest supplier both in terms of total purchases and sales generated from their products. This means what Bibitor buys from them lines up well with what customers want to buy.
 
-### b. Freight Cost Efficiency:
+### b. Top-selling Products by Vendor:
+To gain granular insight into sales performance, the analysis identified the top-selling inventory item for each individual vendor. This involved aggregating sales quantities and revenue for all items supplied by each vendor into a temporary table (`VendorItemsSold`), followed by a ranking process to determine the top performer.
+
+*Sample Output:*
+
+| VendorNumber | InventoryId          | TotalSold  | TotalSales  |
+|--------------|----------------------|------------|-------------|
+| 2            | 76_DONCASTER_90609   | 23         | $574.77     |
+| 60           | 73_DONCASTER_3979    | 9282       | $158,247.18 |
+| 105          | 76_DONCASTER_8412    | 450        | $22,495.50  |
+| 200          | 12_LEESIDE_20789     | 76         | $1,367.24   |
+| 287          | 65_LUTON_24922       | 20         | $281.80     |
+
+This detailed item-level performance data is crucial for targeted inventory management, promotional activities, and refining product portfolio strategies.
+
+### c. Freight Cost Efficiency:
 While higher purchase amounts often mean higher total shipping costs, it's more insightful to look at shipping costs as a percentage of the total purchase cost. This helps uncover if shipping is costing too much compared to the value of the goods.
 
 ```sql
@@ -296,12 +320,12 @@ LIMIT 5;
 *Output:*
 
 | VendorNumber | VendorName                      | TotalPurchase   | TotalFreight   | FreightPercent |
-|--------------|----------------------------------|------------------|----------------|----------------|
-| 9625         | WESTERN SPIRITS BEVERAGE CO     | $361,249.21      | $1,933.19      | 0.54%          |
-| 28776        | TALL SHIP DISTILLERY LLC        | $48,445.58       | $259.90        | 0.54%          |
-| 3951         | HIGHLAND WINE MERCHANTS LLC     | $5,500.32        | $29.43         | 0.54%          |
-| 1590         | DIAGEO CHATEAU ESTATE WINES     | $1,365,472.83    | $7,259.75      | 0.53%          |
-| 9744         | FREDERICK WILDMAN & SONS        | $759,449.24      | $3,999.93      | 0.53%          |
+|--------------|---------------------------------|-----------------|----------------|----------------|
+| 9625         | WESTERN SPIRITS BEVERAGE CO     | $361,249.21     | $1,933.19      | 0.54%          |
+| 28776        | TALL SHIP DISTILLERY LLC        | $48,445.58      | $259.90        | 0.54%          |
+| 3951         | HIGHLAND WINE MERCHANTS LLC     | $5,500.32       | $29.43         | 0.54%          |
+| 1590         | DIAGEO CHATEAU ESTATE WINES     | $1,365,472.83   | $7,259.75      | 0.53%          |
+| 9744         | FREDERICK WILDMAN & SONS        | $759,449.24     | $3,999.93      | 0.53%          |
 
 The result showed that vendors with the highest *percentage* of freight costs are often not the same as those with the highest *total* freight. This suggests that smaller or more specialized vendors may have less optimized shipping logistics, making freight a larger proportion of the overall cost for their products.
 
@@ -348,7 +372,9 @@ This clearly shows which vendors bring in the most profit. While some vendors le
   <h2 id="2-3-inventory" style="font-weight: bold;">2.3. Inventory Turnover Analysis</h2>
 </div>
 
-Efficient inventory management is critical for any retail business, directly impacting cash flow and profitability. This analysis, conducted using the **`Inventory Analysis.sql`** script, aimed to understand how quickly purchased products are sold and to pinpoint slow-moving items that might be tying up funds and taking up too much storage space.
+#### 📜 **SQL Script:** `03. Inventory Turnover Analysis.sql`
+
+Efficient inventory management is critical for any retail business, directly impacting cash flow and profitability. This analysis aimed to understand how quickly purchased products are sold and to pinpoint slow-moving items that might be tying up funds and taking up too much storage space.
 
 ### a. Calculating "Days to Sell":
 The main part of this analysis involved figuring out the "Days to Sell" for each unique item at every store. This number was calculated by finding the difference in days between when an item was first received and when it was first sold. This information was then saved into a new table called `InventorySaleLag` for easy access.
@@ -391,11 +417,13 @@ This output immediately points to specific items that are staying in stock for v
   <h2 id="2-4-MAC" style="font-weight: bold;">2.4. Inventory Valuation: Moving Average Cost (MAC)</h2>
 </div>
 
-Understanding the true cost of inventory is as crucial as knowing how quickly it sells. One way Bibitor can estimate this is by using the Moving Average Cost (MAC) method. Implemented through the **`Inventory MovingAvgCost.sql`** script, this approach continuously updates the average cost of each item as new purchases are made, giving a more realistic view of profit when items are sold.
+#### 📜 **SQL Script:** `04. Inventory MovingAvgCost.sql`
+
+Knowing the true cost of inventory is just as important as knowing how quickly it sells. Bibitor can estimate this using the Moving Average Cost (MAC) method. This approach continually updates the average cost of each product as new purchases are made, giving a more realistic view of profit when items are sold.
 
 The process involves several steps to combine what’s in stock, what was bought, and what was sold — and uses that to calculate the current average cost of each product.
 
-### a. Calculating MAC:
+### Calculating MAC:
 
 To determine the Moving Average Cost, we followed a few key steps:
 - **Tracked sales and purchases:** Sales quantities were treated as negative values (outflows), and purchase quantities as positive (inflows), to reflect inventory movement.
