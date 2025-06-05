@@ -1,10 +1,9 @@
 ---
 layout: post
 title: "Inside Retail Operations: A Case Study on Sales, Inventory, and Vendors"
-date: 2025-05-18
+date: 2025-05-28
 excerpt: "What does it take to run a successful retail business? It's knowing what sells, how fast inventory moves, and which vendors truly impact your bottom line. "
 cover: /assets/images/Cover_Bibitor.png
-published: false
 ---
 
 <!----------- Table of Contents ----------->
@@ -460,19 +459,3 @@ GROUP BY InventoryId, Store, Brand;
 | 10_HORNSEY_10164      | 10    | HORNSEY  | 10164  | Andre Bourgogne Pnt Nr RSV    | 750mL     | 19       | 15.99     | 2016-12-31 | 1.4536             | 14.5364              |
 
 </div>
-
-
-<!------------------------------------------------------------------------------>
-<!------------------------------ DASHBOARDS  ----------------------------------->
-<!------------------------------------------------------------------------------>
-
-<div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
-<div style="text-align: left;">
-  <h1 id="3-dashboards" style="font-weight: bold;">3. DASHBOARDS</h1>
-</div>
-
-Looking at monthly purchases and sales gives important clues about how operations flow and if demand changes with the seasons.
-- Monthly purchases generally went up throughout 2016, with a peak in August, which likely means inventory was being built up.
-- In contrast, monthly sales grew strongly, with big peaks in July and a huge jump in December, probably due to holiday shopping.  
-
-These trends are vital for matching what's bought with what's expected to be sold.
