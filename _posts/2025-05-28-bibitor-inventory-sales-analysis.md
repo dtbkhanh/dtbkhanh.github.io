@@ -343,9 +343,9 @@ The result showed that vendors with the highest percentage of freight costs ofte
 <!-----------------#-#----------------->
 ### d. Profitability via Gross Margin:  
 <!-----------------#-#----------------->
-One of the most critical financial metrics for vendor evaluation is Gross Margin. By comparing the **Total Revenue (Sales)** with the **Total Cost (Purchases)** for each vendor, we can identify which suppliers contribute the most to Bibitor’s overall profitability — not just in terms of efficiency, but in actual dollars earned.
+One of the most important financial measures for evaluating vendors is Gross Margin. This metric compares how much revenue (sales) a vendor generates against the cost of the products purchased from them. It helps Bibitor understand which suppliers are not just efficient but also contribute the most to the company’s overall profitability — showing real dollars earned, not just percentages.
 
-The SQL query below calculates **Gross Profit** and **Gross Margin %** for each vendor, helping prioritize high-performing supplier relationships:
+The SQL query below calculates both **Gross Profit** (the dollar amount earned after costs) and **Gross Margin Percentage** (profit as a share of revenue) for each vendor. This helps Bibitor focus on the top-performing suppliers:
 
 ```sql
 -- Calculates the Gross Margin (Profit) by comparing Total Cost (Purchases) to Total Revenue (Sales) for each vendor
@@ -377,9 +377,9 @@ LIMIT 5;
 | 17035        | $32,281,247.95   | $24,124,091.56   | $8,157,156.39    | 25.27%              |
 | 12546        | $31,906,320.54   | $24,203,151.05   | $7,703,169.49    | 24.14%              |
 
-For instance, while Vendor 3960 may have a lower gross margin percentage than Vendor 1392, its large sales volume makes it the top profit contributor overall.
+For example, Vendor 3960 has a lower gross margin percentage than Vendor 1392, but because it sells a much larger volume, it contributes the most profit overall.
 
-By combining absolute gross profit with margin percentage, this analysis provides a balanced view that supports strategic vendor management and negotiation decisions focused on both profitability and efficiency.
+By looking at both absolute profit (gross profit dollars) and efficiency (gross margin percentage), this analysis gives Bibitor a balanced view to guide smart decisions in managing vendor relationships — prioritizing suppliers that maximize profitability and support strong negotiation.
 
 
 <!-------------------------------------------------------->
@@ -392,19 +392,19 @@ By combining absolute gross profit with margin percentage, this analysis provide
 
 #### 📜 **SQL Script:** `03. Inventory Turnover Analysis.sql`
 
-Efficient inventory management is critical for any retail business, directly impacting cash flow and profitability. This analysis aimed to understand how quickly purchased products are sold and to pinpoint slow-moving items that might be tying up funds and taking up too much storage space.
+Managing inventory efficiently is essential for any retail business because it directly affects cash flow and profits. In this analysis, we focused on understanding how quickly products move from purchase to sale, helping identify items that linger too long on the shelves — which can tie up money and take up valuable storage space.
 
 <!-----------------#-#----------------->
 ### a. Calculating "Days to Sell":
 <!-----------------#-#----------------->
-The main part of this analysis involved figuring out the "Days to Sell" for each unique item at every store. This number was calculated by finding the difference in days between when an item was first received and when it was first sold. This information was then saved into a new table called `InventorySaleLag` for easy access.
+The key metric here is the “Days to Sell” — how many days it takes for an item to go from the moment it arrives in the store to when it’s sold for the first time. To find this, we compared the date the product was received with the date it was sold. This calculation was then stored in a new table called `InventorySaleLag`, making it easy to review later.
 
-While the full SQL code for creating this detailed table is extensive, the core idea involved bringing together purchase and sales data to compare dates. This allowed for the calculation of how many days each specific item sat in inventory before its first sale.
+While the full SQL script behind this table is detailed, the basic idea is straightforward: combine purchase and sales data to find the time gap between arrival and sale for each product at every store.
 
 <!-----------------#-#----------------->
 ### b. Identifying Slow-Moving Inventory:
 <!-----------------#-#----------------->
-Once the `InventorySaleLag` table was ready, a straightforward query was used to find items considered "slow-moving." For this analysis, an item was flagged as slow-moving if it took longer than 60 days to sell after being received.
+With the `InventorySaleLag` data ready, we ran a simple query to flag slow-moving items — those that took more than 60 days to sell after arriving. Identifying these products helps the business take action, like discounting or reevaluating stock levels, to free up cash and space.
 
 ```sql
 -- Selects inventory items that took longer than 60 days to sell from the calculated data
@@ -431,7 +431,7 @@ LIMIT 5;
 
 </div>
 
-This output immediately points to specific items that are staying in stock for very long periods, some for almost a full year! Products that sit for extended times incur costs for storage, risk becoming outdated, and tie up money that could be used elsewhere. Pinpointing these items allows Bibitor to take direct action, such as adjusting future orders, running special sales, or rethinking their prices for these specific products.
+The result quickly highlights specific products that remain in stock for unusually long periods — some even close to a full year! Items that sit on shelves for too long can increase storage costs, risk becoming outdated or unsellable, and tie up valuable funds that could be better invested elsewhere. By identifying these slow-moving products, Bibitor can take targeted steps such as adjusting future purchase orders, launching special promotions, or revising prices to improve sales and free up resources.
 
 <!--------------------------------------------------------------------------->
 <!-------- ** 2.4. Inventory Valuation: Moving Average Cost (MAC) ** -------->
@@ -443,20 +443,20 @@ This output immediately points to specific items that are staying in stock for v
 
 #### 📜 **SQL Script:** `04. Inventory MovingAvgCost.sql`
 
-Knowing the true cost of inventory is just as important as knowing how quickly it sells. Bibitor can estimate this using the Moving Average Cost (MAC) method. This approach continually updates the average cost of each product as new purchases are made, giving a more realistic view of profit when items are sold.
+Knowing the true cost of inventory is just as important as knowing how quickly it sells. Bibitor can estimate this using the Moving Average Cost (MAC) method. This approach continuously updates the average cost of each item whenever new stock is purchased, reflecting the most current value of inventory.
 
-The process involves several steps to combine what’s in stock, what was bought, and what was sold — and uses that to calculate the current average cost of each product.
+The process combines data on what’s currently in stock, what was purchased, and what was sold — then calculates an up-to-date average cost for every product.
 
 ### Calculating MAC:
 
 To determine the Moving Average Cost, we followed a few key steps:
-- **Tracked sales and purchases:** Sales quantities were treated as negative values (outflows), and purchase quantities as positive (inflows), to reflect inventory movement.
-- **Combined Transactions:** All inventory movements (both ins and outs) were gathered into a single dataset.
-- **Added Beginning Inventory:** The inventory at the start of the month was included to get the full picture of what was available.
-- **Calculated Moving Average:** For each product at each store, the total cost was divided by the total quantity on hand, to compute a moving average cost as new transactions occur.
-- **Compared with Ending values:** Finally, we checked whether this average cost matched the value recorded at the end of the period.
+1. **Tracked sales and purchases:** Sales are counted as negative quantities (items leaving inventory), and purchases as positive quantities (items coming in), to accurately represent stock changes.
+2. **Combined Transactions:** All inventory movements — both incoming and outgoing — are merged into one dataset for analysis.
+3. **Added Beginning Inventory:** The inventory at the beginning of the month is added to provide a complete picture of stock availability.
+4. **Calculated Moving Average:** For each product at each store, the total cost of inventory is divided by the total quantity on hand, resulting in a dynamic average cost that adjusts as new purchases and sales happen.
+5. **Compared with Ending values:** Finally, the calculated average cost is compared with the recorded value at the end of the period to ensure accuracy.
 
-The core goal is to provide a precise and up-to-date average cost for every item in stock.
+The goal is to maintain a precise and current average cost for every product, helping Bibitor make informed decisions about pricing, budgeting, and profitability.
 
 ```sql
 -- Calculate Moving Average Cost (MAC)
