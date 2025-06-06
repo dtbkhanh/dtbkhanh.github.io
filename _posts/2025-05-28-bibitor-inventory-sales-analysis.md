@@ -475,3 +475,6 @@ GROUP BY InventoryId, Store, Brand;
 | 10_HORNSEY_10164      | 10    | HORNSEY  | 10164  | Andre Bourgogne Pnt Nr RSV    | 750mL     | 19       | 15.99     | 2016-12-31 | 1.4536             | 14.5364              |
 
 </div>
+
+<hr style="width: 40%; border: none; border-top: 1px dashed transparent; margin: 20px auto;">
+*(To be continued...)*
