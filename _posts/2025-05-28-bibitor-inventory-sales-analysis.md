@@ -22,7 +22,10 @@ cover: /assets/images/Cover_Bibitor.png
 </ul>
 </details>
 
-<!------------ Intro ------------>
+<!------------------------------------------------------>
+<!------------------------ Intro ----------------------->
+<!------------------------------------------------------>
+
 <!-- <img src="/assets/images/Cover_Bibitor.png" alt="Liquour Sales" width="800"/> -->
 <hr style="width: 40%; border: none; border-top: 1px dashed lightgray; margin: 40px auto;">
 
@@ -37,18 +40,18 @@ This case study analyzes data from Bibitor, LLC — a fictional retail chain wit
 ### 🧾 About the Dataset
 The dataset come from the **[HUB of Analytics Education](https://www.hubae.org)** and mimics operations in a large-scale liquor retailer in Lincoln, USA. It spans December 2016 and includes 6 key tables:
 - **Inventory**
-  - `BegInvDec`: Inventory at the start of December 2016.
-  - `EndInvDec`: Inventory remaining at the end of December 2016.
+  - **`BegInvDec`**: Inventory at the start of December 2016.
+  - **`EndInvDec`**: Inventory remaining at the end of December 2016.
 
 - **Purchases**
-  - `PurchasesDec`: What Bibitor bought from vendors (quantities, total cost, vendor info).
-  - `PricingPurchasesDec`: Reference prices Bibitor expects from suppliers.
+  - **`PurchasesDec`**: What Bibitor bought from vendors (quantities, total cost, vendor info).
+  - **`PricingPurchasesDec`**: Reference prices Bibitor expects from suppliers.
 
 - **Vendor Invoices**
-  - `VendorInvoicesDec`: The bills Bibitor received from their suppliers (vendors).
+  - **`VendorInvoicesDec`**: The bills Bibitor received from their suppliers (vendors).
 
 - **Sales**
-  - `SalesDec`: Item-level sales data including price, quantity, and total revenue.
+  - **`SalesDec`**: Item-level sales data including price, quantity, and total revenue.
 
 These tables, when combined, allow us to track products from purchase to sale, understand vendor relationships, and monitor financial flows, all essential for optimizing retail operations.
 
@@ -67,11 +70,12 @@ The ERD below guided our analysis, showing the relationships between Bibitor's c
   <img src="/assets/images/DataModel_Bibitor.png" alt="Data Model" width="800"/>
 </a>
 
-As shown, tables like `PurchasesDec` and `VendorInvoicesDec` are linked by a shared key like `VendorNumber`, representing the core of Bibitor's procurement. `SalesDec` connects through `InventoryId` to track items' journeys from purchase to customer. This structure ensures a cohesive flow for tracing products and understanding financial transactions across the business.
+As shown, tables like **`PurchasesDec`** and **`VendorInvoicesDec`** are linked by a shared key like `VendorNumber`, representing the core of Bibitor's procurement. Table **`SalesDec`** connects through `InventoryId` to track items' journeys from purchase to customer. This structure ensures a cohesive flow for tracing products and understanding financial transactions across the business.
 
-<!----------------------------------------------------------------------->
-<!------------------------------ SQL  ----------------------------------->
-<!----------------------------------------------------------------------->
+
+<!--===========================================================================-->
+<!-------------------------------**** SQL ****----------------------------------->
+<!--===========================================================================-->
 
 <div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
 
@@ -86,8 +90,10 @@ All SQL queries used for this analysis are available in the following GitHub rep
   <strong><a href="https://github.com/dtbkhanh/Data-Analytics-and-Reports/tree/021a7ac923e6cd4f8919e8d023981034e881d0a0/SQL%20Queries/01.%20Bibitor%20LLC%20Inventory%20Analysis" target="_blank" style="text-decoration: none;">➡️ View SQL Queries ⬅️</a></strong>
 </div>
 
-<!-------- ** 2.1. Initial Data Health Check ** -------->
 
+<!------------------------------------------------------>
+<!-------- ** 2.1. Initial Data Health Check ** -------->
+<!------------------------------------------------------>
 <div style="text-align: left;">
   <h2 id="2-1-data-health-check" style="font-weight: bold;">2.1. Initial Data Health Check</h2>
 </div>
@@ -213,7 +219,9 @@ The `VendorInvoicesDec` table shares similar date ranges with `PurchasesDec` for
 | Maximum  | 141,660          | $1,660,435.88   | $8,468.22     |
 
 
+<!-------------------------------------------------------->
 <!-------- ** 2.2. Vendor Performance Analysis ** -------->
+<!-------------------------------------------------------->
 
 <div style="text-align: left;">
   <h2 id="2-2-vendor" style="font-weight: bold;">2.2. Vendor Performance Analysis</h2>
@@ -221,13 +229,13 @@ The `VendorInvoicesDec` table shares similar date ranges with `PurchasesDec` for
 
 #### 📜 **SQL Script:** `02. Vendor Analysis.sql`
 
-The next step involved understanding Bibitor's important relationships with its vendors, or suppliers. This analysis provided a 360-degree view of supplier performance, aiming to find out which vendors were performing best, how efficient shipping costs were, and how much profit each vendor's products brought in.
+The next step involved understanding Bibitor's important relationships with its vendors or suppliers. This analysis provided a 360-degree view of supplier performance, aiming to find out which vendors were performing best, how efficient shipping costs were, and how much profit each vendor's products brought in.
 
 
 ## 🔑 Key Actions & Questions:   
 - **Top Vendor identification:** Which are the top suppliers by total spend, sales generated from their products, and quantity purchased?
 - **Item-level sales performance:** For each vendor, which specific inventory item is the most sold?
-- **Freight cost insights:** Which vendors contribute most to shipping costs, and how does freight impact the overall purchase cost from their goods?
+- **Freight cost insights:** Which vendors contribute most to shipping costs, and how does freight impact the overall purchase cost of their goods?
 - **Profitability assessment:** What is the gross margin achieved from products supplied by each vendor, highlighting their true profit contribution?
 - **Temporal trends:** How do monthly purchase and sales trends look over time, indicating seasonality or growth?
 
@@ -329,8 +337,10 @@ LIMIT 5;
 The result showed that vendors with the highest *percentage* of freight costs are often not the same as those with the highest *total* freight. This suggests that smaller or more specialized vendors may have less optimized shipping logistics, making freight a larger proportion of the overall cost for their products.
 
 
-### c. Profitability via Gross Margin:  
-A very important financial measure is gross margin by vendor. This helps identify which suppliers contribute the most to Bibitor's profit.
+### d. Profitability via Gross Margin:  
+One of the most critical financial metrics for vendor evaluation is Gross Margin. By comparing the **Total Revenue (Sales)** with the **Total Cost (Purchases)** for each vendor, we can identify which suppliers contribute the most to Bibitor’s overall profitability — not just in terms of efficiency, but in actual dollars earned.
+
+The SQL query below calculates **Gross Profit** and **Gross Margin %** for each vendor, helping prioritize high-performing supplier relationships:
 
 ```sql
 -- Calculates the Gross Margin (Profit) by comparing Total Cost (Purchases) to Total Revenue (Sales) for each vendor
@@ -354,7 +364,7 @@ LIMIT 5;
 
 *Output:*
 
-| VendorNumber | TotalRevenue     | TotalCost        | GrossProfit      | GrossMarginPercent |
+| VendorNumber | TotalRevenue     | TotalCost        | GrossProfit      | GrossMarginPercent  |
 |--------------|------------------|------------------|------------------|---------------------|
 | 3960         | $68,742,416.99   | $50,959,796.85   | $17,782,620.14   | 25.87%              |
 | 4425         | $41,047,306.30   | $27,861,690.02   | $13,185,616.28   | 32.12%              |
@@ -362,10 +372,14 @@ LIMIT 5;
 | 17035        | $32,281,247.95   | $24,124,091.56   | $8,157,156.39    | 25.27%              |
 | 12546        | $31,906,320.54   | $24,203,151.05   | $7,703,169.49    | 24.14%              |
 
-This clearly shows which vendors bring in the most profit. While some vendors lead in total profit, others have very strong gross margin percentages, meaning their products are very efficient at generating profit. This information is key for deciding which vendor relationships to focus on for better profits.
+This analysis highlights vendors that generate the most profit in absolute terms, which is crucial for bottom-line performance. For example, Vendor 3960 may have a lower margin percentage than Vendor 1392, but its sheer sales volume makes it the largest profit contributor.
+
+While Gross Profit shows how much money a vendor brings in, Gross Margin % indicates how efficiently that profit is generated. Both metrics together give a well-rounded view to guide strategic vendor management and negotiation decisions.
 
 
+<!-------------------------------------------------------->
 <!-------- ** 2.3. Inventory Turnover Analysis ** -------->
+<!-------------------------------------------------------->
 
 <div style="text-align: left;">
   <h2 id="2-3-inventory" style="font-weight: bold;">2.3. Inventory Turnover Analysis</h2>
@@ -380,7 +394,7 @@ The main part of this analysis involved figuring out the "Days to Sell" for each
 
 While the full SQL code for creating this detailed table is extensive, the core idea involved bringing together purchase and sales data to compare dates. This allowed for the calculation of how many days each specific item sat in inventory before its first sale.
 
-### b. Identifying Slow-Moving Inventory::
+### b. Identifying Slow-Moving Inventory:
 Once the `InventorySaleLag` table was ready, a straightforward query was used to find items considered "slow-moving." For this analysis, an item was flagged as slow-moving if it took longer than 60 days to sell after being received.
 
 ```sql
@@ -398,19 +412,21 @@ LIMIT 5;
 
 <div class="table-wrapper" markdown="block">
 
-| InventoryId         | Store | VendorName            | ...| TotalSold | FirstReceived | FirstSold   | DaysToSell |
-|---------------------|-------|-----------------------|---|-----------|---------------|-------------|------------|
-| 29_AYLESBURY_42188  | 29    | MOET HENNESSY USA INC | ...| 1         | 2016-01-02    | 2016-12-31  | 364        |
+| InventoryId         | Store | VendorName               | ...| TotalSold | FirstReceived | FirstSold   | DaysToSell |
+|---------------------|-------|--------------------------|----|-----------|---------------|-------------|------------|
+| 29_AYLESBURY_42188  | 29    | MOET HENNESSY USA INC    | ...| 1         | 2016-01-02    | 2016-12-31  | 364        |
 | 29_AYLESBURY_2767   | 29    | DIAGEO NORTH AMERICA INC | ...| 1         | 2016-01-02    | 2016-12-29  | 362        |
-| 29_AYLESBURY_8897   | 29    | MOET HENNESSY USA INC | ...| 2         | 2016-01-08    | 2016-12-31  | 358        |
-| 5_SUTTON_17967      | 5     | BANFI PRODUCTS CORP   | ...| 1         | 2016-01-02    | 2016-12-22  | 355        |
-| 6_GOULCREST_4574    | 6     | REMY COINTREAU USA INC | ...| 1         | 2016-01-04    | 2016-12-22  | 353        |
+| 29_AYLESBURY_8897   | 29    | MOET HENNESSY USA INC    | ...| 2         | 2016-01-08    | 2016-12-31  | 358        |
+| 5_SUTTON_17967      | 5     | BANFI PRODUCTS CORP      | ...| 1         | 2016-01-02    | 2016-12-22  | 355        |
+| 6_GOULCREST_4574    | 6     | REMY COINTREAU USA INC   | ...| 1         | 2016-01-04    | 2016-12-22  | 353        |
 
 </div>
 
 This output immediately points to specific items that are staying in stock for very long periods, some for almost a full year! Products that sit for extended times incur costs for storage, risk becoming outdated, and tie up money that could be used elsewhere. Pinpointing these items allows Bibitor to take direct action, such as adjusting future orders, running special sales, or rethinking their prices for these specific products.
 
+<!--------------------------------------------------------------------------->
 <!-------- ** 2.4. Inventory Valuation: Moving Average Cost (MAC) ** -------->
+<!--------------------------------------------------------------------------->
 
 <div style="text-align: left;">
   <h2 id="2-4-MAC" style="font-weight: bold;">2.4. Inventory Valuation: Moving Average Cost (MAC)</h2>
@@ -431,7 +447,7 @@ To determine the Moving Average Cost, we followed a few key steps:
 - **Calculated Moving Average:** For each product at each store, the total cost was divided by the total quantity on hand, to compute a moving average cost as new transactions occur.
 - **Compared with Ending values:** Finally, we checked whether this average cost matched the value recorded at the end of the period.
 
-The core goal is to give a precise, up-to-date average cost for every item in stock.
+The core goal is to provide a precise and up-to-date average cost for every item in stock.
 
 ```sql
 -- Calculate Moving Average Cost (MAC)
