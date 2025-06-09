@@ -57,7 +57,7 @@ I created 4 interactive dashboards in Looker Studio to uncover actionable insigh
   if (dashboardBox) {
     dashboardBox.addEventListener('mouseenter', () => {
       dashboardBox.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
-      dashboardBox.style.borderColor = '#3498db'; /* Example hover border color */
+      dashboardBox.style.borderColor = '#3498db';
     });
     dashboardBox.addEventListener('mouseleave', () => {
       dashboardBox.style.boxShadow = 'none';

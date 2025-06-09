@@ -6,20 +6,25 @@ excerpt: "What does it take to run a successful retail business? It's knowing wh
 cover: /assets/images/Cover_Bibitor.png
 ---
 
-<!----------- Table of Contents ----------->
+<!----------------- Table of Contents ----------------->
 <details>
-<summary><strong>Table of Contents</strong></summary>
-<ul>
-<li><a href="#1-intro">1. Introduction</a></li>
-<li><a href="#2-sql">2. Analysis with SQL</a>
+  <summary><strong>Table of Contents</strong></summary>
   <ul>
-    <li><a href="#2-1-data-health-check">2.1. Initial Data Health Check</a></li>
-    <li><a href="#2-2-vendor">2.2. Vendor Performance Analysis</a></li>
-    <li><a href="#2-3-inventory">2.3. Inventory Turnover Analysis</a></li>
-    <li><a href="#2-4-MAC">2.4. Inventory Valuation: Moving Average Cost (MAC)</a></li>
+    <li><a href="#1-intro">1. Introduction</a></li>
+    <li><a href="#2-sql">2. Analysis with SQL</a>
+      <ul>
+        <li><a href="#2-1-data-health-check">2.1. Initial Data Health Check</a></li>
+        <li><a href="#2-2-vendor">2.2. Vendor Performance Analysis</a></li>
+        <li><a href="#2-3-inventory">2.3. Inventory Turnover Analysis</a></li>
+        <li><a href="#2-4-MAC">2.4. Inventory Valuation: Moving Average Cost (MAC)</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-dashboards">3. Dashboard Visualizations</a></li>
+      <ul>
+        <li><a href="#3-1-vendor-overview">3.1. Vendor Performance & Financial Overview</a></li>
+        <li><a href="#3-2-inventory-impact">3.2 Inventory Efficiency & Product-Level Insights</a></li>
+      </ul>
   </ul>
-</li>
-</ul>
 </details>
 
 <!------------------------------------------------------>
@@ -35,7 +40,7 @@ cover: /assets/images/Cover_Bibitor.png
 
 What does it take to run a successful liquor business? It’s not just about stocking popular products — it’s about understanding what sells, how fast it moves, and which vendors help or hurt your bottom line.
 
-This case study analyzes data from Bibitor, LLC — a fictional retail chain with 80+ locations and over $450M in annual sales — to uncover patterns patterns in vendor performance, inventory movement, and sales behavior, applying real-world retail concepts.
+This case study analyzes data from Bibitor, LLC — a fictional retail chain with 80+ locations and over $450M in annual sales, to uncover patterns patterns in vendor performance, inventory movement, and sales behavior, applying real-world retail concepts.
 
 ### 🧾 About the Dataset
 The dataset, sourced from the **[HUB of Analytics Education](https://www.hubae.org)**, simulates operational data from a large-scale liquor retailer located in Lincoln, USA, for the month of December 2016. It consists of six key data tables that collectively represent purchasing, inventory, sales, and vendor transactions.
@@ -86,10 +91,9 @@ As shown, tables like **`PurchasesDec`** and **`VendorInvoicesDec`** are linked 
 SQL was the primary tool used to extract, transform, and conduct the initial layers of analysis on Bibitor’s extensive datasets. Its robust querying capabilities enabled a systematic and granular approach to addressing critical business questions.
 
 All SQL scripts used in this analysis are available in the following GitHub repository:
-<div style="border: 1px solid #ccc; padding: 15px; margin: 20px 0; border-radius: 5px; text-align: center; transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;">
+<div style="border: 1px solid #ccc; padding: 15px; margin: 20px 0; border-radius: 5px; text-align: center; transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;" class="dashboard-box">
   <strong><a href="https://github.com/dtbkhanh/Data-Analytics-and-Reports/tree/021a7ac923e6cd4f8919e8d023981034e881d0a0/SQL%20Queries/01.%20Bibitor%20LLC%20Inventory%20Analysis" target="_blank" style="text-decoration: none;">➡️ View SQL Queries ⬅️</a></strong>
 </div>
-
 
 <!------------------------------------------------------>
 <!-------- ** 2.1. Initial Data Health Check ** -------->
@@ -377,9 +381,9 @@ LIMIT 5;
 | 17035        | $32,281,247.95   | $24,124,091.56   | $8,157,156.39    | 25.27%              |
 | 12546        | $31,906,320.54   | $24,203,151.05   | $7,703,169.49    | 24.14%              |
 
-For example, Vendor 3960 has a lower gross margin percentage than Vendor 1392, but because it sells a much larger volume, it contributes the most profit overall.
+For example, Vendor 3960 has a lower Gross Margin Percentage than Vendor 1392, but because it sells a much larger volume, it contributes the most profit overall.
 
-By looking at both absolute profit (gross profit dollars) and efficiency (gross margin percentage), this analysis gives Bibitor a balanced view to guide smart decisions in managing vendor relationships — prioritizing suppliers that maximize profitability and support strong negotiation.
+By looking at both absolute profit (Gross Profit dollars) and efficiency (Gross Margin Percentage), this analysis gives Bibitor a balanced view to guide smart decisions in managing vendor relationships — prioritizing suppliers that maximize profitability and support strong negotiation.
 
 
 <!-------------------------------------------------------->
@@ -485,5 +489,124 @@ GROUP BY InventoryId, Store, Brand;
 
 </div>
 
-<hr style="width: 40%; border: none; border-top: 1px dashed transparent; margin: 20px auto;">
-*(To be continued...)*
+<!--===========================================================================-->
+<!--------------------------***** DASHBOARDS *****------------------------------->
+<!--===========================================================================-->
+
+<div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
+<div style="text-align: left;">
+  <h1 id="3-dashboards" style="font-weight: bold;">3. DASHBOARD VISUALIZATIONS</h1>
+</div>
+
+<div style="border: 1px solid #ccc; padding: 15px; margin: 20px 0; border-radius: 5px; text-align: center; transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;" class="dashboard-box">
+  <strong><a href="https://lookerstudio.google.com/reporting/85a4eec4-8ecb-48e9-babd-d3117a5b6580" target="_blank" style="text-decoration: none;">➡️ View Live Dashboards ⬅️</a></strong>
+</div>
+
+
+<!------------------------------------------------------>
+<!------------- ** 3.1. Vendor Overview ** ------------->
+<!------------------------------------------------------>
+<div style="text-align: left;">
+  <h2 id="3-1-vendor-overview" style="font-weight: bold;">3.1. Vendor Performance & Financial Overview</h2>
+</div>
+
+<!-----------------#-#----------------->
+### a. Understanding Business Flow
+<!-----------------#-#----------------->
+<img src="/assets/images/Screenshot_Bibitor_01_Timeline.png" alt="Overview Dashboard Screenshot" width="800"/>
+
+Monthly trends in purchases and sales reveal key patterns in Bibitor’s business flow. These insights support smarter inventory planning and financial forecasting:
+
+- Purchases steadily increased through 2016, peaking in August, which likely means inventory was being built up.
+- Sales showed sharper growth, particularly in July and December, indicating strong seasonality, likely tied to summer and holiday demand.
+
+Understanding these rhythms helps ensure the right products are stocked at the right times.
+
+<!-----------------#-#----------------->
+### b. Visualizing Vendor Dominance
+<!-----------------#-#----------------->
+<img src="/assets/images/Screenshot_Bibitor_01_Top.png" alt="Top Vendors Performance" width="800"/>
+
+This section showcases top-performing vendors through key financial metrics: **Purchase Spend**, **Sales Revenue**, and **Gross Profit/Margin**. As noted earlier (<a href="#2-2-vendor">Section 2.2</a>), **DIAGEO NORTH AMERICA INC** consistently ranks highest, clearly standing out across all metrics.
+
+The bar charts visually rank vendor performance, making it easy to compare their contribution to Bibitor’s bottom line. In parallel, the "Top 10 Vendor by Freight % of Purchase" table surfaces shipping efficiency issues — revealing that some smaller vendors may have disproportionate freight costs relative to their order volumes.
+
+<!-----------------#-#----------------->
+### c. Vendor Inventory Insights
+<!-----------------#-#----------------->
+<img src="/assets/images/Screenshot_Bibitor_01_EndingInv.png" alt="Vendor Inventory Insights" width="800"/>
+
+A new dimension of analysis focuses on inventory allocation across vendors:
+- **Ending Inventory Value:** The "Top 10 Vendor by Ending Inventory Value ($)" bar chart shows where most of Bibitor’s current stock value is concentrated. Diageo again leads, followed by Martignetti Companies — reflecting both their high purchase volumes and slower turnover.
+- **Inventory vs. Purchases:** The scatter plot "Ending Inventory Value vs. Total Purchases" brings an important correlation to light. Vendors with higher purchase totals generally hold more ending inventory. Large bubbles in the upper-right corner (e.g., DIAGEO NORTH AMERICA INC) signal significant capital investment and highlight the need to monitor stock efficiency.
+
+### 📌 Summary
+This dashboard turns complex vendor data into actionable insights. By spotlighting top vendors across purchasing, sales, profit, and inventory, Bibitor can prioritize key relationships, assess capital allocation, and refine stock strategies — all crucial for driving sustainable growth.
+
+
+<!------------------------------------------------------------------------------->
+<!---------- ** 3.2. Inventory Efficiency & Product-Level Insights ** ----------->
+<!------------------------------------------------------------------------------->
+<div style="text-align: left;">
+  <h2 id="3-2-inventory-impact" style="font-weight: bold;">3.2. Inventory Efficiency & Product-Level Insights</h2>
+</div>
+
+To further support strategic vendor relationships, this dashboard focuses on Bibitor’s inventory health and product flow. It provides clear insights into product movement speed, identifies bottlenecks, and highlights both strong performers and areas needing immediate attention.
+
+<!-----------------#-#----------------->
+### a. Highlighting Product Successes
+<!-----------------#-#----------------->
+<img src="/assets/images/Screenshot_Bibitor_02_TopSelling.png" alt="Top-Selling Product by Vendor" width="800"/>
+
+The “Top-Selling Product by Vendor” table shows each vendor’s best-selling product by both quantity and total sales. This highlights specific high-performing items that warrant consistent stocking and potential marketing focus. It complements the overall vendor performance by showing which product contributes most to a vendor's success for Bibitor.
+
+<!-----------------#-#----------------->
+### b. Inventory Velocity
+<!-----------------#-#----------------->
+<img src="/assets/images/Screenshot_Bibitor_02_SaleLag.png" alt="Inventory Velocity" width="800"/>
+
+This section visualizes how quickly products sell after arriving in inventory, based on the “Days to Sell” metric introduced in <a href="#2-3-inventory">Section 2.3</a>.
+
+- **Overall Sales Lag Distribution:** The "Inventory Sales Lag Distribution" chart provides a high-level overview of inventory turnover. It clearly shows that the majority of Bibitor's products sell within a relatively short timeframe (e.g., within 30 days). However, it also visually highlights the presence of a tail — a smaller, but significant, number of products that sit in inventory for extended periods (e.g., 90 days or more), tying up capital and storage space.
+- **Identifying Slow Movers:** The accompanying table lists the ten products with the longest sales lag, including product and vendor details. These are ideal candidates for promotions, pricing changes, or stock review.
+
+<!-----------------#-#----------------->
+### c. Performance Drivers: By Vendor and By Store
+<img src="/assets/images/Screenshot_Bibitor_02_Performance.png" alt="Performance Drivers: By Vendor and By Store" width="800"/>
+<!-----------------#-#----------------->
+To pinpoint where slow-moving inventory originates:
+
+- **Vendor Performance:** The "Top 10 Vendors by Average Days to Sell" chart reveals which suppliers, on average, are associated with slower inventory turnover. Identifying vendors like TRUETTI HURST and WALPOLE MTN VIEW WINERY with significantly higher average days to sell (119 and 115 days, respectively) can lead to discussions about product assortment, demand alignment, or purchasing quantities with these specific partners.
+- **Store Performance:** The "Top 10 Stores by Average Days to Sell" chart highlights locations where inventory tends to linger. Stores such as Store #44 and Store #74 show higher average days to sell (around 36-37 days), indicating potential localized demand issues, merchandising challenges, or inefficiencies in inventory management specific to those branches.
+
+<!-----------------#-#----------------->
+### d. Inventory Cost & Valuation
+<!-----------------#-#----------------->
+<img src="/assets/images/Screenshot_Bibitor_02_MAC.png" alt="Vendor Inventory Insights" width="800"/>
+
+Beyond tracking inventory movement, understanding its true cost is paramount for accurate financial reporting and pricing strategies. This section leverages the Moving Average Cost (MAC) method (introduced in <a href="#2-4-MAC">Section 2.4</a>) to detect cost variances. 
+
+- **Inventory Cost Variance:** The bar chart “Top Products by Inventory Cost Variance” identifies items with the largest gaps between their recorded cost and MAC. Products like 69_MOUNTMEND_20063 and 38_GOULCREST_20063 show notable differences (e.g., $1.83K), signaling potential data errors or unexpected price shifts that warrant investigation to ensure correct inventory valuation.
+- **Cost Alignment Check:** The scatter plot “Recorded vs. MAC per Product” visually compares recorded costs to MAC across products. Most products align well (near the diagonal), while outliers indicate inconsistencies that could impact profitability and require review.
+
+
+<!-----------------#-#----------------->
+### 📌 Summary
+<!-----------------#-#----------------->
+This comprehensive dashboard provides an integrated view of Bibitor's inventory dynamics. It highlights not only product sales velocity, problematic slow-movers, and performance drivers by vendor and store, but also crucial insights into inventory cost accuracy. By visually exposing movement trends, efficiency bottlenecks, and potential valuation discrepancies, this powerful tool empowers Bibitor to optimize inventory levels, refine procurement, ensure financial integrity, and ultimately enhance overall profitability.
+
+
+<!------------------------------------------------------------------------ JavaScript ------------------------------------------------------------------------>
+<script>
+  const dashboardBoxes = document.querySelectorAll('.dashboard-box');
+  dashboardBoxes.forEach((box) => {
+    box.addEventListener('mouseenter', () => {
+      box.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
+      box.style.borderColor = '#3498db';
+    });
+    box.addEventListener('mouseleave', () => {
+      box.style.boxShadow = 'none';
+      box.style.borderColor = '#ccc';
+    });
+  });
+</script>

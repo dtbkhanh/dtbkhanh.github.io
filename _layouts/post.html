@@ -49,6 +49,56 @@ layout: default
       padding: 8px;
     }
 
+    /* Table of Contents styling */
+    .post-content details {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 10px;
+      margin: 20px 0;
+      background-color: #f9f9f9;
+    }
+    
+    .post-content summary {
+      cursor: pointer;
+      padding: 10px;
+      margin: -10px;
+      border-radius: 8px;
+      background-color: #f0f0f0;
+      transition: background-color 0.2s;
+      font-weight: bold;
+    }
+    
+    .post-content summary:hover {
+      background-color: #e0e0e0;
+    }
+    
+    .post-content details ul {
+      margin: 15px 0;
+      padding-left: 20px;
+    }
+    
+    .post-content details li {
+      margin: 8px 0;
+      text-align: left; /* Override the justify alignment for TOC */
+    }
+    
+    .post-content details a {
+      text-decoration: none;
+      color: #0066cc;
+      transition: color 0.2s;
+    }
+    
+    .post-content details a:hover {
+      color: #004499;
+      text-decoration: underline;
+    }
+    
+    /* Style for nested lists in TOC */
+    .post-content details ul ul {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+
   </style>
 
 
