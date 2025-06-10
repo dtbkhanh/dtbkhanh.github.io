@@ -224,6 +224,9 @@ title: Home
   <a href="https://github.com/dtbkhanh">
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
   </a>
+  <a href="https://sites.google.com/view/dtbkhanh">
+    <img src="https://img.shields.io/badge/Creative%20Portfolio-FF5722?style=for-the-badge&logo=google&logoColor=white" alt="Creative Portfolio">
+  </a>
 </div>
 
 <div align="center" style="margin-top: 5px;">
