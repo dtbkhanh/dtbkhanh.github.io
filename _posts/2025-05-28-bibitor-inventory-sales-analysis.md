@@ -540,7 +540,7 @@ A new dimension of analysis focuses on inventory allocation across vendors:
 - **Ending Inventory Value:** The "Top 10 Vendor by Ending Inventory Value ($)" bar chart shows where most of Bibitor’s current stock value is concentrated. Diageo again leads, followed by Martignetti Companies — reflecting both their high purchase volumes and slower turnover.
 - **Inventory vs. Purchases:** The scatter plot "Ending Inventory Value vs. Total Purchases" brings an important correlation to light. Vendors with higher purchase totals generally hold more ending inventory. Large bubbles in the upper-right corner (e.g., DIAGEO NORTH AMERICA INC) signal significant capital investment and highlight the need to monitor stock efficiency.
 
-### 📌 Summary
+### 📝 Summary
 This dashboard turns complex vendor data into actionable insights. By spotlighting top vendors across purchasing, sales, profit, and inventory, Bibitor can prioritize key relationships, assess capital allocation, and refine stock strategies — all crucial for driving sustainable growth.
 
 
@@ -591,7 +591,7 @@ Beyond tracking inventory movement, understanding its true cost is paramount for
 
 
 <!-----------------#-#----------------->
-### 📌 Summary
+### 📝 Summary
 <!-----------------#-#----------------->
 This comprehensive dashboard provides an integrated view of Bibitor's inventory dynamics. It highlights not only product sales velocity, problematic slow-movers, and performance drivers by vendor and store, but also crucial insights into inventory cost accuracy. By visually exposing movement trends, efficiency bottlenecks, and potential valuation discrepancies, this powerful tool empowers Bibitor to optimize inventory levels, refine procurement, ensure financial integrity, and ultimately enhance overall profitability.
 
