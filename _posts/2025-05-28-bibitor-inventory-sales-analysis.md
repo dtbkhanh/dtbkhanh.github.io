@@ -595,6 +595,21 @@ Beyond tracking inventory movement, understanding its true cost is paramount for
 <!-----------------#-#----------------->
 This comprehensive dashboard provides an integrated view of Bibitor's inventory dynamics. It highlights not only product sales velocity, problematic slow-movers, and performance drivers by vendor and store, but also crucial insights into inventory cost accuracy. By visually exposing movement trends, efficiency bottlenecks, and potential valuation discrepancies, this powerful tool empowers Bibitor to optimize inventory levels, refine procurement, ensure financial integrity, and ultimately enhance overall profitability.
 
+<!--===========================================================================-->
+<!-------------------------***** FINAL TAKEWAYS *****---------------------------->
+<!--===========================================================================-->
+<div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
+<h1 id="final-takeaways">📌 Final Takeaways</h1>
+
+Through a combination of robust SQL analysis and intuitive interactive dashboards, this case study provided Bibitor with deep, actionable insights into its core operations. By translating complex data into clear visuals, it offers a comprehensive understanding of:
+- Vendor performance
+- Inventory movement
+- Product-level cost accuracy.
+
+Key insights such as identifying top-performing and slow-moving products, evaluating vendor efficiency, and highlighting cost variances empower Bibitor to make more informed decisions. Whether it's improving stock turnover, refining purchasing strategies, or ensuring accurate financial reporting, the findings presented here offer a strong foundation for optimizing operations, boosting efficiency, and driving sustainable profitability.
+
+This data-driven approach not only reveals what’s happening — but crucially guides Bibitor on where to take action next.
+
 
 <!------------------------------------------------------------------------ JavaScript ------------------------------------------------------------------------>
 <script>
