@@ -604,7 +604,7 @@ This comprehensive dashboard provides an integrated view of Bibitor's inventory 
 Through a combination of robust SQL analysis and intuitive interactive dashboards, this case study provided Bibitor with deep, actionable insights into its core operations. By translating complex data into clear visuals, it offers a comprehensive understanding of:
 - Vendor performance
 - Inventory movement
-- Product-level cost accuracy.
+- Product-level cost accuracy
 
 Key insights such as identifying top-performing and slow-moving products, evaluating vendor efficiency, and highlighting cost variances empower Bibitor to make more informed decisions. Whether it's improving stock turnover, refining purchasing strategies, or ensuring accurate financial reporting, the findings presented here offer a strong foundation for optimizing operations, boosting efficiency, and driving sustainable profitability.
 
