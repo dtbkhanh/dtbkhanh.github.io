@@ -4,6 +4,7 @@ title: "Inside Retail Operations: A Case Study on Sales, Inventory, and Vendors"
 date: 2025-05-28
 excerpt: "What does it take to run a successful retail business? It's knowing what sells, how fast inventory moves, and which vendors truly impact your bottom line. "
 cover: /assets/images/Cover_Bibitor.png
+image: /assets/images/Cover_Bibitor.png 
 ---
 
 <!----------------- Table of Contents ----------------->
