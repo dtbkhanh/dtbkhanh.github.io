@@ -96,7 +96,7 @@ SQL was the primary tool used to extract, transform, and conduct the initial lay
 
 All SQL scripts used in this analysis are available in the following GitHub repository:
 <div style="border: 1px solid #ccc; padding: 15px; margin: 20px 0; border-radius: 5px; text-align: center; transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;" class="dashboard-box">
-  <strong><a href="https://github.com/dtbkhanh/Data-Analytics-and-Reports/tree/021a7ac923e6cd4f8919e8d023981034e881d0a0/SQL%20Queries/01.%20Bibitor%20LLC%20Inventory%20Analysis" target="_blank" style="text-decoration: none;">➡️ View SQL Queries ⬅️</a></strong>
+  <strong><a href="https://github.com/dtbkhanh/Data-Analytics-and-Reports/tree/344d8019f298f3850da2918c817cdc99ea63d134/SQL%20Queries/01.%20Bibitor%20LLC%20Inventory%20Analysis" target="_blank" style="text-decoration: none;">➡️ View SQL Queries ⬅️</a></strong>
 </div>
 
 <!------------------------------------------------------>
