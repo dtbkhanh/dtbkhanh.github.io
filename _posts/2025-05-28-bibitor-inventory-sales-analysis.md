@@ -31,7 +31,6 @@ cover: /assets/images/Cover_Bibitor.png
 <!------------------------ Intro ----------------------->
 <!------------------------------------------------------>
 
-<!-- <img src="/assets/images/Cover_Bibitor.png" alt="Liquour Sales" width="800"/> -->
 <hr style="width: 40%; border: none; border-top: 1px dashed lightgray; margin: 40px auto;">
 
 <div style="text-align: left;">
@@ -42,7 +41,7 @@ What does it take to run a successful liquor business? It’s not just about sto
 
 This case study analyzes data from Bibitor, LLC — a fictional retail chain with 80+ locations and over $450M in annual sales, to uncover patterns patterns in vendor performance, inventory movement, and sales behavior, applying real-world retail concepts.
 
-
+<img src="/assets/images/Cover_Bibitor.png" alt="Liquour Sales" width="800"/>
 
 ### 🧾 About the Dataset
 The dataset, sourced from the **[HUB of Analytics Education](https://www.hubae.org)**, simulates operational data from a large-scale liquor retailer located in Lincoln, USA, for the month of December 2016. It consists of six key data tables that collectively represent purchasing, inventory, sales, and vendor transactions.
