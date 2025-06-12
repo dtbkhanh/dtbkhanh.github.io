@@ -45,7 +45,7 @@ This case study analyzes data from Bibitor, LLC — a fictional retail chain wit
 <img src="/assets/images/Cover_Bibitor.png" alt="Liquour Sales" width="800"/>
 
 ### 🧾 About the Dataset
-The dataset, sourced from the **[HUB of Analytics Education](https://www.hubae.org)**, simulates operational data from a large-scale liquor retailer located in Lincoln, USA, for the month of December 2016. It consists of six key data tables that collectively represent purchasing, inventory, sales, and vendor transactions.
+The dataset, obtained from the **[HUB of Analytics Education](https://www.hubae.org)**, simulates operational data from a large-scale liquor retailer  based in Lincoln, USA, for the month of December 2016. It consists of six key data tables that collectively represent purchasing, inventory, sales, and vendor transactions.
 - **Inventory**
   - **`BegInvDec`**: Inventory at the start of December 2016.
   - **`EndInvDec`**: Inventory remaining at the end of December 2016.
@@ -60,7 +60,7 @@ The dataset, sourced from the **[HUB of Analytics Education](https://www.hubae.o
 - **Sales**
   - **`SalesDec`**: Item-level sales data including price, quantity, and total revenue.
 
-These tables, when combined, allow us to track products from purchase to sale, understand vendor relationships, and monitor financial flows, which are all crucial for optimizing retail operations.
+When combined, these tables allow us to track products from purchase to sale, understand vendor relationships, and monitor financial flows, which are all crucial for optimizing retail operations.
 
 ### 🔑 Key Business Questions
 - Which vendors provide the most value?
@@ -93,7 +93,7 @@ As shown, tables like **`PurchasesDec`** and **`VendorInvoicesDec`** are linked 
   <h1 id="2-sql" style="font-weight: bold;">2. ANALYSIS WITH SQL</h1>
 </div>
 
-SQL was the primary tool used to extract, transform, and conduct the initial layers of analysis on Bibitor’s extensive datasets. Its robust querying capabilities enabled a systematic and granular approach to addressing critical business questions.
+SQL was the primary tool used to extract, transform, and conduct the initial layers of analysis on Bibitor’s extensive datasets. Its powerful querying capabilities supported a structured and detailed approach to addressing critical business questions.
 
 All SQL scripts used in this analysis are available in the following GitHub repository:
 <div style="border: 1px solid #ccc; padding: 15px; margin: 20px 0; border-radius: 5px; text-align: center; transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;" class="dashboard-box">
