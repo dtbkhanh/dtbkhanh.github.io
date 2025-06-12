@@ -60,7 +60,7 @@ The dataset, sourced from the **[HUB of Analytics Education](https://www.hubae.o
 - **Sales**
   - **`SalesDec`**: Item-level sales data including price, quantity, and total revenue.
 
-These tables, when combined, allow us to track products from purchase to sale, understand vendor relationships, and monitor financial flows, all essential for optimizing retail operations.
+These tables, when combined, allow us to track products from purchase to sale, understand vendor relationships, and monitor financial flows, which are all crucial for optimizing retail operations.
 
 ### 🔑 Key Business Questions
 - Which vendors provide the most value?
