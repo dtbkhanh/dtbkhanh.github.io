@@ -67,6 +67,7 @@ These tables, when combined, allow us to track products from purchase to sale, u
 - Are we overstocking or underutilizing inventory?
 - How do purchase prices compare to actual sales?
 - What’s the average time it takes to sell received stock?
+- Are our product costs accurately reflecting ongoing purchase fluctuations?
 
 ### 🧩 Data Model
 Before diving into the code, we first need to understand how all the different pieces of data connect. An *Entity-Relationship Diagram (ERD)* visually represents these connections, providing the logical framework for accurate and efficient analysis. This ensures our data joins are correct and our derived insights are reliable.
