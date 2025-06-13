@@ -190,13 +190,12 @@ FROM SalesDec;
 ```
 *Output:* `0.0004`
 
-➡️ These very low percentages indicate that the financial data is remarkably clean with respect to zero or missing monetary values — a positive indicator for the quality of subsequent analysis.
-
+➡️ These very low percentages indicate that the financial data is remarkably clean with respect to zero or missing monetary values. This is a strong positive for the quality of subsequent analysis.
 ### c. Dataset Summaries
 This section summarizes the key characteristics of the datasets to gain a foundational understanding of their contents.
 
 **📦 Purchases:**   
-The `PurchasesDec` table contains 2.37 million rows, involving 126 distinct vendors and 5,543 unique purchase orders. Monetary and quantity data for purchases are as follows:
+The `PurchasesDec` table contains 2.37 million rows, representing purchases from 128 distinct vendors across 5,543 unique purchase orders. Key monetary and quantity statistics include:
 
 | Metric   | Quantity (units) | Dollars         |
 |----------|------------------|-----------------|
