@@ -171,7 +171,7 @@ layout: default
     <div class="tags-container">
         <span class="tags-label">Tags:</span>
         {% for tag in page.tags %}
-        <a href="/tags/{{ tag }}" class="tag">{{ tag }}</a>
+        <a href="/tags/?tag={{ tag | downcase | replace: ' ', '-' }}" class="tag">{{ tag }}</a>
         {% endfor %}
     </div>
 </div>
