@@ -18,6 +18,7 @@ This repository contains the following key folders and files:
 * **`about.md`**: A Markdown file containing information about me, my background, and my interests. Accessible at [https://dtbkhanh.github.io/about/](https://dtbkhanh.github.io/about).
 * **`index.md`**: The main homepage of the website, featuring an introduction, links to different sections, and the latest blog post.
 * **`posts.md`**: A page listing all my blog posts chronologically, accessible at [https://dtbkhanh.github.io/posts/](https://dtbkhanh.github.io/posts/).
+* **`tags.md`**: A general tags page that displays all tags used in posts and allows filtering posts by tags without creating individual tag pages.
 
 ## 🛠️ Built With
 
