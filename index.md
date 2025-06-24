@@ -172,6 +172,40 @@ title: Home
 
 <div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
 
+<!-------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------ Featured Blogs ----------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------------------------->
+
+<div align="center" style="margin-top: 20px;">
+  <h2>FEATURED BLOGS</h2>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 1.5rem; margin-top: 2rem;">
+  {% assign featured_posts = site.posts | where_exp: "post", "post.featured == true" | slice: 0, 3 %}
+
+  {% for post in featured_posts %}
+    <div style="flex: 1 1 300px; max-width: 400px; margin: 0 auto;">
+      {% if post.cover %}
+        <a href="{{ post.url | relative_url }}">
+          <img src="{{ post.cover | relative_url }}" alt="Cover for {{ post.title }}" style="width: 100%; height: auto; border-radius: 8px; object-fit: cover;">
+        </a>
+      {% endif %}
+    </div>
+    <div style="flex: 2 1 400px; min-width: 280px; text-align: justify; margin: 0 auto;">
+      <h3 style="margin-top: 0;">
+        <a href="{{ post.url | relative_url }}" style="text-decoration: none; color: inherit;">
+          {{ post.title }}
+        </a>
+      </h3>
+      <p style="margin: 0; color: gray; font-size: 0.9em;">{{ post.date | date: "%B %d, %Y" }}</p>
+      {% if post.excerpt %}
+        <p style="margin-top: 0.8rem; font-size: 1rem; line-height: 1.6;">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>
+
+<div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
 
 <!-------------------------------------------------------------------------------------------------------------------------->
 <!------------------------------------------------------ Latest Blogs ------------------------------------------------------>

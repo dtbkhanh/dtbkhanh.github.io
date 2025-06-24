@@ -98,7 +98,53 @@ layout: default
       margin-top: 5px;
       margin-bottom: 5px;
     }
+    
+    /* Hashtags */
+    .post-tags {
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 1px solid #e1e4e8;
+    }
 
+    .tags-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        align-items: center;
+    }
+
+    .tags-label {
+        font-weight: 600;
+        color: #586069;
+        font-size: 0.9em;
+        margin-right: 12px;
+    }
+
+    .tag {
+        display: inline-flex;
+        align-items: center;
+        padding: 4px 10px;
+        background: #f1f8ff;
+        color: #0366d6;
+        text-decoration: none;
+        border-radius: 16px;
+        font-size: 0.8em;
+        font-weight: 500;
+        border: 1px solid #c8e1ff;
+        transition: all 0.2s ease;
+    }
+
+    .tag::before {
+        content: '#';
+        margin-right: 2px;
+    }
+
+    .tag:hover {
+        background: #0366d6;
+        color: white;
+        transform: translateY(-1px);
+        box-shadow: 0 2px 8px rgba(3, 102, 214, 0.3);
+    }
   </style>
 
 
@@ -120,5 +166,14 @@ layout: default
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
+
+  <div class="post-tags">
+    <div class="tags-container">
+        <span class="tags-label">Tags:</span>
+        {% for tag in page.tags %}
+        <a href="/tags/{{ tag }}" class="tag">{{ tag }}</a>
+        {% endfor %}
+    </div>
+</div>
 
 </article>

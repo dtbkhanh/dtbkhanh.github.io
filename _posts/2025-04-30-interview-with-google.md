@@ -4,6 +4,9 @@ title: "My Interview Journey with Google"
 date: 2025-04-30
 excerpt: "Interviewing at Google was more than just a hiring process — it became a journey of self-reflection, testing my ability to think, communicate, and grow under pressure."
 cover: /assets/images/Cover_Google Interview.png
+featured: true
+categories: [Career Insights]
+tags: [GoogleInterview, InterviewExperience, TechInterview, CareerJourney, CareerGrowth]
 ---
 
 <!-- Intro -->
