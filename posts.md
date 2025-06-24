@@ -126,7 +126,9 @@ permalink: /posts/
 <h1 class="page-heading">All Posts</h1>
 <div class="posts-grid" id="posts-grid">
   {% for post in site.posts %}
-    <div class="post-card" data-categories="{{ post.categories | map: 'downcase' | map: 'replace', ' ', '-' | join: '|' }}">
+    {% assign raw_cats = post.categories | join: '|' | downcase %}
+    {% assign safe_cats = raw_cats | replace: ' ', '-' %}
+    <div class="post-card" data-categories="{{ safe_cats }}">
 
       {% if post.cover %}
         <div class="post-card-image">
