@@ -26,9 +26,9 @@ tags: [UserBehavior, MarketingAnalytics, ConversionOptimization, MarketingStrate
 <!-- <img src="/assets/images/Cover_MobileApp Marketing.png" alt="MobileApp" width="800"/> -->
 
 ## 📌 INTRODUCTION
-How do user behavior and marketing touchpoints shape conversions in a mobile app for self-employed professionals in Germany?
+How do user behavior and marketing touchpoints shape conversion rates in a mobile app for self-employed professionals in Germany?
 
-This case study explores data from **29.1k users (15.1% conversion)** between 2020 – 2025, with the goal of improving subscription rates and acquisition efficiency.
+This case study analyzes data from **29.1k users (15.1% conversion)** between 2020 – 2025, with the goal of increasing subscription rates and acquisition efficiency.
 
 I created 4 interactive dashboards in Looker Studio to uncover actionable insights:  
 1. **Overview** – Growth, revenue & conversion trends  
@@ -89,17 +89,16 @@ I created 4 interactive dashboards in Looker Studio to uncover actionable insigh
 - **Significant Spike in trial Conversions**: The "Monthly New Subscribers" chart shows a notable increase in non-paid conversions during July – September 2024.
 
 ### ✅ Recommendations
-- Investigate the spike in non-paid conversions during the period of July – September 2024:
-  
-  - **Marketing campaign effectiveness**: Analyze marketing campaign performance during this period. Were there specific campaigns focused on free trials? Determine the cost per acquisition (CPA) and conversion rate for these campaigns.
+Analyze the increase in non-paid conversions observed between July and September 2024. We can consider the following areas of investigation:   
+- **Marketing campaign effectiveness**: Evaluate marketing campaign performance during this period. Were any specific campaigns pushing free trials? Evaluate their performance by analyzing conversion rates and cost per acquisition (CPA).
 
-  - **Free trial promotion analysis**: Review any free trial promotions run during this time. Was the trial duration, features offered, or onboarding process different? Examine the churn rate of users who signed up through this spike.
+- **Free trial promotions and onboarding**: Review any free trial promotions active at that time. Assess whether any changes were made to the free trial offer, such as the trial duration, included features, or onboarding procedure.  It’s also important to analyze the churn rate among users acquired during this time to better understand retention and long-term engagement.
 
-  - **Potential audience mismatch**: Investigate user demographics and behavior during this period. Did the spike correlate with sign-ups from specific regions or user segments? Analyze feature usage among these trial users to see if they engaged with key value propositions.
+- **Audience characteristics and behavior**: Examine the demographics and usage patterns of the users who converted during this spike. Did they represent a specific region, segment, or behavioral profile? Investigate how actively they engaged with the product’s core features to determine alignment with key value propositions.
 
-  - **Technical or billing issues**: Check for any technical glitches or billing issues that might have temporarily affected direct paid sign-ups or inflated trial sign-ups.
+- **Were there any technical issues?** Investigate whether any technical issues, such as bugs, billing errors, or outages, may have affected the ability of users to complete paid sign-ups—potentially leading to an increase in trial conversions as a fallback.
 
-- Cross-check app store reviews or feedback during this time for additional context.
+- **User reviews and feedback**: Cross-reference these findings with app store reviews or feedback from the same period for additional context.
 
 
 <!------------------------------ PAGE 2  ----------------------------------->
