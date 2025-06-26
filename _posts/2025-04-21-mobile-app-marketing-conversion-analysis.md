@@ -91,13 +91,13 @@ I created 4 interactive dashboards in Looker Studio to uncover actionable insigh
 ### ✅ Recommendations
 - Investigate the spike in non-paid conversions during the period of July – September 2024:
   
-  - **Marketing campaign effectiveness**: Analyze marketing campaign performance during this period. Were there specific campaigns focused on free trials? Evaluate the cost per acquisition (CPA) and conversion rate of these campaigns.
+  - **Marketing campaign effectiveness**: Analyze marketing campaign performance during this period. Were there specific campaigns focused on free trials? Determine the cost per acquisition (CPA) and conversion rate for these campaigns.
 
   - **Free trial promotion analysis**: Review any free trial promotions run during this time. Was the trial duration, features offered, or onboarding process different? Examine the churn rate of users who signed up through this spike.
 
   - **Potential audience mismatch**: Investigate user demographics and behavior during this period. Did the spike correlate with sign-ups from specific regions or user segments? Analyze feature usage among these trial users to see if they engaged with key value propositions.
 
-  - **Technical or billing issues**: Rule out any technical glitches or billing issues that might have temporarily affected direct paid sign-ups or inflated trial sign-ups.
+  - **Technical or billing issues**: Check for any technical glitches or billing issues that might have temporarily affected direct paid sign-ups or inflated trial sign-ups.
 
 - Cross-check app store reviews or feedback during this time for additional context.
 
@@ -243,19 +243,19 @@ Analysis by conversion distribution and Max MRR.
 <img src="/assets/images/Screenshot_Mobile App_04a.png" alt="Users by Region" width="800"/>
 
 - **Berlin** stands out as the region with the largest user base, the highest conversion rate, and the highest Max MRR.   
-  ➡️ Significantly increase marketing budget for Berlin to capitalize on this high-performing market.  
-  ➡️ Conduct a thorough analysis of top-performing campaigns within Berlin to identify successful strategies that can be adapted and scaled to other promising regions.
+  ➡️ Significantly increase marketing budget for Berlin to capitalize on high-performing market.  
+  ➡️ Analyze top-performing campaigns within Berlin to identify successful strategies that can be adapted and scaled to other promising regions.
 
 - **Nordrhein-Westfalen & Bayern** demonstrate strong potential with high Max MRR and robust conversion rates.  
   ➡️ Maintain or slightly increase marketing investment in these regions.  
-  ➡️ Implement A/B testing of new and innovative campaign ideas to further optimize performance and unlock additional user acquisition and revenue.
+  ➡️ Conduct A/B testing on new and innovative campaign ideas to improve performance, increase user acquisition, and boost revenue.
   
 - **Mecklenburg-Vorpommern & Hamburg** has fewer users, but strong conversion efficiency.  
-  ➡️ Explore growth potential by implementing targeted, low-budget awareness campaigns to increase user acquisition. Initial small investments could yield efficient returns.
+  ➡️ Boost user acquisition by implementing targeted, low-cost awareness campaigns. Even small investments can lead to strong results.
 
 - **Saarland** shows low user acquisition, poor conversion rates, and low revenue generation.  
-  ➡️ Conduct in-depth market research within Saarland to understand the underlying reasons for the low performance and identify potential barriers to adoption.  
-  ➡️ Based on the research findings, consider strategically reducing ad spend in this region or pivoting to highly targeted, experimental campaigns if a viable path to improvement is identified.
+  ➡️ Conduct in-depth market research within Saarland to determine low performance and potential barriers to adoption.  
+  ➡️ Based on the research findings, explore cutting back ad spend in this region or shift to highly targeted, experimental campaigns if there's a promising opportunity for improvement.
 
 
 ### b. Users by Self-Employment Status
