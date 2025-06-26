@@ -64,7 +64,7 @@ title: Home
   <div class="intro-image">
     <img src="/assets/images/github_profilepic.png" alt="Khanh's profile photo">
   </div>
-  <div class="intro-title">Hi, I’m Khanh!</div>
+  <div class="intro-title">Hi, I'm Khanh!</div>
   <div class="intro-subtitle">Data Analytics Specialist</div>
   <div class="intro-skills">
     Python &nbsp;|&nbsp; SQL &nbsp;|&nbsp; Power BI &nbsp;|&nbsp; Tableau &nbsp;|&nbsp; Looker Studio
@@ -168,6 +168,106 @@ title: Home
       padding: 20px 10px;
     }
   }
+
+  /* Blog grid styles - matching posts/tags pages */
+  .posts-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .post-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 1.5rem;
+  }
+
+  .post-card-image {
+    flex: 1 1 300px;
+    max-width: 400px;
+  }
+
+  .post-card-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .post-card-content {
+    flex: 2 1 400px;
+    min-width: 280px;
+    text-align: justify;
+  }
+
+  .post-card-content h3 {
+    margin-top: 0.3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .post-card-content h3 a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .post-card-content h3 a:hover {
+    color: #4a90e2;
+  }
+
+  .post-card-content p {
+    margin: 0.5rem 0 0;
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .post-meta {
+    color: gray;
+    font-size: 0.9em;
+  }
+
+  .post-categories {
+    margin: 0.5rem 0;
+  }
+
+  .post-category {
+    display: inline-block;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 2px 8px;
+    margin-right: 0.5rem;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .post-category:hover {
+    background-color: #e0e0e0;
+    text-decoration: none;
+  }
+
+  @media (max-width: 768px) {
+    .post-card {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .post-card-content {
+      text-align: justify;
+    }
+  }
+
+  .section-title {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
 </style>
 
 <div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
@@ -176,31 +276,44 @@ title: Home
 <!------------------------------------------------------ Featured Blogs ----------------------------------------------------->
 <!-------------------------------------------------------------------------------------------------------------------------->
 
-<div align="center" style="margin-top: 20px;">
-  <h2>FEATURED BLOGS</h2>
-</div>
+<h2 class="section-title">FEATURED BLOGS</h2>
 
-<div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 1.5rem; margin-top: 2rem;">
+<div class="posts-grid">
   {% assign featured_posts = site.posts | where_exp: "post", "post.featured == true" | slice: 0, 3 %}
 
   {% for post in featured_posts %}
-    <div style="flex: 1 1 300px; max-width: 400px; margin: 0 auto;">
+    <div class="post-card">
       {% if post.cover %}
-        <a href="{{ post.url | relative_url }}">
-          <img src="{{ post.cover | relative_url }}" alt="Cover for {{ post.title }}" style="width: 100%; height: auto; border-radius: 8px; object-fit: cover;">
-        </a>
+        <div class="post-card-image">
+          <a href="{{ post.url | relative_url }}">
+            <img src="{{ post.cover | relative_url }}" alt="Cover image for {{ post.title }}">
+          </a>
+        </div>
       {% endif %}
-    </div>
-    <div style="flex: 2 1 400px; min-width: 280px; text-align: justify; margin: 0 auto;">
-      <h3 style="margin-top: 0;">
-        <a href="{{ post.url | relative_url }}" style="text-decoration: none; color: inherit;">
-          {{ post.title }}
-        </a>
-      </h3>
-      <p style="margin: 0; color: gray; font-size: 0.9em;">{{ post.date | date: "%B %d, %Y" }}</p>
-      {% if post.excerpt %}
-        <p style="margin-top: 0.8rem; font-size: 1rem; line-height: 1.6;">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-      {% endif %}
+
+      <div class="post-card-content">
+        <span class="post-meta">{{ post.date | date: "%B %d, %Y" }}</span>
+
+        {% if post.categories %}
+          <div class="post-categories">
+            {% for cat in post.categories %}
+              <span class="post-category">
+                {{ cat }}
+              </span>
+            {% endfor %}
+          </div>
+        {% endif %}
+
+        <h3>
+          <a href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+
+        {% if post.excerpt %}
+          <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+        {% endif %}
+      </div>
     </div>
   {% endfor %}
 </div>
@@ -211,37 +324,49 @@ title: Home
 <!------------------------------------------------------ Latest Blogs ------------------------------------------------------>
 <!-------------------------------------------------------------------------------------------------------------------------->
 
-<div align="center" style="margin-top: 20px;">
-  <h2>LATEST INSIGHTS</h2>
-</div>
+<h2 class="section-title">LATEST INSIGHTS</h2>
 
-<div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 1.5rem; margin-top: 2rem;">
-  {% assign latest_posts = site.posts | slice: 0, 3 %}  <!-- Get the latest 3 posts -->
+<div class="posts-grid">
+  {% assign latest_posts = site.posts | slice: 0, 3 %}
 
   {% for post in latest_posts %}
-    <div style="flex: 1 1 300px; max-width: 400px; margin: 0 auto;">
+    <div class="post-card">
       {% if post.cover %}
-        <a href="{{ post.url | relative_url }}">
-          <img src="{{ post.cover | relative_url }}" alt="Cover for {{ post.title }}" style="width: 100%; height: auto; border-radius: 8px; object-fit: cover;">
-        </a>
+        <div class="post-card-image">
+          <a href="{{ post.url | relative_url }}">
+            <img src="{{ post.cover | relative_url }}" alt="Cover image for {{ post.title }}">
+          </a>
+        </div>
       {% endif %}
-    </div>
-    <div style="flex: 2 1 400px; min-width: 280px; text-align: justify; margin: 0 auto;">
-      <h3 style="margin-top: 0;">
-        <a href="{{ post.url | relative_url }}" style="text-decoration: none; color: inherit;">
-          {{ post.title }}
-        </a>
-      </h3>
-      <p style="margin: 0; color: gray; font-size: 0.9em;">{{ post.date | date: "%B %d, %Y" }}</p>
-      {% if post.excerpt %}
-        <p style="margin-top: 0.8rem; font-size: 1rem; line-height: 1.6;">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-      {% endif %}
+
+      <div class="post-card-content">
+        <span class="post-meta">{{ post.date | date: "%B %d, %Y" }}</span>
+
+        {% if post.categories %}
+          <div class="post-categories">
+            {% for cat in post.categories %}
+              <span class="post-category">
+                {{ cat }}
+              </span>
+            {% endfor %}
+          </div>
+        {% endif %}
+
+        <h3>
+          <a href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+
+        {% if post.excerpt %}
+          <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+        {% endif %}
+      </div>
     </div>
   {% endfor %}
 </div>
 
 <div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
-
 
 <!-------------------------------------------------------------------------------------------------------------------------->
 <!------------------------------------------------------ Let's connect ----------------------------------------------------->
