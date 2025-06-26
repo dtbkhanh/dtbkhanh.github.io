@@ -114,7 +114,7 @@ I created 4 interactive dashboards in Looker Studio to uncover actionable insigh
 
 **1. Engagement Metrics Table**  
 - Converted users tend to have more sessions and spend more time per session, showing deeper engagement.  
-- Non-converted users use the app more frequently (higher average days used) but spend less time overall, likely testing limited features (such as invoice creation or bank connections) that are restricted in the free plan.  
+- Non-converted users use the app more frequently (with higher average days used) but spend less time overall, likely testing limited features (such as invoice creation or bank connections) that are restricted in the free plan.  
 
 **2. Feature Usage Funnel**  
 - Many users begin with basic features like **Create Expense/Invoice** or **Enter Tax Number**.
@@ -122,7 +122,7 @@ I created 4 interactive dashboards in Looker Studio to uncover actionable insigh
 - These drop-offs may suggest:
   - UX friction or complexity
   - Lack of onboarding or tooltips
-  - Users feeling overwhelmed with tax-related setup
+  - Users are feeling overwhelmed with tax-related setup
 
 **3. Conversion Rate by Feature Used (100% Stacked Bar Chart)**
 - Although fewer users use features like **IBAN Setup**, **Verified Bank**, and **PEPPOL Registration**, those who do are far more likely to become paid users.  
@@ -141,8 +141,8 @@ Shows which feature users interacted with first after installing the app.
 Highlights how the first action impacts conversion likelihood.
 
 - Users who start with **AI Assistant** have the highest conversion rate (40%), despite being a smaller group.  
-- Users who start with simpler features tend to explore less, leading to lower conversion.  
-→ When users take the time to explore the app fully and engage with its features, they have a higher chance of becoming paying subscribers.
+- Users who start with simpler features  are less likely to explore further, resulting in lower conversion rates.
+→  When users spend time exploring the app and engaging with its features, they are more likely to become paying customers.
 
 ### 🔍 Insights
 
@@ -154,15 +154,15 @@ Highlights how the first action impacts conversion likelihood.
 
 **Onboarding Improvements**  
 - Add tooltips and onboarding prompts for advanced features.
-- Guide users to the next helpful action after they perform a basic action. For example, if they create an invoice, suggest connecting their bank account.
+- After completing a simple task, guide users to the next useful step. For example, if they create an invoice, suggest they connect their bank account.
 
 **AI Assistant Optimization**  
 - Introduce a required (but skippable) first interaction with the AI Assistant.
-- Use the Assistant to guide users through onboarding (e.g., suggesting VAT input after tax number entry).
+- Use the Assistant to walk users through the onboarding process (e.g., suggesting VAT input after tax number entry).
 
 **Incentives and Retention**  
-- Offer a 14-day trial to users who connect a bank but don’t convert.
-- Send personalized in-app nudges to re-engage users who drop off early in the funnel.
+- Offer a 14-day trial to users who connect a bank but do not convert.
+- Use tailored in-app nudges to re-engage consumers who have dropped out early in the funnel.
 
 <!------------------------------ PAGE 3  ----------------------------------->
 <div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
@@ -212,9 +212,9 @@ Analysis by conversion distribution and Max MRR.
 
 ### 🔍 Insights
 
-- **Social media (e.g., Facebook):** Demonstrates strong conversion rates and contributes significantly to revenue, suggesting a highly engaged audience. Consider further investment and scaling successful creatives.  
-- **Search engine (Google):** While generating the highest user volume and MRR, search engine campaigns show a moderate conversion rate, indicating potential for optimization through improved keyword targeting and landing page relevance.  
-- **Short-form video (TikTok):** Currently underperforming across key metrics (user volume, conversion, MRR), potentially due to a mismatch between the platform's demographics and our target audience. A carefully targeted experiment is recommended before further investment.
+- **Social media (e.g., Facebook):** Has high conversion rates and contributes significantly to revenue, suggesting a highly engaged audience. Consider making further investments and scaling successful creatives.  
+- **Search engine (Google):** Despite having the largest user volume and MRR, search engine campaigns show a moderate conversion rate, showing potential for improvement through better keyword targeting and landing page relevance.  
+- **Short-form video (TikTok):** Currently underperforming across key metrics (user volume, conversion, MRR), possibly due to a demographic mismatch between the platform and our target audience. Before making any further investments, it is recommended to conduct a carefully targeted experiment.
 
 
 ### ✅ Recommendations
@@ -222,14 +222,14 @@ Analysis by conversion distribution and Max MRR.
 **Channel Strategy:**
 
 - **Facebook:** Increase budget to leverage its high conversion rates.
-- **Google:** Optimize for better conversion by focusing on top campaigns (SEA), refining keyword targeting, and improving ad and landing page relevance.
+- **Google:** Improve conversion rates by focusing on top campaigns (SEA), optimizing keyword targeting, and increasing ad and landing page relevancy.
 - **TikTok:** Conduct a focused final experiment targeting people aged 25-35 who are interested in business, finance, and freelance topics, using content that addresses their pain points, before considering a budget cut.
 
 **Campaign Tactics:**
 
-- **Prioritize High ROI:** Allocate more budget to campaigns demonstrating strong return (e.g., SEA, Static).
+- **Prioritize High ROI:** Allocate more budget to campaigns with a high return (e.g., SEA, Static).
 - **Explore High-Potential:** Monitor and test scaling campaigns with high conversion rates but low volume (e.g., Retargeting, Organic).
-- **Drive Faster Conversion:** Implement limited-time promos to encourage quicker subscriptions.
+- **Drive Faster Conversion:** Use limited-time promotions to encourage quicker subscriptions.
 
 <!------------------------------ PAGE 4  ----------------------------------->
 
@@ -273,19 +273,19 @@ Analysis by conversion distribution and Max MRR.
 
 ### c. Profession-Based Segmentation
 
-- **Artists & Content Creators** are the largest group and generate the highest Max MRR (due to size). However, their conversion rate is not the highest among all professions, indicating an opportunity for improvement. The high MRR is primarily driven by the sheer volume of users in this category.  
-- **Disparity between Volume and Conversion**: Notably, the professions with the highest number of users are not necessarily the same as those with the highest conversion rates. This highlights the need for a nuanced approach to targeting.
+- **Artists & Content Creators** are the largest group and generate the highest Max MRR (due to size). However, their conversion rate is not the highest among all professions,  showing room for improvement. The high MRR is primarily driven by the sheer volume of users in this category.  
+- **Discrepancy between volume and conversion**: Notably, the professions with the highest number of users do not always have the highest conversion rates. This highlights the need for a refined approach to targeting.
 
 ### d. VAT Type Segmentation
 
 <img src="/assets/images/Screenshot_Mobile App_04c.png" alt="VAT and Account Type" width="800"/>
 
-- Most users fall under **franchise**, which are small businesses exempt from charging Value Added Tax (VAT).  
-- Users under **subjectToVAT** show higher conversion rates, suggesting that businesses actively involved in VAT processes find greater utility and value in the app's features.
+- The majority of users fall under **franchise**, which are small businesses that are exempt from VAT.  
+- Users under **subjectToVAT** show higher conversion rates, suggesting that businesses actively involved in VAT processes find the app's features more useful and valuable.
 
 ### e. Account Type Segmentation
 
-- Most users are freelancers or solo business owners without VAT.  
+- Most users are freelancers or self-employed individuals who do not pay VAT.   
 - Complementary status users — those with a primary job and a freelancing side gig—have the highest conversion rates
 
 
