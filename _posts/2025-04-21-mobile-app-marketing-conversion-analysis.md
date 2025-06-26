@@ -89,16 +89,16 @@ I created 4 interactive dashboards in Looker Studio to uncover actionable insigh
 - **Significant Spike in trial Conversions**: The "Monthly New Subscribers" chart shows a notable increase in non-paid conversions during July – September 2024.
 
 ### ✅ Recommendations
-Analyze the increase in non-paid conversions observed between July and September 2024. We can consider the following areas of investigation:   
-- **Marketing campaign effectiveness**: Evaluate marketing campaign performance during this period. Were any specific campaigns pushing free trials? Evaluate their performance by analyzing conversion rates and cost per acquisition (CPA).
+Between July and September 2024, we noticed a spike in non-paid conversions that needs further investigation. Here are some important areas to consider:
+- **Marketing campaign effectiveness**: Marketing activity during this period should be reviewed in detail. Were any specific campaigns promoting free trials? Evaluate their performance by analyzing conversion rates and cost per acquisition (CPA).
 
-- **Free trial promotions and onboarding**: Review any free trial promotions active at that time. Assess whether any changes were made to the free trial offer, such as the trial duration, included features, or onboarding procedure.  It’s also important to analyze the churn rate among users acquired during this time to better understand retention and long-term engagement.
+- **Free trial promotions and onboarding**: Check if there were any changes to the free trial, such as the trial duration, features, or onboarding process. It’s also important to analyze the churn rate among these new users to get a better sense of retention and long-term engagement.
 
-- **Audience characteristics and behavior**: Examine the demographics and usage patterns of the users who converted during this spike. Did they represent a specific region, segment, or behavioral profile? Investigate how actively they engaged with the product’s core features to determine alignment with key value propositions.
+- **Audience profile**: Examine the demographics and usage patterns of the users who converted during this spike. Did they represent a specific region, segment, or behavioral profile? Investigate how actively they engaged with the product’s core features to determine alignment with key value propositions.
 
-- **Were there any technical issues?** Investigate whether any technical issues, such as bugs, billing errors, or outages, may have affected the ability of users to complete paid sign-ups—potentially leading to an increase in trial conversions as a fallback.
+- **Were there any technical issues?** Investigate whether any technical issues, such as bugs, billing errors, or outages. They may have affected the ability of users to complete paid sign-ups—potentially leading to an increase in trial conversions as a fallback.
 
-- **User reviews and feedback**: Cross-reference these findings with app store reviews or feedback from the same period for additional context.
+- **User reviews and feedback**: Cross-reference our findings with with user reviews, support tickets, or app store feedback from the same period. This can provide additional context or highlight any recurring problems.
 
 
 <!------------------------------ PAGE 2  ----------------------------------->
@@ -211,18 +211,18 @@ Analysis by conversion distribution and Max MRR.
 
 ### 🔍 Insights
 
-- **Social media (e.g., Facebook):** Has high conversion rates and contributes significantly to revenue, suggesting a highly engaged audience. Consider making further investments and scaling successful creatives.  
-- **Search engine (Google):** Despite having the largest user volume and MRR, search engine campaigns show a moderate conversion rate, showing potential for improvement through better keyword targeting and landing page relevance.  
-- **Short-form video (TikTok):** Currently underperforming across key metrics (user volume, conversion, MRR), possibly due to a demographic mismatch between the platform and our target audience. Before making any further investments, it is recommended to conduct a carefully targeted experiment.
+- **Social media (e.g., Facebook):** Brings in a lot of paying customers and generate significant revenue. This tells that our audience on these channels is highly engaged. Hence, we should consider making further investments and scaling successful creatives.  
+- **Search engine (Google):** Despite having the largest user volume and MRR, search engine campaigns has a moderate conversion rate, which shows potential for improvement through better keyword targeting and landing page relevance.  
+- **Short-form video (TikTok):** This channel is currently underperforming across key metrics. It's not bringing in many users, conversions, or revenue. This might be because the typical TikTok user isn't a good match for our target audience. Therefore, before making any further investments, we should test the channel with a smaller, well-targeted experiment.
 
 
 ### ✅ Recommendations
 
 **Channel Strategy:**
 
-- **Facebook:** Increase budget to leverage its high conversion rates.
-- **Google:** Improve conversion rates by focusing on top campaigns (SEA), optimizing keyword targeting, and increasing ad and landing page relevancy.
-- **TikTok:** Conduct a focused final experiment targeting people aged 25-35 who are interested in business, finance, and freelance topics, using content that addresses their pain points, before considering a budget cut.
+- **Facebook:** Given its strong conversion rates, we could consider increasing the budget to maximize returns.
+- **Google:** Focus on top-performing search campaigns by refining keyword targeting and enhancing the relevance of ads and landing pages to boost conversion rates.
+- **TikTok:** Before deciding on budget reductions, run a targeted experiment aimed at users aged 25-35 interested in business, finance, and freelancing.
 
 **Campaign Tactics:**
 
