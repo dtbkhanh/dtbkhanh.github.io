@@ -312,7 +312,7 @@ Analysis by conversion distribution and Max MRR.
 <div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
 <h1 id="final-takeaways">📌 Final Takeaways</h1>
 
-This case study demonstrated how marketing performance and behavioral analytics integration can improve user acquisition and retention. TBy tracking user journeys, analyzing feature usage, and measuring campaign return on investment (ROI), we've built a solid framework for optimizing our app's growth. Using interactive dashboards and a structured analysis, we uncovered several key insights:
+This case study demonstrated how marketing performance and behavioral analytics integration can improve user acquisition and retention. By tracking user journeys, analyzing feature usage, and measuring campaign return on investment (ROI), we've built a solid framework for optimizing our app's growth. Using interactive dashboards and a structured analysis, we uncovered several key insights:
 
 - **Engaging features drive conversions**: Users who interact with our advanced financial tools or the AI Assistant show significantly higher conversion rates. This suggests a strong intent and deeper engagement with our app.
 - **The onboarding experience is important**: The initial feature that users interact with has a significant impact on conversion rates. Early exposure to guided or enhanced functionality leads to more subscriptions.
