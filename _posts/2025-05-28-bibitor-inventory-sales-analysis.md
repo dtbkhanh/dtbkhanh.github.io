@@ -82,7 +82,7 @@ The ERD below guided our analysis, showing the relationships between Bibitor's c
   <strong><a href="https://dbdiagram.io/d/Bibitor-LLC-6817a73d1ca52373f5661284" target="_blank" style="text-decoration: none;">➡️ View Data Model ⬅️</a></strong>
 </div>
 
-As shown, tables like **`PurchasesDec`** and **`VendorInvoicesDec`** are linked by a shared key like `VendorNumber`, representing the core of Bibitor's procurement. Table **`SalesDec`** connects through `InventoryId` to track items' journeys from purchase to customer. This structure ensures a cohesive flow for tracing products and understanding financial transactions across the business.
+As shown, tables like **`PurchasesDec`** and **`VendorInvoicesDec`** are linked by a shared key like `VendorNumber`. This forms the core of Bibitor's purchasing data. Table **`SalesDec`** then links via `InventoryId` to track items' journeys from purchase to customer. This setup creates a smooth flow for tracing items and understanding all financial transactions across the business.
 
 
 <!--===========================================================================-->
@@ -95,7 +95,7 @@ As shown, tables like **`PurchasesDec`** and **`VendorInvoicesDec`** are linked 
   <h1 id="2-sql" style="font-weight: bold;">2. ANALYSIS WITH SQL</h1>
 </div>
 
-SQL was the primary tool used to extract, transform, and conduct the initial layers of analysis on Bibitor’s extensive datasets.  Its robust querying features allowed for a structured and detailed approach to answering key business questions.
+SQL was our main tool for extracting, transforming, and initially analyzing Bibitor’s extensive datasets.  Its strong querying abilities let us take a structured and detailed approach to answer important business questions.
 
 All SQL scripts used in this analysis are available in the following GitHub repository:
 <div style="border: 1px solid #ccc; padding: 15px; margin: 20px 0; border-radius: 5px; text-align: center; transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;" class="dashboard-box">
