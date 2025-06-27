@@ -592,16 +592,17 @@ To pinpoint where slow-moving inventory originates:
 <!-----------------#-#----------------->
 <img src="/assets/images/Screenshot_Bibitor_02_MAC.png" alt="Vendor Inventory Insights" width="800"/>
 
-Beyond tracking inventory movement, understanding its true cost is paramount for accurate financial reporting and pricing strategies. This section leverages the Moving Average Cost (MAC) method (introduced in <a href="#2-4-MAC">Section 2.4</a>) to detect cost variances. 
+Beyond tracking inventory movement, understanding its true cost is essential for accurate financial reporting and pricing. This section applies the Moving Average Cost (MAC) method (which we discussed earlier in <a href="#2-4-MAC">Section 2.4</a>) to identify any cost differences.
 
-- **Inventory Cost Variance:** The bar chart “Top Products by Inventory Cost Variance” identifies items with the largest gaps between their recorded cost and MAC. Products like 69_MOUNTMEND_20063 and 38_GOULCREST_20063 show notable differences (e.g., $1.83K), signaling potential data errors or unexpected price shifts that warrant investigation to ensure correct inventory valuation.
-- **Cost Alignment Check:** The scatter plot “Recorded vs. MAC per Product” visually compares recorded costs to MAC across products. Most products align well (near the diagonal), while outliers indicate inconsistencies that could impact profitability and require review.
+- **Inventory Cost Variance:** The bar chart “Top Products by Inventory Cost Variance” helps us spot items with the biggest differences between their recorded cost and their calculated MAC. Products like 69_MOUNTMEND_20063 and 38_GOULCREST_20063 show notable differences (e.g., $1.83K). These differences mightindicate data issues or unexpected price changes that need investigation to ensure our inventory is valued correctly.
+- **Cost Alignment Check:** The scatter plot “Recorded vs. MAC per Product” compares recorded costs to MAC for all products. Most products fall close to the diagonal line, meaning their costs align well. Any outliers on this chart signal inconsistencies that could impact profitability and require further review.
 
 
 <!-----------------#-#----------------->
 ### 📝 Summary
 <!-----------------#-#----------------->
-This comprehensive dashboard provides an integrated view of Bibitor's inventory dynamics. It highlights not only product sales velocity, problematic slow-movers, and performance drivers by vendor and store, but also crucial insights into inventory cost accuracy. By visually exposing movement trends, efficiency bottlenecks, and potential valuation discrepancies, this powerful tool empowers Bibitor to optimize inventory levels, refine procurement, ensure financial integrity, and ultimately enhance overall profitability.
+This comprehensive dashboard provides an integrated view of Bibitor's inventory dynamics. It highlights product sales velocity, slow-moving items, and key performance drivers by vendor and store. It also provides important insights into inventory cost accuracy. By visualizing movement trends, efficiency issues, and valuation gaps, the dashboard helps Bibitor optimize inventory, refine purchasing, ensure financial accuracy, and improve overall profitability.
+
 
 <!--===========================================================================-->
 <!-------------------------***** FINAL TAKEWAYS *****---------------------------->
@@ -609,14 +610,14 @@ This comprehensive dashboard provides an integrated view of Bibitor's inventory 
 <div style="height: 2px; background-color: lightgray; margin: 40px 0;"></div>
 <h1 id="final-takeaways">📌 Final Takeaways</h1>
 
-Through a combination of robust SQL analysis and intuitive interactive dashboards, this case study provided Bibitor with deep, actionable insights into its core operations. By translating complex data into clear visuals, it offers a comprehensive understanding of:
+Through a combination of robust SQL analysis and interactive dashboards, this case study provided Bibitor with deep, actionable insights into its core operations. By translating complex data into clear visuals, we've provided a full understanding of:
 - Vendor performance
 - Inventory movement
 - Product-level cost accuracy
 
-Key insights such as identifying top-performing and slow-moving products, evaluating vendor efficiency, and highlighting cost variances empower Bibitor to make more informed decisions. Whether it's improving stock turnover, refining purchasing strategies, or ensuring accurate financial reporting, the findings presented here offer a strong foundation for optimizing operations, boosting efficiency, and driving sustainable profitability.
+Key insights, such as identifying top-performing and slow-moving products, evaluating vendor efficiency, and highlighting cost differences, help Bibitor make more informed decisions. Whether it's improving stock turnover, refining purchasing strategies, or ensuring accurate financial reporting, the findings presented here offer a strong foundation for optimizing operations, increasing efficiency, and building lasting profit.
 
-This data-driven approach not only reveals what’s happening — but crucially guides Bibitor on where to take action next.
+This data-driven approach not only reveals what’s happening — it also tells Bibitor what steps to take next.
 
 
 <!------------------------------------------------------------------------ JavaScript ------------------------------------------------------------------------>
