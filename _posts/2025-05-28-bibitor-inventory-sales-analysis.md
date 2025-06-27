@@ -390,7 +390,7 @@ LIMIT 5;
 
 For example, Vendor 3960 has a lower Gross Margin Percentage than Vendor 1392, but because it sells a much larger volume, it contributes the most profit overall.
 
-By looking at both absolute profit (Gross Profit dollars) and efficiency (Gross Margin Percentage), this analysis gives Bibitor a balanced view to guide smart decisions in managing vendor relationships — prioritizing suppliers that maximize profitability and support strong negotiation.
+By looking at both absolute profit (Gross Profit dollars) and efficiency (Gross Margin Percentage), this analysis gives Bibitor a balanced perspective  to make smarter decisions when managing vendor relationships. They can prioritize suppliers who maximize profitability and strengthen their negotiation position.
 
 
 <!-------------------------------------------------------->
@@ -403,19 +403,19 @@ By looking at both absolute profit (Gross Profit dollars) and efficiency (Gross 
 
 #### 📜 **SQL Script:** `03. Inventory Turnover Analysis.sql`
 
-Managing inventory efficiently is essential for any retail business because it directly affects cash flow and profits. In this analysis, we focused on understanding how quickly products move from purchase to sale, helping identify items that linger too long on the shelves — which can tie up money and take up valuable storage space.
+Efficient inventory management is crucial for any retail business, as it directly impacts cash flow and profits. For this analysis, we focused on how quickly products move from purchase to sale. This helps us identify items that remain on shelves too long, which can tie up money and occupy valuable storage space.
 
 <!-----------------#-#----------------->
 ### a. Calculating "Days to Sell":
 <!-----------------#-#----------------->
-The key metric here is the “Days to Sell” — how many days it takes for an item to go from the moment it arrives in the store to when it’s sold for the first time. To find this, we compared the date the product was received with the date it was sold. This calculation was then stored in a new table called `InventorySaleLag`, making it easy to review later.
+Our key metric here is "Days to Sell" — the number of days it takes for a product to go from arrival in the store to its first sale. To calculate this, we simply each product’s received date with its first sale date. The results are stored in a new table called `InventorySaleLag` for easy review.
 
-While the full SQL script behind this table is detailed, the basic idea is straightforward: combine purchase and sales data to find the time gap between arrival and sale for each product at every store.
+Although the full SQL script is detailed, the core idea is simple: we combined purchase and sales data to find the time difference between arrival and sale for each product at every store.
 
 <!-----------------#-#----------------->
 ### b. Identifying Slow-Moving Inventory:
 <!-----------------#-#----------------->
-With the `InventorySaleLag` data ready, we ran a simple query to flag slow-moving items — those that took more than 60 days to sell after arriving. Identifying these products helps the business take action, like discounting or reevaluating stock levels, to free up cash and space.
+With the `InventorySaleLag` data ready, we ran a simple query to flag slow-moving items—products that took more than 60 days to sell after arriving. Identifying these items helps the business take action, such as applying discounts or adjusting stock levels, to free up cash and valuable storage space.
 
 ```sql
 -- Selects inventory items that took longer than 60 days to sell from the calculated data
@@ -442,7 +442,7 @@ LIMIT 5;
 
 </div>
 
-The result quickly highlights specific products that remain in stock for unusually long periods — some even close to a full year! Items that sit on shelves for too long can increase storage costs, risk becoming outdated or unsellable, and tie up valuable funds that could be better invested elsewhere. By identifying these slow-moving products, Bibitor can take targeted steps such as adjusting future purchase orders, launching special promotions, or revising prices to improve sales and free up resources.
+The result quickly highlighted specific products that stay in stock for unusually long times. Some even sit on shelves for almost a full year! Items that remain unsold for too long increase storage costs. They also risk becoming outdated or unsellable, and tie up funds that could be better used elsewhere. By identifying these slow-moving products, Bibitor can take specific actions such as adjusting future orders, launching special promotions, or changing prices to improve sales and free up resources.
 
 <!--------------------------------------------------------------------------->
 <!-------- ** 2.4. Inventory Valuation: Moving Average Cost (MAC) ** -------->
@@ -454,20 +454,20 @@ The result quickly highlights specific products that remain in stock for unusual
 
 #### 📜 **SQL Script:** `04. Inventory MovingAvgCost.sql`
 
-Knowing the true cost of inventory is just as important as knowing how quickly it sells. Bibitor can estimate this using the Moving Average Cost (MAC) method. This approach continuously updates the average cost of each item whenever new stock is purchased, reflecting the most current value of inventory.
+Understanding the true cost of inventory is just as important as knowing how fast it sells. Bibitor can estimate this using the **Moving Average Cost (MAC)** method. This approach continuously updates each item's average cost whenever new stock is bought, giving us the most current inventory value.
 
-The process combines data on what’s currently in stock, what was purchased, and what was sold — then calculates an up-to-date average cost for every product.
+The process combines data on current stock, new purchases, and sales. Then, it calculates an up-to-date average cost for every product.
 
 ### Calculating MAC:
 
 To determine the Moving Average Cost, we followed a few key steps:
-1. **Tracked sales and purchases:** Sales are counted as negative quantities (items leaving inventory), and purchases as positive quantities (items coming in), to accurately represent stock changes.
-2. **Combined Transactions:** All inventory movements — both incoming and outgoing — are merged into one dataset for analysis.
-3. **Added Beginning Inventory:** The inventory at the beginning of the month is added to provide a complete picture of stock availability.
-4. **Calculated Moving Average:** For each product at each store, the total cost of inventory is divided by the total quantity on hand, resulting in a dynamic average cost that adjusts as new purchases and sales happen.
-5. **Compared with Ending values:** Finally, the calculated average cost is compared with the recorded value at the end of the period to ensure accuracy.
+1. **Tracked sales and purchases:** We recorded sales as negative quantities (items leaving stock) and purchases as positive quantities (items coming in) to accurately reflect inventory changes.
+2. **Combined all transactions:** All inventory movements, both incoming and outgoing, were merged into a single dataset for analysis.
+3. **Added Beginning Inventory:** We added the inventory available at the start of the month to get a complete picture of stock availability.
+4. **Calculated Moving Average:** For each product at every store, we divided the total cost of inventory by the total quantity on hand. This gives us a dynamic average cost that adjusts with new purchases and sales.
+5. **Compared with Ending values:** Finally, we compared the calculated average cost with the recorded inventory value at the end of the period to ensure accuracy.
 
-The goal is to maintain a precise and current average cost for every product, helping Bibitor make informed decisions about pricing, budgeting, and profitability.
+Our goal was to maintain a precise and current average cost for every product. This helps Bibitor make informed decisions regarding pricing, budgeting, and overall profitability.
 
 ```sql
 -- Calculate Moving Average Cost (MAC)
@@ -524,10 +524,10 @@ GROUP BY InventoryId, Store, Brand;
 
 Monthly trends in purchases and sales reveal key patterns in Bibitor’s business flow. These insights support smarter inventory planning and financial forecasting:
 
-- Purchases steadily increased through 2016, peaking in August, which likely means inventory was being built up.
-- Sales showed sharper growth, particularly in July and December, indicating strong seasonality, likely tied to summer and holiday demand.
+- Purchases steadily increased through 2016, hitting their highest point in August, which likely means inventory was being built up.
+- Sales showed sharper growth,  especially in July and December. This points to strong seasonality, probably linked to summer and holiday demand.
 
-Understanding these rhythms helps ensure the right products are stocked at the right times.
+Understanding these rhythms helps us ensure we stock the right products at the right times.
 
 <!-----------------#-#----------------->
 ### b. Visualizing Vendor Dominance
@@ -536,7 +536,7 @@ Understanding these rhythms helps ensure the right products are stocked at the r
 
 This section showcases top-performing vendors through key financial metrics: **Purchase Spend**, **Sales Revenue**, and **Gross Profit/Margin**. As noted earlier (<a href="#2-2-vendor">Section 2.2</a>), **DIAGEO NORTH AMERICA INC** consistently ranks highest, clearly standing out across all metrics.
 
-The bar charts visually rank vendor performance, making it easy to compare their contribution to Bibitor’s bottom line. In parallel, the "Top 10 Vendor by Freight % of Purchase" table surfaces shipping efficiency issues — revealing that some smaller vendors may have disproportionate freight costs relative to their order volumes.
+The bar charts clearly rank vendor performance, making it easy to compare their impact on Bibitor's profits. At the same time, the "Top 10 Vendor by Freight % of Purchase" table highlights shipping efficiency problems. It shows that some smaller vendors might have disproportionately high freight costs compared to the size of their orders.
 
 <!-----------------#-#----------------->
 ### c. Vendor Inventory Insights
@@ -544,11 +544,11 @@ The bar charts visually rank vendor performance, making it easy to compare their
 <img src="/assets/images/Screenshot_Bibitor_01_EndingInv.png" alt="Vendor Inventory Insights" width="800"/>
 
 A new dimension of analysis focuses on inventory allocation across vendors:
-- **Ending Inventory Value:** The "Top 10 Vendor by Ending Inventory Value ($)" bar chart shows where most of Bibitor’s current stock value is concentrated. Diageo again leads, followed by Martignetti Companies — reflecting both their high purchase volumes and slower turnover.
-- **Inventory vs. Purchases:** The scatter plot "Ending Inventory Value vs. Total Purchases" brings an important correlation to light. Vendors with higher purchase totals generally hold more ending inventory. Large bubbles in the upper-right corner (e.g., DIAGEO NORTH AMERICA INC) signal significant capital investment and highlight the need to monitor stock efficiency.
+- **Ending Inventory Value:** The "Top 10 Vendor by Ending Inventory Value ($)" bar chart shows where most of Bibitor's current stock value is concentrated. DIAGEO NORTH AMERICA INC again leads, followed by Martignetti Companies. This reflects not only their high purchase volumes but also a slower turnover of their products.
+- **Inventory vs. Purchases:** The scatter plot "Ending Inventory Value vs. Total Purchases" shows that vendors who buy more also tend to hold more ending inventory. The large bubbles in the upper-right corner (e.g., DIAGEO NORTH AMERICA INC) indicate high capital investment and the need to monitor stock efficiency.
 
 ### 📝 Summary
-This dashboard turns complex vendor data into actionable insights. By spotlighting top vendors across purchasing, sales, profit, and inventory, Bibitor can prioritize key relationships, assess capital allocation, and refine stock strategies — all crucial for driving sustainable growth.
+This dashboard effectively transforms complex vendor data into actionable insights. By spotlighting our top vendors across purchases, sales, profitability, and inventory, Bibitor can better prioritize key relationships, assess capital allocation, and refine stock strategies. These insights are vital for driving sustainable growth.
 
 
 <!------------------------------------------------------------------------------->
@@ -558,14 +558,14 @@ This dashboard turns complex vendor data into actionable insights. By spotlighti
   <h2 id="3-2-inventory-impact" style="font-weight: bold;">3.2. Inventory Efficiency & Product-Level Insights</h2>
 </div>
 
-To further support strategic vendor relationships, this dashboard focuses on Bibitor’s inventory health and product flow. It provides clear insights into product movement speed, identifies bottlenecks, and highlights both strong performers and areas needing immediate attention.
+This dashboard is designed to support strategic vendor relationships by offering clear insights into Bibitor's inventory health and product flow. It offers clear insights into how quickly products move, identifies bottlenecks, and highlights both strong performers and areas needing immediate attention.
 
 <!-----------------#-#----------------->
 ### a. Highlighting Product Successes
 <!-----------------#-#----------------->
 <img src="/assets/images/Screenshot_Bibitor_02_TopSelling.png" alt="Top-Selling Product by Vendor" width="800"/>
 
-The “Top-Selling Product by Vendor” table shows each vendor’s best-selling product by both quantity and total sales. This highlights specific high-performing items that warrant consistent stocking and potential marketing focus. It complements the overall vendor performance by showing which product contributes most to a vendor's success for Bibitor.
+The “Top-Selling Product by Vendor” table clearly displays each vendor's best-selling item based on both quantity sold and total sales. This helps us identify specific high-performing products to keep in stock and focus on in marketing. It also highlights the overall vendor performance by showing which specific product drives the most success for each vendor within Bibitor.
 
 <!-----------------#-#----------------->
 ### b. Inventory Velocity
@@ -574,8 +574,8 @@ The “Top-Selling Product by Vendor” table shows each vendor’s best-selling
 
 This section visualizes how quickly products sell after arriving in inventory, based on the “Days to Sell” metric introduced in <a href="#2-3-inventory">Section 2.3</a>.
 
-- **Overall Sales Lag Distribution:** The "Inventory Sales Lag Distribution" chart provides a high-level overview of inventory turnover. It clearly shows that the majority of Bibitor's products sell within a relatively short timeframe (e.g., within 30 days). However, it also visually highlights the presence of a tail — a smaller, but significant, number of products that sit in inventory for extended periods (e.g., 90 days or more), tying up capital and storage space.
-- **Identifying Slow Movers:** The accompanying table lists the ten products with the longest sales lag, including product and vendor details. These are ideal candidates for promotions, pricing changes, or stock review.
+- **Overall Sales Lag Distribution:** The "Inventory Sales Lag Distribution" chart gives a clear overview of inventory turnover. Most of Bibitor’s products sell within a short time, usually under 30 days. However, it also highlights a "long tail" — a smaller, but significant, number of products that stay in inventory for a long time, sometimes 90 days or more. These items tie up our cash and storage space.
+- **Identifying Slow Movers:** The accompanying table lists the ten products with the longest sales lag, including product and vendor details. These are ideal candidates for promotions, pricing changes, or a full stock review.
 
 <!-----------------#-#----------------->
 ### c. Performance Drivers: By Vendor and By Store
@@ -583,8 +583,9 @@ This section visualizes how quickly products sell after arriving in inventory, b
 <!-----------------#-#----------------->
 To pinpoint where slow-moving inventory originates:
 
-- **Vendor Performance:** The "Top 10 Vendors by Average Days to Sell" chart reveals which suppliers, on average, are associated with slower inventory turnover. Identifying vendors like TRUETTI HURST and WALPOLE MTN VIEW WINERY with significantly higher average days to sell (119 and 115 days, respectively) can lead to discussions about product assortment, demand alignment, or purchasing quantities with these specific partners.
-- **Store Performance:** The "Top 10 Stores by Average Days to Sell" chart highlights locations where inventory tends to linger. Stores such as Store #44 and Store #74 show higher average days to sell (around 36-37 days), indicating potential localized demand issues, merchandising challenges, or inefficiencies in inventory management specific to those branches.
+- **Vendor Performance:** The "Top 10 Vendors by Average Days to Sell" chart clearly shows which suppliers are linked to slower-moving inventory. For instance, TRUETTI HURST and WALPOLE MTN VIEW WINERY stand out with significantly higher average days to sell (119 and 115 days, respectively). This insight can lead to discussions about their product mix, alignment with customer demand, or purchasing volumes.
+- **Store Performance:** The "Top 10 Stores by Average Days to Sell" chart highlights locations where inventory tends to sit longer. Stores #44 and #74 have higher average days to sell (36–37 days), indicating potential local demand issues, merchandising problems, or inventory management inefficiencies.
+
 
 <!-----------------#-#----------------->
 ### d. Inventory Cost & Valuation
