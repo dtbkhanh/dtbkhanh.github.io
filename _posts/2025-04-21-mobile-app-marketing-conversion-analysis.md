@@ -96,7 +96,7 @@ Between July and September 2024, we noticed a spike in non-paid conversions that
 
 - **Audience profile**: Examine the demographics and usage patterns of the users who converted during this spike. Did they represent a specific region, segment, or behavioral profile? Investigate how actively they engaged with the product’s core features to determine alignment with key value propositions.
 
-- **Were there any technical issues?** Investigate whether any technical issues, such as bugs, billing errors, or outages. They may have affected the ability of users to complete paid sign-ups—potentially leading to an increase in trial conversions as a fallback.
+- **Were there any technical issues?** Investigate whether any technical issues, such as bugs, billing errors, or outages. They may have affected the ability of users to complete paid sign-ups, perhaps leading to an increase in trial conversions as a fallback.
 
 - **User reviews and feedback**: Cross-reference our findings with with user reviews, support tickets, or app store feedback from the same period. This can provide additional context or highlight any recurring problems.
 
@@ -190,7 +190,7 @@ Evaluation by user volume, conversion rate, and maximum MRR:
 Analysis by conversion distribution and Max MRR.  
 <img src="/assets/images/Screenshot_Mobile App_03b.png" alt="Marketing Performance Dashboard Screenshot" width="800"/>
 
-> ⚠️ To ensure data accuracy for the campaign analysis, a data cleaning step was performed. The original `campaign` column presented inconsistencies in naming, which were resolved by grouping similar entries into these standardized categories:
+> ⚠️ To ensure data accuracy for the campaign analysis, we'll need to perform a data cleaning step. The original `campaign` column presented inconsistencies in naming, which were resolved by grouping similar entries into these standardized categories:
 
 - `sea` → Search Engine Advertising  
 - `ugc` → User Generated Content  
@@ -285,7 +285,7 @@ Analysis by conversion distribution and Max MRR.
 ### e. Account Type Segmentation
 
 - Most users are freelancers or self-employed individuals who do not pay VAT.   
-- Complementary status users — those with a primary job and a freelancing side gig—have the highest conversion rates
+- Complementary status users, those with a primary employment and a freelancing side gig, have the greatest conversion rates.
 
 
 ### ✅ Recommendations
