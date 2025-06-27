@@ -40,14 +40,14 @@ tags: [RetailAnalytics, SalesAnalysis, InventoryManagement, BusinessIntelligence
   <h1 id="1-intro" style="font-weight: bold;">1. INTRODUCTION</h1>
 </div>
 
-What does it take to run a successful liquor business? It’s not just about stocking popular products — it’s about understanding what sells, how fast it moves, and which vendors help or hurt your bottom line.
+What does it take to run a successful liquor business? It’s not just about stocking popular products – it’s about understanding what sells, how fast it moves, and which vendors help or hurt your bottom line.
 
-This case study analyzes data from Bibitor, LLC — a fictional retail chain with 80+ locations and over $450M in annual sales, to uncover patterns patterns in vendor performance, inventory movement, and sales behavior, applying real-world retail concepts.
+In this case study, we analyzes data from Bibitor, LLC – a fictional retail chain with 80+ locations and over $450M in annual sales, to uncover patterns patterns in vendor performance, inventory movement, and sales behavior, using real-world retail concepts.
 
 <img src="/assets/images/Cover_Bibitor.png" alt="Liquour Sales" width="800"/>
 
 ### 🧾 About the Dataset
-The dataset, obtained from the **[HUB of Analytics Education](https://www.hubae.org)**, simulates operational data from a large-scale liquor retailer  based in Lincoln, USA, for the month of December 2016. It consists of six key data tables that collectively represent purchasing, inventory, sales, and vendor transactions.
+The dataset, obtained from the **[HUB of Analytics Education](https://www.hubae.org)**, simulates operational data from a large-scale liquor retailer based in Lincoln, USA, for the month of December 2016. It consists of six key data tables that collectively represent purchasing, inventory, sales, and vendor transactions.
 - **Inventory**
   - **`BegInvDec`**: Inventory at the start of December 2016.
   - **`EndInvDec`**: Inventory remaining at the end of December 2016.
@@ -65,7 +65,7 @@ The dataset, obtained from the **[HUB of Analytics Education](https://www.hubae.
 When combined, these tables allow us to track products from purchase to sale, understand vendor relationships, and monitor financial flows, which are all crucial for optimizing retail operations.
 
 ### 🔑 Key Business Questions
-- Which vendors provide the most value?
+- Which vendors offer the highest value?
 - Are we overstocking or underutilizing inventory?
 - How do purchase prices compare to actual sales?
 - What’s the average time it takes to sell received stock?
@@ -95,7 +95,7 @@ As shown, tables like **`PurchasesDec`** and **`VendorInvoicesDec`** are linked 
   <h1 id="2-sql" style="font-weight: bold;">2. ANALYSIS WITH SQL</h1>
 </div>
 
-SQL was the primary tool used to extract, transform, and conduct the initial layers of analysis on Bibitor’s extensive datasets. Its powerful querying capabilities supported a structured and detailed approach to addressing critical business questions.
+SQL was the primary tool used to extract, transform, and conduct the initial layers of analysis on Bibitor’s extensive datasets.  Its robust querying features allowed for a structured and detailed approach to answering key business questions.
 
 All SQL scripts used in this analysis are available in the following GitHub repository:
 <div style="border: 1px solid #ccc; padding: 15px; margin: 20px 0; border-radius: 5px; text-align: center; transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;" class="dashboard-box">
@@ -111,13 +111,13 @@ All SQL scripts used in this analysis are available in the following GitHub repo
 
 #### 📜 **SQL Script:** `01. Initial Analysis.sql`
 
-Ensuring data integrity was a crucial first step before deeper analysis. This involved systematically checking for missing values, zero amounts in key financial fields, and inconsistencies that could affect the reliability of the insights.
+We began our analysis by thoroughly ensuring data integrity. This involved systematic checks for missing values, zero balances in key financial data, and inconsistencies, all of which could impact the reliability of our findings.
 
 ## 🔑 Key Objectives:  
-- Identify any records with missing or zero monetary values in sales, purchases, or pricing data.
-- Assess the completeness and overall cleanliness of the dataset.
-- Verify that calculated fields (e.g., `PurchasePrice * Quantity`) align with recorded totals.
-- Confirm consistency of vendor information across related tables.
+- Identify missing or zero values in sales, purchases, or pricing data.
+- Assess the completeness and overall cleanliness of the entire dataset.
+- Verify that calculated fields (e.g., `PurchasePrice * Quantity`) accurately match recorded totals.
+- Ensure vendor information is consistent across all related tables.
 
 ## 🔍 A glimpse into the Code:
 ### a. Missing or Zero values
@@ -141,9 +141,9 @@ SELECT * FROM PurchasesDec WHERE Dollars <= 0 OR Dollars IS NULL;
 
 </div>
 
-This query returned 153 records where the `Dollars` value is zero or null. Since `Dollars` is derived from `PurchasePrice * Quantity`, a zero value implies a zero purchase price for these items. Possible explanations include:
-- **Promotional or Free Goods:** Items given away as part of a promotion, marketing campaign, or bundled with other purchases.
-- **Samples:** Products recorded as samples for in-store use or customer trials.
+Our query returned 153 records where the `Dollars` value is zero or null.  Given that `Dollars` is calculated from `PurchasePrice * Quantity`,  a zero value here strongly suggests these items had a zero purchase price. Possible explanations include:
+- **Promotional or Free Goods:** These items might have been given away as part of a marketing campaign, a promotion, or bundled with other purchases.
+- **Samples:** They could also be products recorded as samples for in-store use or customer trials.
 - **Data Entry Errors:** Mistakes made during data input.
 
 **📦 Sales:**
@@ -165,13 +165,13 @@ SELECT * FROM SalesDec WHERE SalesDollars <= 0 OR SalesDollars IS NULL;
 
 </div>
 
-This identified 55 sales records with zero or missing sales amounts, indicating that the sales price was recorded as zero for these transactions.
+We found 55 sales records with zero or missing sales amounts, meaning these transactions were recorded with a zero sales price.
 
 #### ➡️ Next steps:
-To determine if these zero-value entries are valid, further actions include:
-- Consulting business teams to confirm if such transactions are expected under specific contexts (e.g., promotions).
+To figure out if these zero-value entries are valid, we need to take a few more steps:
+- Talk to our business teams to confirm if these types of transactions are expected in certain situations, like promotions.
 - Analyzing patterns by product or vendor to identify systematic issues.
-- Reviewing pricing and promotional strategies that may explain zero-dollar transactions.
+- Reviewing pricing and promotional strategies. This might help explain why some transactions show zero dollars.
 - Investigating potential data entry or system integration errors.
 
 ### b. Percentage of Zero or Null in the dataset
@@ -192,12 +192,13 @@ FROM SalesDec;
 ```
 *Output:* `0.0004`
 
-➡️ These very low percentages indicate that the financial data is remarkably clean with respect to zero or missing monetary values. This is a strong positive for the quality of subsequent analysis.
+➡️ These very low percentages show that our financial data is exceptionally clean regarding zero or missing monetary values. This is a significant advantage for the quality of any future analysis.
+
 ### c. Dataset Summaries
-This section summarizes the key characteristics of the datasets to gain a foundational understanding of their contents.
+This section provides a foundational overview of our datasets' key characteristics.
 
 **📦 Purchases:**   
-The `PurchasesDec` table contains 2.37 million rows, representing purchases from 128 distinct vendors across 5,543 unique purchase orders. Key monetary and quantity statistics include:
+The `PurchasesDec` table contains 2.37 million rows, representing purchases from 128 distinct vendors across 5,543 unique purchase orders. Here are the key statistics for monetary values and quantities:
 
 | Metric   | Quantity (units) | Dollars         |
 |----------|------------------|-----------------|
@@ -239,14 +240,14 @@ The `VendorInvoicesDec` table shares similar date ranges with `PurchasesDec` for
 
 #### 📜 **SQL Script:** `02. Vendor Analysis.sql`
 
-The next phase of the analysis focused on Bibitor’s key relationships with its vendors and suppliers. This comprehensive evaluation aimed to provide a 360-degree view of vendor performance — identifying top suppliers, assessing shipping cost efficiency, and measuring profitability contributions from each vendor’s products.
+The next phase of our analysis focused on Bibitor’s key relationships with its vendors and suppliers. Our goal was to get a complete, 360-degree view of vendor performance. This meant identifying our top suppliers, evaluating how efficient their shipping costs were, and measuring the profit each vendor's products brought in.
 
 ## 🔑 Key Objectives:   
-- **Top Vendor identification:** Which vendors rank highest by total purchase spend, sales generated, and quantity purchased?
+- **Top Vendor identification:** Which vendors rank highest by total purchase spend, sales generated, and quantity of products we purchased from them?
 - **Item-level sales performance:** What are the best-selling products supplied by each vendor?
-- **Freight cost insights:** How significant are shipping costs relative to purchase value for each vendor?
-- **Profitability assessment:** What is the gross margin achieved from products supplied by each vendor, highlighting their true profit contribution?
-- **Temporal trends:** How do purchase and sales volumes vary over time, indicating seasonality or growth patterns?
+- **Freight cost insights:** How significant are shipping costs compared to the purchase value for each vendor?
+- **Profitability assessment:** What gross margin is generated from products supplied by each vendor, revealing their true profit contribution?
+- **Temporal trends:** How do purchase and sales volumes change over time, and how can this help us spot seasonality or growth patterns?
 
 ## 🔍 A glimpse into the Code:  
 The first step involved compiling a comprehensive list of unique vendors by combining purchase and invoice data, yielding a total of **128 distinct suppliers**.
@@ -300,12 +301,12 @@ LIMIT 5;
 | 12546        | JIM BEAM BRANDS COMPANY   | $31,906,320.54       |
 | 480          | BACARDI USA INC           | $25,014,556.89       |
 
-Both results showed consistent leaders in both purchase spend and sales revenue. Notably, **DIAGEO NORTH AMERICA INC** emerged as the largest supplier, indicating strong alignment between what Bibitor buys and what customers actually purchase.
+Both results  consistently showed the same top performers in both purchase spend and sales revenue. Specifically, **DIAGEO NORTH AMERICA INC** stood out as the largest supplier, indicating strong alignment between what Bibitor buys and what their customers want.
 
 <!-----------------#-#----------------->
 ### b. Top-Selling Products by Vendor:
 <!-----------------#-#----------------->
-To drill down into product-level insights, the analysis identified the highest-selling inventory item per vendor. This involved aggregating sales quantities and revenues across all items supplied by each vendor and ranking them accordingly.
+To gain a closer look at individual products, we identified each vendor's top-selling item by aggregating sales quantities and revenues for all products they supplied, then ranking them accordingly.
 
 *Sample Output:*
 
@@ -317,12 +318,12 @@ To drill down into product-level insights, the analysis identified the highest-s
 | 200          | 12_LEESIDE_20789     | 76         | $1,367.24   |
 | 287          | 65_LUTON_24922       | 20         | $281.80     |
 
-This granular data supports targeted inventory management, promotional planning, and refining the product mix for each vendor.
+This detailed data will help us with targeted inventory management, planning promotions, and refining the product mix for every vendor.
 
 <!-----------------#-#----------------->
 ### c. Freight Cost Efficiency:
 <!-----------------#-#----------------->
-Shipping costs can significantly impact overall product costs. Instead of looking only at total freight expenses, freight was evaluated as a percentage of total purchase cost to identify inefficiencies:
+Shipping costs can really impact how much a product ultimately costs. So, instead of just looking at the total freight expenses, we evaluated freight as a percentage of the total purchase cost to identify inefficiencies:
 
 ```sql
 -- Calculates and ranks vendors by freight cost as a percentage of their total purchase cost
@@ -348,7 +349,7 @@ LIMIT 5;
 | 1590         | DIAGEO CHATEAU ESTATE WINES     | $1,365,472.83   | $7,259.75      | 0.53%          |
 | 9744         | FREDERICK WILDMAN & SONS        | $759,449.24     | $3,999.93      | 0.53%          |
 
-The result showed that vendors with the highest percentage of freight costs often differ from those with the highest total freight. This suggests that smaller or more specialized vendors may have less optimized shipping logistics, making freight a larger proportion of the overall cost for their products.
+The result showed that vendors with the highest freight costs as a percentage of total purchase cost weren't always the ones with the highest total shipping expenses. This suggests that smaller or more specialized vendors may have less efficient shipping processes, causing freight to make up a larger portion of their product's overall cost.
 
 <!-----------------#-#----------------->
 ### d. Profitability via Gross Margin:  
